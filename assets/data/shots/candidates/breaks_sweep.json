@@ -1,0 +1,812 @@
+[
+ {
+  "id": "b_00",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_01",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_02",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_03",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_04",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_05",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_06",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_07",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_08",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_09",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_10",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_11",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_12",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_13",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_14",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_15",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_16",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_17",
+  "cue_ball_y_offset_m": -0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_18",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_19",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_20",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_21",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_22",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_23",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_24",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_25",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_26",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_27",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_28",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_29",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_30",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_31",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_32",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_33",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_34",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_35",
+  "cue_ball_y_offset_m": -0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_36",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_37",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_38",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_39",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_40",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_41",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_42",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_43",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_44",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_45",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_46",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_47",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_48",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_49",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_50",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_51",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_52",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_53",
+  "cue_ball_y_offset_m": 0.0,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_54",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_55",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_56",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_57",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_58",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_59",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_60",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_61",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_62",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_63",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_64",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_65",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_66",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_67",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_68",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_69",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_70",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_71",
+  "cue_ball_y_offset_m": 0.05,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_72",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_73",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_74",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_75",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_76",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_77",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 9.8,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_78",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_79",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_80",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_81",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_82",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_83",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 10.73,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_84",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_85",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_86",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.0,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_87",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.0,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_88",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": -0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ },
+ {
+  "id": "b_89",
+  "cue_ball_y_offset_m": 0.1,
+  "speed_mps": 11.6,
+  "aim_jitter_deg": 0.15,
+  "a": 0.0,
+  "b": 0.12,
+  "theta_deg": 0.0
+ }
+]

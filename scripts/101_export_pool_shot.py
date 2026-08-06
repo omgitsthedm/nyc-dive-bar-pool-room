@@ -14,12 +14,43 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUTPUT = ROOT / "assets" / "data" / "shots" / "break_control.json"
 
 
+def load_candidate(path: Path) -> dict:
+    """One candidate tuple from the Section 5.1 sweep schema.
+
+    {"id","cue_ball_y_offset_m","speed_mps","aim_jitter_deg","a","b",
+     "theta_deg"}. The schema calls the placement field
+     ``cue_ball_y_offset_m`` but describes it as "along the head string"; the
+     control break aims down -Y, so the head string is pool X and that is
+     where the offset is applied. ``speed_mps`` is CUE BALL speed, matching
+     the profile's target_cue_ball_speed_mps, not the stick's V0.
+    """
+    shot = P.load_json(path)
+    required = ("id", "cue_ball_y_offset_m", "speed_mps")
+    missing = [k for k in required if k not in shot]
+    if missing:
+        raise ValueError("candidate %s missing keys: %s" %
+                         (path, ", ".join(missing)))
+    overrides = {
+        "head_string_offset_m": float(shot["cue_ball_y_offset_m"]),
+        "cue_ball_speed_mps": float(shot["speed_mps"]),
+        "aim_jitter_deg": float(shot.get("aim_jitter_deg", 0.0)),
+    }
+    for key in ("a", "b", "theta_deg"):
+        if key in shot:
+            overrides[key] = float(shot[key])
+    return shot, overrides
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--fixture", default="break_control",
                         choices=("break_control",))
     parser.add_argument("--sample-rate", type=int, default=None)
     parser.add_argument("--out", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--shot", type=Path, default=None,
+                        help="candidate JSON (Section 5.1 schema); without "
+                             "this the frozen control break is exported and "
+                             "its trajectory hash must not move")
     args = parser.parse_args()
 
     profile = P.load_profile()
@@ -28,11 +59,17 @@ def main() -> int:
     if rate < 120:
         raise ValueError("authoritative trajectory exports require at least 120 Hz")
 
-    system = P.control_break_system(profile, geometry)
+    shot_id = args.fixture
+    overrides = None
+    if args.shot is not None:
+        shot, overrides = load_candidate(args.shot)
+        shot_id = str(shot["id"])
+
+    system = P.control_break_system(profile, geometry, overrides=overrides)
     P.simulate(system, profile=profile)
     payload = P.export_trajectory(
         system,
-        shot_id=args.fixture,
+        shot_id=shot_id,
         profile=profile,
         geometry=geometry,
         sample_rate_hz=rate,

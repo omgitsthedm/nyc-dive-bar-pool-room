@@ -282,7 +282,32 @@ def system_from_positions(
 def control_break_system(
     profile: dict[str, Any] | None = None,
     geometry: dict[str, Any] | None = None,
+    overrides: dict[str, Any] | None = None,
 ) -> pt.System:
+    """The frozen control break, or a swept variant of it.
+
+    With ``overrides`` None this is byte-for-byte the original function and the
+    control break's trajectory hash is unchanged - that invariant is proved by
+    re-exporting the control shot before and after any edit here and comparing
+    ``trajectory_sha256``.
+
+    With ``overrides`` set, the SAME code path builds a candidate: the only
+    things that move are cue-ball placement along the head string, the stick
+    speed, the aim, and the tip offsets. There is no second simulator.
+
+    Override keys (all optional):
+      head_string_offset_m  cue ball slides along the head string. The control
+                            break aims at phi 270 deg, i.e. down -Y, so the
+                            head string runs along pool X and this offsets X.
+      cue_ball_speed_mps    desired CUE BALL speed. The profile stores stick
+                            speed V0 (6.988) and the cue-ball speed it yields
+                            (10.73); the stick-ball model is linear in V0 for a
+                            fixed tip offset, so V0 scales by the same ratio.
+                            The achieved speed is measured after simulation
+                            rather than assumed.
+      aim_jitter_deg        added to phi.
+      theta_deg, a, b       tip offsets, replacing the control values.
+    """
     profile = profile or load_profile()
     geometry = geometry or load_geometry()
     positions: dict[str, Iterable[float]] = rack_layout(profile, geometry)
@@ -295,6 +320,21 @@ def control_break_system(
         "a": float(row["side_offset_a"]),
         "b": float(row["vertical_offset_b"]),
     }
+    if overrides:
+        cx, cy = positions["cue"]
+        if "head_string_offset_m" in overrides:
+            cx = cx + float(overrides["head_string_offset_m"])
+            positions["cue"] = (cx, cy)
+        if "cue_ball_speed_mps" in overrides:
+            ratio = (float(row["cue_speed_mps"]) /
+                     float(row["target_cue_ball_speed_mps"]))
+            cue_state["V0"] = float(overrides["cue_ball_speed_mps"]) * ratio
+        if "aim_jitter_deg" in overrides:
+            cue_state["phi"] = (float(row["phi_deg"]) +
+                                float(overrides["aim_jitter_deg"]))
+        for key, field in (("theta_deg", "theta"), ("a", "a"), ("b", "b")):
+            if key in overrides:
+                cue_state[field] = float(overrides[key])
     return system_from_positions(
         positions,
         cue_ball_id="cue",
