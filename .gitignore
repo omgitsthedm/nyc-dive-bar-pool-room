@@ -15,3 +15,10 @@ renders/sweep/
 blend-backups/
 renders/film_frames
 renders/break_candidates
+
+# Candidate trajectories are ~4.6 MB each and fully regenerable: the tuple in
+# candidates/<id>.json plus 101_export_pool_shot.py --shot reproduces them
+# byte-for-byte. The tuples, the sweep report and the WINNER (promoted to
+# assets/data/shots/break_film.json) are all committed; the raw intermediates
+# are not.
+assets/data/shots/candidates/out/

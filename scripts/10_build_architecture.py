@@ -38,6 +38,48 @@ def _irregular_patch(name, centre, radii, material, z=0.0012):
     return ob
 
 
+def _sagged_tin_panel(name, cx, cy, size, top_z, sag, material, seg=8):
+    """A5 - one pressed-tin panel that has bellied under an old leak.
+
+    Same footprint and same top plane as its neighbours at the edges, where
+    it is still nailed to the strapping; the middle drops by `sag`. The
+    profile is a raised cosine in both directions, so the panel meets its
+    neighbours flush and there is no crease at the seam. `sag` is metres and
+    belongs in the 0.008-0.012 band - deeper stops reading as age and starts
+    reading as damage.
+    """
+    half = size / 2.0
+    thick = 0.014
+    verts, faces = [], []
+    for k, z_base in enumerate((top_z + thick / 2.0, top_z - thick / 2.0)):
+        for i in range(seg + 1):
+            for j in range(seg + 1):
+                u = (i / seg) * 2.0 - 1.0
+                v = (j / seg) * 2.0 - 1.0
+                bell = ((math.cos(u * math.pi) + 1.0) / 2.0) * \
+                       ((math.cos(v * math.pi) + 1.0) / 2.0)
+                verts.append((cx + u * half, cy + v * half,
+                              z_base - sag * bell))
+    stride = (seg + 1) ** 2
+    for k in range(2):
+        base = k * stride
+        for i in range(seg):
+            for j in range(seg):
+                a = base + i * (seg + 1) + j
+                quad = (a, a + 1, a + seg + 2, a + seg + 1)
+                faces.append(quad if k == 1 else tuple(reversed(quad)))
+    for i in range(seg):                       # skirt closes the two sheets
+        for a, b in ((i * (seg + 1), (i + 1) * (seg + 1)),
+                     (i * (seg + 1) + seg, (i + 1) * (seg + 1) + seg),
+                     (i, i + 1),
+                     (seg * (seg + 1) + i, seg * (seg + 1) + i + 1)):
+            faces.append((a, b, b + stride, a + stride))
+    ob = L.mesh_object(name, verts, faces, A, material)
+    ob["tin_condition"] = "bellied_under_old_leak"
+    ob["sag_m"] = round(sag, 4)
+    return ob
+
+
 def _crack_segment(name, start, end, material, width=0.009):
     """A nearly flush dark seam following an authored crack path."""
     dx, dy = end[0] - start[0], end[1] - start[1]
@@ -331,6 +373,7 @@ def build(mats):
 
     # ----------------------------------------------------------- ceiling ---
     # pressed tin: repeated panels with edge trim, on a real slab
+    # (see _sagged_tin_panel below for the one panel that has bellied)
     L.box("ENV_Ceiling_Slab", (C.ROOM_W + 2 * T, C.ROOM_L + 2 * T, 0.08),
           (0, 0, C.ROOM_H + 0.04), A, mats["plaster"])
     panel = 0.61                                  # 2 ft pressed-tin panels
@@ -338,12 +381,34 @@ def build(mats):
     ny = int(C.ROOM_L / panel)
     x0 = -(nx - 1) * panel / 2.0
     y0 = -(ny - 1) * panel / 2.0
+    # A5: one panel has given up. Pressed tin is nailed to strapping, and the
+    # panel that sits under a slow leak is the one that lets go first - it
+    # bellies down a few millimetres and stops catching the light like its
+    # neighbours. Exactly one panel, the one nearest the restroom corner where
+    # the stain is, because two would read as a damaged ceiling rather than an
+    # old one.
+    sag_i = min(range(nx), key=lambda i: abs(x0 + i * panel -
+                                             C.DD_BATHROOM_DOOR_X))
+    sag_j = min(range(ny), key=lambda j: abs(y0 + j * panel - (HL - 0.95)))
     for i in range(nx):
         for j in range(ny):
+            cx, cy = x0 + i * panel, y0 + j * panel
+            if i == sag_i and j == sag_j:
+                _sagged_tin_panel("ENV_TinCeiling_Panel_%02d_%02d" % (i, j),
+                                  cx, cy, panel - 0.006, C.ROOM_H - 0.007,
+                                  0.010, mats["tin"])
+                continue
             L.box("ENV_TinCeiling_Panel_%02d_%02d" % (i, j),
                   (panel - 0.006, panel - 0.006, 0.014),
-                  (x0 + i * panel, y0 + j * panel, C.ROOM_H - 0.007), A,
+                  (cx, cy, C.ROOM_H - 0.007), A,
                   mats["tin"], bevel=0.002)
+    # The leak that caused it, as a stain rather than as geometry: a thin
+    # patch tight under the tin, ringed the way drying water actually marks a
+    # ceiling - darkest at the tide lines, clear at the edges.
+    L.box("ENV_TinCeiling_WaterStain",
+          (panel * 1.7, panel * 1.7, 0.002),
+          (x0 + sag_i * panel, y0 + sag_j * panel, C.ROOM_H - 0.016), A,
+          mats["tin_stain"])
 
     # ------------------------------------------------- trim and services ---
     for sx in (-1, 1):

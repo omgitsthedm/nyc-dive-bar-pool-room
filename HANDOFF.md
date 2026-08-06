@@ -34,11 +34,11 @@ evaluated independently:
   physical-staging contracts** across **2,317 render-visible components**
   grouped into **1,064 logical real-world items**.
 - **333 high-risk logical items** have explicit support/placement evidence.
-- **2,223 environment objects, 82 materials, and eight image assets** match the
+- **2,229 environment objects, 90 materials, and eight image assets** match the
   approved environment fingerprint in `reports/environment_lock.json`.
 - **355 pool-system objects and 30 materials** match the accepted static
   table/ball/proxy fingerprint in `reports/pool_system_lock.json`
-  (`15ffef5e…`, re-banked 2026-08-06 after the R1 register-bay revision).
+  (`3bf03865…`, re-banked 2026-08-06 after the R1 register-bay and A1-A6 atmosphere revisions).
 - The source-backed Pooltool suite passes **15/15 deterministic physics
   contracts**, including sliding-to-roll transition, rolling resistance,
   ball/ball and ball/cushion response, draw/stop/follow, pocket acceptance and
@@ -236,14 +236,14 @@ default derived-preview path is the safe routine choice.
 - Current derived-preview inventory: 2,317 render-visible components and 1,064
   logical items. The realism and staging reports record these current totals;
   all 333 high-risk items pass their support/placement checks.
-- `reports/environment_lock.json`: locked baseline; 2,223 objects, 82 materials,
+- `reports/environment_lock.json`: locked baseline; 2,229 objects, 90 materials,
   eight assets; aggregate SHA-256
-  `29cf6fa0f1b61beeab8ffb891e35e1f8de60e20cfd36be5f36c6a8f0ab23fb89`.
+  `003f55601e0ebcaa26a888ee33fe6a3a338d8b9f7b2be0787161c15989f6bbd0`.
 - `reports/pool_system_lock.json`: locked static pool baseline; 355 objects, 30
   materials; aggregate SHA-256
-  `15ffef5e0949b854e17d24a345e8c28e0d8fa6a0089a60469e2665859806df75`.
+  `3bf038658cd21025f72468ca60d43f02cc9f06310deca9a1d46294f971c9a6a8`.
   Fresh read-only checks against `blend/poolroom_gameplay_preview.blend` pass
-  both locks: all 2,223 environment objects and all 355 static pool objects are
+  both locks: all 2,229 environment objects and all 355 static pool objects are
   unchanged.
 - `assets/data/pool_physics_profile.json`: pinned Pooltool 0.6.0 resolver,
   physical profile, cue/rack setup, source links and deterministic control-break

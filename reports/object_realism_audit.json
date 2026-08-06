@@ -1,17 +1,17 @@
 {
   "summary": {
-    "render_visible_component_objects": 2466,
-    "logical_items": 1121,
+    "render_visible_component_objects": 2472,
+    "logical_items": 1127,
     "collections": {
-      "01_ARCHITECTURE": 414,
+      "01_ARCHITECTURE": 415,
       "02_TABLE_VISIBLE": 120,
       "03_TABLE_ENGINEERING": 80,
       "04_BAR": 1141,
       "05_HERO_PROPS": 16,
-      "06_PATINA": 141,
+      "06_PATINA": 145,
       "06_PATRON_FOOTPRINTS": 153,
       "06_SET_DRESSING": 256,
-      "07_LIGHTS": 144,
+      "07_LIGHTS": 145,
       "09_ATMOSPHERE": 1
     },
     "categories": {
@@ -19,10 +19,10 @@
       "bar_fixture_or_stock": 290,
       "bar_workflow_equipment": 73,
       "bottle_stock": 743,
-      "building_fabric": 400,
+      "building_fabric": 405,
       "door_hardware": 66,
       "fixed_seating": 79,
-      "motivated_lighting": 144,
+      "motivated_lighting": 145,
       "movable_seating": 75,
       "patron_service": 153,
       "patron_table": 20,
@@ -189,8 +189,8 @@
     {
       "check": "every_light_source_has_motivation",
       "status": "PASS",
-      "measured": 25,
-      "expected": 25,
+      "measured": 26,
+      "expected": 26,
       "required": true
     },
     {
@@ -392,7 +392,7 @@
     {
       "check": "close_views_reward_search_with_small_authored_secrets",
       "status": "PASS",
-      "measured": 18,
+      "measured": 22,
       "expected": ">=14 subtle story components",
       "required": true
     }
@@ -6783,6 +6783,70 @@
       "review_state": "classified_and_contract_checked"
     },
     {
+      "logical_item": "ENV_PaperCurl_payphones_SE",
+      "category": "building_fabric",
+      "collection": "06_PATINA",
+      "component_count": 1,
+      "world_bbox_m": [
+        3.25785,
+        3.26885,
+        0.90428,
+        0.925,
+        1.33514,
+        1.35586
+      ],
+      "support_contract": "building_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "ENV_PaperCurl_sticker_wall_NE",
+      "category": "building_fabric",
+      "collection": "06_PATINA",
+      "component_count": 1,
+      "world_bbox_m": [
+        3.25285,
+        3.26885,
+        0.03783,
+        0.07472,
+        2.06103,
+        2.09791
+      ],
+      "support_contract": "building_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "ENV_PaperCurl_sticker_wall_SW",
+      "category": "building_fabric",
+      "collection": "06_PATINA",
+      "component_count": 1,
+      "world_bbox_m": [
+        3.25985,
+        3.26885,
+        -1.23472,
+        -1.21472,
+        1.30209,
+        1.32209
+      ],
+      "support_contract": "building_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "ENV_PaperCurl_tuesday_8ball_NE",
+      "category": "building_fabric",
+      "collection": "06_PATINA",
+      "component_count": 1,
+      "world_bbox_m": [
+        3.25585,
+        3.26885,
+        3.0644,
+        3.10207,
+        2.19529,
+        2.23296
+      ],
+      "support_contract": "building_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
       "logical_item": "ENV_RadiatorFin_00",
       "category": "building_fabric",
       "collection": "01_ARCHITECTURE",
@@ -9672,7 +9736,7 @@
         2.437,
         4.273,
         4.877,
-        3.136,
+        3.126,
         3.15
       ],
       "support_contract": "building_assembly",
@@ -9978,6 +10042,22 @@
         5.487,
         3.136,
         3.15
+      ],
+      "support_contract": "building_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "ENV_TinCeiling_WaterStain",
+      "category": "building_fabric",
+      "collection": "01_ARCHITECTURE",
+      "component_count": 1,
+      "world_bbox_m": [
+        1.6165,
+        2.6535,
+        4.0565,
+        5.0935,
+        3.133,
+        3.135
       ],
       "support_contract": "building_assembly",
       "review_state": "classified_and_contract_checked"
@@ -12394,6 +12474,22 @@
         3.415,
         2.035,
         3.15
+      ],
+      "support_contract": "visible_fixture_or_documented_opening",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "LGT_CRT_Spill",
+      "category": "motivated_lighting",
+      "collection": "07_LIGHTS",
+      "component_count": 1,
+      "world_bbox_m": [
+        -2.655,
+        -2.655,
+        4.05,
+        4.05,
+        2.4,
+        2.4
       ],
       "support_contract": "visible_fixture_or_documented_opening",
       "review_state": "classified_and_contract_checked"
@@ -61347,6 +61443,142 @@
       "support_contract": "building_assembly"
     },
     {
+      "name": "ENV_PaperCurl_payphones_SE",
+      "logical_item": "ENV_PaperCurl_payphones_SE",
+      "category": "building_fabric",
+      "collection": "06_PATINA",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.011,
+        0.02072,
+        0.02072
+      ],
+      "world_bbox_m": [
+        3.25785,
+        3.26885,
+        0.90428,
+        0.925,
+        1.33514,
+        1.35586
+      ],
+      "materials": [
+        "MAT_Prop_Paper_Aged"
+      ],
+      "support_contract": "building_assembly"
+    },
+    {
+      "name": "ENV_PaperCurl_sticker_wall_NE",
+      "logical_item": "ENV_PaperCurl_sticker_wall_NE",
+      "category": "building_fabric",
+      "collection": "06_PATINA",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.016,
+        0.03688,
+        0.03688
+      ],
+      "world_bbox_m": [
+        3.25285,
+        3.26885,
+        0.03783,
+        0.07472,
+        2.06103,
+        2.09791
+      ],
+      "materials": [
+        "MAT_Prop_Paper_Aged"
+      ],
+      "support_contract": "building_assembly"
+    },
+    {
+      "name": "ENV_PaperCurl_sticker_wall_SW",
+      "logical_item": "ENV_PaperCurl_sticker_wall_SW",
+      "category": "building_fabric",
+      "collection": "06_PATINA",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.009,
+        0.02,
+        0.02
+      ],
+      "world_bbox_m": [
+        3.25985,
+        3.26885,
+        -1.23472,
+        -1.21472,
+        1.30209,
+        1.32209
+      ],
+      "materials": [
+        "MAT_Prop_Paper_Aged"
+      ],
+      "support_contract": "building_assembly"
+    },
+    {
+      "name": "ENV_PaperCurl_tuesday_8ball_NE",
+      "logical_item": "ENV_PaperCurl_tuesday_8ball_NE",
+      "category": "building_fabric",
+      "collection": "06_PATINA",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.013,
+        0.03766,
+        0.03766
+      ],
+      "world_bbox_m": [
+        3.25585,
+        3.26885,
+        3.0644,
+        3.10207,
+        2.19529,
+        2.23296
+      ],
+      "materials": [
+        "MAT_Prop_Paper_Aged"
+      ],
+      "support_contract": "building_assembly"
+    },
+    {
       "name": "ENV_RadiatorFin_00",
       "logical_item": "ENV_RadiatorFin_00",
       "category": "building_fabric",
@@ -67915,9 +68147,9 @@
       "collection": "01_ARCHITECTURE",
       "type": "MESH",
       "location_m": [
-        2.135,
-        4.575,
-        3.143
+        0.0,
+        0.0,
+        0.0
       ],
       "rotation_deg": [
         0.0,
@@ -67927,14 +68159,14 @@
       "dimensions_m": [
         0.604,
         0.604,
-        0.014
+        0.024
       ],
       "world_bbox_m": [
         1.833,
         2.437,
         4.273,
         4.877,
-        3.136,
+        3.126,
         3.15
       ],
       "materials": [
@@ -68585,6 +68817,40 @@
       ],
       "materials": [
         "MAT_Env_TinCeiling_Painted"
+      ],
+      "support_contract": "building_assembly"
+    },
+    {
+      "name": "ENV_TinCeiling_WaterStain",
+      "logical_item": "ENV_TinCeiling_WaterStain",
+      "category": "building_fabric",
+      "collection": "01_ARCHITECTURE",
+      "type": "MESH",
+      "location_m": [
+        2.135,
+        4.575,
+        3.134
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        1.037,
+        1.037,
+        0.002
+      ],
+      "world_bbox_m": [
+        1.6165,
+        2.6535,
+        4.0565,
+        5.0935,
+        3.133,
+        3.135
+      ],
+      "materials": [
+        "MAT_Env_TinCeiling_WaterStain"
       ],
       "support_contract": "building_assembly"
     },
@@ -73710,7 +73976,7 @@
         2.325
       ],
       "materials": [
-        "MAT_Fixture_WarmBulb"
+        "MAT_Fixture_CoolBulb"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -74216,6 +74482,38 @@
       "materials": [
         "MAT_Fixture_Enamel_Green"
       ],
+      "support_contract": "visible_fixture_or_documented_opening"
+    },
+    {
+      "name": "LGT_CRT_Spill",
+      "logical_item": "LGT_CRT_Spill",
+      "category": "motivated_lighting",
+      "collection": "07_LIGHTS",
+      "type": "LIGHT",
+      "location_m": [
+        -2.655,
+        4.05,
+        2.4
+      ],
+      "rotation_deg": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_bbox_m": [
+        -2.655,
+        -2.655,
+        4.05,
+        4.05,
+        2.4,
+        2.4
+      ],
+      "materials": [],
       "support_contract": "visible_fixture_or_documented_opening"
     },
     {
@@ -75260,7 +75558,7 @@
         2.273
       ],
       "materials": [
-        "MAT_Fixture_ExitSignRed"
+        "MAT_Fixture_ExitSignRed_exit_E"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -75294,7 +75592,7 @@
         2.312
       ],
       "materials": [
-        "MAT_Fixture_ExitSignRed"
+        "MAT_Fixture_ExitSignRed_exit_E"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -75328,7 +75626,7 @@
         2.351
       ],
       "materials": [
-        "MAT_Fixture_ExitSignRed"
+        "MAT_Fixture_ExitSignRed_exit_E"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -75362,7 +75660,7 @@
         2.344
       ],
       "materials": [
-        "MAT_Fixture_ExitSignRed"
+        "MAT_Fixture_ExitSignRed_exit_E"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -75496,7 +75794,7 @@
         2.344
       ],
       "materials": [
-        "MAT_Fixture_ExitSignRed"
+        "MAT_Fixture_ExitSignRed_exit_I"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -75530,7 +75828,7 @@
         2.344
       ],
       "materials": [
-        "MAT_Fixture_ExitSignRed"
+        "MAT_Fixture_ExitSignRed_exit_T"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -75564,7 +75862,7 @@
         2.351
       ],
       "materials": [
-        "MAT_Fixture_ExitSignRed"
+        "MAT_Fixture_ExitSignRed_exit_T"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -75598,7 +75896,7 @@
         2.34827
       ],
       "materials": [
-        "MAT_Fixture_ExitSignRed"
+        "MAT_Fixture_ExitSignRed_exit_X"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -75632,7 +75930,7 @@
         2.34827
       ],
       "materials": [
-        "MAT_Fixture_ExitSignRed"
+        "MAT_Fixture_ExitSignRed_exit_X"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -75936,7 +76234,7 @@
         2.114
       ],
       "materials": [
-        "MAT_Prop_NeonRed"
+        "MAT_Prop_NeonRed_pool_0"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -75970,7 +76268,7 @@
         2.19586
       ],
       "materials": [
-        "MAT_Prop_NeonRed"
+        "MAT_Prop_NeonRed_pool_1"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -76004,7 +76302,7 @@
         2.26738
       ],
       "materials": [
-        "MAT_Prop_NeonRed"
+        "MAT_Prop_NeonRed_pool_2"
       ],
       "support_contract": "visible_fixture_or_documented_opening"
     },
@@ -86894,7 +87192,7 @@
         2.6
       ],
       "materials": [
-        "MAT_Prop_CRT_ScreenOff"
+        "MAT_Prop_CRT_ScreenStandby"
       ],
       "support_contract": "wall_fastened"
     },

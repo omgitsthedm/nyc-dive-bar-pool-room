@@ -1,7 +1,7 @@
 {
   "summary": {
-    "render_visible_components": 2466,
-    "logical_items": 1121,
+    "render_visible_components": 2472,
+    "logical_items": 1127,
     "high_risk_logical_items": 333,
     "required_checks": 14,
     "required_failures": 0,
@@ -14,10 +14,10 @@
       "chalk_shelf_contact": 4,
       "contained_in_tip_jar": 4,
       "cue_rack_engagement": 5,
-      "deterministic_owned_assembly": 729,
+      "deterministic_owned_assembly": 734,
       "floor_contact": 12,
       "guest_surface_contact_and_footprint": 13,
-      "motivated_light_or_visible_fixture_geometry": 59,
+      "motivated_light_or_visible_fixture_geometry": 60,
       "napkin_stack_contact": 7,
       "nested_fruit_contact": 3,
       "opening_plane_and_floor_contact": 3,
@@ -80,8 +80,8 @@
     {
       "check": "every_logical_item_is_classified_and_support_routed",
       "status": "PASS",
-      "measured": 1121,
-      "expected": 1121,
+      "measured": 1127,
+      "expected": 1127,
       "required": true
     },
     {
@@ -181,8 +181,8 @@
     {
       "check": "every_blender_light_has_authored_motivation",
       "status": "PASS",
-      "measured": 25,
-      "expected": 25,
+      "measured": 26,
+      "expected": 26,
       "required": true
     },
     {
@@ -6579,6 +6579,70 @@
       ]
     },
     {
+      "logical_item": "ENV_PaperCurl_payphones_SE",
+      "category": "building_fabric",
+      "component_count": 1,
+      "support_contract": "building_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        3.25785,
+        3.26885,
+        0.90428,
+        0.925,
+        1.33514,
+        1.35586
+      ]
+    },
+    {
+      "logical_item": "ENV_PaperCurl_sticker_wall_NE",
+      "category": "building_fabric",
+      "component_count": 1,
+      "support_contract": "building_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        3.25285,
+        3.26885,
+        0.03783,
+        0.07472,
+        2.06103,
+        2.09791
+      ]
+    },
+    {
+      "logical_item": "ENV_PaperCurl_sticker_wall_SW",
+      "category": "building_fabric",
+      "component_count": 1,
+      "support_contract": "building_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        3.25985,
+        3.26885,
+        -1.23472,
+        -1.21472,
+        1.30209,
+        1.32209
+      ]
+    },
+    {
+      "logical_item": "ENV_PaperCurl_tuesday_8ball_NE",
+      "category": "building_fabric",
+      "component_count": 1,
+      "support_contract": "building_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        3.25585,
+        3.26885,
+        3.0644,
+        3.10207,
+        2.19529,
+        2.23296
+      ]
+    },
+    {
       "logical_item": "ENV_RadiatorFin_00",
       "category": "building_fabric",
       "component_count": 1,
@@ -9470,7 +9534,7 @@
         2.437,
         4.273,
         4.877,
-        3.136,
+        3.126,
         3.15
       ]
     },
@@ -9776,6 +9840,22 @@
         5.487,
         3.136,
         3.15
+      ]
+    },
+    {
+      "logical_item": "ENV_TinCeiling_WaterStain",
+      "category": "building_fabric",
+      "component_count": 1,
+      "support_contract": "building_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        1.6165,
+        2.6535,
+        4.0565,
+        5.0935,
+        3.133,
+        3.135
       ]
     },
     {
@@ -12192,6 +12272,22 @@
         3.415,
         2.035,
         3.15
+      ]
+    },
+    {
+      "logical_item": "LGT_CRT_Spill",
+      "category": "motivated_lighting",
+      "component_count": 1,
+      "support_contract": "visible_fixture_or_documented_opening",
+      "staging_status": "PASS",
+      "support_evidence": "motivated_light_or_visible_fixture_geometry",
+      "world_bbox_m": [
+        -2.655,
+        -2.655,
+        4.05,
+        4.05,
+        2.4,
+        2.4
       ]
     },
     {

@@ -559,7 +559,157 @@ def env_concrete_floor():
     rough.inputs["To Min"].default_value = 0.78
     rough.inputs["To Max"].default_value = 0.98
     nt.links.new(aggregate.outputs["Fac"], rough.inputs["Value"])
-    nt.links.new(rough.outputs["Result"], b.inputs["Roughness"])
+
+    # ------------------------------------------------- A4 wet floor life ---
+    # A bar floor is never uniformly dry. Spill happens where drinks are
+    # handed over and where the bartender walks, and the wet patch is the only
+    # thing in the room that reflects a light source back at the camera. This
+    # is roughness only - no new meshes, no puddle geometry, no standing water
+    # to read as filth. ENV_Floor sits at the world origin, so this material's
+    # Object coordinates ARE world X/Y and the patches can be placed against
+    # real bar positions.
+    #
+    # Guest side of the bar where drinks land, the bartender's own lane behind
+    # it, and the north end of the service run.
+    tc_w = nt.nodes.new("ShaderNodeTexCoord")
+    sep = nt.nodes.new("ShaderNodeSeparateXYZ")
+    nt.links.new(tc_w.outputs["Object"], sep.inputs["Vector"])
+    flat = nt.nodes.new("ShaderNodeCombineXYZ")
+    nt.links.new(sep.outputs["X"], flat.inputs["X"])
+    nt.links.new(sep.outputs["Y"], flat.inputs["Y"])
+
+    def _distance_to(cx, cy):
+        centre = nt.nodes.new("ShaderNodeCombineXYZ")
+        centre.inputs["X"].default_value = cx
+        centre.inputs["Y"].default_value = cy
+        d = nt.nodes.new("ShaderNodeVectorMath")
+        d.operation = "DISTANCE"
+        nt.links.new(flat.outputs["Vector"], d.inputs[0])
+        nt.links.new(centre.outputs["Vector"], d.inputs[1])
+        return d
+
+    def _patch(cx, cy, radius, feather):
+        """1 inside the patch, 0 outside, soft over `feather` metres."""
+        d = _distance_to(cx, cy)
+        mr = nt.nodes.new("ShaderNodeMapRange")
+        mr.clamp = True
+        mr.inputs["From Min"].default_value = radius
+        mr.inputs["From Max"].default_value = max(radius - feather, 0.001)
+        mr.inputs["To Min"].default_value = 0.0
+        mr.inputs["To Max"].default_value = 1.0
+        nt.links.new(d.outputs["Value"], mr.inputs["Value"])
+        return mr
+
+    masks = [_patch(-0.85, -3.20, 0.42, 0.28),     # drink rail, guest side
+             _patch(-2.35, -3.55, 0.36, 0.24),     # bartender's lane
+             _patch(-0.95, -1.85, 0.30, 0.22)]     # north end of the run
+
+    # One mop arc in front of the bar: the sweep a mop actually leaves, a band
+    # at a fixed radius rather than a disc. Damp, not wet - it reads as a
+    # gradient, which is why it is the widest and weakest of the four.
+    arc_d = _distance_to(-1.05, -2.60)
+    arc_off = nt.nodes.new("ShaderNodeMath")
+    arc_off.operation = "SUBTRACT"
+    arc_off.inputs[1].default_value = 1.15
+    nt.links.new(arc_d.outputs["Value"], arc_off.inputs[0])
+    arc_abs = nt.nodes.new("ShaderNodeMath")
+    arc_abs.operation = "ABSOLUTE"
+    nt.links.new(arc_off.outputs["Value"], arc_abs.inputs[0])
+    arc_mask = nt.nodes.new("ShaderNodeMapRange")
+    arc_mask.clamp = True
+    arc_mask.inputs["From Min"].default_value = 0.22
+    arc_mask.inputs["From Max"].default_value = 0.0
+    arc_mask.inputs["To Min"].default_value = 0.0
+    arc_mask.inputs["To Max"].default_value = 0.55   # damp, not a puddle
+    nt.links.new(arc_abs.outputs["Value"], arc_mask.inputs["Value"])
+    masks.append(arc_mask)
+
+    # Track the SOCKET, not the node: MapRange emits "Result" but Math emits
+    # "Value", so chaining on a node name breaks after the first MAXIMUM.
+    combined_out = masks[0].outputs["Result"]
+    for extra in masks[1:]:
+        mx = nt.nodes.new("ShaderNodeMath")
+        mx.operation = "MAXIMUM"
+        nt.links.new(combined_out, mx.inputs[0])
+        nt.links.new(extra.outputs["Result"], mx.inputs[1])
+        combined_out = mx.outputs["Value"]
+
+    # Wet concrete is not mirror smooth; it keeps its aggregate, so the gloss
+    # target varies with the same noise the dry floor uses.
+    wet = nt.nodes.new("ShaderNodeMapRange")
+    wet.inputs["To Min"].default_value = 0.08
+    wet.inputs["To Max"].default_value = 0.15
+    nt.links.new(aggregate.outputs["Fac"], wet.inputs["Value"])
+
+    blend = nt.nodes.new("ShaderNodeMixRGB")
+    blend.blend_type = "MIX"
+    nt.links.new(combined_out, blend.inputs["Fac"])
+    nt.links.new(rough.outputs["Result"], blend.inputs[1])
+    nt.links.new(wet.outputs["Result"], blend.inputs[2])
+    nt.links.new(blend.outputs["Color"], b.inputs["Roughness"])
+    return m
+
+
+def tin_water_stain():
+    """A5 - the dried tide lines an old roof leak leaves on a tin ceiling.
+
+    Water does not stain evenly. It creeps out, dries, creeps out again, and
+    each pause leaves a darker ring where the dissolved rust and nicotine
+    concentrated. So this is concentric bands, not a blob, and it fades to
+    fully transparent well before the patch edge so no rectangle can show.
+    """
+    m, nt, b = _new("MAT_Env_TinCeiling_WaterStain")
+    b.inputs["Roughness"].default_value = 0.95
+    b.inputs["Base Color"].default_value = (0.140, 0.101, 0.062, 1.0)
+    mp = _tex_coord(nt, 1.0)
+    # Distorted radial distance: rings that wobble instead of drawing a target.
+    warp = nt.nodes.new("ShaderNodeTexNoise")
+    warp.inputs["Scale"].default_value = 2.6
+    warp.inputs["Detail"].default_value = 6.0
+    nt.links.new(mp.outputs["Vector"], warp.inputs["Vector"])
+    grad = nt.nodes.new("ShaderNodeTexGradient")
+    grad.gradient_type = "SPHERICAL"
+    nt.links.new(mp.outputs["Vector"], grad.inputs["Vector"])
+    mixv = nt.nodes.new("ShaderNodeMixRGB")
+    mixv.blend_type = "MIX"
+    mixv.inputs["Fac"].default_value = 0.22
+    nt.links.new(grad.outputs["Color"], mixv.inputs[1])
+    nt.links.new(warp.outputs["Fac"], mixv.inputs[2])
+    # Tide lines.
+    rings = nt.nodes.new("ShaderNodeTexWave")
+    rings.wave_type = "RINGS"
+    rings.inputs["Scale"].default_value = 3.4
+    rings.inputs["Distortion"].default_value = 1.6
+    nt.links.new(mp.outputs["Vector"], rings.inputs["Vector"])
+    ring_ramp = nt.nodes.new("ShaderNodeValToRGB")
+    ring_ramp.color_ramp.elements[0].position = 0.35
+    ring_ramp.color_ramp.elements[0].color = (0.35, 0.35, 0.35, 1.0)
+    ring_ramp.color_ramp.elements[1].position = 0.78
+    ring_ramp.color_ramp.elements[1].color = (1.0, 1.0, 1.0, 1.0)
+    nt.links.new(rings.outputs["Fac"], ring_ramp.inputs["Fac"])
+    # Radial falloff to fully clear before the patch edge.
+    fade = nt.nodes.new("ShaderNodeMapRange")
+    fade.clamp = True
+    fade.inputs["From Min"].default_value = 0.62
+    fade.inputs["From Max"].default_value = 0.16
+    fade.inputs["To Min"].default_value = 0.0
+    fade.inputs["To Max"].default_value = 1.0
+    nt.links.new(mixv.outputs["Color"], fade.inputs["Value"])
+    alpha = nt.nodes.new("ShaderNodeMath")
+    alpha.operation = "MULTIPLY"
+    alpha.inputs[1].default_value = 0.72        # never a solid mark
+    nt.links.new(fade.outputs["Result"], alpha.inputs[0])
+    strength = nt.nodes.new("ShaderNodeMath")
+    strength.operation = "MULTIPLY"
+    nt.links.new(alpha.outputs["Value"], strength.inputs[0])
+    nt.links.new(ring_ramp.outputs["Color"], strength.inputs[1])
+    nt.links.new(strength.outputs["Value"], b.inputs["Alpha"])
+    # Blender renamed/removed blend_method across 4.x-5.x; Cycles ignores it
+    # entirely and the stills are Cycles. Set it only if this build has it.
+    try:
+        m.blend_method = "BLEND"
+    except (AttributeError, TypeError):
+        pass
     return m
 
 
@@ -901,6 +1051,7 @@ def build():
         "plaster": plaster(),
         "brick": brick(),
         "tin": tin_ceiling(),
+        "tin_stain": tin_water_stain(),
         "paint_trim": aged_simple("MAT_Env_Paint_Trim",
                                    (0.055, 0.062, 0.058), 0.78,
                                    colour_variation=0.30),
@@ -1110,6 +1261,16 @@ def build():
                                    (0.46, 0.64, 0.82), 1.8),
         "backbar_tube": emissive("MAT_Bar_OldFluorescentTube",
                                    (0.78, 0.54, 0.31), 2.8),
+        # A2 cool accents. The room is otherwise a single amber note, and an
+        # amber-only room reads flat however good the geometry is. Both of
+        # these are motivators for cool lights, never invisible fill: the CRT
+        # left on standby in the payphone corner, and the daylight bulb some
+        # previous owner put in the back-hall cage because it was in the
+        # drawer. Neither is white; both stay well under the practicals.
+        "crt_glow": emissive("MAT_Prop_CRT_ScreenStandby",
+                             (0.20, 0.42, 0.62), 1.1),
+        "bulb_cool": emissive("MAT_Fixture_CoolBulb",
+                              (0.74, 0.84, 1.0), 9.0),
         "mirror_aged": mirror_aged(),
     }
     # The basket catch pads need the deep-shadow leather in EVERY build path.

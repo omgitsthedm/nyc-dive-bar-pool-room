@@ -16,6 +16,7 @@ Owns: 07_LIGHTS, 09_ATMOSPHERE.
 import bpy
 import math
 import os
+import random
 import sys
 from math import radians
 
@@ -83,6 +84,72 @@ def point(name, energy, radius, loc, colour, motivation):
     o.location = loc
     o["motivation"] = motivation
     return o
+
+
+def _neon_tube_variance():
+    """A6 - give each neon tube its own emission level.
+
+    Every POOL tube and every EXIT letter shares one material, so all of them
+    burn at exactly the same brightness. Real tubes do not: gas pressure,
+    transformer age and hours run all differ, and a matched sign is one of the
+    tells that a room was generated rather than lit. Each tube gets a private
+    copy of its material scaled +/-10-15%, and one POOL tube runs at 70% -
+    tired, not dead, the one the owner keeps meaning to replace.
+
+    Seeded so the same tube is tired in every rebuild. The film phase adds a
+    flicker F-curve to that tube only; stills keep the static variance.
+    """
+    rnd = random.Random(6041)
+    groups = {
+        "POOL": [o for o in bpy.data.objects
+                 if o.name.startswith("LGT_NeonTube_")],
+        "EXIT": [],
+    }
+    # EXIT letters are multi-part; vary per LETTER so a letter stays internally
+    # consistent and the sign still reads as four strokes, not eleven.
+    letters = {}
+    for o in bpy.data.objects:
+        if not o.name.startswith("LGT_ExitSign_"):
+            continue
+        rest = o.name[len("LGT_ExitSign_"):]
+        key = rest.split("_")[0]
+        if key in ("E", "X", "I", "T"):
+            letters.setdefault(key, []).append(o)
+    tired = None
+    if groups["POOL"]:
+        groups["POOL"].sort(key=lambda o: o.name)
+        tired = rnd.choice(groups["POOL"])
+    varied = 0
+    for ob in sorted(groups["POOL"], key=lambda o: o.name):
+        factor = 0.70 if ob is tired else 1.0 + rnd.uniform(-0.15, 0.10)
+        varied += _scale_emission(ob, factor, "pool_%s" % ob.name[-1])
+    for key in sorted(letters):
+        factor = 1.0 + rnd.uniform(-0.15, 0.10)
+        for ob in sorted(letters[key], key=lambda o: o.name):
+            varied += _scale_emission(ob, factor, "exit_%s" % key)
+    if tired is not None:
+        tired["neon_condition"] = "tired_tube_70_percent"
+    print("  [lighting] A6 neon variance on %d tubes; tired tube = %s"
+          % (varied, tired.name if tired else "none"))
+    return varied
+
+
+def _scale_emission(ob, factor, tag):
+    """Private material copy for one tube, emission scaled by `factor`."""
+    if not ob.data.materials:
+        return 0
+    src = ob.data.materials[0]
+    name = "%s_%s" % (src.name, tag)
+    mat = bpy.data.materials.get(name)
+    if mat is None:
+        mat = src.copy()
+        mat.name = name
+        for node in mat.node_tree.nodes:
+            if "Emission Strength" in getattr(node, "inputs", {}):
+                node.inputs["Emission Strength"].default_value *= factor
+    ob.data.materials[0] = mat
+    ob["neon_emission_factor"] = round(factor, 4)
+    return 1
 
 
 def _neon_stroke(name, a, b, mat, radius=0.010):
@@ -518,9 +585,13 @@ def build(mats):
                (bx, by - 0.155, bz - 0.045), LG,
                mats["enamel_white"], segments=20,
                rotation=(radians(90), 0, 0))
+    # A2: someone replaced this bulb with a daylight one out of the drawer,
+    # which is what actually happens in a back hall nobody art-directs. The
+    # cool globe is the visible motivator for the cool point light below and
+    # separates the rear corridor from the amber room in front of it.
     L.uv_sphere("LGT_BathroomDoor_Bulb", 0.040,
                 (bx, by - 0.205, bz - 0.055), LG,
-                mats["bulb_warm"], segments=22, rings=12)
+                mats["bulb_cool"], segments=22, rings=12)
     for i, (radius, depth) in enumerate(((0.065, 0.010), (0.098, 0.010),
                                          (0.082, 0.010))):
         L.ring("LGT_BathroomDoor_CageRing_%d" % i,
@@ -528,9 +599,11 @@ def build(mats):
                (bx, by - 0.205 - i * 0.020,
                 bz - 0.055), LG, mats["blacksteel"], segments=28,
                rotation=(radians(90), 0, 0))
-    point("LGT_BathroomDoor_Practical", 72.0, 0.075,
-          (bx, by - 0.235, bz - 0.075), (1.0, 0.62, 0.31),
-          "visible_caged_restroom_door_practical")
+    # Cool now, and quieter: a daylight bulb reads brighter than a warm one at
+    # equal wattage, so the energy drops with the colour change.
+    point("LGT_BathroomDoor_Practical", 58.0, 0.075,
+          (bx, by - 0.235, bz - 0.075), (0.76, 0.85, 1.0),
+          "visible_caged_restroom_door_cool_bulb")
 
     # ------------------------------------- street spill through the glass --
     # rainy sodium-free night: cool blue-green, motivated by the storefront
@@ -555,6 +628,23 @@ def build(mats):
          (C.DD_SERVICE_DOOR_X, C.ROOM_L / 2.0 - 0.10, 0.035),
          rot=(radians(-90), 0, 0), colour=(0.72, 0.86, 1.0),
          shape="RECTANGLE", size_y=0.025, spread=110.0)
+
+    # ------------------------------------------------- A2 cool CRT spill ---
+    # The CRT in the north corner is left in standby (PROP_CRT_Screen carries
+    # MAT_Prop_CRT_ScreenStandby). This is its spill, and nothing else in that
+    # corner is cold. Deliberately weak: it should tint the wall and the top
+    # of the payphone run, not light the room.
+    area("LGT_CRT_Spill", 3.2, 0.52,
+         (-C.ROOM_W / 2.0 + 0.62, 4.05, 2.40),
+         rot=(0, radians(90), 0), colour=(0.42, 0.62, 0.92),
+         shape="RECTANGLE", size_y=0.34, spread=125.0,
+         motivation="visible_crt_screen_in_standby")
+
+    # ----------------------------------------- A6 per-tube neon variance ---
+    # Real neon does not run matched. Each tube gets its own material copy so
+    # the emission can differ per tube; one POOL tube runs tired at 70%. The
+    # variance is seeded, so a rebuild reproduces the same imperfection.
+    _neon_tube_variance()
 
     # -------------------------------------------------------- atmosphere ---
     # A low-density volume only where the pool beam lives, so the brightest
@@ -581,6 +671,47 @@ def build(mats):
     sc.inputs["Color"].default_value = (1.0, 0.95, 0.88, 1.0)
     nt.links.new(sc.outputs["Volume"], out.inputs["Volume"])
     vol.data.materials.append(m)
+
+    # ------------------------------------------------- A1 whole-room haze ---
+    # The single biggest lever on this room: air. Light in a bar is visible
+    # because it travels through smoke and dust, and without a real medium
+    # every fixture just deposits a pool on a surface and stops. This is an
+    # interior cube fitted 10 cm short of the shell on every side, carrying a
+    # Principled Volume.
+    #
+    # ENGINE SPLIT (INVARIANT). Cycles stills use THIS volume. EEVEE film does
+    # not: this project measured EEVEE volumetrics as blocky froxel dots on
+    # dark walls, and a camera inside a scatter box renders black - which is
+    # exactly why ATM_PoolBeam_Volume above starts above rail height. Every
+    # camera in the room sits inside this cube, so EEVEE must never see it.
+    #
+    # The split is implemented ONLY through hide_render, and the SAVED state
+    # of every blend keeps this volume hidden - EEVEE-safe by default, and the
+    # locks fingerprint that hidden state. The render entry scripts flip it in
+    # memory and never save.
+    hz_inset = 0.10
+    hz0, hz1 = hz_inset, C.ROOM_H - hz_inset
+    haze = L.box("ATM_RoomHaze_Volume",
+                 (C.ROOM_W - hz_inset * 2.0,
+                  C.ROOM_L - hz_inset * 2.0,
+                  hz1 - hz0),
+                 (0.0, 0.0, (hz0 + hz1) / 2.0), AT, None)
+    haze.hide_select = True
+    haze.hide_render = True          # SAVED STATE: off. Cycles path flips it.
+    haze["engine_split"] = "cycles_only_real_volume"
+    hm = bpy.data.materials.get("MAT_Atmosphere_RoomHaze")
+    if hm is None:
+        hm = bpy.data.materials.new("MAT_Atmosphere_RoomHaze")
+    hm.use_nodes = True
+    hnt = hm.node_tree
+    hnt.nodes.clear()
+    hout = hnt.nodes.new("ShaderNodeOutputMaterial")
+    pv = hnt.nodes.new("ShaderNodeVolumePrincipled")
+    pv.inputs["Density"].default_value = C.DD_ROOM_HAZE_DENSITY
+    pv.inputs["Anisotropy"].default_value = 0.30
+    pv.inputs["Color"].default_value = (1.0, 0.97, 0.92, 1.0)
+    hnt.links.new(pv.outputs["Volume"], hout.inputs["Volume"])
+    haze.data.materials.append(hm)
 
     n = len(L.get_collection(LG).objects)
     print("  [lighting] %d fixture/light objects, faint pool-beam volume" % n)

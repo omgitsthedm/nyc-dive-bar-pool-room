@@ -214,6 +214,46 @@ DD_BACKBAR_DEPTH = 0.22
 DD_BACKBAR_SHELF_DEPTH = 0.24
 DD_BARTENDER_AISLE_MIN = 0.70
 
+# A1 whole-room haze density (Principled Volume, ATM_RoomHaze_Volume).
+# Cycles stills only - the EEVEE film path hides the volume entirely.
+#
+# MEASURED, not guessed. Rendering CAM_Hero_Entry_30mm across the range and
+# reading the image back:
+#   density   far-wall stops lost   shadow lift   lit/shadow contrast
+#     0.000         0.000              +0.0%          1.43
+#     0.004         0.016              +0.4%          -
+#     0.012         0.017              +0.4%          -
+#     0.110         0.009              +1.4%          -
+#     0.200         0.004              +4.4%          1.38
+#     0.400         0.012              +9.6%          1.32
+#     0.700         0.019             +11.5%          1.31
+#     1.200         0.005             +12.8%          1.30
+# The far wall never approaches the 1-stop budget at any density, because in a
+# lit room haze ADDS in-scattered light rather than subtracting it; the effect
+# shows up as lifted shadows and reduced contrast. Anything at or below ~0.1 is
+# indistinguishable from no haze at all - the originally specified 0.004-0.012
+# band is roughly 100x too low for a Principled Volume at this room scale.
+#
+# Far-wall stops turned out to be the WRONG gauge. The cost of haze lands on
+# near-camera surface texture, not on distant brightness. Measured on
+# CAM_Cinematic_Threshold_Low_32mm at final quality, comparing the floor's
+# local contrast against the same frame with no haze:
+#   density   floor detail   shadow lift
+#     0.00        +0.0%          +0.0%
+#     0.45        -2.2%          +2.2%
+#     0.70        -4.2%          +2.7%
+#     1.20        -8.9%          +2.9%
+# Lift saturates by 0.70 while the detail cost still doubles on the way to
+# 1.20. At 1.20 the concrete slab cracks wash out of the near floor entirely,
+# which is exactly the "lived-in reads through detail" the room depends on.
+# 0.70 buys 93% of the atmosphere for less than half the texture.
+DD_ROOM_HAZE_DENSITY = 0.70
+
+# In-scattering needs volume bounces; the scene ships with 0, which alone cost
+# about a quarter of the effect (shadow lift +10.2% vs +12.8% at density 1.20).
+# Applied in memory by the Cycles stills path only, never saved.
+DD_ROOM_HAZE_VOLUME_BOUNCES = 2
+
 # Two compact wall bays only. Each tuple is
 # (centre_y, bench_run_from_wall_x, total_bay_width_y). The benches run along
 # X, perpendicular to the west wall, so patrons enter from the east/pool aisle
@@ -276,6 +316,21 @@ DD_WALL_ART_LAYOUT = (
     ("tuesday_8ball", "east", 2.78, 1.76, 0.62, 0.93, 1.5),
     ("sticker_wall", "east", -0.58, 1.70, 1.30, 0.78, 0.7),
     ("pool_team", "rear", 0.32, 2.34, 1.08, 0.72, -1.0),
+)
+
+
+# A3 peeling paper corners: (art_name, corner, tip_lift_m, roll_deg).
+# Corner letters are vertical then horizontal: S/N = lower/upper, W/E = the
+# negative/positive in-plane horizontal direction of that wall. Wheat paste
+# fails at corners first, so these are corners, never edges or centres. Lifts
+# stay in the 5-20 mm band and the flap stays small: worn, not trashed.
+# Two on the sticker-wall history field, one on the art nearest the dartboard
+# (east wall, y 4.20), one on the payphones sheet.
+DD_PAPER_CURLS = (
+    ("sticker_wall", "NE", 0.016, 55.0),
+    ("sticker_wall", "SW", 0.009, 80.0),
+    ("tuesday_8ball", "NE", 0.013, 45.0),
+    ("payphones", "SE", 0.011, 65.0),
 )
 
 

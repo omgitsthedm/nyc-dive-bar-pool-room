@@ -73,7 +73,37 @@ def _validate_cameras(sequence):
         raise RuntimeError("; ".join(problems))
 
 
+def apply_cycles_atmosphere():
+    """A1 engine split, Cycles side. In memory only - never saved.
+
+    The saved blends keep ATM_RoomHaze_Volume hidden and the legacy pool-beam
+    scatter box visible, because that state is EEVEE-safe and it is what both
+    locks fingerprint. Cycles wants the opposite: the real whole-room volume
+    on, and the older localised box off so the two do not stack over the
+    table. This script never writes the .blend, so the locks never see it.
+    """
+    haze = bpy.data.objects.get("ATM_RoomHaze_Volume")
+    if haze is None:
+        raise RuntimeError(
+            "ATM_RoomHaze_Volume missing - stills must not render without "
+            "the A1 haze; rebuild the environment before rendering")
+    haze.hide_render = False
+    legacy = [o for o in bpy.data.objects if o.name.startswith("ATM_PoolBeam")]
+    for ob in legacy:
+        ob.hide_render = True
+    # Without volume bounces the haze cannot in-scatter and contributes almost
+    # nothing however dense it is. Also in memory only.
+    scene = bpy.context.scene
+    scene.cycles.volume_bounces = max(scene.cycles.volume_bounces,
+                                      C.DD_ROOM_HAZE_VOLUME_BOUNCES)
+    print("  [stills] A1 engine split: room haze ON (density %.2f, volume "
+          "bounces %d), %d legacy pool-beam object(s) OFF"
+          % (C.DD_ROOM_HAZE_DENSITY, scene.cycles.volume_bounces, len(legacy)))
+    return haze, legacy
+
+
 def render(mode="preview", samples=None, resolution=None, only=None):
+    apply_cycles_atmosphere()
     sequence = SHOT_SEQUENCE
     if only:
         requested = set(only)

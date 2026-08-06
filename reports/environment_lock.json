@@ -20,7 +20,7 @@
     "locked_scene_state": "render engine, colour management, world"
   },
   "snapshot": {
-    "aggregate_sha256": "29cf6fa0f1b61beeab8ffb891e35e1f8de60e20cfd36be5f36c6a8f0ab23fb89",
+    "aggregate_sha256": "003f55601e0ebcaa26a888ee33fe6a3a338d8b9f7b2be0787161c15989f6bbd0",
     "assets": {
       "assets/textures/environment/bathroom_sticker_bomb_v2.png": "679b48ddc9f7f493bc38e2fb39b0b620040b7fe79db3d5e45540127989a7d5ac",
       "assets/textures/environment/les_night_street_v2.png": "63b10cb784c64bcd00497ecf42ce7331577fec4ee4557de09c013d17b0d5a084",
@@ -62,7 +62,7 @@
       "MAT_Env_Floor_Crack": "67209bfb326097317fb0d36a7a37c5791e72fa8874696f7e9ecbc3f54f4edfff",
       "MAT_Env_Floor_DriedBeer": "9b04ceae413006ff01e0788bd86e944a311e04b6cb9c12698c2d73a5fd4d7704",
       "MAT_Env_Floor_ExposedAggregate": "d32b8985d2e906a214cbc4476e1cb9e56d667a05d9088cd20b1f62465ab3b432",
-      "MAT_Env_Floor_NeglectedConcrete": "68488e07ff2e97de58cdb9ceb16cf6300968aec903fdae35aefe0fc81536a787",
+      "MAT_Env_Floor_NeglectedConcrete": "3d452223e67d76de50d63e332f595dba36a54f050f3aec644fbb5fa8c1cde0e6",
       "MAT_Env_Floor_OilAndBeerStain": "548c67f90404d6fbe1ef59ab7496be941171ea561717b851580bb8f16f020947",
       "MAT_Env_Floor_OldResinPlug": "fd5f3ded7e727664dd468d9e430a41163ff5723dabd786c58cd90fc453d2b492",
       "MAT_Env_Floor_RustBloom": "9514a3181c759620524b6eedaed650bddd4cbb49d0e0fee9ce1c757ba5bb32a0",
@@ -78,16 +78,22 @@
       "MAT_Env_Plaster_Tobacco": "4e60a69b3d4b22a305f6d11cdb83377e3892d7921347815fb8ec144044bfbc71",
       "MAT_Env_ServiceDoor_UnderGlow": "8bdf4016d1b50309c7554cd844628d05d3308ff8b15bdf883ad556d8eb2f1dab",
       "MAT_Env_TinCeiling_Painted": "2bd2dd9fccd9ee336d050007bb664fd87a2b92dc573699255ca703020c251c33",
+      "MAT_Env_TinCeiling_WaterStain": "44149fc1cac2eb9213c04547bb8478edafbce8bd73ee282af4b029c0720dde24",
       "MAT_Env_Wainscot_OldGreen": "aff8d803b4bb25c1fca5c195d999212a9cc9173d7bdddfafd6e2df6f238a7a25",
       "MAT_Env_WheatpasteWallHistory": "9409810fa1fac8d310167a49d910a76d0e798fab6afa93d10bb585a9bd985aba",
+      "MAT_Fixture_CoolBulb": "d106d5f95599b430eab969ace58417891781f8d4fb7768a052b6c8a0734f7794",
       "MAT_Fixture_Enamel_Green": "dfcf24f03f52921884884c18199889679a7d8d94db30e713cacde21d5b3b15d9",
       "MAT_Fixture_Enamel_White": "dc6ed405d4acd89308f22c286be7bdeb9269121b34eb1b9ac175f10608dcc14f",
-      "MAT_Fixture_ExitSignRed": "5547a4f7b31dfcd5f412308a8a29df2fd45af99badd84a854ec50bd96e5164ce",
+      "MAT_Fixture_ExitSignRed_exit_E": "cdbb3d65f42c042c11aef92ecb2b99f8516f60ae35b09ce39071232c352d29e7",
+      "MAT_Fixture_ExitSignRed_exit_I": "13dbcaf18a8e0a3cb66a3299ec9c6714926ae9973551989f3269d3c193434ca4",
+      "MAT_Fixture_ExitSignRed_exit_T": "fa5ef268e6113da9f79892d4158a1d8bf18c63110f013ab76c25e77385f25fec",
+      "MAT_Fixture_ExitSignRed_exit_X": "d6b9bdc140ae014cbbd275453ff9b5b0d7d7278e58064d4738f0f76598284317",
       "MAT_Fixture_WarmBulb": "e98ab423e653f3ab454b896ce113f8681da2a47fab563da8f8d73314c78d5674",
       "MAT_Metal_AgedBrass": "c4755729e0c40f99cb9c443de5b4c7a355b3ed04fe13a6bb113e429989d2dd58",
       "MAT_Metal_BlackenedSteel": "5641feae74130d2583e2ef4d42cb80841dbcb17f91b4051b0426730d8d37adde",
       "MAT_Metal_Chrome": "6ab4fd716fa64915eb433b1911256351d0ba75c6253d87942ac0d6bf940a1973",
       "MAT_Prop_CRT_ScreenOff": "dd687cfe999feeec16a5554ccf8302f72220d6fbae022d08f9c9405c601d76cc",
+      "MAT_Prop_CRT_ScreenStandby": "f249563eb294ee67b6ce3cdf1aa40a2590e2b2b4c6da16e7af57a60dc7679f30",
       "MAT_Prop_CastBronze_Ornate": "a1b1de4d699887fc0576b6ccc245aac02d38d14b55f81c9b86b27d113d278fac",
       "MAT_Prop_CastIron_OldRegister": "37f9a96fe7b0b09695aac6be6fe11ff14ecef5549664ce277794382e68832de7",
       "MAT_Prop_ExposedSeatFoam": "542d144604d6bcd538030dcee46ef396acb54f8f33bcffa8a776e1597a530720",
@@ -96,7 +102,9 @@
       "MAT_Prop_NeonAmber": "eb481787d3097b46fed6454b638e61395cbba8aeba4158df8fd15c657b370119",
       "MAT_Prop_NeonBlue": "2c205a5e1b2492dc60fc96e61ff3e9825b126eda92bd0d0a28b87d2913139f60",
       "MAT_Prop_NeonGreen": "ccd1f1c760f10928d0363624ca02e08678eb7cf8402c314cde30507b99e7f821",
-      "MAT_Prop_NeonRed": "fe5994c675041742a7a13322735ae33f094f610ab1dc961a1d580e63732b8bce",
+      "MAT_Prop_NeonRed_pool_0": "9b722b15045b9159b18d8aa9a9baa968d81aa67b2ca85a3a2257abc9932c893e",
+      "MAT_Prop_NeonRed_pool_1": "15df0843455a2412645aa4fa622977c654580f8e8688fde5e2091cf730c77e2f",
+      "MAT_Prop_NeonRed_pool_2": "1db3fff8a23417f9e8938069c9e13eb8dcf15059571e1af4b91a3bcc2825846c",
       "MAT_Prop_OldBlackRepairTape": "4f5b194c5d619f0eb4e29e97f56e61b39091e007f608e2555d17d871eb0fb6a6",
       "MAT_Prop_OldSnapshot": "9748b74df4ccdc5dfe7dfc607a52d9b6186dd0b39a5709286febebabe01cd56e",
       "MAT_Prop_Paper_Aged": "8f3a6a2ca462be908de19440555beca6415d0fb1db62c925d09d8e4c9b2016d9",
@@ -6436,6 +6444,26 @@
         "sha256": "24dba914778ac3f8fd9bbc07ff371f09c28ef6b31fcf31b85f100f169ef2692f",
         "type": "MESH"
       },
+      "ENV_PaperCurl_payphones_SE": {
+        "collection": "06_PATINA",
+        "sha256": "f1aec86d472e88f7629075573890abf62c90dcf74d93e941c6add2c3505e4062",
+        "type": "MESH"
+      },
+      "ENV_PaperCurl_sticker_wall_NE": {
+        "collection": "06_PATINA",
+        "sha256": "ff0f114e553d5cd58f3414b27092a18ba845c11fa6fcfeaacbb97d454eaa68c7",
+        "type": "MESH"
+      },
+      "ENV_PaperCurl_sticker_wall_SW": {
+        "collection": "06_PATINA",
+        "sha256": "b29047d05a7439eaf9431892065052d03673f7a9d0a6f3a37d813dcc2b7987c6",
+        "type": "MESH"
+      },
+      "ENV_PaperCurl_tuesday_8ball_NE": {
+        "collection": "06_PATINA",
+        "sha256": "6dd8c49a3df3fa107f0a5df90d5065a4bb25265cfa1ecc92eba39b125d97a33b",
+        "type": "MESH"
+      },
       "ENV_RadiatorFin_00": {
         "collection": "01_ARCHITECTURE",
         "sha256": "4022c5f965e4525819d926a257eddb471e34033f01fec11fce6d2fd400cecf05",
@@ -7403,7 +7431,7 @@
       },
       "ENV_TinCeiling_Panel_08_16": {
         "collection": "01_ARCHITECTURE",
-        "sha256": "fb91235bc056348022b3751310a983a4f674cd19bbf29655e3bd64448e21b92e",
+        "sha256": "a615e7718e412021742df7d04cadcebab8586ddfd66a4309feab5f30ad3d11ab",
         "type": "MESH"
       },
       "ENV_TinCeiling_Panel_08_17": {
@@ -7499,6 +7527,11 @@
       "ENV_TinCeiling_Panel_09_17": {
         "collection": "01_ARCHITECTURE",
         "sha256": "419fea0400bfc41b9a8a613c81513f010ebd7ab49b182dbb72611099a6eda7f3",
+        "type": "MESH"
+      },
+      "ENV_TinCeiling_WaterStain": {
+        "collection": "01_ARCHITECTURE",
+        "sha256": "1abe9c3655e8066aca01d8b0421b6f0562b3d2cd00d65fd6d637da0185084b67",
         "type": "MESH"
       },
       "ENV_WainscotBatten_East_00": {
@@ -8253,7 +8286,7 @@
       },
       "LGT_BathroomDoor_Bulb": {
         "collection": "07_LIGHTS",
-        "sha256": "0f7a0bd63eb3074195cc8b3b74c9384c7de65844e77a3dd1b892efefcfce0574",
+        "sha256": "ebdb9f7978f3d95ff71667893f28e816e477b64482a09d8de256a3ee78e319e4",
         "type": "MESH"
       },
       "LGT_BathroomDoor_CageRing_0": {
@@ -8278,7 +8311,7 @@
       },
       "LGT_BathroomDoor_Practical": {
         "collection": "07_LIGHTS",
-        "sha256": "029584f47fbe66e45fb916597a12fdfa5c0b611845d05305622378c2d6850599",
+        "sha256": "b4fe9dc35d7cb4494c973734c13d7771502885c7a98b47828d965f7c78c96b75",
         "type": "LIGHT"
       },
       "LGT_BoothPendant_Bulb_0": {
@@ -8330,6 +8363,11 @@
         "collection": "07_LIGHTS",
         "sha256": "2e5e6f52027d3cdb1200f92a8e8c377a69f670f4e0ea40114100bd3d53649d6d",
         "type": "MESH"
+      },
+      "LGT_CRT_Spill": {
+        "collection": "07_LIGHTS",
+        "sha256": "14a32ddc120186af81bd77af3f08591b60c0325ae84e3d1ff3233c4d587e1fea",
+        "type": "LIGHT"
       },
       "LGT_Cafe_Bulb": {
         "collection": "07_LIGHTS",
@@ -8483,22 +8521,22 @@
       },
       "LGT_ExitSign_E_H0": {
         "collection": "07_LIGHTS",
-        "sha256": "c058cc388bd9860f0ae0801cbedeb705f022912cdb87244a732e7ea014f7e3bf",
+        "sha256": "cb4746d06b530024fc9ded5aeb00d2991674f3d4e7c37e5bfad9f7fd7bb9a910",
         "type": "MESH"
       },
       "LGT_ExitSign_E_H1": {
         "collection": "07_LIGHTS",
-        "sha256": "db1253902bba5964057dc0ce83f88473ba5eedba91bdf621232ed3aa397fd8e2",
+        "sha256": "41c157d99242faf033a77f8991880bccff1821d12ff330aea3501c1076d43ab2",
         "type": "MESH"
       },
       "LGT_ExitSign_E_H2": {
         "collection": "07_LIGHTS",
-        "sha256": "ec2007c75c018f3a6765b98971e6e7bd9d8b3a68a8fbe39c46bb92af4dfa1d93",
+        "sha256": "491aebe92e8b067a2c6b4f9754d604d9096f6467eeacd94720ca47dfb397c754",
         "type": "MESH"
       },
       "LGT_ExitSign_E_V": {
         "collection": "07_LIGHTS",
-        "sha256": "6fb30743a486ff06dc547166569cd8cb5bc7ddc5ae9e42f9f5fa76eac36991b6",
+        "sha256": "79b0c497482d7cca27cd905e1870361166379ab6dc6fd9cefcb1b5c0ee622d40",
         "type": "MESH"
       },
       "LGT_ExitSign_Face": {
@@ -8518,27 +8556,27 @@
       },
       "LGT_ExitSign_I": {
         "collection": "07_LIGHTS",
-        "sha256": "086daffc0ea2a402de77de01b16ee26c7700adc6a037560e4bb1ec161d3d9850",
+        "sha256": "5b3d8113e2626296d03dd580ff709172e9d5d7eae966c2711dd2fe461d299bd9",
         "type": "MESH"
       },
       "LGT_ExitSign_T_Stem": {
         "collection": "07_LIGHTS",
-        "sha256": "689d49fd9f4119197e35cb520e9de5a0d05e1948c49087382d848f8a222e640d",
+        "sha256": "fb52364104811dc70d7f96b0df9dc9c21024f3721e5cd651079008ab09117acb",
         "type": "MESH"
       },
       "LGT_ExitSign_T_Top": {
         "collection": "07_LIGHTS",
-        "sha256": "a08dee90c03d859b48a4fcd191bed701c0a57878f7f4bf83778b9b366eabc871",
+        "sha256": "2514c6e9a5453806f51939cce03864890dcaf606e35feda5fad319e444a32d9a",
         "type": "MESH"
       },
       "LGT_ExitSign_X_0": {
         "collection": "07_LIGHTS",
-        "sha256": "12b569acefe57777898b7b2b85b9e0861bf035a5b9b47690db7d9758a6040e09",
+        "sha256": "f06bacd537812940822287d7da8aba93017249bda5408b655c87b4b0ed9559ca",
         "type": "MESH"
       },
       "LGT_ExitSign_X_1": {
         "collection": "07_LIGHTS",
-        "sha256": "99854b72f64ea2e43ddcbfdcf6decbda7b97ba0e6cf8be7ffe3e1ef42a9195a9",
+        "sha256": "d46c4b2a609f6f3dce10cf4800576b53093ca37fef8fbdfc419e87d5b944b2d7",
         "type": "MESH"
       },
       "LGT_Neon": {
@@ -8583,17 +8621,17 @@
       },
       "LGT_NeonTube_0": {
         "collection": "07_LIGHTS",
-        "sha256": "2cc5c06b7003d46db8698977f64ea2169830b1a7c634ddc21c7cb20fcaec72eb",
+        "sha256": "0d3f27b5c33eb40e4f19a7212efab2cf84d9d3199a33f3eb66d531a3a5dcc42d",
         "type": "MESH"
       },
       "LGT_NeonTube_1": {
         "collection": "07_LIGHTS",
-        "sha256": "87c626ea9c3516879e04166fd7e54afcb236b541c07f726f1e65858e8042b42e",
+        "sha256": "840a87ae29dc4c63f10bac91bcd5c9a695be56d560a552a8df65d6025e864c18",
         "type": "MESH"
       },
       "LGT_NeonTube_2": {
         "collection": "07_LIGHTS",
-        "sha256": "96c852c1b30ef5a810ac0c67bf89e07203060ab581be183307dca84dc7632ac7",
+        "sha256": "d818e0ba225d12d81b58e0abef9d3da17d8b810cb06b14ccc8cef9e815e3ee01",
         "type": "MESH"
       },
       "LGT_NeonWindowOpen_E_0": {
@@ -10068,7 +10106,7 @@
       },
       "PROP_CRT_Screen": {
         "collection": "06_SET_DRESSING",
-        "sha256": "683a6219435c15784a4efd6a495abb464fca1bcc2733416a6261f7d03877c7f7",
+        "sha256": "af54c0c2f5774911a0d4e718e6aa5f8c301a075435f035ba0fd76bf3a8f7372f",
         "type": "MESH"
       },
       "PROP_CafeChair_0_Metal_BackPad": {
@@ -11236,10 +11274,10 @@
   },
   "status": "LOCKED_BASELINE",
   "summary": {
-    "aggregate_sha256": "29cf6fa0f1b61beeab8ffb891e35e1f8de60e20cfd36be5f36c6a8f0ab23fb89",
+    "aggregate_sha256": "003f55601e0ebcaa26a888ee33fe6a3a338d8b9f7b2be0787161c15989f6bbd0",
     "asset_count": 8,
-    "material_count": 82,
-    "object_count": 2223
+    "material_count": 90,
+    "object_count": 2229
   },
   "version": 1
 }

@@ -577,7 +577,11 @@ def build_west_wall_vignette(mats):
     L.curve_tube("PROP_WallPayphone_Cord", cord_points, 0.0055, D,
                  mats["blacksteel"])
 
-    # Switched-off late-1980s CRT on a brutally practical steel wall bracket.
+    # Late-1980s CRT on a brutally practical steel wall bracket, left in
+    # standby rather than switched off at the set. The faint cool screen is
+    # the visible motivator for LGT_CRT_Spill: it is the only cold source in
+    # the north end of the room and it keeps that corner from reading as one
+    # more pocket of the same amber.
     ty, tz = 4.05, 2.42
     L.box("PROP_CRT_Bracket", (0.48, 0.10, 0.075),
           (wall_x + 0.24, ty, 2.13), D, mats["blacksteel"], bevel=0.010)
@@ -591,7 +595,7 @@ def build_west_wall_vignette(mats):
           (wall_x + 0.25, ty, tz), D, mats["paint_door"], bevel=0.080,
           bevel_segments=4)
     L.box("PROP_CRT_Screen", (0.025, 0.56, 0.33),
-          (wall_x + 0.492, ty, tz + 0.015), D, mats["tv_screen"],
+          (wall_x + 0.492, ty, tz + 0.015), D, mats["crt_glow"],
           bevel=0.055, bevel_segments=4)
     for i in range(3):
         L.cylinder("PROP_CRT_Knob_%d" % i, 0.018, 0.018,

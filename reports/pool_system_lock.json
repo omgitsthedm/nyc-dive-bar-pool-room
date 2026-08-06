@@ -24,7 +24,7 @@
     ]
   },
   "snapshot": {
-    "aggregate_sha256": "15ffef5e0949b854e17d24a345e8c28e0d8fa6a0089a60469e2665859806df75",
+    "aggregate_sha256": "3bf038658cd21025f72468ca60d43f02cc9f06310deca9a1d46294f971c9a6a8",
     "assets": {
       "assets/textures/balls/ball_01.png": "6258e037900825e850d21b13e8124d477fe9bead6ff20c14da24fdf63ccb2e0d",
       "assets/textures/balls/ball_02.png": "3b936e5e434bffba9ea87212e38e4d1250aadfd8aaa95b5d4209b7f43e99c83a",
@@ -449,9 +449,9 @@
       }
     },
     "environment_lock": {
-      "aggregate_sha256": "29cf6fa0f1b61beeab8ffb891e35e1f8de60e20cfd36be5f36c6a8f0ab23fb89",
+      "aggregate_sha256": "003f55601e0ebcaa26a888ee33fe6a3a338d8b9f7b2be0787161c15989f6bbd0",
       "path": "reports/environment_lock.json",
-      "report_sha256": "4b3ca95382b6b7005ecb1d0023aab6cdda72cf2a9659580453247e25f645bc35",
+      "report_sha256": "6d9b712f1d44d83b490ee83e6e4b29a3a4fb24edebc3fd2f0abc9718fd18d034",
       "version": 1
     },
     "geometry_contract": {
@@ -4054,22 +4054,22 @@
       "scripts/20_build_pool_table.py": "977261e702f848a18d7ff752b21cc4131a261ff1a56e04e5c54dfc41183ed791",
       "scripts/22_build_balls_and_rack.py": "5c70e57f893db04c1bbf8034cd5409ff0602974e2b5a9b69d8810aec899e5d8c",
       "scripts/23_rebuild_pool_system.py": "67317daf1baa3f2eaac8fe5809d671bb16588d5788b65fd8f44a15b76fcf7568",
-      "scripts/40_build_materials.py": "6e9ff694f44a3eac2aaee97b65be13eb59253f26dbe5857b19fe2ac89f215612",
+      "scripts/40_build_materials.py": "0fb67e03d9a741bbc66d91f412571d06c7bb5cc1bab060efa33f7d49d6b49361",
       "scripts/90_validate_scene.py": "3dd24e9d3950538c851af336daae03232eaf58fdd8feccf0dd31b1fe231e583a",
       "scripts/91_validate_pool_geometry_contract.py": "39d3290ca98a8057ccdb3e0f7afd6dd1c0492a422955ffd80c4c01521d9ddd57",
       "scripts/99_bank_pool_system_lock.py": "fa679345f36f40a47d091a30872b38bc169690324603cf4b65049b7841fb0769",
-      "scripts/config.py": "f73561cb7e4d82f18cbec6472d6f77768d06883cf3acf1e1bce31b09f019b3f1",
+      "scripts/config.py": "18cbc3d27e0eb499ffab0bfad817d131b059f550a35a24990409e2d877b100f9",
       "scripts/lib.py": "dc985f2bd6d3e20a314169d642d3a0f3a04c1e073a27d9b6fc6187e1dab2709c",
       "scripts/pool_geometry_contract.py": "74906108c8f4e1fc960a3af59cd2a022473ea28e202efb675fa2af8a4d5dfdff"
     }
   },
   "status": "LOCKED_BASELINE",
   "summary": {
-    "aggregate_sha256": "15ffef5e0949b854e17d24a345e8c28e0d8fa6a0089a60469e2665859806df75",
+    "aggregate_sha256": "3bf038658cd21025f72468ca60d43f02cc9f06310deca9a1d46294f971c9a6a8",
     "curve_points": 252,
     "curve_splines": 12,
     "dimension_audit_sha256": "7da606d170107fecf55251cc1d53be44731bee865839e3dba0bd5668e8acd572",
-    "environment_lock_sha256": "29cf6fa0f1b61beeab8ffb891e35e1f8de60e20cfd36be5f36c6a8f0ab23fb89",
+    "environment_lock_sha256": "003f55601e0ebcaa26a888ee33fe6a3a338d8b9f7b2be0787161c15989f6bbd0",
     "geometry_contract_sha256": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
     "material_assets": 16,
     "material_slots": 330,

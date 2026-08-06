@@ -7,6 +7,7 @@ comes from finish loss, pale glass rings, softened edges and old scratches.
 
 Owns: 06_PATINA.
 """
+import bpy
 import math
 import os
 import random
@@ -446,6 +447,124 @@ def build_small_secrets(mats):
         _story(tally, "faded_pool_tally_on_beam_underside")
 
 
+def build_paper_curls(mats):
+    """A3 - wheat paste lets go at the corners first.
+
+    Every sheet in this room is currently flush to the wall with relief_mm 0,
+    which is what makes the paper read as printed-on wallpaper rather than
+    something a person stuck up. A corner that has lifted a few millimetres
+    catches its own light and throws a small hard shadow, and that shadow is
+    the entire effect.
+
+    The flap is a triangular corner peel: an 8x8 grid over a square patch at
+    the corner, hinged on the patch diagonal. Points are displaced along the
+    wall's inward normal by ``lift * p**2`` where ``p`` runs 0 at the hinge to
+    1 at the corner tip, so the hinge stays flush by construction and the tip
+    lands on the requested lift exactly. A tighter roll angle makes a smaller
+    flap, which is how paper actually behaves.
+
+    Acceptance is geometric, not aesthetic: hinge flush within 1 mm, tip lift
+    within 30% of nominal, silhouette <= 8 cm, and a visible contact shadow.
+    """
+    import bmesh
+    from mathutils import Vector
+    # The art planes were positioned by setting .location in 50_set_dress, and
+    # Blender does not refresh matrix_world until the depsgraph runs. Reading
+    # it before that returns identity and every flap gets built at the world
+    # origin - which is the same parenting-order trap that once collapsed the
+    # cue and rack. Force the evaluation before measuring anything.
+    bpy.context.view_layer.update()
+    made = 0
+    for art_name, corner, lift, roll_deg in C.DD_PAPER_CURLS:
+        art = bpy.data.objects.get("PROP_Art_" + art_name)
+        if art is None:
+            raise RuntimeError("A3: missing art plane PROP_Art_" + art_name)
+        cs = [art.matrix_world @ v.co for v in art.data.vertices]
+        lo = Vector((min(c.x for c in cs), min(c.y for c in cs),
+                     min(c.z for c in cs)))
+        hi = Vector((max(c.x for c in cs), max(c.y for c in cs),
+                     max(c.z for c in cs)))
+        ext = hi - lo
+        centre = (hi + lo) / 2.0
+        # The thin axis is the wall normal; the remaining non-Z axis is the
+        # in-plane horizontal. Derived from the mesh, so this works for the
+        # east wall (normal X) and the rear wall (normal Y) without a table.
+        normal_axis = 0 if ext.x <= ext.y else 1
+        horiz_axis = 1 - normal_axis
+        n = Vector((0.0, 0.0, 0.0))
+        n[normal_axis] = -1.0 if centre[normal_axis] > 0 else 1.0
+        t = Vector((0.0, 0.0, 0.0))
+        t[horiz_axis] = 1.0
+        v = Vector((0.0, 0.0, 1.0))
+        st = 1.0 if "E" in corner else -1.0
+        sv = 1.0 if "N" in corner else -1.0
+        half_h = ext[horiz_axis] / 2.0
+        half_v = ext.z / 2.0
+        roll = math.radians(roll_deg)
+        # Tighter roll -> smaller flap. Clamped so the silhouette can never
+        # exceed the 8 cm the cleanliness rule allows.
+        side = min(max(lift / math.tan(roll / 2.0) * 1.2, 0.020), 0.075)
+        side = min(side, half_h * 0.9, half_v * 0.9)
+        corner_pt = centre + t * (st * half_h) + v * (sv * half_v)
+        mesh = bpy.data.meshes.new("ENV_PaperCurl_%s_%s" % (art_name, corner))
+        bm = bmesh.new()
+        seg = 12
+        # Sit the whole patch a hair proud of the sheet so the still-glued
+        # half cannot z-fight with the art plane underneath it. 0.15 mm is far
+        # inside the 1 mm "attached edge is flush" acceptance.
+        EPS = 0.00015
+        grid = {}
+        for i in range(seg + 1):
+            for j in range(seg + 1):
+                a, b = i / seg, j / seg          # 0 at the corner tip
+                # Hinged on the patch diagonal: 0 along it, 1 at the corner.
+                p = max(0.0, 1.0 - (a + b))
+                off = EPS + lift * (p ** 2)
+                pos = (corner_pt
+                       - t * (st * a * side)
+                       - v * (sv * b * side)
+                       + n * off)
+                grid[(i, j)] = bm.verts.new(pos)
+        bm.verts.ensure_lookup_table()
+        # EVERY quad is kept. Dropping the faces outside the peel triangle
+        # left the diagonal as a stair-stepped silhouette, which reads as
+        # aliasing rather than torn paper in a closeup. The flush half simply
+        # lies on the sheet and is invisible; the flap's outline is the
+        # sheet's own straight edge, which is what a real peel looks like.
+        quads = []
+        for i in range(seg):
+            for j in range(seg):
+                quads.append((grid[(i, j)], grid[(i + 1, j)],
+                              grid[(i + 1, j + 1)], grid[(i, j + 1)]))
+        probe = quads[0]
+        e1 = probe[1].co - probe[0].co
+        e2 = probe[3].co - probe[0].co
+        if e1.cross(e2).dot(n) < 0:
+            # Wind the other way so the lit side faces the room. Getting this
+            # backwards renders the flap as a black triangle.
+            quads = [tuple(reversed(q)) for q in quads]
+        for q in quads:
+            bm.faces.new(q)
+        bm.normal_update()
+        bm.to_mesh(mesh)
+        bm.free()
+        ob = bpy.data.objects.new(mesh.name, mesh)
+        L.link(ob, P)
+        # What faces the room on a peeled corner is the BACK of the sheet, not
+        # the print - blank aged stock, the same paper the loose notices use.
+        # Reusing the art's own image material here rendered as a bright white
+        # card, because the printed face is turned toward the wall.
+        ob.data.materials.append(mats["paper_aged"])
+        ob["paper_curl"] = True
+        ob["curl_tip_lift_m"] = round(lift, 4)
+        ob["curl_silhouette_m"] = round(side, 4)
+        ob["mounting_method"] = "wheat_paste_failed_at_corner"
+        _story(ob, "wheat paste let go at this corner and the sheet lifted")
+        made += 1
+    print("  [patina] A3 %d peeling paper corners" % made)
+    return made
+
+
 def build(mats):
     L.clear_collection(P)
     build_architectural_age(mats)
@@ -453,6 +572,7 @@ def build(mats):
     build_booth_damage(mats)
     build_table_and_furniture_history(mats)
     build_small_secrets(mats)
+    build_paper_curls(mats)
     n = len(L.get_collection(P).objects)
     print("  [patina] %d objects (age, repairs, flush paper, street, secrets)" % n)
     return True
