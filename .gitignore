@@ -22,3 +22,6 @@ renders/break_candidates
 # assets/data/shots/break_film.json) are all committed; the raw intermediates
 # are not.
 assets/data/shots/candidates/out/
+
+# Silent master + film intermediates: the shipped file is site/break-film.mp4
+renders/film_out/

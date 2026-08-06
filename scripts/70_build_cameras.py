@@ -98,10 +98,153 @@ FOCUS_OVERRIDES = {
          C.BED_Z + C.BALL_R),
 }
 
+def _film_camera_spec():
+    """CAM_Film_* cameras, derived from the FROZEN take.
+
+    Section 6.2's settle inserts cannot be authored until the break is
+    chosen, because their framings depend on where the balls actually went.
+    So they are computed here from assets/data/shots/break_film.json rather
+    than hand-placed: pocket drop, cushion death, spin bleed, cue ball
+    stopping, last ball stopping. If no take is frozen yet the film cameras
+    are simply absent and every other build path is unaffected.
+
+    All the audit cameras stay exactly where they are - validators expect
+    them static, so these are additions, never edits.
+    """
+    import json
+    import math
+    path = os.path.join(C.ROOT, "assets", "data", "shots", "break_film.json")
+    if not os.path.exists(path):
+        return []
+    with open(path) as handle:
+        shot = json.load(handle)
+
+    # coordinate_contract: blender = pool + (-0.385, +0.880, +0.762)
+    OX, OY, OZ = -0.385, 0.880, 0.762
+    def w(px, py, pz=0.0):
+        return (px + OX, py + OY, pz + OZ)
+
+    bed_z = OZ
+    ball_r = float(shot["ball_parameters"]["R"])
+    events = shot["events"]
+    balls = shot["balls"]
+    tw, tl = 1.27, 2.54                      # pool bed, metres
+    ccx, ccy = tw / 2.0, tl / 2.0
+
+    def final_xy(bid):
+        p = balls[bid]["samples"][-1]["p"]
+        return float(p[0]), float(p[1])
+
+    spec = []
+
+    # --- shot 8/6: low behind the cue ball, down the head string ---------
+    cue0 = balls["cue"]["samples"][0]["p"]
+    rack_y = min(float(balls[b]["samples"][0]["p"][1])
+                 for b in balls if b != "cue")
+    spec.append(("CAM_Film_CueAddress_85mm", 85.0,
+                 w(float(cue0[0]) + 0.055, float(cue0[1]) + 0.30,
+                   ball_r + 0.030),
+                 w(ccx, rack_y + 0.10, ball_r), 2.2))
+
+    # --- shot 7: macro insert, tip a chalk's width off the cue ball ------
+    spec.append(("CAM_Film_TipInsert_100mm", 100.0,
+                 w(float(cue0[0]) + 0.16, float(cue0[1]) + 0.20,
+                   ball_r + 0.020),
+                 w(float(cue0[0]), float(cue0[1]), ball_r), 1.8))
+
+    # --- shot 9: locked-off god shot, whole table -------------------------
+    # WORLD coordinates, not w(): this camera's height is an absolute height
+    # in the room, not a height above the bed, and running it through the
+    # pool->world offset once put it at z 3.04 - inside the ceiling, above the
+    # light, filming the top of the shades.
+    #
+    # A true top-down is not physically available. The three shades hang at
+    # z 1.778-1.963 across x 0.015-0.485, y 1.415-2.885, directly over the
+    # table, so a camera above them sees shades and a camera under them needs
+    # roughly a 13 mm fisheye to cover a 2.8 m table from 1 m up. This sits
+    # high and off to the cue-side, where the sightline passes beside and
+    # below the shades: at the near shade edge the ray is at z 1.54, a
+    # quarter-metre under them. Still locked off, still the whole table.
+    spec.append(("CAM_Film_BreakOverhead_24mm", 24.0,
+                 (-1.35, 0.60, 2.35), (0.25, 2.15, 0.80), 8.0))
+
+    # --- shot 2: the register drum, tighter than the audit reverse -------
+    spec.append(("CAM_Film_Register_50mm", 50.0,
+                 (C.DD_BACKBAR_X + 0.92, C.DD_BAR_CENTRE_Y - 0.86, 1.30),
+                 (C.DD_BACKBAR_X + 0.20, C.DD_BAR_CENTRE_Y, 1.24), 2.8))
+
+    # --- shots 10-14: settle inserts, from the take's own events ---------
+    pockets = sorted((e for e in events if e["type"] == "ball_pocket"),
+                     key=lambda e: e["time_s"])
+    cushions = [e for e in events
+                if e["type"] in ("ball_linear_cushion",
+                                 "ball_circular_cushion")
+                and e["time_s"] > 1.5]
+
+    def speed(e):
+        v = e["balls"][0]["initial"]["velocity_mps"]
+        return math.hypot(float(v[0]), float(v[1]))
+    cushions.sort(key=speed, reverse=True)
+    stops = sorted((e for e in events if e["type"] == "rolling_stationary"),
+                   key=lambda e: e["time_s"])
+
+    # A - the first ball to drop, shot from outside the pocket looking in
+    if pockets:
+        pe = pockets[0]
+        px, py = (float(v) for v in
+                  pe["balls"][0]["final"]["position_m"][:2])
+        ox, oy = px - ccx, py - ccy
+        n = math.hypot(ox, oy) or 1.0
+        ox, oy = ox / n, oy / n
+        spec.append(("CAM_Film_Insert_A", 85.0,
+                     w(px + ox * 0.55, py + oy * 0.55, 0.25),
+                     w(px, py, -0.05), 2.8))
+
+    # B - a ball dying against a cushion nose
+    if cushions:
+        ce = cushions[0]
+        bx, by = (float(v) for v in
+                  ce["balls"][0]["initial"]["position_m"][:2])
+        # stand off ALONG the rail, toward whichever side has more table
+        along = (1.0, 0.0) if abs(by - ccy) > abs(bx - ccx) else (0.0, 1.0)
+        sign = 1.0 if (ccx - bx if along[0] else ccy - by) > 0 else -1.0
+        spec.append(("CAM_Film_Insert_B", 100.0,
+                     w(bx + along[0] * sign * 0.60 + (0.0 if along[0] else 0.16),
+                       by + along[1] * sign * 0.60 + (0.16 if along[0] else 0.0),
+                       0.18),
+                     w(bx, by, ball_r), 2.8))
+
+    # C - sidespin bleeding off a slowing ball, read on the cue ball's dot
+    cfx, cfy = final_xy("cue")
+    spec.append(("CAM_Film_Insert_C", 100.0,
+                 w(cfx + 0.34, cfy + 0.30, 0.15), w(cfx, cfy, ball_r), 2.5))
+
+    # D - the cue ball drifting to its final stop
+    cue_samples = balls["cue"]["samples"]
+    prev = cue_samples[max(len(cue_samples) - 24, 0)]["p"]
+    dx, dy = cfx - float(prev[0]), cfy - float(prev[1])
+    n = math.hypot(dx, dy) or 1.0
+    spec.append(("CAM_Film_Insert_D", 85.0,
+                 w(cfx - dx / n * 0.50, cfy - dy / n * 0.50, 0.20),
+                 w(cfx, cfy, ball_r), 2.5))
+
+    # E - the very last ball anywhere to stop moving
+    if stops:
+        last_id = stops[-1]["balls"][0]["id"]
+        lx, ly = final_xy(last_id)
+        spec.append(("CAM_Film_Insert_E", 85.0,
+                     w(lx + 0.38, ly + 0.34, 0.20), w(lx, ly, ball_r), 2.5))
+    return spec
+
+
 def build(mats=None):
     L.clear_collection(CAMS)
     made = []
-    for name, lens, loc, aim, fstop in SPEC:
+    film = _film_camera_spec()
+    if film:
+        print("  [cameras] %d film cameras derived from the frozen take"
+              % len(film))
+    for name, lens, loc, aim, fstop in tuple(SPEC) + tuple(film):
         tgt = bpy.data.objects.new(name + "_AIM", None)
         L.link(tgt, CAMS); tgt.location = aim; tgt.empty_display_size = 0.05
         cd = bpy.data.cameras.new(name)

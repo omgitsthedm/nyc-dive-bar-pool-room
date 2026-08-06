@@ -44,7 +44,8 @@
     margin-bottom: 0;
   }
 
-  .shot img {
+  .shot img,
+  .shot video {
     display: block;
     width: 100%;
     height: auto;
@@ -55,6 +56,13 @@
 </head>
 <body>
 <main class="chapter" aria-label="NYC dive-bar pool room">
+  <figure class="shot">
+    <video src="break-film.mp4" poster="img/break-film-poster.webp"
+           width="1920" height="1080" controls preload="metadata"
+           playsinline
+           aria-label="Thirty-second break: the room, the address, and the
+                       rack scattering in real time"></video>
+  </figure>
   <figure class="shot">
     <img src="img/opening/01-street-neon.webp"
          alt="Rain-lit Lower East Side storefronts seen through a diamond-latticed bar window and an open neon sign"

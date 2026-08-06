@@ -1,0 +1,9 @@
+{
+ "id": "b_31",
+ "cue_ball_y_offset_m": -0.05,
+ "speed_mps": 11.6,
+ "aim_jitter_deg": -0.15,
+ "a": 0.0,
+ "b": 0.0,
+ "theta_deg": 0.0
+}

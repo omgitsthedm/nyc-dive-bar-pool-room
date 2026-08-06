@@ -1,0 +1,126 @@
+{
+ "shot": "b_51",
+ "trajectory_sha256": "16b5aafa8ce5b8a75a6bc59d66ceea55953f49792328d145cdb4c89487c816a7",
+ "fps": 24,
+ "total_frames": 720,
+ "film_offset_s": 14.0,
+ "last_motion_film_s": 21.806,
+ "cuts": [
+  {
+   "cam": "CAM_Audit_StreetNeon_35mm",
+   "start": 0,
+   "end": 45,
+   "static": true,
+   "why": "cold open"
+  },
+  {
+   "cam": "CAM_Film_Register_50mm",
+   "start": 46,
+   "end": 88,
+   "static": true,
+   "why": "cold open"
+  },
+  {
+   "cam": "CAM_Audit_PatronBarware_55mm",
+   "start": 89,
+   "end": 129,
+   "static": true,
+   "why": "cold open"
+  },
+  {
+   "cam": "CAM_Audit_BoothPatina_60mm",
+   "start": 130,
+   "end": 172,
+   "static": true,
+   "why": "cold open"
+  },
+  {
+   "cam": "CAM_Audit_Booths_45mm",
+   "start": 173,
+   "end": 217,
+   "static": true,
+   "why": "cold open"
+  },
+  {
+   "cam": "CAM_Audit_Lighting_35mm",
+   "start": 218,
+   "end": 263,
+   "static": true,
+   "why": "cold open"
+  },
+  {
+   "cam": "CAM_Film_CueAddress_85mm",
+   "start": 264,
+   "end": 311,
+   "static": true,
+   "why": "address"
+  },
+  {
+   "cam": "CAM_Film_TipInsert_100mm",
+   "start": 312,
+   "end": 335,
+   "static": true,
+   "why": "one second of held breath"
+  },
+  {
+   "cam": "CAM_Film_CueAddress_85mm",
+   "start": 336,
+   "end": 403,
+   "static": false,
+   "cut_on_traj_s": 2.8337,
+   "why": "strike and scatter, real time"
+  },
+  {
+   "cam": "CAM_Film_BreakOverhead_24mm",
+   "start": 404,
+   "end": 466,
+   "static": false,
+   "cut_on_traj_s": 5.4738,
+   "why": "god shot: spread develops, rails return, pockets swallow"
+  },
+  {
+   "cam": "CAM_Film_Insert_D",
+   "start": 467,
+   "end": 486,
+   "static": false,
+   "cut_on_traj_s": 6.2738,
+   "why": "the cue ball drifting to its final stop"
+  },
+  {
+   "cam": "CAM_Film_Insert_E",
+   "start": 487,
+   "end": 522,
+   "static": false,
+   "cut_on_traj_s": 7.806,
+   "why": "ball 13, the last thing moving"
+  },
+  {
+   "cam": "CAM_Film_Insert_A",
+   "start": 523,
+   "end": 568,
+   "static": true,
+   "why": "the basket that swallowed the first ball"
+  },
+  {
+   "cam": "CAM_Rack_Detail_85mm",
+   "start": 569,
+   "end": 614,
+   "static": true,
+   "why": "what is left of the rack"
+  },
+  {
+   "cam": "CAM_Cinematic_BreakLine_70mm",
+   "start": 615,
+   "end": 671,
+   "static": true,
+   "why": "down the line"
+  },
+  {
+   "cam": "CAM_Table_ThreeQuarter_50mm",
+   "start": 672,
+   "end": 719,
+   "static": true,
+   "why": "settled table, one breath, cut to black"
+  }
+ ]
+}

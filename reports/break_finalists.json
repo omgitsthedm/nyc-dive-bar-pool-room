@@ -1,0 +1,40 @@
+{
+ "finalists": [
+  {
+   "id": "b_51",
+   "trajectory_sha256": "16b5aafa8ce5b8a75a6bc59d66ceea55953f49792328d145cdb4c89487c816a7",
+   "balls_pocketed": 2,
+   "rails_hit": 31,
+   "spread_m": 0.59777,
+   "settle_s": 7.806,
+   "duration_s": 7.806,
+   "eight_survives": true,
+   "score": 39.59777,
+   "proof_dir": "renders/break_candidates/b_51"
+  },
+  {
+   "id": "b_45",
+   "trajectory_sha256": "e39d50b9f8a66fcb4f26c8da0028fd4b2a8eb74f83eab56701bf60bf0043b6e0",
+   "balls_pocketed": 1,
+   "rails_hit": 29,
+   "spread_m": 0.63788,
+   "settle_s": 5.7899,
+   "duration_s": 5.7899,
+   "eight_survives": true,
+   "score": 34.63788,
+   "proof_dir": "renders/break_candidates/b_45"
+  },
+  {
+   "id": "b_31",
+   "trajectory_sha256": "c056eefb2b1c79dff80f6fad308672337b201c24b005d52966307c5880e5eb5c",
+   "balls_pocketed": 3,
+   "rails_hit": 23,
+   "spread_m": 0.8986,
+   "settle_s": 5.8109,
+   "duration_s": 5.8109,
+   "eight_survives": false,
+   "score": 32.8986,
+   "proof_dir": "renders/break_candidates/b_31"
+  }
+ ]
+}

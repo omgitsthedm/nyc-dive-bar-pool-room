@@ -70,3 +70,23 @@ fictional small-business fronts. All prompts excluded real logos, celebrities,
 copyrighted characters and readable brands. Generated source files were copied
 from built-in image-tool output into the project paths above; Blender references
 only these project copies.
+
+## Film audio (2026-08-06)
+
+PATH B — synthesized offline, no downloaded assets. The provenance invariant
+requires any downloaded audio to be CC0/public-domain with a verifiable URL,
+licence, hash and byte size; no sample could be licence-verified without
+fetching from the network, so none was used. Synthesized assets need no
+manifest entry, but the generator is recorded here:
+
+| Generator | Sounds |
+|---|---|
+| `scripts/111_build_film_audio.py` | cue strike, ball-ball clack, cushion thump, pocket capture, room tone |
+
+All four one-shots are numpy: band-passed noise bursts with exponential
+decays, plus a damped sine partial on the clack and a 90 Hz thud under the
+pocket. The room tone is brown noise low-passed at 300 Hz, -34 dBFS.
+
+The mix is deterministic. The RNG is seeded from the trajectory's own
+SHA-256, so the same take always produces a bit-identical WAV; the hash of
+each render is recorded in `reports/film_audio_manifest.json`.
