@@ -113,9 +113,9 @@ and 1,064 logical items.
 ### Environment lock — PASS
 
 `reports/environment_lock.json` fingerprints the approved static room at
-2,116 objects, 80 used materials and eight image assets. Standalone verification
+2,143 objects, 82 used materials and eight image assets. Standalone verification
 matches aggregate SHA-256
-`c025578c2a74fd0761fad9c327f201b0b78c75ef4c5ebbcedabfdd98ce292fe5`.
+`de99efd0b2f5caef661e66d542918f06942a20ea7330f925a615d77b778bd0be`.
 Architecture, bar, set dressing, patina and patron-service collections are
 unselectable in the frozen `blend/poolroom_master.blend`. Non-pool lights and
 global color state are also fingerprinted. Pool-table collections, pool fixture
@@ -132,7 +132,7 @@ by the 2026-08-05 pocket-mouth revision); 175 meshes and the root in
 
 `reports/pool_system_lock.json` fingerprints this accepted static pool state at
 355 objects and 30 materials. Standalone verification matches aggregate
-SHA-256 `1b4e3397398477e0d70855e48329a1b4b30795477b7d07f5ebd14ddbb5bc0930`.
+SHA-256 `0d7d3949f39661715cb5edb41d1e044b6461a0ed28fe96857fa16ce826a47273`.
 
 Shared geometry measures 115.8875 mm corner and 128.5875 mm side evaluated
 mouths at the WPA permitted-range midpoints. Corner/side jaw cuts are
@@ -182,7 +182,7 @@ The gameplay bake is additive: `blend/poolroom_master.blend` and
 `reports/environment_lock.json` remain unchanged protected artifacts, and
 `reports/pool_system_lock.json` carries the deliberately re-banked 2026-08-05
 pocket-revision baseline. Fresh read-only checks against the saved gameplay
-candidate pass both protected locks: 2,116 environment objects and 355 static
+candidate pass both protected locks: 2,143 environment objects and 355 static
 pool objects are unchanged.
 
 All 216 checks pass:

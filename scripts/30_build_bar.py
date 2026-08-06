@@ -12,7 +12,7 @@ import math
 import os
 import random
 import sys
-from math import radians
+from math import cos, radians, sin
 
 sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
 import config as C          # noqa: E402
@@ -34,71 +34,105 @@ def _local_xy(cx, cy, dx, dy, yaw):
 
 
 def _cash_register(mats):
-    """Early mechanical register placed as bartender equipment, not décor."""
-    # Historical saloon photographs put the register on the back-bar work
-    # surface, facing the operator. This leaves the guest rail clear and gives
-    # the bartender one compact cash/bottle work zone.
+    """Ornate 1900s barrel-front register, bartender equipment not décor.
+
+    Modeled on the brass National-class machines used behind bars for the
+    whole century: a cast base with the cash drawer, a convex drum front
+    carrying columns of round ivory-capped keys, proud scrolled side cheeks,
+    a glass-front indicator crown with flag cards, a working side crank and
+    paw feet.  Every cast surface uses the chased-bronze relief material so
+    the machine reads engraved, not sheet-metal.
+    """
     bx = BACK_X
     x, y, z0 = bx + 0.20, BAR_Y, 0.92
-    base = L.box("BAR_CashRegister_Base", (0.36, 0.46, 0.13),
-                 (x, y, z0 + 0.065), B, mats["cast_iron"], bevel=0.030,
-                 bevel_segments=4)
+    bronze = mats["bronze_ornate"]
+
+    # Four paw feet under the base corners.
+    for sx_, sy_ in ((-0.145, -0.185), (-0.145, 0.185),
+                     (0.145, -0.185), (0.145, 0.185)):
+        L.cylinder("BAR_CashRegister_Foot_%s%s" %
+                   ("S" if sy_ < 0 else "N", "W" if sx_ < 0 else "E"),
+                   0.024, 0.030, (x + sx_, y + sy_, z0 + 0.015), B,
+                   mats["brass"], segments=16)
+
+    # Cast base with the cash drawer facing +X into the bartender aisle.
+    base = L.box("BAR_CashRegister_Base", (0.36, 0.44, 0.105),
+                 (x, y, z0 + 0.0825), B, bronze, bevel=0.014,
+                 bevel_segments=3)
     base["workflow_side"] = "backbar_facing_bartender"
     base["period_family"] = "early_mechanical_register"
+    L.box("BAR_CashRegister_Drawer", (0.030, 0.36, 0.078),
+          (x + 0.192, y, z0 + 0.078), B, bronze, bevel=0.006)
+    L.box("BAR_CashRegister_DrawerPull", (0.018, 0.11, 0.024),
+          (x + 0.213, y, z0 + 0.070), B, mats["brass"], bevel=0.006)
 
-    # Drawer and keyboard face +X into the bartender aisle. A customer sees
-    # the machine over the bartender's shoulder, not a drawer pointed at them.
-    L.box("BAR_CashRegister_Drawer", (0.038, 0.35, 0.090),
-          (x + 0.196, y, z0 + 0.065), B, mats["cast_iron"], bevel=0.008)
-    L.box("BAR_CashRegister_DrawerPull", (0.020, 0.115, 0.026),
-          (x + 0.221, y, z0 + 0.070), B, mats["brass"], bevel=0.006)
-    L.box("BAR_CashRegister_KeyDeck", (0.27, 0.39, 0.16),
-          (x + 0.025, y, z0 + 0.205), B, mats["cast_iron"],
-          rotation=(0, radians(-15), 0), bevel=0.050, bevel_segments=4)
+    # Body core behind the drum.
+    L.box("BAR_CashRegister_Body", (0.24, 0.40, 0.25),
+          (x - 0.05, y, z0 + 0.26), B, bronze, bevel=0.018,
+          bevel_segments=3)
 
-    # Four staggered rows of round keys sit normal to the sloped deck.
-    for row in range(4):
-        for col in range(7):
-            L.cylinder("BAR_CashRegister_Key_%d_%d" % (row, col),
-                       0.0125, 0.022,
-                       (x + 0.145 - row * 0.047,
-                        y - 0.135 + col * 0.045,
-                        z0 + 0.245 + row * 0.019), B, mats["brass"],
-                       segments=16, rotation=(0, radians(-15), 0))
+    # Convex drum front: the barrel the key columns wrap around.
+    L.cylinder("BAR_CashRegister_Drum", 0.145, 0.40,
+               (x + 0.010, y, z0 + 0.275), B, bronze, segments=48,
+               rotation=(radians(90), 0, 0))
 
-    # Raised indicator box and separate amount windows make the silhouette
-    # legible as a register instead of stacked anonymous boxes.
-    L.box("BAR_CashRegister_IndicatorHousing", (0.13, 0.34, 0.19),
-          (x - 0.055, y, z0 + 0.405), B, mats["cast_iron"],
-          bevel=0.035, bevel_segments=4)
-    L.box("BAR_CashRegister_IndicatorGlass", (0.018, 0.285, 0.105),
-          (x + 0.020, y, z0 + 0.415), B, mats["tv_screen"], bevel=0.010)
+    # Five key columns follow the drum curve; each round brass key carries
+    # an ivory cap, sitting normal to the barrel surface.
+    drum_cx, drum_cz, drum_r = x + 0.010, z0 + 0.275, 0.145
+    for col in range(5):
+        ky = y - 0.14 + col * 0.07
+        for rank in range(5):
+            theta = radians(-28 + rank * 19)
+            rx = drum_cx + cos(theta) * (drum_r + 0.008)
+            rz = drum_cz + sin(theta) * (drum_r + 0.008)
+            rot = (0, radians(90) - theta, 0)
+            L.cylinder("BAR_CashRegister_Key_%d_%d" % (rank, col),
+                       0.0135, 0.020, (rx, ky, rz), B, mats["brass"],
+                       segments=16, rotation=rot)
+            cx2 = drum_cx + cos(theta) * (drum_r + 0.020)
+            cz2 = drum_cz + sin(theta) * (drum_r + 0.020)
+            L.cylinder("BAR_CashRegister_KeyCap_%d_%d" % (rank, col),
+                       0.0095, 0.006, (cx2, ky, cz2), B,
+                       mats["ivory_key"], segments=14, rotation=rot)
+
+    # Proud scrolled side cheeks close the drum ends completely: the cheek
+    # must reach past the drum's front arc or the bare barrel end shows as
+    # a dark disc beside the key field.
+    for sy_ in (-1, 1):
+        L.box("BAR_CashRegister_SideCheek_%s" % ("S" if sy_ < 0 else "N"),
+              (0.37, 0.024, 0.315),
+              (x - 0.005, y + sy_ * 0.212, z0 + 0.272), B, bronze,
+              bevel=0.012, bevel_segments=3)
+
+    # Indicator crown: glass front, five flag cards, cast cornice and ridge.
+    L.box("BAR_CashRegister_IndicatorHousing", (0.125, 0.38, 0.150),
+          (x - 0.065, y, z0 + 0.470), B, bronze, bevel=0.014,
+          bevel_segments=3)
+    L.box("BAR_CashRegister_IndicatorGlass", (0.014, 0.30, 0.100),
+          (x + 0.002, y, z0 + 0.470), B, mats["tv_screen"], bevel=0.006)
     for col in range(5):
         L.box("BAR_CashRegister_DisplayCard_%d" % col,
-              (0.008, 0.040, 0.063),
-              (x + 0.032, y - 0.100 + col * 0.050, z0 + 0.415), B,
+              (0.007, 0.042, 0.062),
+              (x + 0.010, y - 0.104 + col * 0.052, z0 + 0.468), B,
               mats["paper_aged"], bevel=0.002)
+    L.box("BAR_CashRegister_Cornice", (0.155, 0.42, 0.028),
+          (x - 0.065, y, z0 + 0.558), B, bronze, bevel=0.010,
+          bevel_segments=3)
+    L.box("BAR_CashRegister_CrownRidge", (0.100, 0.30, 0.020),
+          (x - 0.065, y, z0 + 0.580), B, bronze, bevel=0.008)
 
-    # Cast trim, feet and side crank are mechanically connected.
-    for sy in (-1, 1):
-        L.box("BAR_CashRegister_SideTrim_%s" % ("S" if sy < 0 else "N"),
-              (0.29, 0.016, 0.035),
-              (x, y + sy * 0.218, z0 + 0.145), B, mats["brass"],
-              rotation=(0, radians(-6), 0), bevel=0.006)
-    for sy in (-0.16, 0.16):
-        L.cylinder("BAR_CashRegister_Foot_%s" % ("S" if sy < 0 else "N"),
-                   0.022, 0.025, (x, y + sy, z0 + 0.0125), B,
-                   mats["brass"], segments=16)
-    L.cylinder("BAR_CashRegister_CrankShaft", 0.014, 0.12,
-               (x - 0.05, y + 0.285, z0 + 0.22), B, mats["blacksteel"],
+    # Side crank on the machine's flank, mechanically connected.
+    L.cylinder("BAR_CashRegister_CrankShaft", 0.013, 0.070,
+               (drum_cx, y + 0.245, drum_cz), B, mats["blacksteel"],
                segments=14, rotation=(radians(90), 0, 0))
-    L.cylinder_between("BAR_CashRegister_CrankArm", 0.012,
-                       (x - 0.05, y + 0.345, z0 + 0.22),
-                       (x + 0.02, y + 0.345, z0 + 0.16), B,
+    L.cylinder_between("BAR_CashRegister_CrankArm", 0.011,
+                       (drum_cx, y + 0.276, drum_cz),
+                       (drum_cx + 0.075, y + 0.276, drum_cz - 0.045), B,
                        mats["blacksteel"], segments=12)
-    L.cylinder("BAR_CashRegister_CrankGrip", 0.018, 0.10,
-               (x + 0.02, y + 0.395, z0 + 0.16), B, mats["bar_wood"],
-               segments=14, rotation=(radians(90), 0, 0))
+    L.cylinder("BAR_CashRegister_CrankGrip", 0.016, 0.085,
+               (drum_cx + 0.075, y + 0.318, drum_cz - 0.045), B,
+               mats["bar_wood"], segments=14,
+               rotation=(radians(90), 0, 0))
 
 
 def _stock_bottle(name, family, x, y, support_z, h, r, yaw, mats, rnd,
@@ -774,21 +808,23 @@ def build(mats):
     L.box("BAR_TapTower_Manifold", (0.085, 0.34, 0.075),
           (tap_x, tap_y, BT + 0.25), B, mats["chrome"], bevel=0.025,
           bevel_segments=3)
+    # Spouts pour toward the bartender aisle, over the drip tray. The old
+    # build aimed them across the guest rail, away from their own tray.
     for i in range(4):
         ty = tap_y - 0.12 + i * 0.08
         L.cylinder_between("BAR_TapSpout_%d" % i, 0.009,
-                           (tap_x + 0.035, ty, BT + 0.24),
-                           (tap_x + 0.13, ty, BT + 0.18), B,
+                           (tap_x - 0.035, ty, BT + 0.24),
+                           (tap_x - 0.10, ty, BT + 0.18), B,
                            mats["chrome"], segments=12)
         L.cylinder("BAR_TapHandle_%d" % i, 0.015, 0.12,
-                   (tap_x - 0.015, ty, BT + 0.34), B,
+                   (tap_x + 0.015, ty, BT + 0.34), B,
                    mats["bar_wood"], segments=12)
+    _rubber_bar_mat("BAR_RubberMat_Tap", BAR_X - 0.16, BAR_Y + 0.30,
+                    0.20, 0.50, BT + 0.004, mats)
     drip = L.box("BAR_DripTray", (0.16, 0.34, 0.014),
-                 (BAR_X - 0.16, BAR_Y + 0.30, BT + 0.008), B,
+                 (BAR_X - 0.16, BAR_Y + 0.30, BT + 0.012), B,
                  mats["stainless"], bevel=0.004)
     drip["workflow_role"] = "beer_service"
-    _rubber_bar_mat("BAR_RubberMat_Tap", BAR_X + 0.035, BAR_Y + 0.30,
-                    0.20, 0.50, BT + 0.004, mats)
 
     # -------------------------------------------------------- back bar -----
     bx = BACK_X

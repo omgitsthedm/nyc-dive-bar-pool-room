@@ -886,6 +886,16 @@ def build():
         "dust": simple("MAT_Env_Dust", (0.16, 0.135, 0.098), 0.98),
         "cast_iron": simple("MAT_Prop_CastIron_OldRegister",
                             (0.028, 0.026, 0.024), 0.56, metal=0.86),
+        # Chased cast bronze for the ornate register body: strong roughness
+        # variation plus a deep fine bump so the surface reads as scrolled
+        # relief rather than smooth sheet metal at render distance.
+        "bronze_ornate": aged_simple("MAT_Prop_CastBronze_Ornate",
+                                      (0.285, 0.185, 0.075), 0.34, metal=1.0,
+                                      colour_variation=0.55,
+                                      micro_scale=310.0,
+                                      bump_distance=0.0013),
+        "ivory_key": simple("MAT_Prop_IvoryKeyCap",
+                            (0.78, 0.74, 0.63), 0.30),
         "bar_wood": aged_bar_wood(),
         "wall_panel": painted_panel(),
         "plaster": plaster(),
@@ -1102,6 +1112,27 @@ def build():
                                    (0.78, 0.54, 0.31), 2.8),
         "mirror_aged": mirror_aged(),
     }
+    # The basket catch pads need the deep-shadow leather in EVERY build path.
+    # It used to exist only via 23_rebuild_pool_system.py's derived injection,
+    # so a full build_all reconstruction silently fell back to plain leather
+    # and failed the basket-base validator. Same derivation, same values.
+    shadow = bpy.data.materials.get("MAT_Pocket_Leather_DeepShadow")
+    if shadow is None:
+        shadow = mats["leather_interior"].copy()
+        shadow.name = "MAT_Pocket_Leather_DeepShadow"
+    shadow_principled = next(
+        (node for node in shadow.node_tree.nodes
+         if node.type == "BSDF_PRINCIPLED"), None)
+    if shadow_principled is None:
+        raise RuntimeError("pocket shadow leather has no Principled shader")
+    for socket_name in ("Base Color", "Roughness"):
+        for link in list(shadow_principled.inputs[socket_name].links):
+            shadow.node_tree.links.remove(link)
+    shadow_principled.inputs["Base Color"].default_value = \
+        (0.0025, 0.0012, 0.0008, 1.0)
+    shadow_principled.inputs["Roughness"].default_value = 0.92
+    shadow["deep_recess_not_open_void"] = True
+    mats["leather_shadow"] = shadow
     print("  [materials] %d built" % len(mats))
     return mats
 

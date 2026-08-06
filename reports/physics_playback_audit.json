@@ -714,7 +714,7 @@
     }
   },
   "blend": "blend/poolroom_gameplay_preview.blend",
-  "blend_sha256": "62ddc8abeb636a841871bd1f727e6674830cc02977d2a285bcac7044c5a6d2d5",
+  "blend_sha256": "407e78b3fed68c1ac9c267396a2c57f16b6143a11445fef5335e27e112071d03",
   "checks": [
     {
       "id": "trajectory_payload_identity",
@@ -5184,7 +5184,7 @@
       0.0
     ]
   },
-  "generated_utc": "2026-08-06T05:49:27.148385+00:00",
+  "generated_utc": "2026-08-06T06:33:08.546954+00:00",
   "identity": {
     "geometry_file_sha256": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
     "markings_file_sha256": "a9a44374a1b726462cb267faffac947cb8dc068280a31a4ba57778c623bc3f9e",

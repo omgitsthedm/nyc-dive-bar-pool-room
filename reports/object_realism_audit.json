@@ -1,12 +1,12 @@
 {
   "summary": {
-    "render_visible_component_objects": 2347,
-    "logical_items": 1094,
+    "render_visible_component_objects": 2386,
+    "logical_items": 1106,
     "collections": {
       "01_ARCHITECTURE": 414,
-      "02_TABLE_VISIBLE": 108,
+      "02_TABLE_VISIBLE": 120,
       "03_TABLE_ENGINEERING": 80,
-      "04_BAR": 1036,
+      "04_BAR": 1063,
       "05_HERO_PROPS": 16,
       "06_PATINA": 141,
       "06_PATRON_FOOTPRINTS": 153,
@@ -17,7 +17,7 @@
     "categories": {
       "atmosphere": 1,
       "bar_fixture_or_stock": 287,
-      "bar_workflow_equipment": 46,
+      "bar_workflow_equipment": 73,
       "bottle_stock": 668,
       "building_fabric": 400,
       "door_hardware": 66,
@@ -26,7 +26,7 @@
       "movable_seating": 75,
       "patron_service": 153,
       "patron_table": 20,
-      "pool_table_system": 204,
+      "pool_table_system": 216,
       "wall_or_table_prop": 206
     },
     "required_checks": 33,
@@ -385,7 +385,7 @@
     {
       "check": "age_is_embedded_across_major_material_families",
       "status": "PASS",
-      "measured": 38,
+      "measured": 39,
       "expected": ">=20 used materials",
       "required": true
     },
@@ -693,7 +693,7 @@
       "component_count": 11,
       "world_bbox_m": [
         -1.77,
-        -1.49519,
+        -1.575,
         -2.42,
         -2.08,
         1.067,
@@ -3826,14 +3826,14 @@
       "logical_item": "BAR_CashRegister",
       "category": "bar_workflow_equipment",
       "collection": "04_BAR",
-      "component_count": 46,
+      "component_count": 73,
       "world_bbox_m": [
-        -3.135,
-        -2.724,
-        -2.78,
-        -2.105,
+        -3.145,
+        -2.733,
+        -2.774,
+        -2.1895,
         0.92,
-        1.42
+        1.51
       ],
       "support_contract": "bar_assembly_contact",
       "review_state": "classified_and_contract_checked"
@@ -5044,8 +5044,8 @@
       "collection": "04_BAR",
       "component_count": 14,
       "world_bbox_m": [
-        -1.595,
-        -1.395,
+        -1.79,
+        -1.59,
         -2.5,
         -2.0,
         1.0675,
@@ -15023,6 +15023,198 @@
       "review_state": "classified_and_contract_checked"
     },
     {
+      "logical_item": "PT_CapHorn_corner_NE_10",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        0.77252,
+        0.84326,
+        3.43706,
+        3.47152,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_NE_11",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        0.90206,
+        0.93652,
+        3.30752,
+        3.37826,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_NW_7",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        -0.43652,
+        -0.40206,
+        3.30752,
+        3.37826,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_NW_8",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        -0.34326,
+        -0.27252,
+        3.43706,
+        3.47152,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_SE_16",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        0.90206,
+        0.93652,
+        0.92174,
+        0.99248,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_SE_17",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        0.77252,
+        0.84326,
+        0.82848,
+        0.86294,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_SW_1",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        -0.34326,
+        -0.27252,
+        0.82848,
+        0.86294,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_SW_2",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        -0.43652,
+        -0.40206,
+        0.92174,
+        0.99248,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_side_E_13",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        0.89285,
+        0.94504,
+        2.21191,
+        2.39268,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_side_E_14",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        0.89285,
+        0.94504,
+        1.90732,
+        2.08809,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_side_W_4",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        -0.44504,
+        -0.39285,
+        1.90732,
+        2.08809,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
+      "logical_item": "PT_CapHorn_side_W_5",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "component_count": 1,
+      "world_bbox_m": [
+        -0.44504,
+        -0.39285,
+        2.21191,
+        2.39268,
+        0.7901,
+        0.8001
+      ],
+      "support_contract": "pool_table_assembly",
+      "review_state": "classified_and_contract_checked"
+    },
+    {
       "logical_item": "PT_CentreBeam",
       "category": "pool_table_system",
       "collection": "03_TABLE_ENGINEERING",
@@ -15190,7 +15382,7 @@
       "world_bbox_m": [
         -0.35263,
         0.85263,
-        0.82725,
+        0.8292,
         0.88,
         0.76994,
         0.8001
@@ -15207,7 +15399,7 @@
         -0.35263,
         0.85263,
         3.42,
-        3.47275,
+        3.4708,
         0.76994,
         0.8001
       ],
@@ -15221,7 +15413,7 @@
       "component_count": 1,
       "world_bbox_m": [
         0.885,
-        0.93775,
+        0.9358,
         2.2058,
         3.38763,
         0.76994,
@@ -15237,7 +15429,7 @@
       "component_count": 1,
       "world_bbox_m": [
         0.885,
-        0.93775,
+        0.9358,
         0.91237,
         2.0942,
         0.76994,
@@ -15252,7 +15444,7 @@
       "collection": "02_TABLE_VISIBLE",
       "component_count": 1,
       "world_bbox_m": [
-        -0.43775,
+        -0.4358,
         -0.385,
         2.2058,
         3.38763,
@@ -15268,7 +15460,7 @@
       "collection": "02_TABLE_VISIBLE",
       "component_count": 1,
       "world_bbox_m": [
-        -0.43775,
+        -0.4358,
         -0.385,
         0.91237,
         2.0942,
@@ -17012,8 +17204,8 @@
       "collection": "02_TABLE_VISIBLE",
       "component_count": 1,
       "world_bbox_m": [
-        -0.33319,
-        0.83319,
+        -0.5247,
+        1.0247,
         0.7403,
         0.8292,
         0.7901,
@@ -17028,8 +17220,8 @@
       "collection": "02_TABLE_VISIBLE",
       "component_count": 1,
       "world_bbox_m": [
-        -0.33319,
-        0.83319,
+        -0.5247,
+        1.0247,
         3.4708,
         3.5597,
         0.7901,
@@ -17046,8 +17238,8 @@
       "world_bbox_m": [
         0.9358,
         1.0247,
-        2.21177,
-        3.36819,
+        2.18453,
+        3.5597,
         0.7901,
         0.8001
       ],
@@ -17062,8 +17254,8 @@
       "world_bbox_m": [
         0.9358,
         1.0247,
-        0.93181,
-        2.08819,
+        0.7403,
+        2.11547,
         0.7901,
         0.8001
       ],
@@ -17078,8 +17270,8 @@
       "world_bbox_m": [
         -0.5247,
         -0.4358,
-        2.21211,
-        3.36819,
+        2.18453,
+        3.5597,
         0.7901,
         0.8001
       ],
@@ -17094,8 +17286,8 @@
       "world_bbox_m": [
         -0.5247,
         -0.4358,
-        0.93181,
-        2.08819,
+        0.7403,
+        2.11547,
         0.7901,
         0.8001
       ],
@@ -40217,7 +40409,7 @@
       "location_m": [
         -2.955,
         -2.55,
-        0.985
+        1.0025
       ],
       "rotation_deg": [
         0.0,
@@ -40226,19 +40418,87 @@
       ],
       "dimensions_m": [
         0.36,
-        0.46,
-        0.13
+        0.44,
+        0.105
       ],
       "world_bbox_m": [
         -3.135,
         -2.775,
-        -2.78,
-        -2.32,
-        0.92,
-        1.05
+        -2.77,
+        -2.33,
+        0.95,
+        1.055
       ],
       "materials": [
-        "MAT_Prop_CastIron_OldRegister"
+        "MAT_Prop_CastBronze_Ornate"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_Body",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -3.005,
+        -2.55,
+        1.18
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.24,
+        0.4,
+        0.25
+      ],
+      "world_bbox_m": [
+        -3.125,
+        -2.885,
+        -2.75,
+        -2.35,
+        1.055,
+        1.305
+      ],
+      "materials": [
+        "MAT_Prop_CastBronze_Ornate"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_Cornice",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -3.02,
+        -2.55,
+        1.478
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.155,
+        0.42,
+        0.028
+      ],
+      "world_bbox_m": [
+        -3.0975,
+        -2.9425,
+        -2.76,
+        -2.34,
+        1.464,
+        1.492
+      ],
+      "materials": [
+        "MAT_Prop_CastBronze_Ornate"
       ],
       "support_contract": "bar_assembly_contact"
     },
@@ -40249,9 +40509,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.97,
-        -2.205,
-        1.11
+        -2.9075,
+        -2.274,
+        1.1725
       ],
       "rotation_deg": [
         0.0,
@@ -40259,17 +40519,17 @@
         0.0
       ],
       "dimensions_m": [
-        0.024,
-        0.024,
-        0.0922
+        0.022,
+        0.022,
+        0.08746
       ],
       "world_bbox_m": [
-        -3.01281,
-        -2.92719,
-        -2.217,
-        -2.193,
-        1.07089,
-        1.14911
+        -2.95066,
+        -2.86434,
+        -2.285,
+        -2.263,
+        1.14057,
+        1.20443
       ],
       "materials": [
         "MAT_Metal_BlackenedSteel"
@@ -40283,9 +40543,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.935,
-        -2.155,
-        1.08
+        -2.87,
+        -2.232,
+        1.15
       ],
       "rotation_deg": [
         90.0,
@@ -40293,17 +40553,17 @@
         0.0
       ],
       "dimensions_m": [
-        0.036,
-        0.0351,
-        0.1
+        0.032,
+        0.0312,
+        0.085
       ],
       "world_bbox_m": [
-        -2.953,
-        -2.917,
-        -2.205,
-        -2.105,
-        1.06245,
-        1.09755
+        -2.886,
+        -2.854,
+        -2.2745,
+        -2.1895,
+        1.1344,
+        1.1656
       ],
       "materials": [
         "MAT_Bar_OldStainedOak"
@@ -40317,9 +40577,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -3.005,
-        -2.265,
-        1.14
+        -2.945,
+        -2.305,
+        1.195
       ],
       "rotation_deg": [
         90.0,
@@ -40327,20 +40587,54 @@
         0.0
       ],
       "dimensions_m": [
-        0.028,
-        0.0273,
-        0.12
+        0.026,
+        0.02535,
+        0.07
       ],
       "world_bbox_m": [
-        -3.019,
-        -2.991,
-        -2.325,
-        -2.205,
-        1.12635,
-        1.15365
+        -2.958,
+        -2.932,
+        -2.34,
+        -2.27,
+        1.18233,
+        1.20767
       ],
       "materials": [
         "MAT_Metal_BlackenedSteel"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_CrownRidge",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -3.02,
+        -2.55,
+        1.5
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.1,
+        0.3,
+        0.02
+      ],
+      "world_bbox_m": [
+        -3.07,
+        -2.97,
+        -2.7,
+        -2.4,
+        1.49,
+        1.51
+      ],
+      "materials": [
+        "MAT_Prop_CastBronze_Ornate"
       ],
       "support_contract": "bar_assembly_contact"
     },
@@ -40351,9 +40645,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.923,
-        -2.65,
-        1.335
+        -2.945,
+        -2.654,
+        1.388
       ],
       "rotation_deg": [
         0.0,
@@ -40361,17 +40655,17 @@
         0.0
       ],
       "dimensions_m": [
-        0.008,
-        0.04,
-        0.063
+        0.007,
+        0.042,
+        0.062
       ],
       "world_bbox_m": [
-        -2.927,
-        -2.919,
-        -2.67,
-        -2.63,
-        1.3035,
-        1.3665
+        -2.9485,
+        -2.9415,
+        -2.675,
+        -2.633,
+        1.357,
+        1.419
       ],
       "materials": [
         "MAT_Prop_Paper_Aged"
@@ -40385,9 +40679,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.923,
-        -2.6,
-        1.335
+        -2.945,
+        -2.602,
+        1.388
       ],
       "rotation_deg": [
         0.0,
@@ -40395,17 +40689,17 @@
         0.0
       ],
       "dimensions_m": [
-        0.008,
-        0.04,
-        0.063
+        0.007,
+        0.042,
+        0.062
       ],
       "world_bbox_m": [
-        -2.927,
-        -2.919,
-        -2.62,
-        -2.58,
-        1.3035,
-        1.3665
+        -2.9485,
+        -2.9415,
+        -2.623,
+        -2.581,
+        1.357,
+        1.419
       ],
       "materials": [
         "MAT_Prop_Paper_Aged"
@@ -40419,9 +40713,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.923,
+        -2.945,
         -2.55,
-        1.335
+        1.388
       ],
       "rotation_deg": [
         0.0,
@@ -40429,17 +40723,17 @@
         0.0
       ],
       "dimensions_m": [
-        0.008,
-        0.04,
-        0.063
+        0.007,
+        0.042,
+        0.062
       ],
       "world_bbox_m": [
-        -2.927,
-        -2.919,
-        -2.57,
-        -2.53,
-        1.3035,
-        1.3665
+        -2.9485,
+        -2.9415,
+        -2.571,
+        -2.529,
+        1.357,
+        1.419
       ],
       "materials": [
         "MAT_Prop_Paper_Aged"
@@ -40453,9 +40747,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.923,
-        -2.5,
-        1.335
+        -2.945,
+        -2.498,
+        1.388
       ],
       "rotation_deg": [
         0.0,
@@ -40463,17 +40757,17 @@
         0.0
       ],
       "dimensions_m": [
-        0.008,
-        0.04,
-        0.063
+        0.007,
+        0.042,
+        0.062
       ],
       "world_bbox_m": [
-        -2.927,
-        -2.919,
-        -2.52,
-        -2.48,
-        1.3035,
-        1.3665
+        -2.9485,
+        -2.9415,
+        -2.519,
+        -2.477,
+        1.357,
+        1.419
       ],
       "materials": [
         "MAT_Prop_Paper_Aged"
@@ -40487,9 +40781,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.923,
-        -2.45,
-        1.335
+        -2.945,
+        -2.446,
+        1.388
       ],
       "rotation_deg": [
         0.0,
@@ -40497,17 +40791,17 @@
         0.0
       ],
       "dimensions_m": [
-        0.008,
-        0.04,
-        0.063
+        0.007,
+        0.042,
+        0.062
       ],
       "world_bbox_m": [
-        -2.927,
-        -2.919,
-        -2.47,
-        -2.43,
-        1.3035,
-        1.3665
+        -2.9485,
+        -2.9415,
+        -2.467,
+        -2.425,
+        1.357,
+        1.419
       ],
       "materials": [
         "MAT_Prop_Paper_Aged"
@@ -40521,9 +40815,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.759,
+        -2.763,
         -2.55,
-        0.985
+        0.998
       ],
       "rotation_deg": [
         0.0,
@@ -40531,20 +40825,20 @@
         0.0
       ],
       "dimensions_m": [
-        0.038,
-        0.35,
-        0.09
+        0.03,
+        0.36,
+        0.078
       ],
       "world_bbox_m": [
         -2.778,
-        -2.74,
-        -2.725,
-        -2.375,
-        0.94,
-        1.03
+        -2.748,
+        -2.73,
+        -2.37,
+        0.959,
+        1.037
       ],
       "materials": [
-        "MAT_Prop_CastIron_OldRegister"
+        "MAT_Prop_CastBronze_Ornate"
       ],
       "support_contract": "bar_assembly_contact"
     },
@@ -40555,7 +40849,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.734,
+        -2.742,
         -2.55,
         0.99
       ],
@@ -40565,17 +40859,17 @@
         0.0
       ],
       "dimensions_m": [
-        0.02,
-        0.115,
-        0.026
+        0.018,
+        0.11,
+        0.024
       ],
       "world_bbox_m": [
-        -2.744,
-        -2.724,
-        -2.6075,
-        -2.4925,
-        0.977,
-        1.003
+        -2.751,
+        -2.733,
+        -2.605,
+        -2.495,
+        0.978,
+        1.002
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -40583,15 +40877,49 @@
       "support_contract": "bar_assembly_contact"
     },
     {
-      "name": "BAR_CashRegister_Foot_N",
+      "name": "BAR_CashRegister_Drum",
       "logical_item": "BAR_CashRegister",
       "category": "bar_workflow_equipment",
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.955,
-        -2.39,
-        0.9325
+        -2.945,
+        -2.55,
+        1.195
+      ],
+      "rotation_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.29,
+        0.29,
+        0.4
+      ],
+      "world_bbox_m": [
+        -3.09,
+        -2.8,
+        -2.75,
+        -2.35,
+        1.05,
+        1.34
+      ],
+      "materials": [
+        "MAT_Prop_CastBronze_Ornate"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_Foot_NE",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.81,
+        -2.365,
+        0.935
       ],
       "rotation_deg": [
         0.0,
@@ -40599,17 +40927,17 @@
         0.0
       ],
       "dimensions_m": [
-        0.044,
-        0.044,
-        0.025
+        0.048,
+        0.048,
+        0.03
       ],
       "world_bbox_m": [
-        -2.977,
-        -2.933,
-        -2.412,
-        -2.368,
+        -2.834,
+        -2.786,
+        -2.389,
+        -2.341,
         0.92,
-        0.945
+        0.95
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -40617,15 +40945,15 @@
       "support_contract": "bar_assembly_contact"
     },
     {
-      "name": "BAR_CashRegister_Foot_S",
+      "name": "BAR_CashRegister_Foot_NW",
       "logical_item": "BAR_CashRegister",
       "category": "bar_workflow_equipment",
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.955,
-        -2.71,
-        0.9325
+        -3.1,
+        -2.365,
+        0.935
       ],
       "rotation_deg": [
         0.0,
@@ -40633,17 +40961,85 @@
         0.0
       ],
       "dimensions_m": [
-        0.044,
-        0.044,
-        0.025
+        0.048,
+        0.048,
+        0.03
       ],
       "world_bbox_m": [
-        -2.977,
-        -2.933,
-        -2.732,
-        -2.688,
+        -3.124,
+        -3.076,
+        -2.389,
+        -2.341,
         0.92,
-        0.945
+        0.95
+      ],
+      "materials": [
+        "MAT_Metal_AgedBrass"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_Foot_SE",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.81,
+        -2.735,
+        0.935
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.048,
+        0.048,
+        0.03
+      ],
+      "world_bbox_m": [
+        -2.834,
+        -2.786,
+        -2.759,
+        -2.711,
+        0.92,
+        0.95
+      ],
+      "materials": [
+        "MAT_Metal_AgedBrass"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_Foot_SW",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -3.1,
+        -2.735,
+        0.935
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.048,
+        0.048,
+        0.03
+      ],
+      "world_bbox_m": [
+        -3.124,
+        -3.076,
+        -2.759,
+        -2.711,
+        0.92,
+        0.95
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -40657,9 +41053,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.935,
+        -2.953,
         -2.55,
-        1.335
+        1.39
       ],
       "rotation_deg": [
         0.0,
@@ -40667,17 +41063,17 @@
         0.0
       ],
       "dimensions_m": [
-        0.018,
-        0.285,
-        0.105
+        0.014,
+        0.3,
+        0.1
       ],
       "world_bbox_m": [
-        -2.944,
-        -2.926,
-        -2.6925,
-        -2.4075,
-        1.2825,
-        1.3875
+        -2.96,
+        -2.946,
+        -2.7,
+        -2.4,
+        1.34,
+        1.44
       ],
       "materials": [
         "MAT_Prop_CRT_ScreenOff"
@@ -40691,9 +41087,9 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -3.01,
+        -3.02,
         -2.55,
-        1.325
+        1.39
       ],
       "rotation_deg": [
         0.0,
@@ -40701,54 +41097,870 @@
         0.0
       ],
       "dimensions_m": [
-        0.13,
-        0.34,
-        0.19
+        0.125,
+        0.38,
+        0.15
       ],
       "world_bbox_m": [
-        -3.075,
-        -2.945,
-        -2.72,
-        -2.38,
-        1.23,
-        1.42
+        -3.0825,
+        -2.9575,
+        -2.74,
+        -2.36,
+        1.315,
+        1.465
       ],
       "materials": [
-        "MAT_Prop_CastIron_OldRegister"
+        "MAT_Prop_CastBronze_Ornate"
       ],
       "support_contract": "bar_assembly_contact"
     },
     {
-      "name": "BAR_CashRegister_KeyDeck",
+      "name": "BAR_CashRegister_KeyCap_0_0",
       "logical_item": "BAR_CashRegister",
       "category": "bar_workflow_equipment",
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.93,
-        -2.55,
-        1.125
+        -2.79931,
+        -2.69,
+        1.11754
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        118.0,
         0.0
       ],
       "dimensions_m": [
-        0.27,
-        0.39,
-        0.16
+        0.019,
+        0.01852,
+        0.006
       ],
       "world_bbox_m": [
-        -3.08111,
-        -2.77889,
-        -2.745,
-        -2.355,
-        1.01279,
-        1.23721
+        -2.80642,
+        -2.7922,
+        -2.69926,
+        -2.68074,
+        1.10774,
+        1.12733
       ],
       "materials": [
-        "MAT_Prop_CastIron_OldRegister"
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_0_1",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.79931,
+        -2.62,
+        1.11754
+      ],
+      "rotation_deg": [
+        0.0,
+        118.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.80642,
+        -2.7922,
+        -2.62926,
+        -2.61074,
+        1.10774,
+        1.12733
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_0_2",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.79931,
+        -2.55,
+        1.11754
+      ],
+      "rotation_deg": [
+        0.0,
+        118.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.80642,
+        -2.7922,
+        -2.55926,
+        -2.54074,
+        1.10774,
+        1.12733
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_0_3",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.79931,
+        -2.48,
+        1.11754
+      ],
+      "rotation_deg": [
+        0.0,
+        118.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.80642,
+        -2.7922,
+        -2.48926,
+        -2.47074,
+        1.10774,
+        1.12733
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_0_4",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.79931,
+        -2.41,
+        1.11754
+      ],
+      "rotation_deg": [
+        0.0,
+        118.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.80642,
+        -2.7922,
+        -2.41926,
+        -2.40074,
+        1.10774,
+        1.12733
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_1_0",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.78203,
+        -2.69,
+        1.16919
+      ],
+      "rotation_deg": [
+        0.0,
+        99.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.78648,
+        -2.77758,
+        -2.69926,
+        -2.68074,
+        1.15934,
+        1.17904
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_1_1",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.78203,
+        -2.62,
+        1.16919
+      ],
+      "rotation_deg": [
+        0.0,
+        99.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.78648,
+        -2.77758,
+        -2.62926,
+        -2.61074,
+        1.15934,
+        1.17904
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_1_2",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.78203,
+        -2.55,
+        1.16919
+      ],
+      "rotation_deg": [
+        0.0,
+        99.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.78648,
+        -2.77758,
+        -2.55926,
+        -2.54074,
+        1.15934,
+        1.17904
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_1_3",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.78203,
+        -2.48,
+        1.16919
+      ],
+      "rotation_deg": [
+        0.0,
+        99.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.78648,
+        -2.77758,
+        -2.48926,
+        -2.47074,
+        1.15934,
+        1.17904
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_1_4",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.78203,
+        -2.41,
+        1.16919
+      ],
+      "rotation_deg": [
+        0.0,
+        99.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.78648,
+        -2.77758,
+        -2.41926,
+        -2.40074,
+        1.15934,
+        1.17904
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_2_0",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.78251,
+        -2.69,
+        1.22365
+      ],
+      "rotation_deg": [
+        0.0,
+        80.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.78711,
+        -2.7779,
+        -2.69926,
+        -2.68074,
+        1.21378,
+        1.23353
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_2_1",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.78251,
+        -2.62,
+        1.22365
+      ],
+      "rotation_deg": [
+        0.0,
+        80.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.78711,
+        -2.7779,
+        -2.62926,
+        -2.61074,
+        1.21378,
+        1.23353
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_2_2",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.78251,
+        -2.55,
+        1.22365
+      ],
+      "rotation_deg": [
+        0.0,
+        80.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.78711,
+        -2.7779,
+        -2.55926,
+        -2.54074,
+        1.21378,
+        1.23353
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_2_3",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.78251,
+        -2.48,
+        1.22365
+      ],
+      "rotation_deg": [
+        0.0,
+        80.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.78711,
+        -2.7779,
+        -2.48926,
+        -2.47074,
+        1.21378,
+        1.23353
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_2_4",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.78251,
+        -2.41,
+        1.22365
+      ],
+      "rotation_deg": [
+        0.0,
+        80.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.78711,
+        -2.7779,
+        -2.41926,
+        -2.40074,
+        1.21378,
+        1.23353
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_3_0",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.80069,
+        -2.69,
+        1.27499
+      ],
+      "rotation_deg": [
+        0.0,
+        61.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.80792,
+        -2.79346,
+        -2.69926,
+        -2.68074,
+        1.26523,
+        1.28476
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_3_1",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.80069,
+        -2.62,
+        1.27499
+      ],
+      "rotation_deg": [
+        0.0,
+        61.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.80792,
+        -2.79346,
+        -2.62926,
+        -2.61074,
+        1.26523,
+        1.28476
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_3_2",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.80069,
+        -2.55,
+        1.27499
+      ],
+      "rotation_deg": [
+        0.0,
+        61.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.80792,
+        -2.79346,
+        -2.55926,
+        -2.54074,
+        1.26523,
+        1.28476
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_3_3",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.80069,
+        -2.48,
+        1.27499
+      ],
+      "rotation_deg": [
+        0.0,
+        61.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.80792,
+        -2.79346,
+        -2.48926,
+        -2.47074,
+        1.26523,
+        1.28476
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_3_4",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.80069,
+        -2.41,
+        1.27499
+      ],
+      "rotation_deg": [
+        0.0,
+        61.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.80792,
+        -2.79346,
+        -2.41926,
+        -2.40074,
+        1.26523,
+        1.28476
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_4_0",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.83459,
+        -2.69,
+        1.31762
+      ],
+      "rotation_deg": [
+        0.0,
+        42.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.84366,
+        -2.82553,
+        -2.69926,
+        -2.68074,
+        1.30903,
+        1.32621
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_4_1",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.83459,
+        -2.62,
+        1.31762
+      ],
+      "rotation_deg": [
+        0.0,
+        42.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.84366,
+        -2.82553,
+        -2.62926,
+        -2.61074,
+        1.30903,
+        1.32621
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_4_2",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.83459,
+        -2.55,
+        1.31762
+      ],
+      "rotation_deg": [
+        0.0,
+        42.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.84366,
+        -2.82553,
+        -2.55926,
+        -2.54074,
+        1.30903,
+        1.32621
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_4_3",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.83459,
+        -2.48,
+        1.31762
+      ],
+      "rotation_deg": [
+        0.0,
+        42.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.84366,
+        -2.82553,
+        -2.48926,
+        -2.47074,
+        1.30903,
+        1.32621
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_KeyCap_4_4",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.83459,
+        -2.41,
+        1.31762
+      ],
+      "rotation_deg": [
+        0.0,
+        42.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.019,
+        0.01852,
+        0.006
+      ],
+      "world_bbox_m": [
+        -2.84366,
+        -2.82553,
+        -2.41926,
+        -2.40074,
+        1.30903,
+        1.32621
+      ],
+      "materials": [
+        "MAT_Prop_IvoryKeyCap"
       ],
       "support_contract": "bar_assembly_contact"
     },
@@ -40759,27 +41971,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.81,
-        -2.685,
-        1.165
+        -2.80991,
+        -2.69,
+        1.12317
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        118.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.82492,
-        -2.79508,
-        -2.6975,
-        -2.6725,
-        1.15114,
-        1.17886
+        -2.82508,
+        -2.79474,
+        -2.7035,
+        -2.6765,
+        1.10656,
+        1.13979
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -40793,27 +42005,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.81,
-        -2.64,
-        1.165
+        -2.80991,
+        -2.62,
+        1.12317
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        118.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.82492,
-        -2.79508,
-        -2.6525,
-        -2.6275,
-        1.15114,
-        1.17886
+        -2.82508,
+        -2.79474,
+        -2.6335,
+        -2.6065,
+        1.10656,
+        1.13979
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -40827,27 +42039,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.81,
-        -2.595,
-        1.165
+        -2.80991,
+        -2.55,
+        1.12317
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        118.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.82492,
-        -2.79508,
-        -2.6075,
-        -2.5825,
-        1.15114,
-        1.17886
+        -2.82508,
+        -2.79474,
+        -2.5635,
+        -2.5365,
+        1.10656,
+        1.13979
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -40861,27 +42073,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.81,
-        -2.55,
-        1.165
+        -2.80991,
+        -2.48,
+        1.12317
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        118.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.82492,
-        -2.79508,
-        -2.5625,
-        -2.5375,
-        1.15114,
-        1.17886
+        -2.82508,
+        -2.79474,
+        -2.4935,
+        -2.4665,
+        1.10656,
+        1.13979
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -40895,95 +42107,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.81,
-        -2.505,
-        1.165
+        -2.80991,
+        -2.41,
+        1.12317
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        118.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.82492,
-        -2.79508,
-        -2.5175,
-        -2.4925,
-        1.15114,
-        1.17886
-      ],
-      "materials": [
-        "MAT_Metal_AgedBrass"
-      ],
-      "support_contract": "bar_assembly_contact"
-    },
-    {
-      "name": "BAR_CashRegister_Key_0_5",
-      "logical_item": "BAR_CashRegister",
-      "category": "bar_workflow_equipment",
-      "collection": "04_BAR",
-      "type": "MESH",
-      "location_m": [
-        -2.81,
-        -2.46,
-        1.165
-      ],
-      "rotation_deg": [
-        0.0,
-        -15.0,
-        0.0
-      ],
-      "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
-      ],
-      "world_bbox_m": [
-        -2.82492,
-        -2.79508,
-        -2.4725,
-        -2.4475,
-        1.15114,
-        1.17886
-      ],
-      "materials": [
-        "MAT_Metal_AgedBrass"
-      ],
-      "support_contract": "bar_assembly_contact"
-    },
-    {
-      "name": "BAR_CashRegister_Key_0_6",
-      "logical_item": "BAR_CashRegister",
-      "category": "bar_workflow_equipment",
-      "collection": "04_BAR",
-      "type": "MESH",
-      "location_m": [
-        -2.81,
-        -2.415,
-        1.165
-      ],
-      "rotation_deg": [
-        0.0,
-        -15.0,
-        0.0
-      ],
-      "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
-      ],
-      "world_bbox_m": [
-        -2.82492,
-        -2.79508,
-        -2.4275,
-        -2.4025,
-        1.15114,
-        1.17886
+        -2.82508,
+        -2.79474,
+        -2.4235,
+        -2.3965,
+        1.10656,
+        1.13979
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -40997,27 +42141,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.857,
-        -2.685,
-        1.184
+        -2.79388,
+        -2.69,
+        1.17107
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        99.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.87192,
-        -2.84208,
-        -2.6975,
-        -2.6725,
-        1.17014,
-        1.19786
+        -2.80587,
+        -2.7819,
+        -2.7035,
+        -2.6765,
+        1.15617,
+        1.18596
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41031,27 +42175,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.857,
-        -2.64,
-        1.184
+        -2.79388,
+        -2.62,
+        1.17107
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        99.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.87192,
-        -2.84208,
-        -2.6525,
-        -2.6275,
-        1.17014,
-        1.19786
+        -2.80587,
+        -2.7819,
+        -2.6335,
+        -2.6065,
+        1.15617,
+        1.18596
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41065,27 +42209,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.857,
-        -2.595,
-        1.184
+        -2.79388,
+        -2.55,
+        1.17107
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        99.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.87192,
-        -2.84208,
-        -2.6075,
-        -2.5825,
-        1.17014,
-        1.19786
+        -2.80587,
+        -2.7819,
+        -2.5635,
+        -2.5365,
+        1.15617,
+        1.18596
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41099,27 +42243,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.857,
-        -2.55,
-        1.184
+        -2.79388,
+        -2.48,
+        1.17107
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        99.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.87192,
-        -2.84208,
-        -2.5625,
-        -2.5375,
-        1.17014,
-        1.19786
+        -2.80587,
+        -2.7819,
+        -2.4935,
+        -2.4665,
+        1.15617,
+        1.18596
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41133,95 +42277,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.857,
-        -2.505,
-        1.184
+        -2.79388,
+        -2.41,
+        1.17107
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        99.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.87192,
-        -2.84208,
-        -2.5175,
-        -2.4925,
-        1.17014,
-        1.19786
-      ],
-      "materials": [
-        "MAT_Metal_AgedBrass"
-      ],
-      "support_contract": "bar_assembly_contact"
-    },
-    {
-      "name": "BAR_CashRegister_Key_1_5",
-      "logical_item": "BAR_CashRegister",
-      "category": "bar_workflow_equipment",
-      "collection": "04_BAR",
-      "type": "MESH",
-      "location_m": [
-        -2.857,
-        -2.46,
-        1.184
-      ],
-      "rotation_deg": [
-        0.0,
-        -15.0,
-        0.0
-      ],
-      "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
-      ],
-      "world_bbox_m": [
-        -2.87192,
-        -2.84208,
-        -2.4725,
-        -2.4475,
-        1.17014,
-        1.19786
-      ],
-      "materials": [
-        "MAT_Metal_AgedBrass"
-      ],
-      "support_contract": "bar_assembly_contact"
-    },
-    {
-      "name": "BAR_CashRegister_Key_1_6",
-      "logical_item": "BAR_CashRegister",
-      "category": "bar_workflow_equipment",
-      "collection": "04_BAR",
-      "type": "MESH",
-      "location_m": [
-        -2.857,
-        -2.415,
-        1.184
-      ],
-      "rotation_deg": [
-        0.0,
-        -15.0,
-        0.0
-      ],
-      "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
-      ],
-      "world_bbox_m": [
-        -2.87192,
-        -2.84208,
-        -2.4275,
-        -2.4025,
-        1.17014,
-        1.19786
+        -2.80587,
+        -2.7819,
+        -2.4235,
+        -2.3965,
+        1.15617,
+        1.18596
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41235,27 +42311,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.904,
-        -2.685,
-        1.203
+        -2.79432,
+        -2.69,
+        1.22157
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        80.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.91892,
-        -2.88908,
-        -2.6975,
-        -2.6725,
-        1.18914,
-        1.21686
+        -2.80652,
+        -2.78213,
+        -2.7035,
+        -2.6765,
+        1.20654,
+        1.2366
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41269,27 +42345,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.904,
-        -2.64,
-        1.203
+        -2.79432,
+        -2.62,
+        1.22157
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        80.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.91892,
-        -2.88908,
-        -2.6525,
-        -2.6275,
-        1.18914,
-        1.21686
+        -2.80652,
+        -2.78213,
+        -2.6335,
+        -2.6065,
+        1.20654,
+        1.2366
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41303,27 +42379,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.904,
-        -2.595,
-        1.203
+        -2.79432,
+        -2.55,
+        1.22157
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        80.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.91892,
-        -2.88908,
-        -2.6075,
-        -2.5825,
-        1.18914,
-        1.21686
+        -2.80652,
+        -2.78213,
+        -2.5635,
+        -2.5365,
+        1.20654,
+        1.2366
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41337,27 +42413,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.904,
-        -2.55,
-        1.203
+        -2.79432,
+        -2.48,
+        1.22157
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        80.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.91892,
-        -2.88908,
-        -2.5625,
-        -2.5375,
-        1.18914,
-        1.21686
+        -2.80652,
+        -2.78213,
+        -2.4935,
+        -2.4665,
+        1.20654,
+        1.2366
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41371,95 +42447,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.904,
-        -2.505,
-        1.203
+        -2.79432,
+        -2.41,
+        1.22157
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        80.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.91892,
-        -2.88908,
-        -2.5175,
-        -2.4925,
-        1.18914,
-        1.21686
-      ],
-      "materials": [
-        "MAT_Metal_AgedBrass"
-      ],
-      "support_contract": "bar_assembly_contact"
-    },
-    {
-      "name": "BAR_CashRegister_Key_2_5",
-      "logical_item": "BAR_CashRegister",
-      "category": "bar_workflow_equipment",
-      "collection": "04_BAR",
-      "type": "MESH",
-      "location_m": [
-        -2.904,
-        -2.46,
-        1.203
-      ],
-      "rotation_deg": [
-        0.0,
-        -15.0,
-        0.0
-      ],
-      "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
-      ],
-      "world_bbox_m": [
-        -2.91892,
-        -2.88908,
-        -2.4725,
-        -2.4475,
-        1.18914,
-        1.21686
-      ],
-      "materials": [
-        "MAT_Metal_AgedBrass"
-      ],
-      "support_contract": "bar_assembly_contact"
-    },
-    {
-      "name": "BAR_CashRegister_Key_2_6",
-      "logical_item": "BAR_CashRegister",
-      "category": "bar_workflow_equipment",
-      "collection": "04_BAR",
-      "type": "MESH",
-      "location_m": [
-        -2.904,
-        -2.415,
-        1.203
-      ],
-      "rotation_deg": [
-        0.0,
-        -15.0,
-        0.0
-      ],
-      "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
-      ],
-      "world_bbox_m": [
-        -2.91892,
-        -2.88908,
-        -2.4275,
-        -2.4025,
-        1.18914,
-        1.21686
+        -2.80652,
+        -2.78213,
+        -2.4235,
+        -2.3965,
+        1.20654,
+        1.2366
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41473,27 +42481,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.951,
-        -2.685,
-        1.222
+        -2.81118,
+        -2.69,
+        1.26918
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        61.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.96592,
-        -2.93608,
-        -2.6975,
-        -2.6725,
-        1.20814,
-        1.23586
+        -2.82647,
+        -2.79589,
+        -2.7035,
+        -2.6765,
+        1.25252,
+        1.28583
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41507,27 +42515,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.951,
-        -2.64,
-        1.222
+        -2.81118,
+        -2.62,
+        1.26918
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        61.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.96592,
-        -2.93608,
-        -2.6525,
-        -2.6275,
-        1.20814,
-        1.23586
+        -2.82647,
+        -2.79589,
+        -2.6335,
+        -2.6065,
+        1.25252,
+        1.28583
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41541,27 +42549,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.951,
-        -2.595,
-        1.222
+        -2.81118,
+        -2.55,
+        1.26918
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        61.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.96592,
-        -2.93608,
-        -2.6075,
-        -2.5825,
-        1.20814,
-        1.23586
+        -2.82647,
+        -2.79589,
+        -2.5635,
+        -2.5365,
+        1.25252,
+        1.28583
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41575,27 +42583,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.951,
-        -2.55,
-        1.222
+        -2.81118,
+        -2.48,
+        1.26918
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        61.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.96592,
-        -2.93608,
-        -2.5625,
-        -2.5375,
-        1.20814,
-        1.23586
+        -2.82647,
+        -2.79589,
+        -2.4935,
+        -2.4665,
+        1.25252,
+        1.28583
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41609,27 +42617,27 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.951,
-        -2.505,
-        1.222
+        -2.81118,
+        -2.41,
+        1.26918
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        61.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.96592,
-        -2.93608,
-        -2.5175,
-        -2.4925,
-        1.20814,
-        1.23586
+        -2.82647,
+        -2.79589,
+        -2.4235,
+        -2.3965,
+        1.25252,
+        1.28583
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41637,33 +42645,33 @@
       "support_contract": "bar_assembly_contact"
     },
     {
-      "name": "BAR_CashRegister_Key_3_5",
+      "name": "BAR_CashRegister_Key_4_0",
       "logical_item": "BAR_CashRegister",
       "category": "bar_workflow_equipment",
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.951,
-        -2.46,
-        1.222
+        -2.84262,
+        -2.69,
+        1.3087
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        42.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.96592,
-        -2.93608,
-        -2.4725,
-        -2.4475,
-        1.20814,
-        1.23586
+        -2.85935,
+        -2.8259,
+        -2.7035,
+        -2.6765,
+        1.29224,
+        1.32517
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41671,33 +42679,33 @@
       "support_contract": "bar_assembly_contact"
     },
     {
-      "name": "BAR_CashRegister_Key_3_6",
+      "name": "BAR_CashRegister_Key_4_1",
       "logical_item": "BAR_CashRegister",
       "category": "bar_workflow_equipment",
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.951,
-        -2.415,
-        1.222
+        -2.84262,
+        -2.62,
+        1.3087
       ],
       "rotation_deg": [
         0.0,
-        -15.0,
+        42.0,
         0.0
       ],
       "dimensions_m": [
-        0.025,
-        0.025,
-        0.022
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -2.96592,
-        -2.93608,
-        -2.4275,
-        -2.4025,
-        1.20814,
-        1.23586
+        -2.85935,
+        -2.8259,
+        -2.6335,
+        -2.6065,
+        1.29224,
+        1.32517
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41705,33 +42713,33 @@
       "support_contract": "bar_assembly_contact"
     },
     {
-      "name": "BAR_CashRegister_SideTrim_N",
+      "name": "BAR_CashRegister_Key_4_2",
       "logical_item": "BAR_CashRegister",
       "category": "bar_workflow_equipment",
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.955,
-        -2.332,
-        1.065
+        -2.84262,
+        -2.55,
+        1.3087
       ],
       "rotation_deg": [
         0.0,
-        -6.0,
+        42.0,
         0.0
       ],
       "dimensions_m": [
-        0.29,
-        0.016,
-        0.035
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -3.10103,
-        -2.80896,
-        -2.34,
-        -2.324,
-        1.03244,
-        1.09756
+        -2.85935,
+        -2.8259,
+        -2.5635,
+        -2.5365,
+        1.29224,
+        1.32517
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
@@ -41739,36 +42747,138 @@
       "support_contract": "bar_assembly_contact"
     },
     {
-      "name": "BAR_CashRegister_SideTrim_S",
+      "name": "BAR_CashRegister_Key_4_3",
       "logical_item": "BAR_CashRegister",
       "category": "bar_workflow_equipment",
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -2.955,
-        -2.768,
-        1.065
+        -2.84262,
+        -2.48,
+        1.3087
       ],
       "rotation_deg": [
         0.0,
-        -6.0,
+        42.0,
         0.0
       ],
       "dimensions_m": [
-        0.29,
-        0.016,
-        0.035
+        0.027,
+        0.027,
+        0.02
       ],
       "world_bbox_m": [
-        -3.10103,
-        -2.80896,
-        -2.776,
-        -2.76,
-        1.03244,
-        1.09756
+        -2.85935,
+        -2.8259,
+        -2.4935,
+        -2.4665,
+        1.29224,
+        1.32517
       ],
       "materials": [
         "MAT_Metal_AgedBrass"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_Key_4_4",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.84262,
+        -2.41,
+        1.3087
+      ],
+      "rotation_deg": [
+        0.0,
+        42.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.027,
+        0.027,
+        0.02
+      ],
+      "world_bbox_m": [
+        -2.85935,
+        -2.8259,
+        -2.4235,
+        -2.3965,
+        1.29224,
+        1.32517
+      ],
+      "materials": [
+        "MAT_Metal_AgedBrass"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_SideCheek_N",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.96,
+        -2.338,
+        1.192
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.37,
+        0.024,
+        0.315
+      ],
+      "world_bbox_m": [
+        -3.145,
+        -2.775,
+        -2.35,
+        -2.326,
+        1.0345,
+        1.3495
+      ],
+      "materials": [
+        "MAT_Prop_CastBronze_Ornate"
+      ],
+      "support_contract": "bar_assembly_contact"
+    },
+    {
+      "name": "BAR_CashRegister_SideCheek_S",
+      "logical_item": "BAR_CashRegister",
+      "category": "bar_workflow_equipment",
+      "collection": "04_BAR",
+      "type": "MESH",
+      "location_m": [
+        -2.96,
+        -2.762,
+        1.192
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.37,
+        0.024,
+        0.315
+      ],
+      "world_bbox_m": [
+        -3.145,
+        -2.775,
+        -2.774,
+        -2.75,
+        1.0345,
+        1.3495
+      ],
+      "materials": [
+        "MAT_Prop_CastBronze_Ornate"
       ],
       "support_contract": "bar_assembly_contact"
     },
@@ -42767,7 +43877,7 @@
       "location_m": [
         -1.69,
         -2.25,
-        1.075
+        1.079
       ],
       "rotation_deg": [
         0.0,
@@ -42784,8 +43894,8 @@
         -1.61,
         -2.42,
         -2.08,
-        1.068,
-        1.082
+        1.072,
+        1.086
       ],
       "materials": [
         "MAT_Bar_Stainless_Scoured"
@@ -48069,7 +49179,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.495,
+        -1.69,
         -2.25,
         1.071
       ],
@@ -48084,8 +49194,8 @@
         0.007
       ],
       "world_bbox_m": [
-        -1.595,
-        -1.395,
+        -1.79,
+        -1.59,
         -2.5,
         -2.0,
         1.0675,
@@ -48103,7 +49213,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.567,
+        -1.762,
         -2.25,
         1.078
       ],
@@ -48118,8 +49228,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.571,
-        -1.563,
+        -1.766,
+        -1.758,
         -2.475,
         -2.025,
         1.074,
@@ -48137,7 +49247,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.519,
+        -1.714,
         -2.25,
         1.078
       ],
@@ -48152,8 +49262,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.523,
-        -1.515,
+        -1.718,
+        -1.71,
         -2.475,
         -2.025,
         1.074,
@@ -48171,7 +49281,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.471,
+        -1.666,
         -2.25,
         1.078
       ],
@@ -48186,8 +49296,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.475,
-        -1.467,
+        -1.67,
+        -1.662,
         -2.475,
         -2.025,
         1.074,
@@ -48205,7 +49315,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.423,
+        -1.618,
         -2.25,
         1.078
       ],
@@ -48220,8 +49330,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.427,
-        -1.419,
+        -1.622,
+        -1.614,
         -2.475,
         -2.025,
         1.074,
@@ -48239,7 +49349,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.495,
+        -1.69,
         -2.46,
         1.078
       ],
@@ -48254,8 +49364,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.585,
-        -1.405,
+        -1.78,
+        -1.6,
         -2.464,
         -2.456,
         1.074,
@@ -48273,7 +49383,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.495,
+        -1.69,
         -2.4075,
         1.078
       ],
@@ -48288,8 +49398,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.585,
-        -1.405,
+        -1.78,
+        -1.6,
         -2.4115,
         -2.4035,
         1.074,
@@ -48307,7 +49417,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.495,
+        -1.69,
         -2.355,
         1.078
       ],
@@ -48322,8 +49432,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.585,
-        -1.405,
+        -1.78,
+        -1.6,
         -2.359,
         -2.351,
         1.074,
@@ -48341,7 +49451,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.495,
+        -1.69,
         -2.3025,
         1.078
       ],
@@ -48356,8 +49466,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.585,
-        -1.405,
+        -1.78,
+        -1.6,
         -2.3065,
         -2.2985,
         1.074,
@@ -48375,7 +49485,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.495,
+        -1.69,
         -2.25,
         1.078
       ],
@@ -48390,8 +49500,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.585,
-        -1.405,
+        -1.78,
+        -1.6,
         -2.254,
         -2.246,
         1.074,
@@ -48409,7 +49519,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.495,
+        -1.69,
         -2.1975,
         1.078
       ],
@@ -48424,8 +49534,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.585,
-        -1.405,
+        -1.78,
+        -1.6,
         -2.2015,
         -2.1935,
         1.074,
@@ -48443,7 +49553,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.495,
+        -1.69,
         -2.145,
         1.078
       ],
@@ -48458,8 +49568,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.585,
-        -1.405,
+        -1.78,
+        -1.6,
         -2.149,
         -2.141,
         1.074,
@@ -48477,7 +49587,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.495,
+        -1.69,
         -2.0925,
         1.078
       ],
@@ -48492,8 +49602,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.585,
-        -1.405,
+        -1.78,
+        -1.6,
         -2.0965,
         -2.0885,
         1.074,
@@ -48511,7 +49621,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.495,
+        -1.69,
         -2.04,
         1.078
       ],
@@ -48526,8 +49636,8 @@
         0.008
       ],
       "world_bbox_m": [
-        -1.585,
-        -1.405,
+        -1.78,
+        -1.6,
         -2.044,
         -2.036,
         1.074,
@@ -51299,7 +52409,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.645,
+        -1.615,
         -2.37,
         1.407
       ],
@@ -51314,8 +52424,8 @@
         0.12
       ],
       "world_bbox_m": [
-        -1.66,
         -1.63,
+        -1.6,
         -2.385,
         -2.355,
         1.347,
@@ -51333,7 +52443,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.645,
+        -1.615,
         -2.29,
         1.407
       ],
@@ -51348,8 +52458,8 @@
         0.12
       ],
       "world_bbox_m": [
-        -1.66,
         -1.63,
+        -1.6,
         -2.305,
         -2.275,
         1.347,
@@ -51367,7 +52477,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.645,
+        -1.615,
         -2.21,
         1.407
       ],
@@ -51382,8 +52492,8 @@
         0.12
       ],
       "world_bbox_m": [
-        -1.66,
         -1.63,
+        -1.6,
         -2.225,
         -2.195,
         1.347,
@@ -51401,7 +52511,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.645,
+        -1.615,
         -2.13,
         1.407
       ],
@@ -51416,8 +52526,8 @@
         0.12
       ],
       "world_bbox_m": [
-        -1.66,
         -1.63,
+        -1.6,
         -2.145,
         -2.115,
         1.347,
@@ -51435,7 +52545,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.5475,
+        -1.6975,
         -2.37,
         1.277
       ],
@@ -51447,15 +52557,15 @@
       "dimensions_m": [
         0.018,
         0.018,
-        0.11236
+        0.08846
       ],
       "world_bbox_m": [
-        -1.59981,
-        -1.49519,
+        -1.7361,
+        -1.6589,
         -2.379,
         -2.361,
-        1.23939,
-        1.31461
+        1.24039,
+        1.31361
       ],
       "materials": [
         "MAT_Metal_Chrome"
@@ -51469,7 +52579,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.5475,
+        -1.6975,
         -2.29,
         1.277
       ],
@@ -51481,15 +52591,15 @@
       "dimensions_m": [
         0.018,
         0.018,
-        0.11236
+        0.08846
       ],
       "world_bbox_m": [
-        -1.59981,
-        -1.49519,
+        -1.7361,
+        -1.6589,
         -2.299,
         -2.281,
-        1.23939,
-        1.31461
+        1.24039,
+        1.31361
       ],
       "materials": [
         "MAT_Metal_Chrome"
@@ -51503,7 +52613,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.5475,
+        -1.6975,
         -2.21,
         1.277
       ],
@@ -51515,15 +52625,15 @@
       "dimensions_m": [
         0.018,
         0.018,
-        0.11236
+        0.08846
       ],
       "world_bbox_m": [
-        -1.59981,
-        -1.49519,
+        -1.7361,
+        -1.6589,
         -2.219,
         -2.201,
-        1.23939,
-        1.31461
+        1.24039,
+        1.31361
       ],
       "materials": [
         "MAT_Metal_Chrome"
@@ -51537,7 +52647,7 @@
       "collection": "04_BAR",
       "type": "MESH",
       "location_m": [
-        -1.5475,
+        -1.6975,
         -2.13,
         1.277
       ],
@@ -51549,15 +52659,15 @@
       "dimensions_m": [
         0.018,
         0.018,
-        0.11236
+        0.08846
       ],
       "world_bbox_m": [
-        -1.59981,
-        -1.49519,
+        -1.7361,
+        -1.6589,
         -2.139,
         -2.121,
-        1.23939,
-        1.31461
+        1.24039,
+        1.31361
       ],
       "materials": [
         "MAT_Metal_Chrome"
@@ -91533,6 +92643,414 @@
       "support_contract": "pool_table_assembly"
     },
     {
+      "name": "PT_CapHorn_corner_NE_10",
+      "logical_item": "PT_CapHorn_corner_NE_10",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.07074,
+        0.03447,
+        0.01
+      ],
+      "world_bbox_m": [
+        0.77252,
+        0.84326,
+        3.43706,
+        3.47152,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_CrossGrain"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_corner_NE_11",
+      "logical_item": "PT_CapHorn_corner_NE_11",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.03447,
+        0.07074,
+        0.01
+      ],
+      "world_bbox_m": [
+        0.90206,
+        0.93652,
+        3.30752,
+        3.37826,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_Clearcoat"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_corner_NW_7",
+      "logical_item": "PT_CapHorn_corner_NW_7",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.03447,
+        0.07074,
+        0.01
+      ],
+      "world_bbox_m": [
+        -0.43652,
+        -0.40206,
+        3.30752,
+        3.37826,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_Clearcoat"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_corner_NW_8",
+      "logical_item": "PT_CapHorn_corner_NW_8",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.07074,
+        0.03446,
+        0.01
+      ],
+      "world_bbox_m": [
+        -0.34326,
+        -0.27252,
+        3.43706,
+        3.47152,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_CrossGrain"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_corner_SE_16",
+      "logical_item": "PT_CapHorn_corner_SE_16",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.03447,
+        0.07074,
+        0.01
+      ],
+      "world_bbox_m": [
+        0.90206,
+        0.93652,
+        0.92174,
+        0.99248,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_Clearcoat"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_corner_SE_17",
+      "logical_item": "PT_CapHorn_corner_SE_17",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.07074,
+        0.03447,
+        0.01
+      ],
+      "world_bbox_m": [
+        0.77252,
+        0.84326,
+        0.82848,
+        0.86294,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_CrossGrain"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_corner_SW_1",
+      "logical_item": "PT_CapHorn_corner_SW_1",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.07074,
+        0.03447,
+        0.01
+      ],
+      "world_bbox_m": [
+        -0.34326,
+        -0.27252,
+        0.82848,
+        0.86294,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_CrossGrain"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_corner_SW_2",
+      "logical_item": "PT_CapHorn_corner_SW_2",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.03447,
+        0.07074,
+        0.01
+      ],
+      "world_bbox_m": [
+        -0.43652,
+        -0.40206,
+        0.92174,
+        0.99248,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_Clearcoat"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_side_E_13",
+      "logical_item": "PT_CapHorn_side_E_13",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.05219,
+        0.18077,
+        0.01
+      ],
+      "world_bbox_m": [
+        0.89285,
+        0.94504,
+        2.21191,
+        2.39268,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_Clearcoat"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_side_E_14",
+      "logical_item": "PT_CapHorn_side_E_14",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.05219,
+        0.18077,
+        0.01
+      ],
+      "world_bbox_m": [
+        0.89285,
+        0.94504,
+        1.90732,
+        2.08809,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_Clearcoat"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_side_W_4",
+      "logical_item": "PT_CapHorn_side_W_4",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.05219,
+        0.18077,
+        0.01
+      ],
+      "world_bbox_m": [
+        -0.44504,
+        -0.39285,
+        1.90732,
+        2.08809,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_Clearcoat"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
+      "name": "PT_CapHorn_side_W_5",
+      "logical_item": "PT_CapHorn_side_W_5",
+      "category": "pool_table_system",
+      "collection": "02_TABLE_VISIBLE",
+      "type": "MESH",
+      "location_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_m": [
+        0.05219,
+        0.18077,
+        0.01
+      ],
+      "world_bbox_m": [
+        -0.44504,
+        -0.39285,
+        2.21191,
+        2.39268,
+        0.7901,
+        0.8001
+      ],
+      "materials": [
+        "MAT_Table_Walnut_Clearcoat"
+      ],
+      "support_contract": "pool_table_assembly"
+    },
+    {
       "name": "PT_CentreBeam",
       "logical_item": "PT_CentreBeam",
       "category": "pool_table_system",
@@ -91890,13 +93408,13 @@
       ],
       "dimensions_m": [
         1.20526,
-        0.05275,
+        0.0508,
         0.03016
       ],
       "world_bbox_m": [
         -0.35263,
         0.85263,
-        0.82725,
+        0.8292,
         0.88,
         0.76994,
         0.8001
@@ -91925,14 +93443,14 @@
       ],
       "dimensions_m": [
         1.20526,
-        0.05275,
+        0.0508,
         0.03016
       ],
       "world_bbox_m": [
         -0.35263,
         0.85263,
         3.42,
-        3.47275,
+        3.4708,
         0.76994,
         0.8001
       ],
@@ -91959,13 +93477,13 @@
         0.0
       ],
       "dimensions_m": [
-        0.05275,
+        0.0508,
         1.18183,
         0.03016
       ],
       "world_bbox_m": [
         0.885,
-        0.93775,
+        0.9358,
         2.2058,
         3.38763,
         0.76994,
@@ -91994,13 +93512,13 @@
         0.0
       ],
       "dimensions_m": [
-        0.05275,
+        0.0508,
         1.18183,
         0.03016
       ],
       "world_bbox_m": [
         0.885,
-        0.93775,
+        0.9358,
         0.91237,
         2.0942,
         0.76994,
@@ -92029,12 +93547,12 @@
         0.0
       ],
       "dimensions_m": [
-        0.05275,
+        0.0508,
         1.18183,
         0.03016
       ],
       "world_bbox_m": [
-        -0.43775,
+        -0.4358,
         -0.385,
         2.2058,
         3.38763,
@@ -92064,12 +93582,12 @@
         0.0
       ],
       "dimensions_m": [
-        0.05275,
+        0.0508,
         1.18183,
         0.03016
       ],
       "world_bbox_m": [
-        -0.43775,
+        -0.4358,
         -0.385,
         0.91237,
         2.0942,
@@ -95771,13 +97289,13 @@
         0.0
       ],
       "dimensions_m": [
-        1.16637,
+        1.5494,
         0.0889,
         0.01
       ],
       "world_bbox_m": [
-        -0.33319,
-        0.83319,
+        -0.5247,
+        1.0247,
         0.7403,
         0.8292,
         0.7901,
@@ -95805,13 +97323,13 @@
         0.0
       ],
       "dimensions_m": [
-        1.16637,
+        1.5494,
         0.0889,
         0.01
       ],
       "world_bbox_m": [
-        -0.33319,
-        0.83319,
+        -0.5247,
+        1.0247,
         3.4708,
         3.5597,
         0.7901,
@@ -95840,14 +97358,14 @@
       ],
       "dimensions_m": [
         0.0889,
-        1.15642,
+        1.37517,
         0.01
       ],
       "world_bbox_m": [
         0.9358,
         1.0247,
-        2.21177,
-        3.36819,
+        2.18453,
+        3.5597,
         0.7901,
         0.8001
       ],
@@ -95874,14 +97392,14 @@
       ],
       "dimensions_m": [
         0.0889,
-        1.15637,
+        1.37517,
         0.01
       ],
       "world_bbox_m": [
         0.9358,
         1.0247,
-        0.93181,
-        2.08819,
+        0.7403,
+        2.11547,
         0.7901,
         0.8001
       ],
@@ -95908,14 +97426,14 @@
       ],
       "dimensions_m": [
         0.0889,
-        1.15607,
+        1.37517,
         0.01
       ],
       "world_bbox_m": [
         -0.5247,
         -0.4358,
-        2.21211,
-        3.36819,
+        2.18453,
+        3.5597,
         0.7901,
         0.8001
       ],
@@ -95942,14 +97460,14 @@
       ],
       "dimensions_m": [
         0.0889,
-        1.15637,
+        1.37517,
         0.01
       ],
       "world_bbox_m": [
         -0.5247,
         -0.4358,
-        0.93181,
-        2.08819,
+        0.7403,
+        2.11547,
         0.7901,
         0.8001
       ],

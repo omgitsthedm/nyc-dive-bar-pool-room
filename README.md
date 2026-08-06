@@ -29,8 +29,8 @@ fingerprint fails:
   items**.
 - `reports/environment_staging_audit.json`: **14/14 staging contracts pass**;
   all **321 high-risk logical items** have explicit support/placement evidence.
-- `reports/environment_lock.json`: **PASS** — 2,116 frozen environment objects,
-  80 materials, and eight image assets match the approved baseline.
+- `reports/environment_lock.json`: **PASS** — 2,143 frozen environment objects,
+  82 materials, and eight image assets match the approved baseline.
 - `reports/pool_system_lock.json`: **PASS** — 355 pool-system objects and 30
   materials match the accepted static table/ball/proxy baseline (re-banked
   2026-08-05 with the corrected pocket mouths and cap horns).
@@ -60,7 +60,7 @@ Scoped pool rebuild and saved-candidate checks:
 | Area | Status |
 |---|---|
 | Room shell | done — swept but heavily worn concrete, aged plaster, pressed tin, green wainscot, conduit, three constructed cross beams, diamond storefront, three constructed door assemblies |
-| Pool table | static construction and current visual proof pass — 284 table meshes plus one root, six crafted rail caps, 18 flush sights, complete frame/load paths, and six complete pocket drops; the separate gameplay layer leaves this accepted baseline unchanged |
+| Pool table | static construction and current visual proof pass — 296 table meshes plus one root, six crafted rail caps, twelve cap horns, 18 flush sights, complete frame/load paths, and six complete pocket drops; the separate gameplay layer leaves this accepted baseline unchanged |
 | Pool light | done — low movable three-shade green-enamel fixture, 40 in above bed / 1.778 m above floor |
 | Working bar | done — physical shallow-backbar/service-counter section, 703 mm aisle, 193 supported back-stock bottles, eight poured well bottles, ice/soda/garnish, sink, drainboard, waste, cooler, taps, mats, opener/catcher, bartender-facing register, supported display oddments, and a clean open guest top with eight physically nested whole fruits and barware bases at least 63 mm inside the guest edge |
 | Seating | done — four distinct stools, two different café tables, four chair types, two wall-adjacent face-to-face booth bays with open pool-side entry |

@@ -1,7 +1,7 @@
 {
   "summary": {
-    "render_visible_components": 2347,
-    "logical_items": 1094,
+    "render_visible_components": 2386,
+    "logical_items": 1106,
     "high_risk_logical_items": 321,
     "required_checks": 14,
     "required_failures": 0,
@@ -14,7 +14,7 @@
       "chalk_shelf_contact": 4,
       "contained_in_tip_jar": 4,
       "cue_rack_engagement": 5,
-      "deterministic_owned_assembly": 714,
+      "deterministic_owned_assembly": 726,
       "floor_contact": 12,
       "guest_surface_contact_and_footprint": 13,
       "motivated_light_or_visible_fixture_geometry": 59,
@@ -80,8 +80,8 @@
     {
       "check": "every_logical_item_is_classified_and_support_routed",
       "status": "PASS",
-      "measured": 1094,
-      "expected": 1094,
+      "measured": 1106,
+      "expected": 1106,
       "required": true
     },
     {
@@ -491,7 +491,7 @@
       "support_evidence": "deterministic_owned_assembly",
       "world_bbox_m": [
         -1.77,
-        -1.49519,
+        -1.575,
         -2.42,
         -2.08,
         1.067,
@@ -3621,17 +3621,17 @@
     {
       "logical_item": "BAR_CashRegister",
       "category": "bar_workflow_equipment",
-      "component_count": 46,
+      "component_count": 73,
       "support_contract": "bar_assembly_contact",
       "staging_status": "PASS",
       "support_evidence": "deterministic_owned_assembly",
       "world_bbox_m": [
-        -3.135,
-        -2.724,
-        -2.78,
-        -2.105,
+        -3.145,
+        -2.733,
+        -2.774,
+        -2.1895,
         0.92,
-        1.42
+        1.51
       ]
     },
     {
@@ -4842,8 +4842,8 @@
       "staging_status": "PASS",
       "support_evidence": "deterministic_owned_assembly",
       "world_bbox_m": [
-        -1.595,
-        -1.395,
+        -1.79,
+        -1.59,
         -2.5,
         -2.0,
         1.0675,
@@ -14819,6 +14819,198 @@
       ]
     },
     {
+      "logical_item": "PT_CapHorn_corner_NE_10",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        0.77252,
+        0.84326,
+        3.43706,
+        3.47152,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_NE_11",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        0.90206,
+        0.93652,
+        3.30752,
+        3.37826,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_NW_7",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        -0.43652,
+        -0.40206,
+        3.30752,
+        3.37826,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_NW_8",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        -0.34326,
+        -0.27252,
+        3.43706,
+        3.47152,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_SE_16",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        0.90206,
+        0.93652,
+        0.92174,
+        0.99248,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_SE_17",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        0.77252,
+        0.84326,
+        0.82848,
+        0.86294,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_SW_1",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        -0.34326,
+        -0.27252,
+        0.82848,
+        0.86294,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_corner_SW_2",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        -0.43652,
+        -0.40206,
+        0.92174,
+        0.99248,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_side_E_13",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        0.89285,
+        0.94504,
+        2.21191,
+        2.39268,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_side_E_14",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        0.89285,
+        0.94504,
+        1.90732,
+        2.08809,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_side_W_4",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        -0.44504,
+        -0.39285,
+        1.90732,
+        2.08809,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
+      "logical_item": "PT_CapHorn_side_W_5",
+      "category": "pool_table_system",
+      "component_count": 1,
+      "support_contract": "pool_table_assembly",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        -0.44504,
+        -0.39285,
+        2.21191,
+        2.39268,
+        0.7901,
+        0.8001
+      ]
+    },
+    {
       "logical_item": "PT_CentreBeam",
       "category": "pool_table_system",
       "component_count": 1,
@@ -14988,7 +15180,7 @@
       "world_bbox_m": [
         -0.35263,
         0.85263,
-        0.82725,
+        0.8292,
         0.88,
         0.76994,
         0.8001
@@ -15005,7 +15197,7 @@
         -0.35263,
         0.85263,
         3.42,
-        3.47275,
+        3.4708,
         0.76994,
         0.8001
       ]
@@ -15019,7 +15211,7 @@
       "support_evidence": "deterministic_owned_assembly",
       "world_bbox_m": [
         0.885,
-        0.93775,
+        0.9358,
         2.2058,
         3.38763,
         0.76994,
@@ -15035,7 +15227,7 @@
       "support_evidence": "deterministic_owned_assembly",
       "world_bbox_m": [
         0.885,
-        0.93775,
+        0.9358,
         0.91237,
         2.0942,
         0.76994,
@@ -15050,7 +15242,7 @@
       "staging_status": "PASS",
       "support_evidence": "deterministic_owned_assembly",
       "world_bbox_m": [
-        -0.43775,
+        -0.4358,
         -0.385,
         2.2058,
         3.38763,
@@ -15066,7 +15258,7 @@
       "staging_status": "PASS",
       "support_evidence": "deterministic_owned_assembly",
       "world_bbox_m": [
-        -0.43775,
+        -0.4358,
         -0.385,
         0.91237,
         2.0942,
@@ -16810,8 +17002,8 @@
       "staging_status": "PASS",
       "support_evidence": "deterministic_owned_assembly",
       "world_bbox_m": [
-        -0.33319,
-        0.83319,
+        -0.5247,
+        1.0247,
         0.7403,
         0.8292,
         0.7901,
@@ -16826,8 +17018,8 @@
       "staging_status": "PASS",
       "support_evidence": "deterministic_owned_assembly",
       "world_bbox_m": [
-        -0.33319,
-        0.83319,
+        -0.5247,
+        1.0247,
         3.4708,
         3.5597,
         0.7901,
@@ -16844,8 +17036,8 @@
       "world_bbox_m": [
         0.9358,
         1.0247,
-        2.21177,
-        3.36819,
+        2.18453,
+        3.5597,
         0.7901,
         0.8001
       ]
@@ -16860,8 +17052,8 @@
       "world_bbox_m": [
         0.9358,
         1.0247,
-        0.93181,
-        2.08819,
+        0.7403,
+        2.11547,
         0.7901,
         0.8001
       ]
@@ -16876,8 +17068,8 @@
       "world_bbox_m": [
         -0.5247,
         -0.4358,
-        2.21211,
-        3.36819,
+        2.18453,
+        3.5597,
         0.7901,
         0.8001
       ]
@@ -16892,8 +17084,8 @@
       "world_bbox_m": [
         -0.5247,
         -0.4358,
-        0.93181,
-        2.08819,
+        0.7403,
+        2.11547,
         0.7901,
         0.8001
       ]

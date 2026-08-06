@@ -20,7 +20,7 @@
     "locked_scene_state": "render engine, colour management, world"
   },
   "snapshot": {
-    "aggregate_sha256": "c025578c2a74fd0761fad9c327f201b0b78c75ef4c5ebbcedabfdd98ce292fe5",
+    "aggregate_sha256": "de99efd0b2f5caef661e66d542918f06942a20ea7330f925a615d77b778bd0be",
     "assets": {
       "assets/textures/environment/bathroom_sticker_bomb_v2.png": "679b48ddc9f7f493bc38e2fb39b0b620040b7fe79db3d5e45540127989a7d5ac",
       "assets/textures/environment/les_night_street_v2.png": "63b10cb784c64bcd00497ecf42ce7331577fec4ee4557de09c013d17b0d5a084",
@@ -88,9 +88,11 @@
       "MAT_Metal_BlackenedSteel": "5641feae74130d2583e2ef4d42cb80841dbcb17f91b4051b0426730d8d37adde",
       "MAT_Metal_Chrome": "6ab4fd716fa64915eb433b1911256351d0ba75c6253d87942ac0d6bf940a1973",
       "MAT_Prop_CRT_ScreenOff": "dd687cfe999feeec16a5554ccf8302f72220d6fbae022d08f9c9405c601d76cc",
+      "MAT_Prop_CastBronze_Ornate": "a1b1de4d699887fc0576b6ccc245aac02d38d14b55f81c9b86b27d113d278fac",
       "MAT_Prop_CastIron_OldRegister": "37f9a96fe7b0b09695aac6be6fe11ff14ecef5549664ce277794382e68832de7",
       "MAT_Prop_ExposedSeatFoam": "542d144604d6bcd538030dcee46ef396acb54f8f33bcffa8a776e1597a530720",
       "MAT_Prop_Frame_DarkWood": "05dba3a1fdd37c530ea69c7c95e7257abe01adaa7c22ea0161b776a36c582e9f",
+      "MAT_Prop_IvoryKeyCap": "e4255b12bf3ea17266c7cdef4d8197069716a4664dac305d76100dc9cc022d00",
       "MAT_Prop_NeonAmber": "eb481787d3097b46fed6454b638e61395cbba8aeba4158df8fd15c657b370119",
       "MAT_Prop_NeonBlue": "2c205a5e1b2492dc60fc96e61ff3e9825b126eda92bd0d0a28b87d2913139f60",
       "MAT_Prop_NeonGreen": "ccd1f1c760f10928d0363624ca02e08678eb7cf8402c314cde30507b99e7f821",
@@ -3391,232 +3393,367 @@
       },
       "BAR_CashRegister_Base": {
         "collection": "04_BAR",
-        "sha256": "239d913c500fab1871e1285e32c1ed639cb1cab5f86156e2b1b6b0523c55794b",
+        "sha256": "6befef654f43e160f138d116fd7720496fa13cf8abd2d66116140bdd1b39fd1e",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_Body": {
+        "collection": "04_BAR",
+        "sha256": "f58fcf3724093e43a2254e01627108a698e495c6e8d2ec1203b182045e3eb837",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_Cornice": {
+        "collection": "04_BAR",
+        "sha256": "bbd30679ef5bc6475aff6b44f436d40e7d7cc15e37d407f6c543451f070a6966",
         "type": "MESH"
       },
       "BAR_CashRegister_CrankArm": {
         "collection": "04_BAR",
-        "sha256": "187519046c46aa0466b49c827ab76bfbc582ac923e1e65b586f7963714681531",
+        "sha256": "4e9e73bcaf3a6c09204716e0541bb7c9e505211a6b484ef598d1c75d6ae6d99b",
         "type": "MESH"
       },
       "BAR_CashRegister_CrankGrip": {
         "collection": "04_BAR",
-        "sha256": "cf487b3e451120db693063be242333fd9c93a0f39c4a307fb3123c7b386dd0f7",
+        "sha256": "c3397bf139304b2f5b8f63de62d95cd6ef10c15116e45218add3789baa9a2a13",
         "type": "MESH"
       },
       "BAR_CashRegister_CrankShaft": {
         "collection": "04_BAR",
-        "sha256": "de3ce45e63257596b5dff02ff992ac6801e09ae14aa5c776b1a496814d50c284",
+        "sha256": "9961bcbb8b4fe4a8ebe7297a0051da4ba8848fd1d183f6c580e961cfc55ee250",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_CrownRidge": {
+        "collection": "04_BAR",
+        "sha256": "ce448d1624b3ef2c30c1104022e1c1a1226e8be69ec168101fcb41a51a057e38",
         "type": "MESH"
       },
       "BAR_CashRegister_DisplayCard_0": {
         "collection": "04_BAR",
-        "sha256": "4810a4e753c9b05c0e15ac2a1bee304b1a3ecf289021a52e025731662991724f",
+        "sha256": "2dc4c06e745fc9df8932354be5bc9717c197a0dfac583d4b31c0bfd8c3016311",
         "type": "MESH"
       },
       "BAR_CashRegister_DisplayCard_1": {
         "collection": "04_BAR",
-        "sha256": "6b31f06580f6c1604ae10ce30bcc81b16dbd05857a919b778dc2f0cdeb3fe351",
+        "sha256": "38930d7d80d229fdb07ddd5093f3c0e769211c8ef2682cf6726a32dead44eb66",
         "type": "MESH"
       },
       "BAR_CashRegister_DisplayCard_2": {
         "collection": "04_BAR",
-        "sha256": "0d5bb47f34d67ae2508ae07bff81264f06926f2c5bb8ba4e36be5081d08fdf8f",
+        "sha256": "412f3c8a2250840586f83f59cc615c40c63a138f5cf340741a93a1558541c915",
         "type": "MESH"
       },
       "BAR_CashRegister_DisplayCard_3": {
         "collection": "04_BAR",
-        "sha256": "f9e92a6ec45ba7d5f654cd13fabfb6064f5494e5a8245dfe31dd2f572c6f3b16",
+        "sha256": "b7c411d82fe53f212eda55a621fd895c963ef13362ec437e5ba10f1131f4d8f2",
         "type": "MESH"
       },
       "BAR_CashRegister_DisplayCard_4": {
         "collection": "04_BAR",
-        "sha256": "382ac3698138ab625b5dae59d9f0100e0a9e649b94b84845f49e2e5f2c4d3129",
+        "sha256": "6a949dc70ca26f4deedc2ef1bb903163895b235c255052af3168eecacf9d0f04",
         "type": "MESH"
       },
       "BAR_CashRegister_Drawer": {
         "collection": "04_BAR",
-        "sha256": "0f040a2a562e13b811052ccf41201b78f733ecef6a713846bedb91d3b3ed2dd0",
+        "sha256": "953f9e3ddf73976162d5307439e7c467c5766d2987428cf1d888540d37b10cbd",
         "type": "MESH"
       },
       "BAR_CashRegister_DrawerPull": {
         "collection": "04_BAR",
-        "sha256": "46299424a8dc3041a42cb45b616bbdba4262d523c1dcca52f88bb04faedc9d6e",
+        "sha256": "ce43a319e2e9a524534cf3f6860bddb9867a0eb3c81bdcaa9127891d85d2d5c2",
         "type": "MESH"
       },
-      "BAR_CashRegister_Foot_N": {
+      "BAR_CashRegister_Drum": {
         "collection": "04_BAR",
-        "sha256": "09eb91ee75b020adb027bc8f8c5ebbd440c79b588bd9194665d2180a00ac356f",
+        "sha256": "dedfe937ebca90f12ce1ad71d910eee41febe9deab778eaec2b2469c94b37b15",
         "type": "MESH"
       },
-      "BAR_CashRegister_Foot_S": {
+      "BAR_CashRegister_Foot_NE": {
         "collection": "04_BAR",
-        "sha256": "645fe27fe8812089a426310d828bf69bf0f2c2513279439a012ae995d08875f7",
+        "sha256": "3c946b6828b14b4d0445d9220c0b5377bdc2afe8b2d7acc5517532f1bb527dca",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_Foot_NW": {
+        "collection": "04_BAR",
+        "sha256": "979a48c73096ebbe0ac52c147dc9b47771928fe3594c7b4ae1894b4c5c991477",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_Foot_SE": {
+        "collection": "04_BAR",
+        "sha256": "b15d83c5c8a4be5d5fb2d4d6b034cccdd5220b1f088e95f436e9f61506c2cc0a",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_Foot_SW": {
+        "collection": "04_BAR",
+        "sha256": "c330a3b9d445feb69b4b417f67b0052acab56e7c1490c8f6a56da7c48013d37f",
         "type": "MESH"
       },
       "BAR_CashRegister_IndicatorGlass": {
         "collection": "04_BAR",
-        "sha256": "8f3897c7fb73cd28a4baa5c29615e03d7f603f45517f21b6f83fd92508f8a2f6",
+        "sha256": "012aced53cd8b2a76727526a32007c8f27531a3d35013a6248ce9eacb273624b",
         "type": "MESH"
       },
       "BAR_CashRegister_IndicatorHousing": {
         "collection": "04_BAR",
-        "sha256": "c0719baa034c0ad85a97c7a18f1b7158ed1f9a56533e3127456e441aa82706d9",
+        "sha256": "ce21c84bdc5d410646b7b77f4d2980486372c92c1924f73fef620679ef9d5fd3",
         "type": "MESH"
       },
-      "BAR_CashRegister_KeyDeck": {
+      "BAR_CashRegister_KeyCap_0_0": {
         "collection": "04_BAR",
-        "sha256": "eabb300224b18bdd478f8bcf724652ced9f9aaed16b3256cad055105f474041e",
+        "sha256": "adab1b2886e2603bff11a870b3d02160c0d718d69c8ba876576432853db2fdc8",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_0_1": {
+        "collection": "04_BAR",
+        "sha256": "7e473969693ffccfeb9ad256b546abc4691a3f0f8abeff04f7b4c23d6331a2dc",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_0_2": {
+        "collection": "04_BAR",
+        "sha256": "da4e10f00456c7fb10ed91095c7f4b8d4eaff1a1eb73d770a1c1aecbe9c55256",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_0_3": {
+        "collection": "04_BAR",
+        "sha256": "b3f0a86d0319a85d1c51fcf7468552bd0494997e9afa54fe9d6eb33484e74353",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_0_4": {
+        "collection": "04_BAR",
+        "sha256": "b8dc5a11225029c1e0e61526382edf4692caaa0800be7560148cd3054cfebb10",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_1_0": {
+        "collection": "04_BAR",
+        "sha256": "75bc4d63bb043600931f45d96a887e3bed3748349cd8edac60cbe280b35d9bca",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_1_1": {
+        "collection": "04_BAR",
+        "sha256": "e294d53d9c2ddb3b340c13f09af26d29f9df5fb61360e71c83192923c6069204",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_1_2": {
+        "collection": "04_BAR",
+        "sha256": "cd17c7211a68070d7bb03a545083f1cccc077784950525391c92002a66c54016",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_1_3": {
+        "collection": "04_BAR",
+        "sha256": "ce6596ae418f69dc951d5ba3823f499cad99e7a5dce5375b5f8ef941ea90c6c2",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_1_4": {
+        "collection": "04_BAR",
+        "sha256": "109047083b06e8d7716d458b8facf589218ad682de89e97245a6738f1504fde8",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_2_0": {
+        "collection": "04_BAR",
+        "sha256": "46db1b795cbc79b53212ac941655b478e532057a6a5b9109f250610143cf9bf9",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_2_1": {
+        "collection": "04_BAR",
+        "sha256": "51e6f8e99d5ca0c5e03bf1278371f9ef9c839345d57b72de2c06364f21ae87e6",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_2_2": {
+        "collection": "04_BAR",
+        "sha256": "c60f214f09eaa4f647ac6530e0e4bb917201665f05d26f9a18a6984d43eb92f4",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_2_3": {
+        "collection": "04_BAR",
+        "sha256": "f6c79445cc1228dc17a6df8ab5e996b60b3b75f8b35574d842e0fa424865e85a",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_2_4": {
+        "collection": "04_BAR",
+        "sha256": "508f5bf51e37255ca9bd7d5b537c965e1b99bec4a1357dc2eedc1edcc2b40791",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_3_0": {
+        "collection": "04_BAR",
+        "sha256": "fe77ab6c2dc11a297469a62cd5b6d7802fc550580a92a027fbfd78fcb0b29532",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_3_1": {
+        "collection": "04_BAR",
+        "sha256": "812211036c394d2db785fc457f2fe9ec463ea1f2bba54b25b74800a500f2c5ec",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_3_2": {
+        "collection": "04_BAR",
+        "sha256": "f21cdb97c32484d6dc252bdf7b341f21e86a8022ed5f5d2e4f52eca6419bc7d5",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_3_3": {
+        "collection": "04_BAR",
+        "sha256": "a81a2535aef7f6da610d96433dfd5b5f7bd29bce0d5f5e15b0492067d9a8d54a",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_3_4": {
+        "collection": "04_BAR",
+        "sha256": "ab27a7fab120ce5a5f0267f2a8b08e80c2ef57e06de4635537efe4c44bbfcbf9",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_4_0": {
+        "collection": "04_BAR",
+        "sha256": "5d5af431e63fabb528864088ab5bb311092c8db8e82b3963425c4a258c14ce94",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_4_1": {
+        "collection": "04_BAR",
+        "sha256": "efc1b1777206e2a35010e330171f2bea466a33c72ddbdd6d5eb234e92ef8812d",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_4_2": {
+        "collection": "04_BAR",
+        "sha256": "ce7ae3a018bf68f94cf657dd72014fdc6919b8b856fd4c28dee7338c7271ef2c",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_4_3": {
+        "collection": "04_BAR",
+        "sha256": "db59bc87f69e3eba46728cdd536c443e7cde38fda508d24d06a77dbe323dae0b",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_KeyCap_4_4": {
+        "collection": "04_BAR",
+        "sha256": "d0e44fd7cf71be9b7231ae8e47c4d0acf917bc82e354afce8c5df6ba004a3915",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_0_0": {
         "collection": "04_BAR",
-        "sha256": "c124066a93024fe00df22b791d7cb67997a973e7d0e07e6d1246c77061236341",
+        "sha256": "2dcbf6649376a6e9cdd16181c06b428eb6a4d2aa1afff933a560523c64bcb679",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_0_1": {
         "collection": "04_BAR",
-        "sha256": "fb3fe43ff836122ffb7b96abda78f0279266016e5d1c79aeaa8a30b39454d67f",
+        "sha256": "5026a390669418dfedbcf4941a7b40ed723fca5d1029de08f69506648ec85f26",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_0_2": {
         "collection": "04_BAR",
-        "sha256": "340fc0df9c4b1217f22219ea44d99bca04805c6dd4b33e2dbc257a1234ca1c29",
+        "sha256": "3dacd50b7c2e2c1ac659c862c09870ee9c38f90c169dde8d8c7dc595ea677893",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_0_3": {
         "collection": "04_BAR",
-        "sha256": "afd9363c9d5354e185592a36dfb58e280504af7d9093d2e69ee6e75acf331f0d",
+        "sha256": "4f4e96322b0c1a24cc6e518428b172f382c8d5c7a496a9acf3cc6a9db06cb62a",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_0_4": {
         "collection": "04_BAR",
-        "sha256": "e27ca14a06b58ad88d0c39c13e5448659dd063ccdd27d8f4a7f989002d32da49",
-        "type": "MESH"
-      },
-      "BAR_CashRegister_Key_0_5": {
-        "collection": "04_BAR",
-        "sha256": "eb94d0422f7b72505756dd4a7e375dd8aeb4b1c4a84a056548a9139234b12cdf",
-        "type": "MESH"
-      },
-      "BAR_CashRegister_Key_0_6": {
-        "collection": "04_BAR",
-        "sha256": "19e6cad49d10bfbe960c3276293f3cbd81954d49be15c69d7e2c4cfa2ca709dd",
+        "sha256": "4d9142ce760082dd922c4eaf4bc9e06b8c7736b74d70bac905d1a8d347fb6864",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_1_0": {
         "collection": "04_BAR",
-        "sha256": "79117ab7215f46a129306556027d18b869013d3478fb7e6f1d5ea851056bcdbf",
+        "sha256": "cd3d9abb64b57615c8256d1526285cc2ac4f9ddc1de6ac562b13e9c19bdf1816",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_1_1": {
         "collection": "04_BAR",
-        "sha256": "2b24f435caac48115f62fcfec6c0b78f8ecd77f785d33163bef30b4d38670146",
+        "sha256": "bea7d0bfb47d6d1bd02204bf90ce0ec9a124bcc856e48eba087ffa396cbc66f5",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_1_2": {
         "collection": "04_BAR",
-        "sha256": "c03eb8a680d087900fa904597658da13dac1e2442992900cec599ec70684f62b",
+        "sha256": "15d82a08be827eb244600ad2588aa13b223865d37d217a551ee408b4e4e04406",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_1_3": {
         "collection": "04_BAR",
-        "sha256": "72bf8be624422836a75ef79de1621bd3184d40c0cef1db7b97d80411c85ba1e9",
+        "sha256": "a44f860bf19d78d06570d69c7a1ea603dff2c4108594fb1c3fa28af8701f8e9b",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_1_4": {
         "collection": "04_BAR",
-        "sha256": "ce0f761f491f02c5c3dbe7df2a46c9812dd7bbdf73edc989923cf59b2a5d4e6f",
-        "type": "MESH"
-      },
-      "BAR_CashRegister_Key_1_5": {
-        "collection": "04_BAR",
-        "sha256": "fda676542390fa3195dd3d378e93b9ac92cc6493cc4104a2388d910489c9fd9c",
-        "type": "MESH"
-      },
-      "BAR_CashRegister_Key_1_6": {
-        "collection": "04_BAR",
-        "sha256": "6f36dcd7b1df5ddc3cad08b72a891b961cf5758e9047c5ef06cefa4779363096",
+        "sha256": "8fae99a7c4a4acbcc07018ff97b8447a915ac5af0db032f977703f2a81925231",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_2_0": {
         "collection": "04_BAR",
-        "sha256": "b5fbd618aae4801fc1bd484bf5901c2e940907b01bcc1677e2be065456efc651",
+        "sha256": "8368b45ba1e70a227890f81e8e4c46abbd14706e1c336fa101653f3f7b99409c",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_2_1": {
         "collection": "04_BAR",
-        "sha256": "de240f155df4dd5b16655c178ed8c3eccbf356f34e11c158518f4b3879614e3d",
+        "sha256": "6cede0d9ddb8469d1f740eb0efcc56dfc3714d8993fa5122d17ed84610ff04ae",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_2_2": {
         "collection": "04_BAR",
-        "sha256": "428964ab7f2900c8ab685816b97bde5c13065aaa0bcf1d5902412533d5cbba1a",
+        "sha256": "48215dde03e893ebb380e5db94c8ecad439c9ec7f685f9ffbee4f472ad58776d",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_2_3": {
         "collection": "04_BAR",
-        "sha256": "2070006b3523190b3655aa205054b45599a189c85f160f8f0fec8a4574a30065",
+        "sha256": "18cc28614626cbb82927b22aa6214652aa81efa4ff7ad36ae15d0b8d95c318fd",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_2_4": {
         "collection": "04_BAR",
-        "sha256": "06cf7d2d30c8b3c7f11b12a08c13285bb070657ddb27224e3f3eb86b52b5599a",
-        "type": "MESH"
-      },
-      "BAR_CashRegister_Key_2_5": {
-        "collection": "04_BAR",
-        "sha256": "d636fa2912eeeda83ed7478931e342e1eb7a4373b7532b096fe81764d4c83235",
-        "type": "MESH"
-      },
-      "BAR_CashRegister_Key_2_6": {
-        "collection": "04_BAR",
-        "sha256": "bea2454aea431dbb46ad3f26d2b1c64a30c4f622d55f7f2371fc62c7dd8a4064",
+        "sha256": "e8948604002e7501a0d904c3a0c1b7bd0407f5bc75df64c82fcdc9738e3fde49",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_3_0": {
         "collection": "04_BAR",
-        "sha256": "9ac4e1f3ad27d5c3b328162191c3a75978bf5612236fd672796024ecfa2b727b",
+        "sha256": "3b9d94d49535d829b9d7d9ff41ce1cbcdfa2ac5b45b59e61e17a1bf40f9d2a84",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_3_1": {
         "collection": "04_BAR",
-        "sha256": "0fadde2bad50c0710e5ae5157ee6650b945820c98e1d669bb23337f90770e000",
+        "sha256": "02eaef5d913b9b6981480559171c5ca51639420397f2c267e415d25d72b01f10",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_3_2": {
         "collection": "04_BAR",
-        "sha256": "31321fc4f5e7da2fff9ef59dad9af62a20c681ebbf50ec1361786d95dce2c205",
+        "sha256": "b3b9455bb6987705a5be7a2b50f413cd6ec86107846649c02530beac29467511",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_3_3": {
         "collection": "04_BAR",
-        "sha256": "34dc82865706a96ea99e6839428f488246f9ba1c240b5150db966fe294c7c881",
+        "sha256": "6106008f5e44881b5c8737c454347dffe8e5df6f42d3b241dc7e1dc3f9abd62c",
         "type": "MESH"
       },
       "BAR_CashRegister_Key_3_4": {
         "collection": "04_BAR",
-        "sha256": "791eed9f5d92dcc3e44b64f515d73636a4541ecf96b02faef3f773cfd37d22e6",
+        "sha256": "2a08994bee5ebdbab11171d474f38bdeb3342da0ec608bca37baaccf92e85a01",
         "type": "MESH"
       },
-      "BAR_CashRegister_Key_3_5": {
+      "BAR_CashRegister_Key_4_0": {
         "collection": "04_BAR",
-        "sha256": "3f515a6154d1e28221f9884f9e91087d7160eac4c0d71d28b14385108f62a25a",
+        "sha256": "347e784ad62638ac9113d1bfcca18a9158d2e715eecc6f5d1fe22c10e8752dfc",
         "type": "MESH"
       },
-      "BAR_CashRegister_Key_3_6": {
+      "BAR_CashRegister_Key_4_1": {
         "collection": "04_BAR",
-        "sha256": "7845cb317cc8e1baae7e276fab6a0eacfb87b2ee13167587ca7c7d8dca57b1ac",
+        "sha256": "92319b95009473a404d41288d9359a34f85b750f3e8c896692319820ad69da84",
         "type": "MESH"
       },
-      "BAR_CashRegister_SideTrim_N": {
+      "BAR_CashRegister_Key_4_2": {
         "collection": "04_BAR",
-        "sha256": "1f4a7f0ee80acc5febce2af102c67caeedbe77d523d9653c51317210030d8694",
+        "sha256": "3387c11c7e3fb413e825474c5d35aed536698b5e0aad52aa9a0bf114f1fbd438",
         "type": "MESH"
       },
-      "BAR_CashRegister_SideTrim_S": {
+      "BAR_CashRegister_Key_4_3": {
         "collection": "04_BAR",
-        "sha256": "e06633776c66a740953bef7e3f2f16270256799763e2abfd2c0aceacb874cc1f",
+        "sha256": "64facedf297e90a21d80d15891cd9588baa1d78d5f37678d6d1680dc94fb1642",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_Key_4_4": {
+        "collection": "04_BAR",
+        "sha256": "3839d57fa287490ebf9201bb506e146715024ab5733079fe519ce14c1b66d791",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_SideCheek_N": {
+        "collection": "04_BAR",
+        "sha256": "30318b99c9235db8391bfd0ab13a6d5f8340f24c5a33a458371d04abfb06e17f",
+        "type": "MESH"
+      },
+      "BAR_CashRegister_SideCheek_S": {
+        "collection": "04_BAR",
+        "sha256": "35a01c2740a1b8a5929f7a85d21de23dfdbd1969506ebe056f3c2f0344d66b89",
         "type": "MESH"
       },
       "BAR_Cooler": {
@@ -3766,7 +3903,7 @@
       },
       "BAR_DripTray": {
         "collection": "04_BAR",
-        "sha256": "658581ecb78e73f567bdd3726a0f638bf7a9e15d15eff0a12036c43a26be8088",
+        "sha256": "1ff4f6890c9c86a918b4545bc3be3567229059ad0f33270970468b5849267b7a",
         "type": "MESH"
       },
       "BAR_Face": {
@@ -4546,72 +4683,72 @@
       },
       "BAR_RubberMat_Tap_Base": {
         "collection": "04_BAR",
-        "sha256": "6c6082e45c7db73b6039af2389c829fbe16d6d51a76fe38f6b95404839a7da9d",
+        "sha256": "ccdbd59f68480cd1224317a25e6b2a44026a7286b0e82f38ea2ba15f5ea4074a",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibX_00": {
         "collection": "04_BAR",
-        "sha256": "b77e7d0bb65d25d772810cf916c4896a9cc17af041dc718249fa6806658d4fce",
+        "sha256": "88ccf8ca7ca0cbeb806f87616509935bc11ead1d41ecfa889c2b2d02bf5a1b1c",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibX_01": {
         "collection": "04_BAR",
-        "sha256": "3225e8e99dfaf7758d0335c08c3f1fa73ebd52cbfe638f6b122041ab4ea984ec",
+        "sha256": "069e5ac577e9e452b77d7c838a9ce0da9cfe69ccc8a2de1112426a6bd8bad51b",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibX_02": {
         "collection": "04_BAR",
-        "sha256": "815b32090e0025b19c507d84c7cae5d8ca85aa5368e1eaede370d5b5d546652c",
+        "sha256": "688adab023faec54c4b5c146154167b701a2218b5ab321bd3a4e8d0d838a82f3",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibX_03": {
         "collection": "04_BAR",
-        "sha256": "e0d9c9e1990f443317b4b2d387eece92b4276b36770bba5491d8e4f62f158ef2",
+        "sha256": "89f7cc318e4a452f985bcd2c2e11576e57b796cb5e396578f89ee46462fc60de",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibY_00": {
         "collection": "04_BAR",
-        "sha256": "849581c60dc3b48b45c83c15e704491b02194d8b06a4b5e9d1dec8576d65deb1",
+        "sha256": "d4aee6ded2f9eae984f9a93e7f2c23807b7c6446ca3ab1b58f864804b34373b6",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibY_01": {
         "collection": "04_BAR",
-        "sha256": "996c241544dd1c102b97e129d9506d4631c9c85cc0d8cc47bf261461cf5e6ccd",
+        "sha256": "eb66ecea1cd2a03a3c0a02563abd7a203089728deba899352436e11357cd0800",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibY_02": {
         "collection": "04_BAR",
-        "sha256": "b2ddbb51228b774adec4c689b13764db729fea97e6a35610d087d0f8f283ad2d",
+        "sha256": "628ebe1ad827e51051023a9cec27d500b66d5a1fd253bb61bcfb5fe2654c084d",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibY_03": {
         "collection": "04_BAR",
-        "sha256": "19828c15c01fdd84c34f7fc1c461908e2f8346c96123c7654c994fbd7027261b",
+        "sha256": "784a8a87268a4f7c0ba166d96a7b6162b65e8b1822458794558812c7a8e6fe59",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibY_04": {
         "collection": "04_BAR",
-        "sha256": "b1f0bb101a59043ce155bb2eaad42891a5111d2b1a0087df293adc65efef8157",
+        "sha256": "de2dbe17c5e263505249bd462c3ad28738a1d2a077abc71afed6f1ade34f531a",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibY_05": {
         "collection": "04_BAR",
-        "sha256": "a78018f74df5c028c2feb8ddcab0b9b5e3ca88650100be151416ed90905a23e4",
+        "sha256": "3db8c0b2b94cef1e97aca4aefe13f81d9c2b7394a5a7125e186b2c589a979e74",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibY_06": {
         "collection": "04_BAR",
-        "sha256": "97d46a0a1995fd0a29fd884c5d34d7c4e3abae8c96f16bb84ab51eca89f8a36d",
+        "sha256": "fb755ccd3c120c27f0f501d86563aa06bdf4424f2c5e0fa6f0fbe47887801f27",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibY_07": {
         "collection": "04_BAR",
-        "sha256": "a6cd19279689e5a9df88b5d8bb829c3866ce9862c2ec99c8db22a607da436282",
+        "sha256": "28e8eb10bafcc1afe55f0cec46b00054c9d576eb4bc814cc2d060ee493fa1401",
         "type": "MESH"
       },
       "BAR_RubberMat_Tap_RibY_08": {
         "collection": "04_BAR",
-        "sha256": "debede5713af9af81ac563bbfafc02a2811ce6cdac0b5fda4eb7458b4d69a37c",
+        "sha256": "ec943e196adebaa75c1386051fdab128e6f4069e41e39b0690de4c53f4ceaf7c",
         "type": "MESH"
       },
       "BAR_ServiceCounter_Middle": {
@@ -5021,42 +5158,42 @@
       },
       "BAR_TapHandle_0": {
         "collection": "04_BAR",
-        "sha256": "ba73babcafb200ba94f42a03c566c230c73016410ca8f990a38cb3195854502d",
+        "sha256": "631ec3f5516cd128237a67901eb2da55b392894636749444a5f3fdee66f6e169",
         "type": "MESH"
       },
       "BAR_TapHandle_1": {
         "collection": "04_BAR",
-        "sha256": "11c33b5a9520076f816753be447a04e38498c136ceb8f4edef1d3c1b483416b0",
+        "sha256": "6a45ce2ea4f993b64325a037406859f531089b85986908041b04a966be8379dd",
         "type": "MESH"
       },
       "BAR_TapHandle_2": {
         "collection": "04_BAR",
-        "sha256": "d2799a8be3e2ca926e0909e3addc601a635b97914eb5cf215470d5197473f58e",
+        "sha256": "c4964ebac532ac320e3778ebf9e9442559de04210f5b8c50be0f71b35c10181f",
         "type": "MESH"
       },
       "BAR_TapHandle_3": {
         "collection": "04_BAR",
-        "sha256": "77b742636b07a0b445c817148f4b8e4bb84a27b3c57e667b665d925227ad746a",
+        "sha256": "90d0293a5afd7a53d0b38234417dfcc509be7c0b0bf92c6dedb6866f65ed20a2",
         "type": "MESH"
       },
       "BAR_TapSpout_0": {
         "collection": "04_BAR",
-        "sha256": "4701efd591cf9f40e5c21a5257d77a81ae640a827246b723d8289f46b462eddc",
+        "sha256": "babd7ee635743d56fd0f54fb20c61283ba9511ca31bc722fe9ec409c08b1134a",
         "type": "MESH"
       },
       "BAR_TapSpout_1": {
         "collection": "04_BAR",
-        "sha256": "0db27d3d72587d525d42461b97dcb53f8ea51e3eae2bbf80acd92589ca1be92b",
+        "sha256": "985823d9469c38e1d1a1e863b3057cd55d50e4a63a731afae6fc2ac4b7521c2d",
         "type": "MESH"
       },
       "BAR_TapSpout_2": {
         "collection": "04_BAR",
-        "sha256": "a749cfeb15a6bb0e5284d0c0f98aa7fb560cf4dd0390d7c33c87ebb904812d74",
+        "sha256": "6e9ffd1f5b9a48ee330f7c73ec4760fe7b2828bb87f6e4d1b0b18057b060a2ea",
         "type": "MESH"
       },
       "BAR_TapSpout_3": {
         "collection": "04_BAR",
-        "sha256": "d8d6e1954ff1b9ca45f0f27e79c91d824558e8c500207f14b659ccea1733a48e",
+        "sha256": "5865238ba79cc2a8b68c276394c48adb93523ff8b2fb81ba25fd68411492998a",
         "type": "MESH"
       },
       "BAR_TapTower_Column": {
@@ -10699,10 +10836,10 @@
   },
   "status": "LOCKED_BASELINE",
   "summary": {
-    "aggregate_sha256": "c025578c2a74fd0761fad9c327f201b0b78c75ef4c5ebbcedabfdd98ce292fe5",
+    "aggregate_sha256": "de99efd0b2f5caef661e66d542918f06942a20ea7330f925a615d77b778bd0be",
     "asset_count": 8,
-    "material_count": 80,
-    "object_count": 2116
+    "material_count": 82,
+    "object_count": 2143
   },
   "version": 1
 }
