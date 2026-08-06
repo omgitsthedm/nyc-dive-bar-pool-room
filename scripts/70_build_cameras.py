@@ -52,6 +52,15 @@ SPEC = [
      (-2.68, 2.48, 0.86), 5.6),
     ("CAM_Audit_Lighting_35mm", 35.0, (1.62, 0.38, 1.42),
      (0.18, 2.08, 2.17), 5.6),
+    # Register bay proof: the machine stands 0.590 m from paw feet (0.920) to
+    # crown ridge (1.510). A 50 mm from 1.02 m up the aisle only covers 0.412 m
+    # vertically, so it cannot show the whole machine at once; 35 mm from
+    # 1.574 m obliquely down the bartender aisle covers 0.910 m and leaves
+    # 0.160 m of clear air above the crown. Oblique also reads the drum face,
+    # the side cheek and the split shelf runs in a single frame.
+    ("CAM_Audit_Register_35mm", 35.0,
+     (C.DD_BACKBAR_X + 1.15, C.DD_BAR_CENTRE_Y - 1.25, 1.32),
+     (C.DD_BACKBAR_X + 0.20, C.DD_BAR_CENTRE_Y, 1.215), 4.5),
     # Deep-patina proof cameras. These are deliberately close enough that a
     # clean procedural surface, floating paper or egg-like fruit cannot hide.
     ("CAM_Audit_BoothPatina_60mm", 60.0, (-0.92, 0.82, 1.22),

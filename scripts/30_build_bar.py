@@ -217,14 +217,17 @@ def _accumulated_junk(mats, bx):
     # Dust lips sit visibly behind bottle feet; the lowest run stops at the
     # register opening instead of passing through the machine.
     for shelf in range(C.DD_BAR_BOTTLE_SHELVES):
-        if shelf == 0:
+        # Rows 0 and 1 stop at the register opening; their shelves are split
+        # around the machine, so a full-width dust lip would float in the bay.
+        if shelf <= 1:
             gap = 0.82
             span = (C.BAR_LEN + 0.04 - gap) / 2.0
             for side in (-1, 1):
                 sy = BAR_Y + side * (gap / 2.0 + span / 2.0)
                 L.box("BAR_BackShelfDust_%d_%s" %
                       (shelf, "S" if side < 0 else "N"),
-                      (0.22, span, 0.003), (bx + 0.14, sy, 1.196), B,
+                      (0.22, span, 0.003),
+                      (bx + 0.14, sy, 1.196 + shelf * 0.34), B,
                       mats["dust"])
         else:
             L.box("BAR_BackShelfDust_%d" % shelf,
@@ -855,7 +858,11 @@ def build(mats):
     register_gap = 0.82
     for i in range(3):
         shelf_z = 1.18 + i * 0.34
-        if i == 0:
+        # Rows 0 and 1 both split around the register: the machine's crown
+        # ridge tops at 1.510 and row 1's lip spans 1.4725-1.5275, so an
+        # unsplit row 1 runs straight through the indicator head. Row 2
+        # (1.86) clears it and stays full width. The register never moves.
+        if i <= 1:
             span = (ln + 0.1 - register_gap) / 2.0
             for side in (-1, 1):
                 sy = BAR_Y + side * (register_gap / 2.0 + span / 2.0)
@@ -888,10 +895,16 @@ def build(mats):
         for depth in range(C.DD_BAR_BOTTLE_ROWS):
             z = 1.18 + shelf * 0.34 + 0.013
             row_x = bx + 0.10 + depth * 0.095
-            y = BAR_Y - ln / 2 + 0.12 + rnd.uniform(0.0, 0.07)
+            # Runs reach the real shelf ends. The register bay costs rows 0
+            # and 1 a 0.82 m stretch each, and a bartender restocks that
+            # liquor onto the shelf that is left rather than losing it, so
+            # the stock crowds out to the shelf edge instead of stopping
+            # 0.17 m short. Widest bottle radius is 0.039 and the shelf half
+            # width is 1.95, so a centre at 1.89 still sits 0.021 m inboard.
+            y = BAR_Y - ln / 2 + 0.01 + rnd.uniform(0.0, 0.05)
             index = 0
-            while y < BAR_Y + ln / 2 - 0.10:
-                if shelf == 0 and abs(y - BAR_Y) < register_gap * 0.52:
+            while y < BAR_Y + ln / 2 - 0.01:
+                if shelf <= 1 and abs(y - BAR_Y) < register_gap * 0.52:
                     y = BAR_Y + register_gap * 0.52
                     continue
                 family = families[rnd.randrange(len(families))]
@@ -899,7 +912,7 @@ def build(mats):
                 if family in ("squat_liqueur", "bell_decanter"):
                     h *= 0.83
                 r = rnd.uniform(0.026, 0.039)
-                if shelf == 0:
+                if shelf <= 1:
                     south_end = BAR_Y - register_gap / 2.0
                     north_start = BAR_Y + register_gap / 2.0
                     # Reserve the complete bottle base, not merely its centre,
@@ -911,8 +924,8 @@ def build(mats):
                 _stock_bottle("BAR_Bottle_" + token, family, row_x, y, z,
                               h, r, yaw, mats, rnd)
                 # Occasional deliberate gap where a regular's bottle lived.
-                y += r * 2.0 + rnd.uniform(0.018, 0.044)
-                if rnd.random() < 0.055:
+                y += r * 2.0 + rnd.uniform(0.014, 0.038)
+                if rnd.random() < 0.030:
                     y += rnd.uniform(0.05, 0.11)
                 index += 1
 

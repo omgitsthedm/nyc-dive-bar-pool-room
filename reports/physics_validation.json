@@ -21,7 +21,7 @@
     "velocity_tolerance_mps": 1e-06
   },
   "fixture_contract_sha256": "c841f21aa69e3cb59ce3b3f74d8408e0a9f9683674a4a940db5cadf395f0953f",
-  "generated_utc": "2026-08-06T05:00:34.314690+00:00",
+  "generated_utc": "2026-08-06T11:35:54.793754+00:00",
   "parameters": {
     "ball": {
       "R": 0.028575,

@@ -901,7 +901,7 @@
     },
     {
       "check": "bar_stock_bottle_density",
-      "measured": 193,
+      "measured": 205,
       "expected": ">=120",
       "unit": "count",
       "required": true,

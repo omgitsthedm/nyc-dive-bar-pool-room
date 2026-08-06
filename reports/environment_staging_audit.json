@@ -1,8 +1,8 @@
 {
   "summary": {
-    "render_visible_components": 2386,
-    "logical_items": 1106,
-    "high_risk_logical_items": 321,
+    "render_visible_components": 2466,
+    "logical_items": 1121,
+    "high_risk_logical_items": 333,
     "required_checks": 14,
     "required_failures": 0,
     "high_risk_item_failures": 0,
@@ -14,14 +14,14 @@
       "chalk_shelf_contact": 4,
       "contained_in_tip_jar": 4,
       "cue_rack_engagement": 5,
-      "deterministic_owned_assembly": 726,
+      "deterministic_owned_assembly": 729,
       "floor_contact": 12,
       "guest_surface_contact_and_footprint": 13,
       "motivated_light_or_visible_fixture_geometry": 59,
       "napkin_stack_contact": 7,
       "nested_fruit_contact": 3,
       "opening_plane_and_floor_contact": 3,
-      "recorded_shelf_contact": 201,
+      "recorded_shelf_contact": 213,
       "stem_engages_fruit": 8,
       "table_finish_engagement": 8,
       "wall_or_casing_contact": 15,
@@ -80,21 +80,21 @@
     {
       "check": "every_logical_item_is_classified_and_support_routed",
       "status": "PASS",
-      "measured": 1106,
-      "expected": 1106,
+      "measured": 1121,
+      "expected": 1121,
       "required": true
     },
     {
       "check": "every_high_risk_logical_item_has_physical_staging_evidence",
       "status": "PASS",
       "measured": {
-        "passed": 321,
-        "total": 321,
+        "passed": 333,
+        "total": 333,
         "failures": []
       },
       "expected": {
-        "passed": 321,
-        "total": 321,
+        "passed": 333,
+        "total": 333,
         "failures": []
       },
       "required": true
@@ -124,8 +124,8 @@
       "check": "every_stock_bottle_root_meets_recorded_support",
       "status": "PASS",
       "measured": {
-        "supported": 201,
-        "total": 201
+        "supported": 213,
+        "total": 213
       },
       "expected": {
         "supported": "all",
@@ -137,13 +137,13 @@
       "check": "every_bottle_footprint_fits_its_shelf_or_speed_rail",
       "status": "PASS",
       "measured": {
-        "fitted": 201,
-        "total": 201,
+        "fitted": 213,
+        "total": 213,
         "failures": []
       },
       "expected": {
-        "fitted": 201,
-        "total": 201,
+        "fitted": 213,
+        "total": 213,
         "failures": []
       },
       "required": true
@@ -152,7 +152,7 @@
       "check": "separate_bottle_roots_do_not_interpenetrate",
       "status": "PASS",
       "measured": {
-        "minimum_clearance_m": 0.01086,
+        "minimum_clearance_m": 0.00301,
         "overlaps": []
       },
       "expected": {
@@ -323,7 +323,23 @@
       ]
     },
     {
-      "logical_item": "BAR_BackShelfDust_1",
+      "logical_item": "BAR_BackShelfDust_1_N",
+      "category": "bar_fixture_or_stock",
+      "component_count": 1,
+      "support_contract": "bar_assembly_contact",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        -3.125,
+        -2.905,
+        -2.14,
+        -0.63,
+        1.5345,
+        1.5375
+      ]
+    },
+    {
+      "logical_item": "BAR_BackShelfDust_1_S",
       "category": "bar_fixture_or_stock",
       "component_count": 1,
       "support_contract": "bar_assembly_contact",
@@ -333,7 +349,7 @@
         -3.125,
         -2.905,
         -4.47,
-        -0.63,
+        -2.96,
         1.5345,
         1.5375
       ]
@@ -387,7 +403,23 @@
       ]
     },
     {
-      "logical_item": "BAR_BackShelfLip_1",
+      "logical_item": "BAR_BackShelfLip_1_N",
+      "category": "bar_fixture_or_stock",
+      "component_count": 1,
+      "support_contract": "bar_assembly_contact",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        -2.9225,
+        -2.8675,
+        -2.16,
+        -0.58,
+        1.4725,
+        1.5275
+      ]
+    },
+    {
+      "logical_item": "BAR_BackShelfLip_1_S",
       "category": "bar_fixture_or_stock",
       "component_count": 1,
       "support_contract": "bar_assembly_contact",
@@ -397,7 +429,7 @@
         -2.9225,
         -2.8675,
         -4.52,
-        -0.58,
+        -2.94,
         1.4725,
         1.5275
       ]
@@ -451,7 +483,23 @@
       ]
     },
     {
-      "logical_item": "BAR_BackShelf_1",
+      "logical_item": "BAR_BackShelf_1_N",
+      "category": "bar_fixture_or_stock",
+      "component_count": 1,
+      "support_contract": "bar_assembly_contact",
+      "staging_status": "PASS",
+      "support_evidence": "deterministic_owned_assembly",
+      "world_bbox_m": [
+        -3.135,
+        -2.895,
+        -2.14,
+        -0.6,
+        1.507,
+        1.533
+      ]
+    },
+    {
+      "logical_item": "BAR_BackShelf_1_S",
       "category": "bar_fixture_or_stock",
       "component_count": 1,
       "support_contract": "bar_assembly_contact",
@@ -461,7 +509,7 @@
         -3.135,
         -2.895,
         -4.5,
-        -0.6,
+        -2.96,
         1.507,
         1.533
       ]
@@ -524,8 +572,8 @@
       "world_bbox_m": [
         -3.08163,
         -3.02837,
-        -4.33396,
-        -4.2807,
+        -4.45044,
+        -4.39718,
         1.193,
         1.45148
       ]
@@ -533,33 +581,33 @@
     {
       "logical_item": "BAR_Bottle_0_0_001",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08816,
-        -3.01066,
-        -4.18324,
-        -4.1137,
+        -3.08413,
+        -3.02587,
+        -4.3735,
+        -4.31525,
         1.193,
-        1.43607
+        1.41186
       ]
     },
     {
       "logical_item": "BAR_Bottle_0_0_002",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08803,
-        -3.01571,
-        -3.96868,
-        -3.90262,
+        -3.08616,
+        -3.02384,
+        -4.29792,
+        -4.2356,
         1.193,
-        1.45391
+        1.46971
       ]
     },
     {
@@ -570,76 +618,76 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08791,
-        -3.01278,
-        -3.88287,
-        -3.81704,
+        -3.09161,
+        -3.00821,
+        -4.217,
+        -4.14378,
         1.193,
-        1.46164
+        1.40275
       ]
     },
     {
       "logical_item": "BAR_Bottle_0_0_004",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08474,
-        -3.01455,
-        -3.78094,
-        -3.71767,
-        1.193,
-        1.48494
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_0_0_005",
       "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.0766,
-        -3.01756,
-        -3.69763,
-        -3.64575,
+        -3.07617,
+        -3.01566,
+        -4.10807,
+        -4.05443,
         1.193,
-        1.49955
+        1.44341
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_0_005",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08254,
+        -3.02126,
+        -4.01932,
+        -3.96425,
+        1.193,
+        1.4585
       ]
     },
     {
       "logical_item": "BAR_Bottle_0_0_006",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09391,
-        -3.00512,
-        -3.63075,
-        -3.55279,
+        -3.08657,
+        -3.01327,
+        -3.93621,
+        -3.8672,
         1.193,
-        1.47671
+        1.44702
       ]
     },
     {
       "logical_item": "BAR_Bottle_0_0_007",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08422,
-        -3.01901,
-        -3.51241,
-        -3.45397,
+        -3.08381,
+        -3.01025,
+        -3.83995,
+        -3.77456,
         1.193,
-        1.42493
+        1.45656
       ]
     },
     {
@@ -650,12 +698,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08595,
-        -3.01548,
-        -3.43046,
-        -3.36856,
+        -3.08745,
+        -3.01259,
+        -3.75218,
+        -3.68707,
         1.193,
-        1.48027
+        1.45325
       ]
     },
     {
@@ -666,12 +714,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08514,
-        -3.0156,
-        -3.34965,
-        -3.28937,
+        -3.08329,
+        -3.0187,
+        -3.66029,
+        -3.60371,
         1.193,
-        1.47298
+        1.42709
       ]
     },
     {
@@ -682,28 +730,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08235,
-        -3.02108,
-        -3.25088,
-        -3.19619,
+        -3.0877,
+        -3.01513,
+        -3.57949,
+        -3.51408,
         1.193,
-        1.41027
+        1.48105
       ]
     },
     {
       "logical_item": "BAR_Bottle_0_0_011",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08191,
-        -3.01996,
-        -3.16302,
-        -3.10919,
+        -3.08181,
+        -3.02819,
+        -3.48464,
+        -3.43102,
         1.193,
-        1.47337
+        1.4298
       ]
     },
     {
@@ -714,12 +762,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08287,
-        -3.01958,
-        -3.06633,
-        -3.01058,
+        -3.08232,
+        -3.02079,
+        -3.40311,
+        -3.34847,
         1.193,
-        1.40303
+        1.3897
       ]
     },
     {
@@ -730,12 +778,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08488,
-        -3.01827,
-        -2.134,
-        -2.07425,
+        -3.08706,
+        -3.01767,
+        -3.32783,
+        -3.26372,
         1.193,
-        1.48781
+        1.45958
       ]
     },
     {
@@ -746,12 +794,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09125,
-        -3.01004,
-        -2.04237,
-        -1.96987,
+        -3.08806,
+        -3.0108,
+        -3.24915,
+        -3.17967,
         1.193,
-        1.47332
+        1.42666
       ]
     },
     {
@@ -762,12 +810,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08887,
-        -3.01382,
-        -1.88197,
-        -1.81424,
+        -3.08529,
+        -3.01648,
+        -3.15436,
+        -3.09379,
         1.193,
-        1.43136
+        1.44181
       ]
     },
     {
@@ -778,12 +826,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08723,
-        -3.01519,
-        -1.78929,
-        -1.72482,
+        -3.08887,
+        -3.01382,
+        -2.134,
+        -2.06627,
         1.193,
-        1.44691
+        1.43136
       ]
     },
     {
@@ -794,12 +842,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.0933,
-        -3.00827,
-        -1.70825,
-        -1.63165,
+        -3.08723,
+        -3.01519,
+        -2.04573,
+        -1.98126,
         1.193,
-        1.42067
+        1.44691
       ]
     },
     {
@@ -810,16 +858,32 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
+        -3.0933,
+        -3.00827,
+        -1.96904,
+        -1.89244,
+        1.193,
+        1.42067
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_0_019",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
         -3.08875,
         -3.01575,
-        -1.58557,
-        -1.51807,
+        -1.85217,
+        -1.78468,
         1.193,
         1.47316
       ]
     },
     {
-      "logical_item": "BAR_Bottle_0_0_019",
+      "logical_item": "BAR_Bottle_0_0_020",
       "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
@@ -828,14 +892,14 @@
       "world_bbox_m": [
         -3.08684,
         -3.00718,
-        -1.48408,
-        -1.41149,
+        -1.75618,
+        -1.68359,
         1.193,
         1.43148
       ]
     },
     {
-      "logical_item": "BAR_Bottle_0_0_020",
+      "logical_item": "BAR_Bottle_0_0_021",
       "category": "bottle_stock",
       "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
@@ -844,14 +908,14 @@
       "world_bbox_m": [
         -3.0916,
         -3.0184,
-        -1.36705,
-        -1.29386,
+        -1.64498,
+        -1.57179,
         1.193,
         1.43214
       ]
     },
     {
-      "logical_item": "BAR_Bottle_0_0_021",
+      "logical_item": "BAR_Bottle_0_0_022",
       "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
@@ -860,14 +924,14 @@
       "world_bbox_m": [
         -3.07515,
         -3.02123,
-        -1.24943,
-        -1.20256,
+        -1.53238,
+        -1.4855,
         1.193,
         1.43031
       ]
     },
     {
-      "logical_item": "BAR_Bottle_0_0_022",
+      "logical_item": "BAR_Bottle_0_0_023",
       "category": "bottle_stock",
       "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
@@ -876,14 +940,14 @@
       "world_bbox_m": [
         -3.08349,
         -3.01623,
-        -1.17501,
-        -1.11486,
+        -1.46292,
+        -1.40277,
         1.193,
         1.38187
       ]
     },
     {
-      "logical_item": "BAR_Bottle_0_0_023",
+      "logical_item": "BAR_Bottle_0_0_024",
       "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
@@ -892,14 +956,14 @@
       "world_bbox_m": [
         -3.08691,
         -3.01258,
-        -1.09004,
-        -1.02042,
+        -1.38296,
+        -1.31334,
         1.193,
         1.43972
       ]
     },
     {
-      "logical_item": "BAR_Bottle_0_0_024",
+      "logical_item": "BAR_Bottle_0_0_025",
       "category": "bottle_stock",
       "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
@@ -908,14 +972,14 @@
       "world_bbox_m": [
         -3.0861,
         -3.0239,
-        -0.97859,
-        -0.91639,
+        -1.2774,
+        -1.2152,
         1.193,
         1.45366
       ]
     },
     {
-      "logical_item": "BAR_Bottle_0_0_025",
+      "logical_item": "BAR_Bottle_0_0_026",
       "category": "bottle_stock",
       "component_count": 4,
       "support_contract": "shelf_or_speed_rail_contact",
@@ -924,58 +988,122 @@
       "world_bbox_m": [
         -3.07966,
         -3.03034,
-        -0.87984,
-        -0.81993,
+        -1.18399,
+        -1.12408,
         1.193,
         1.42744
       ]
     },
     {
-      "logical_item": "BAR_Bottle_0_1_000",
+      "logical_item": "BAR_Bottle_0_0_027",
       "category": "bottle_stock",
       "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99468,
-        -2.91664,
-        -4.35809,
-        -4.28873,
+        -3.08733,
+        -3.01275,
+        -1.09052,
+        -1.02488,
         1.193,
-        1.39066
+        1.45183
       ]
     },
     {
-      "logical_item": "BAR_Bottle_0_1_001",
+      "logical_item": "BAR_Bottle_0_0_028",
       "category": "bottle_stock",
       "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.991,
-        -2.929,
-        -4.26654,
-        -4.20454,
+        -3.086,
+        -3.024,
+        -0.90994,
+        -0.84795,
         1.193,
         1.43551
       ]
     },
     {
-      "logical_item": "BAR_Bottle_0_1_002",
+      "logical_item": "BAR_Bottle_0_0_029",
       "category": "bottle_stock",
       "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98954,
-        -2.93046,
-        -4.15947,
-        -4.1004,
+        -3.08454,
+        -3.02547,
+        -0.80884,
+        -0.74977,
         1.193,
         1.42041
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_0_030",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.0745,
+        -3.01819,
+        -0.72091,
+        -0.6713,
+        1.193,
+        1.5066
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_000",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98585,
+        -2.91699,
+        -4.43901,
+        -4.37802,
+        1.193,
+        1.43806
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_001",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.9986,
+        -2.91194,
+        -4.36196,
+        -4.28476,
+        1.193,
+        1.50581
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_002",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98648,
+        -2.92348,
+        -4.25799,
+        -4.20141,
+        1.193,
+        1.51145
       ]
     },
     {
@@ -986,44 +1114,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9795,
-        -2.92319,
-        -4.06669,
-        -4.01708,
+        -2.98767,
+        -2.9127,
+        -4.18382,
+        -4.11731,
         1.193,
-        1.5066
+        1.50087
       ]
     },
     {
       "logical_item": "BAR_Bottle_0_1_004",
       "category": "bottle_stock",
-      "component_count": 5,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98508,
-        -2.9241,
-        -3.98785,
-        -3.93105,
+        -2.99413,
+        -2.92587,
+        -4.08512,
+        -4.01686,
         1.193,
-        1.42086
+        1.41343
       ]
     },
     {
       "logical_item": "BAR_Bottle_0_1_005",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 4,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9982,
-        -2.9111,
-        -3.91391,
-        -3.83747,
+        -2.99073,
+        -2.92927,
+        -3.98276,
+        -3.91432,
         1.193,
-        1.43604
+        1.50909
       ]
     },
     {
@@ -1034,12 +1162,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99893,
-        -2.90983,
-        -3.80819,
-        -3.72939,
+        -2.99311,
+        -2.91871,
+        -3.88938,
+        -3.82316,
         1.193,
-        1.49237
+        1.50926
       ]
     },
     {
@@ -1050,140 +1178,140 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99755,
-        -2.91047,
-        -3.68872,
-        -3.61022,
+        -2.98717,
+        -2.92663,
+        -3.79726,
+        -3.74293,
         1.193,
-        1.42246
+        1.43842
       ]
     },
     {
       "logical_item": "BAR_Bottle_0_1_008",
-      "category": "bottle_stock",
-      "component_count": 2,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.98619,
-        -2.93381,
-        -3.57372,
-        -3.52135,
-        1.193,
-        1.4957
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_0_1_009",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.98967,
-        -2.92258,
-        -3.48954,
-        -3.43021,
-        1.193,
-        1.43281
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_0_1_010",
-      "category": "bottle_stock",
-      "component_count": 2,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.99002,
-        -2.92998,
-        -3.38696,
-        -3.32691,
-        1.193,
-        1.50857
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_0_1_011",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.98606,
-        -2.9264,
-        -3.2977,
-        -3.24557,
-        1.193,
-        1.46247
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_0_1_012",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.99531,
-        -2.91497,
-        -3.21192,
-        -3.1413,
-        1.193,
-        1.47775
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_0_1_013",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.99554,
-        -2.91435,
-        -3.10209,
-        -3.03101,
-        1.193,
-        1.42922
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_0_1_014",
-      "category": "bottle_stock",
-      "component_count": 4,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.98861,
-        -2.93139,
-        -2.13738,
-        -2.07641,
-        1.193,
-        1.47629
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_0_1_015",
       "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99121,
-        -2.91841,
-        -2.04731,
-        -1.97859,
+        -2.98194,
+        -2.92176,
+        -3.72456,
+        -3.67151,
         1.193,
-        1.41388
+        1.49991
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_009",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98835,
+        -2.91284,
+        -3.64028,
+        -3.57325,
+        1.193,
+        1.46255
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_010",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.99428,
+        -2.91493,
+        -3.53483,
+        -3.46443,
+        1.193,
+        1.41619
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_011",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.99887,
+        -2.91256,
+        -3.45964,
+        -3.37618,
+        1.193,
+        1.50525
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_012",
+      "category": "bottle_stock",
+      "component_count": 2,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.99097,
+        -2.92903,
+        -3.35461,
+        -3.29267,
+        1.193,
+        1.41815
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_013",
+      "category": "bottle_stock",
+      "component_count": 2,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.9893,
+        -2.9307,
+        -3.26181,
+        -3.2032,
+        1.193,
+        1.38939
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_014",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98257,
+        -2.92603,
+        -3.17446,
+        -3.12218,
+        1.193,
+        1.42195
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_015",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98699,
+        -2.9279,
+        -3.08018,
+        -3.02619,
+        1.193,
+        1.44096
       ]
     },
     {
@@ -1194,28 +1322,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.997,
-        -2.91323,
-        -1.96441,
-        -1.89042,
+        -2.99666,
+        -2.91816,
+        -2.134,
+        -2.06067,
         1.193,
-        1.49292
+        1.42526
       ]
     },
     {
       "logical_item": "BAR_Bottle_0_1_017",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98792,
-        -2.92408,
-        -1.76789,
-        -1.71206,
+        -2.99141,
+        -2.92859,
+        -2.02962,
+        -1.9668,
         1.193,
-        1.41975
+        1.48472
       ]
     },
     {
@@ -1226,12 +1354,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99271,
-        -2.92171,
-        -1.69627,
-        -1.63084,
+        -2.98854,
+        -2.92082,
+        -1.93609,
+        -1.87483,
         1.193,
-        1.40129
+        1.50599
       ]
     },
     {
@@ -1242,12 +1370,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99184,
-        -2.92031,
-        -1.60444,
-        -1.54076,
+        -2.98667,
+        -2.92627,
+        -1.84868,
+        -1.79534,
         1.193,
-        1.4575
+        1.44006
       ]
     },
     {
@@ -1258,12 +1386,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99439,
-        -2.91434,
-        -1.51978,
-        -1.44335,
+        -2.98529,
+        -2.9189,
+        -1.76051,
+        -1.69999,
         1.193,
-        1.46287
+        1.48817
       ]
     },
     {
@@ -1274,12 +1402,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99011,
-        -2.92013,
-        -1.40807,
-        -1.34702,
+        -2.99315,
+        -2.91665,
+        -1.67371,
+        -1.6067,
         1.193,
-        1.4057
+        1.50319
       ]
     },
     {
@@ -1290,12 +1418,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99898,
-        -2.91436,
-        -1.31949,
-        -1.24152,
+        -2.99436,
+        -2.91445,
+        -1.58933,
+        -1.51797,
         1.193,
-        1.45129
+        1.38709
       ]
     },
     {
@@ -1306,12 +1434,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9901,
-        -2.92087,
-        -1.19813,
-        -1.13793,
+        -2.99323,
+        -2.91873,
+        -1.49948,
+        -1.43303,
         1.193,
-        1.45562
+        1.42947
       ]
     },
     {
@@ -1322,12 +1450,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9878,
-        -2.9233,
-        -1.00498,
-        -0.94937,
+        -2.99248,
+        -2.92115,
+        -1.4057,
+        -1.34075,
         1.193,
-        1.42819
+        1.48721
       ]
     },
     {
@@ -1338,92 +1466,188 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9891,
-        -2.92566,
-        -0.91346,
-        -0.85526,
+        -2.99006,
+        -2.92064,
+        -1.31836,
+        -1.25825,
         1.193,
-        1.45262
+        1.41299
       ]
     },
     {
       "logical_item": "BAR_Bottle_0_1_026",
-      "category": "bottle_stock",
-      "component_count": 5,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.98163,
-        -2.92383,
-        -0.82764,
-        -0.77733,
-        1.193,
-        1.457
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_000",
-      "category": "bottle_stock",
-      "component_count": 5,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08249,
-        -3.01658,
-        -4.33399,
-        -4.27241,
-        1.533,
-        1.80442
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_001",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.0894,
-        -3.01456,
-        -4.23573,
-        -4.16694,
-        1.533,
-        1.79046
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_002",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.09309,
-        -3.0069,
-        -4.14034,
-        -4.06415,
-        1.533,
-        1.75931
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_003",
       "category": "bottle_stock",
       "component_count": 4,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09294,
-        -3.01706,
-        -4.03114,
-        -3.94951,
+        -2.9803,
+        -2.9397,
+        -1.23811,
+        -1.18677,
+        1.193,
+        1.46479
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_027",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98601,
+        -2.91714,
+        -1.1415,
+        -1.08038,
+        1.193,
+        1.48417
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_028",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.9913,
+        -2.9179,
+        -1.04577,
+        -0.97613,
+        1.193,
+        1.43718
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_029",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.99011,
+        -2.92011,
+        -0.95849,
+        -0.89735,
+        1.193,
+        1.40027
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_030",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98593,
+        -2.92498,
+        -0.88209,
+        -0.82517,
+        1.193,
+        1.47672
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_031",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98092,
+        -2.92807,
+        -0.80503,
+        -0.7565,
+        1.193,
+        1.49651
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_0_1_032",
+      "category": "bottle_stock",
+      "component_count": 2,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.99231,
+        -2.92769,
+        -0.72248,
+        -0.65786,
+        1.193,
+        1.50165
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_000",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.09023,
+        -3.00936,
+        -4.42696,
+        -4.35607,
         1.533,
-        1.8221
+        1.79354
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_001",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08295,
+        -3.01733,
+        -4.33332,
+        -4.27145,
+        1.533,
+        1.79876
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_002",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.07904,
+        -3.01529,
+        -4.23481,
+        -4.17813,
+        1.533,
+        1.77274
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_003",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08991,
+        -3.00985,
+        -4.15242,
+        -4.07571,
+        1.533,
+        1.79308
       ]
     },
     {
@@ -1434,12 +1658,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08495,
-        -3.01643,
-        -3.90792,
-        -3.84802,
+        -3.08902,
+        -3.01211,
+        -4.04644,
+        -3.9784,
         1.533,
-        1.81655
+        1.84777
       ]
     },
     {
@@ -1450,28 +1674,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.07382,
-        -3.02168,
-        -3.81766,
-        -3.77252,
+        -3.08222,
+        -3.0135,
+        -3.93801,
+        -3.87636,
         1.533,
-        1.81211
+        1.77539
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_0_006",
       "category": "bottle_stock",
-      "component_count": 4,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.0754,
-        -3.0346,
-        -3.74774,
-        -3.70037,
+        -3.08538,
+        -3.01333,
+        -3.84093,
+        -3.773,
         1.533,
-        1.78274
+        1.82928
       ]
     },
     {
@@ -1482,60 +1706,60 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08144,
-        -3.02165,
-        -3.67401,
-        -3.62112,
+        -3.08523,
+        -3.01574,
+        -3.74563,
+        -3.68516,
         1.533,
-        1.77468
+        1.76302
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_0_008",
-      "category": "bottle_stock",
-      "component_count": 5,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.07713,
-        -3.01708,
-        -3.59201,
-        -3.5379,
-        1.533,
-        1.834
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_009",
-      "category": "bottle_stock",
-      "component_count": 2,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08131,
-        -3.02869,
-        -3.51263,
-        -3.46002,
-        1.533,
-        1.72166
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_010",
       "category": "bottle_stock",
       "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09397,
-        -3.005,
-        -3.44445,
-        -3.36645,
+        -3.09259,
+        -3.00757,
+        -3.66778,
+        -3.59261,
         1.533,
-        1.82527
+        1.75541
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_009",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08341,
+        -3.01846,
+        -3.56048,
+        -3.50366,
+        1.533,
+        1.79594
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_010",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08339,
+        -3.01965,
+        -3.48577,
+        -3.4256,
+        1.533,
+        1.79839
       ]
     },
     {
@@ -1546,12 +1770,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08104,
-        -3.02116,
-        -3.31377,
-        -3.26169,
+        -3.09226,
+        -3.01171,
+        -3.40263,
+        -3.32811,
         1.533,
-        1.7312
+        1.78922
       ]
     },
     {
@@ -1562,28 +1786,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08716,
-        -3.01612,
-        -3.24179,
-        -3.17748,
+        -3.08431,
+        -3.01926,
+        -3.30527,
+        -3.24664,
         1.533,
-        1.75693
+        1.7724
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_0_013",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08181,
-        -3.01926,
-        -3.08233,
-        -3.02849,
+        -3.08182,
+        -3.02818,
+        -3.22828,
+        -3.17464,
         1.533,
-        1.83233
+        1.76264
       ]
     },
     {
@@ -1594,124 +1818,124 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09038,
-        -3.01962,
-        -3.00043,
-        -2.92967,
+        -3.08633,
+        -3.02367,
+        -3.15232,
+        -3.08967,
         1.533,
-        1.78174
+        1.77487
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_0_015",
       "category": "bottle_stock",
-      "component_count": 5,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08791,
-        -3.00943,
-        -2.89204,
-        -2.81758,
+        -3.09224,
+        -3.00539,
+        -3.06369,
+        -2.98454,
         1.533,
-        1.84768
+        1.75171
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_0_016",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08526,
-        -3.01727,
-        -2.78239,
-        -2.72186,
+        -3.08699,
+        -3.02301,
+        -2.134,
+        -2.07002,
         1.533,
-        1.81273
+        1.79043
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_0_017",
       "category": "bottle_stock",
-      "component_count": 2,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09374,
-        -3.01626,
-        -2.69546,
-        -2.61797,
+        -3.08582,
+        -3.01911,
+        -2.03549,
+        -1.97385,
         1.533,
-        1.74419
+        1.76879
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_0_018",
-      "category": "bottle_stock",
-      "component_count": 5,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08356,
-        -3.01722,
-        -2.58958,
-        -2.52786,
-        1.533,
-        1.84921
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_019",
       "category": "bottle_stock",
       "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.0843,
-        -3.01718,
-        -2.49166,
-        -2.43305,
+        -3.09326,
+        -3.00659,
+        -1.94828,
+        -1.87176,
         1.533,
-        1.73937
+        1.76467
       ]
     },
     {
-      "logical_item": "BAR_Bottle_1_0_020",
-      "category": "bottle_stock",
-      "component_count": 2,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08945,
-        -3.02055,
-        -2.4099,
-        -2.34101,
-        1.533,
-        1.76083
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_021",
+      "logical_item": "BAR_Bottle_1_0_019",
       "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08003,
-        -3.01454,
-        -2.3047,
-        -2.24558,
+        -3.0799,
+        -3.01442,
+        -1.82669,
+        -1.76817,
         1.533,
-        1.79683
+        1.77421
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_020",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08831,
+        -3.013,
+        -1.74897,
+        -1.68235,
+        1.533,
+        1.75611
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_021",
+      "category": "bottle_stock",
+      "component_count": 2,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08957,
+        -3.02044,
+        -1.65403,
+        -1.5849,
+        1.533,
+        1.79457
       ]
     },
     {
@@ -1722,76 +1946,76 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08964,
-        -3.00998,
-        -2.20978,
-        -2.13934,
+        -3.09114,
+        -3.0131,
+        -1.54881,
+        -1.47653,
         1.533,
-        1.8295
+        1.78053
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_0_023",
-      "category": "bottle_stock",
-      "component_count": 5,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.09105,
-        -3.00912,
-        -2.11932,
-        -2.04082,
-        1.533,
-        1.8434
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_024",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08301,
-        -3.02152,
-        -2.01525,
-        -1.95923,
-        1.533,
-        1.77226
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_025",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08124,
-        -3.0203,
-        -1.93133,
-        -1.87886,
-        1.533,
-        1.79341
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_026",
       "category": "bottle_stock",
       "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08699,
-        -3.02301,
-        -1.86366,
-        -1.79968,
+        -3.08207,
+        -3.02793,
+        -1.44135,
+        -1.38722,
         1.533,
-        1.79043
+        1.81564
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_024",
+      "category": "bottle_stock",
+      "component_count": 4,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08701,
+        -3.02299,
+        -1.36938,
+        -1.29872,
+        1.533,
+        1.76562
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_025",
+      "category": "bottle_stock",
+      "component_count": 2,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.09291,
+        -3.01709,
+        -1.28052,
+        -1.2047,
+        1.533,
+        1.84766
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_0_026",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08898,
+        -3.01149,
+        -1.17835,
+        -1.11039,
+        1.533,
+        1.78438
       ]
     },
     {
@@ -1802,12 +2026,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08582,
-        -3.01911,
-        -1.75954,
-        -1.6979,
+        -3.08928,
+        -3.01272,
+        -1.08904,
+        -1.02049,
         1.533,
-        1.76879
+        1.79235
       ]
     },
     {
@@ -1818,12 +2042,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09326,
-        -3.00659,
-        -1.66674,
-        -1.59022,
+        -3.08995,
+        -3.00921,
+        -0.99853,
+        -0.92731,
         1.533,
-        1.76467
+        1.76043
       ]
     },
     {
@@ -1834,28 +2058,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.0799,
-        -3.01442,
-        -1.53937,
-        -1.48085,
+        -3.07448,
+        -3.01911,
+        -0.88985,
+        -0.84136,
         1.533,
-        1.77421
+        1.76014
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_0_030",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08831,
-        -3.013,
-        -1.45716,
-        -1.39054,
+        -3.07899,
+        -3.02046,
+        -0.79946,
+        -0.7452,
         1.533,
-        1.75611
+        1.75538
       ]
     },
     {
@@ -1866,172 +2090,92 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08957,
-        -3.02044,
-        -1.35692,
-        -1.28779,
+        -3.08564,
+        -3.02436,
+        -0.73179,
+        -0.6705,
         1.533,
-        1.79457
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_032",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.09114,
-        -3.0131,
-        -1.24573,
-        -1.17345,
-        1.533,
-        1.78053
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_033",
-      "category": "bottle_stock",
-      "component_count": 2,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08207,
-        -3.02793,
-        -1.13327,
-        -1.07913,
-        1.533,
-        1.81564
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_034",
-      "category": "bottle_stock",
-      "component_count": 4,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08701,
-        -3.02299,
-        -1.05629,
-        -0.98562,
-        1.533,
-        1.76562
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_035",
-      "category": "bottle_stock",
-      "component_count": 2,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.09291,
-        -3.01709,
-        -0.96316,
-        -0.88734,
-        1.533,
-        1.84766
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_0_036",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08898,
-        -3.01149,
-        -0.85629,
-        -0.78833,
-        1.533,
-        1.78438
+        1.76264
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_000",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99764,
-        -2.91255,
-        -4.35635,
-        -4.28107,
+        -2.98917,
+        -2.93083,
+        -4.46124,
+        -4.4029,
         1.533,
-        1.81997
+        1.84566
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_001",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.99296,
-        -2.91728,
-        -4.24332,
-        -4.17739,
-        1.533,
-        1.7772
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_1_002",
       "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9835,
-        -2.92488,
-        -4.1421,
-        -4.08775,
+        -2.97803,
+        -2.92696,
+        -4.36578,
+        -4.32175,
         1.533,
-        1.8478
+        1.77842
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_1_002",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98909,
+        -2.92206,
+        -4.2489,
+        -4.19072,
+        1.533,
+        1.7926
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_003",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99143,
-        -2.92179,
-        -4.06777,
-        -4.00491,
+        -2.98731,
+        -2.91684,
+        -4.16989,
+        -4.10487,
         1.533,
-        1.76908
+        1.81332
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_004",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 4,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98992,
-        -2.92013,
-        -3.98404,
-        -3.9228,
+        -2.99033,
+        -2.92967,
+        -4.0705,
+        -4.00622,
         1.533,
-        1.79332
+        1.81755
       ]
     },
     {
@@ -2042,12 +2186,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98301,
-        -2.92158,
-        -3.89906,
-        -3.84447,
+        -2.99092,
+        -2.92092,
+        -3.99274,
+        -3.92675,
         1.533,
-        1.81855
+        1.84628
       ]
     },
     {
@@ -2058,12 +2202,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98657,
-        -2.93343,
-        -3.80849,
-        -3.75535,
+        -2.98938,
+        -2.93062,
+        -3.89312,
+        -3.83435,
         1.533,
-        1.84235
+        1.71841
       ]
     },
     {
@@ -2074,60 +2218,60 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99823,
-        -2.91153,
-        -3.72531,
-        -3.64884,
+        -2.98911,
+        -2.92146,
+        -3.79812,
+        -3.73958,
         1.533,
-        1.76288
+        1.74442
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_008",
-      "category": "bottle_stock",
-      "component_count": 5,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.99782,
-        -2.914,
-        -3.63104,
-        -3.55087,
-        1.533,
-        1.8303
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_1_009",
-      "category": "bottle_stock",
-      "component_count": 5,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.99585,
-        -2.9123,
-        -3.46578,
-        -3.38658,
-        1.533,
-        1.84452
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_1_010",
       "category": "bottle_stock",
       "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9926,
-        -2.91738,
-        -3.34797,
-        -3.28238,
+        -2.99,
+        -2.92196,
+        -3.61929,
+        -3.55929,
         1.533,
-        1.76054
+        1.80903
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_1_009",
+      "category": "bottle_stock",
+      "component_count": 4,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98414,
+        -2.93586,
+        -3.53829,
+        -3.48453,
+        1.533,
+        1.75487
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_1_010",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.9887,
+        -2.91278,
+        -3.47639,
+        -3.40641,
+        1.533,
+        1.78834
       ]
     },
     {
@@ -2138,28 +2282,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98455,
-        -2.91692,
-        -3.24592,
-        -3.18586,
+        -2.98961,
+        -2.91309,
+        -3.39075,
+        -3.31988,
         1.533,
-        1.81507
+        1.84311
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_012",
       "category": "bottle_stock",
-      "component_count": 2,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99361,
-        -2.92639,
-        -3.14692,
-        -3.0797,
+        -2.98967,
+        -2.92245,
+        -3.28926,
+        -3.22991,
         1.533,
-        1.79116
+        1.77767
       ]
     },
     {
@@ -2170,44 +2314,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99511,
-        -2.91364,
-        -3.06314,
-        -2.9902,
+        -2.99051,
+        -2.92156,
+        -3.19781,
+        -3.13679,
         1.533,
-        1.84974
+        1.78131
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_014",
       "category": "bottle_stock",
-      "component_count": 4,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98813,
-        -2.93187,
-        -2.95964,
-        -2.89565,
+        -2.97579,
+        -2.92881,
+        -3.10003,
+        -3.05941,
         1.533,
-        1.80539
+        1.84979
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_015",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99784,
-        -2.91351,
-        -2.87287,
-        -2.79718,
+        -2.98109,
+        -2.91987,
+        -3.02696,
+        -2.97251,
         1.533,
-        1.84693
+        1.77347
       ]
     },
     {
@@ -2218,12 +2362,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99056,
-        -2.91882,
-        -2.76657,
-        -2.70249,
+        -2.99569,
+        -2.91772,
+        -2.134,
+        -2.06262,
         1.533,
-        1.73883
+        1.79117
       ]
     },
     {
@@ -2234,28 +2378,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98728,
-        -2.92732,
-        -2.59331,
-        -2.53876,
+        -2.99372,
+        -2.91863,
+        -2.02544,
+        -1.958,
         1.533,
-        1.7602
+        1.72768
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_018",
       "category": "bottle_stock",
-      "component_count": 5,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.97852,
-        -2.92635,
-        -2.51601,
-        -2.47088,
+        -2.98934,
+        -2.92263,
+        -1.92181,
+        -1.86312,
         1.533,
-        1.82705
+        1.77434
       ]
     },
     {
@@ -2266,92 +2410,92 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9982,
-        -2.91191,
-        -2.45347,
-        -2.37707,
+        -2.9954,
+        -2.91751,
+        -1.83493,
+        -1.76413,
         1.533,
-        1.83352
+        1.84948
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_020",
       "category": "bottle_stock",
-      "component_count": 2,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99759,
-        -2.92241,
-        -2.34214,
-        -2.26695,
+        -2.98793,
+        -2.92485,
+        -1.71956,
+        -1.6637,
         1.533,
-        1.79422
+        1.72968
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_021",
       "category": "bottle_stock",
-      "component_count": 2,
+      "component_count": 4,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99093,
-        -2.92907,
-        -2.23693,
-        -2.17507,
+        -2.98473,
+        -2.93527,
+        -1.64836,
+        -1.59357,
         1.533,
-        1.75875
+        1.79565
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_022",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99053,
-        -2.92211,
-        -2.14122,
-        -2.08016,
+        -2.99393,
+        -2.91422,
+        -1.57242,
+        -1.49696,
         1.533,
-        1.77079
+        1.77623
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_023",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 4,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99751,
-        -2.91303,
-        -2.06245,
-        -1.98744,
+        -2.98277,
+        -2.93723,
+        -1.45573,
+        -1.40369,
         1.533,
-        1.7982
+        1.77015
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_024",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99027,
-        -2.92129,
-        -1.94339,
-        -1.88286,
+        -2.98808,
+        -2.92286,
+        -1.38084,
+        -1.31999,
         1.533,
-        1.76809
+        1.82326
       ]
     },
     {
@@ -2362,44 +2506,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99429,
-        -2.9149,
-        -1.86262,
-        -1.79245,
+        -2.99781,
+        -2.91057,
+        -1.30458,
+        -1.22683,
         1.533,
-        1.77162
+        1.7862
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_026",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.99385,
-        -2.91948,
-        -1.7485,
-        -1.68081,
-        1.533,
-        1.76618
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_1_027",
       "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9855,
-        -2.91731,
-        -1.64232,
-        -1.58169,
+        -2.98543,
+        -2.92592,
+        -1.18905,
+        -1.13342,
         1.533,
-        1.81617
+        1.79957
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_1_1_027",
+      "category": "bottle_stock",
+      "component_count": 2,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98674,
+        -2.93326,
+        -1.10325,
+        -1.04977,
+        1.533,
+        1.74665
       ]
     },
     {
@@ -2410,12 +2554,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98919,
-        -2.91757,
-        -1.53982,
-        -1.47232,
+        -2.98828,
+        -2.92149,
+        -1.01809,
+        -0.95605,
         1.533,
-        1.76765
+        1.78721
       ]
     },
     {
@@ -2426,124 +2570,60 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98738,
-        -2.92462,
-        -1.42114,
-        -1.36637,
+        -2.99425,
+        -2.92017,
+        -0.94447,
+        -0.87598,
         1.533,
-        1.79253
+        1.83296
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_030",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9963,
-        -2.91624,
-        -1.34322,
-        -1.27062,
+        -2.98184,
+        -2.92343,
+        -0.84297,
+        -0.79065,
         1.533,
-        1.71849
+        1.80683
       ]
     },
     {
       "logical_item": "BAR_Bottle_1_1_031",
       "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.98928,
-        -2.9239,
-        -1.24241,
-        -1.18385,
-        1.533,
-        1.81576
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_1_032",
-      "category": "bottle_stock",
-      "component_count": 2,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.99892,
-        -2.92108,
-        -1.16966,
-        -1.09181,
-        1.533,
-        1.79778
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_1_033",
-      "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99185,
-        -2.91686,
-        -1.04997,
-        -0.97941,
+        -2.98101,
+        -2.92281,
+        -0.76342,
+        -0.7118,
         1.533,
-        1.77132
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_1_034",
-      "category": "bottle_stock",
-      "component_count": 5,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.98744,
-        -2.91505,
-        -0.94593,
-        -0.88155,
-        1.533,
-        1.79894
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_1_1_035",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.9923,
-        -2.92052,
-        -0.84836,
-        -0.78375,
-        1.533,
-        1.78403
+        1.78012
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_000",
       "category": "bottle_stock",
-      "component_count": 5,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.07839,
-        -3.01421,
-        -4.34861,
-        -4.29173,
+        -3.08283,
+        -3.01906,
+        -4.4396,
+        -4.38394,
         1.873,
-        2.12651
+        2.1704
       ]
     },
     {
@@ -2554,12 +2634,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08623,
-        -3.01817,
-        -4.24608,
-        -4.18361,
+        -3.0855,
+        -3.01513,
+        -4.35874,
+        -4.29773,
         1.873,
-        2.11285
+        2.16963
       ]
     },
     {
@@ -2570,44 +2650,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08192,
-        -3.0197,
-        -4.14179,
-        -4.08335,
+        -3.07988,
+        -3.01355,
+        -4.26147,
+        -4.20273,
         1.873,
-        2.11331
+        2.1217
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_003",
-      "category": "bottle_stock",
-      "component_count": 2,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08421,
-        -3.02579,
-        -4.06821,
-        -4.0098,
-        1.873,
-        2.16204
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_2_0_004",
       "category": "bottle_stock",
       "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08486,
-        -3.01958,
-        -3.97059,
-        -3.91088,
+        -3.09277,
+        -3.00929,
+        -4.18735,
+        -4.1118,
         1.873,
-        2.09845
+        2.14044
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_0_004",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08223,
+        -3.01437,
+        -4.07655,
+        -4.01539,
+        1.873,
+        2.13858
       ]
     },
     {
@@ -2618,44 +2698,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08222,
-        -3.02256,
-        -3.87439,
-        -3.81995,
+        -3.0873,
+        -3.01366,
+        -3.9794,
+        -3.9148,
         1.873,
-        2.17286
+        2.14306
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_006",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08545,
+        -3.01634,
+        -3.88026,
+        -3.81937,
+        1.873,
+        2.12041
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_0_007",
       "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.0757,
-        -3.01783,
-        -3.78783,
-        -3.73722,
+        -3.08195,
+        -3.01862,
+        -3.79217,
+        -3.73337,
         1.873,
-        2.18323
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_2_0_007",
-      "category": "bottle_stock",
-      "component_count": 2,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.0913,
-        -3.0187,
-        -3.71423,
-        -3.64164,
-        1.873,
-        2.15746
+        2.14122
       ]
     },
     {
@@ -2666,12 +2746,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08821,
-        -3.01536,
-        -3.59526,
-        -3.52885,
+        -3.08241,
+        -3.01754,
+        -3.7029,
+        -3.64504,
         1.873,
-        2.13189
+        2.13185
       ]
     },
     {
@@ -2682,28 +2762,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08902,
-        -3.01416,
-        -3.49455,
-        -3.42651,
+        -3.08208,
+        -3.01924,
+        -3.61567,
+        -3.56151,
         1.873,
-        2.10792
+        2.12988
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_010",
       "category": "bottle_stock",
-      "component_count": 5,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08486,
-        -3.00883,
-        -3.40362,
-        -3.33513,
+        -3.0828,
+        -3.01988,
+        -3.52629,
+        -3.47069,
         1.873,
-        2.0957
+        2.17919
       ]
     },
     {
@@ -2714,76 +2794,76 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09314,
-        -3.00599,
-        -3.26212,
-        -3.18567,
+        -3.09172,
+        -3.00967,
+        -3.4432,
+        -3.36975,
         1.873,
-        2.11042
+        2.10049
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_012",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09319,
-        -3.00561,
-        -3.16597,
-        -3.08819,
+        -3.08813,
+        -3.02187,
+        -3.32966,
+        -3.26339,
         1.873,
-        2.10628
+        2.12105
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_013",
       "category": "bottle_stock",
+      "component_count": 2,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.09216,
+        -3.01784,
+        -3.16202,
+        -3.0877,
+        1.873,
+        2.19066
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_0_014",
+      "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08515,
-        -3.00681,
-        -2.96972,
-        -2.89777,
+        -3.0881,
+        -3.00982,
+        -3.05656,
+        -2.98199,
         1.873,
-        2.10081
+        2.16642
       ]
     },
     {
-      "logical_item": "BAR_Bottle_2_0_014",
+      "logical_item": "BAR_Bottle_2_0_015",
       "category": "bottle_stock",
       "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.0821,
-        -3.02098,
-        -2.8472,
-        -2.79301,
+        -3.08168,
+        -3.01986,
+        -2.94491,
+        -2.89154,
         1.873,
-        2.16497
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_2_0_015",
-      "category": "bottle_stock",
-      "component_count": 5,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.07953,
-        -3.02051,
-        -2.77367,
-        -2.719,
-        1.873,
-        2.17373
+        2.18335
       ]
     },
     {
@@ -2794,12 +2874,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09137,
-        -3.011,
-        -2.69171,
-        -2.61898,
+        -3.08511,
+        -3.01456,
+        -2.87698,
+        -2.81428,
         1.873,
-        2.10649
+        2.10769
       ]
     },
     {
@@ -2810,12 +2890,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09366,
-        -3.00732,
-        -2.58365,
-        -2.50632,
+        -3.08689,
+        -3.01469,
+        -2.78942,
+        -2.72565,
         1.873,
-        2.09806
+        2.12173
       ]
     },
     {
@@ -2826,44 +2906,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08589,
-        -3.0158,
-        -2.46941,
-        -2.40763,
+        -3.08881,
+        -3.01329,
+        -2.69271,
+        -2.62508,
         1.873,
-        2.0893
+        2.17513
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_019",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -3.08283,
-        -3.01802,
-        -2.36535,
-        -2.30962,
-        1.873,
-        2.12085
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_2_0_020",
       "category": "bottle_stock",
       "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08361,
-        -3.02639,
-        -2.27857,
-        -2.22136,
+        -3.08649,
+        -3.02351,
+        -2.59793,
+        -2.53494,
         1.873,
-        2.12333
+        2.1183
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_0_020",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.09207,
+        -3.00812,
+        -2.50514,
+        -2.43101,
+        1.873,
+        2.11938
       ]
     },
     {
@@ -2874,12 +2954,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08112,
-        -3.02251,
-        -2.1906,
-        -2.13835,
+        -3.08175,
+        -3.02173,
+        -2.38779,
+        -2.33429,
         1.873,
-        2.15064
+        2.12295
       ]
     },
     {
@@ -2890,12 +2970,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08362,
-        -3.01783,
-        -2.09984,
-        -2.04259,
+        -3.08777,
+        -3.01407,
+        -2.30696,
+        -2.24141,
         1.873,
-        2.09916
+        2.13182
       ]
     },
     {
@@ -2906,12 +2986,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08583,
-        -3.01857,
-        -1.9131,
-        -1.85144,
+        -3.08772,
+        -3.01295,
+        -2.22041,
+        -2.15496,
         1.873,
-        2.17864
+        2.13225
       ]
     },
     {
@@ -2922,60 +3002,60 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08378,
-        -3.01624,
-        -1.80563,
-        -1.74599,
+        -3.08127,
+        -3.01908,
+        -2.12957,
+        -2.07439,
         1.873,
-        2.10585
+        2.14395
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_025",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08136,
-        -3.01875,
-        -1.72988,
-        -1.67396,
+        -3.08149,
+        -3.02851,
+        -2.0422,
+        -1.98922,
         1.873,
-        2.12982
+        2.1174
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_026",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08834,
-        -3.01447,
-        -1.65261,
-        -1.58593,
+        -3.09457,
+        -3.00535,
+        -1.99035,
+        -1.90542,
         1.873,
-        2.11772
+        2.13783
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_027",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08819,
-        -3.01085,
-        -1.56618,
-        -1.49693,
+        -3.08343,
+        -3.0184,
+        -1.88246,
+        -1.82086,
         1.873,
-        2.09793
+        2.14265
       ]
     },
     {
@@ -2986,28 +3066,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.087,
-        -3.01268,
-        -1.41076,
-        -1.34033,
+        -3.07286,
+        -3.02046,
+        -1.78219,
+        -1.7363,
         1.873,
-        2.12188
+        2.18391
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_029",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.09286,
-        -3.00676,
-        -1.30703,
-        -1.23131,
+        -3.08948,
+        -3.02052,
+        -1.70478,
+        -1.63581,
         1.873,
-        2.13879
+        2.09378
       ]
     },
     {
@@ -3018,12 +3098,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08917,
-        -3.01501,
-        -1.19798,
-        -1.12965,
+        -3.09289,
+        -3.00552,
+        -1.61367,
+        -1.53587,
         1.873,
-        2.12706
+        2.17276
       ]
     },
     {
@@ -3034,44 +3114,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08294,
-        -3.02095,
-        -1.10073,
-        -1.04485,
+        -3.09345,
+        -3.00594,
+        -1.50366,
+        -1.42675,
         1.873,
-        2.1359
+        2.16983
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_032",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08768,
-        -3.01547,
-        -1.02331,
-        -0.95796,
+        -3.08334,
+        -3.02666,
+        -1.38757,
+        -1.33088,
         1.873,
-        2.10734
+        2.16561
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_0_033",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 2,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.08227,
-        -3.01971,
-        -0.92332,
-        -0.86879,
+        -3.09191,
+        -3.01809,
+        -1.31541,
+        -1.24158,
         1.873,
-        2.18451
+        2.11911
       ]
     },
     {
@@ -3082,28 +3162,108 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
+        -3.08174,
+        -3.01993,
+        -1.20646,
+        -1.15298,
+        1.873,
+        2.18986
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_0_035",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08227,
+        -3.01971,
+        -1.12914,
+        -1.07461,
+        1.873,
+        2.18451
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_0_036",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
         -3.09327,
         -3.00791,
-        -0.85292,
-        -0.77639,
+        -1.06342,
+        -0.98689,
         1.873,
         2.17096
       ]
     },
     {
-      "logical_item": "BAR_Bottle_2_1_000",
+      "logical_item": "BAR_Bottle_2_0_037",
       "category": "bottle_stock",
-      "component_count": 2,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99756,
-        -2.92244,
-        -4.35379,
-        -4.27867,
+        -3.09178,
+        -3.00753,
+        -0.95291,
+        -0.87935,
         1.873,
-        2.1749
+        2.15207
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_0_038",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08775,
+        -3.01254,
+        -0.84734,
+        -0.78183,
+        1.873,
+        2.16122
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_0_039",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -3.08446,
+        -3.01625,
+        -0.75471,
+        -0.69579,
+        1.873,
+        2.1792
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_1_000",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.99725,
+        -2.91481,
+        -4.45941,
+        -4.38491,
+        1.873,
+        2.17365
       ]
     },
     {
@@ -3114,28 +3274,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98863,
-        -2.92192,
-        -4.23514,
-        -4.17706,
+        -2.99858,
+        -2.91111,
+        -4.26325,
+        -4.1861,
         1.873,
-        2.15029
+        2.09407
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_002",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99783,
-        -2.91671,
-        -4.15164,
-        -4.07598,
+        -2.98059,
+        -2.92113,
+        -4.14213,
+        -4.08946,
         1.873,
-        2.09354
+        2.15194
       ]
     },
     {
@@ -3146,76 +3306,76 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98693,
-        -2.92608,
-        -3.95042,
-        -3.89656,
+        -2.99127,
+        -2.91937,
+        -4.05202,
+        -3.98947,
         1.873,
-        2.13755
+        2.1042
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_004",
+      "category": "bottle_stock",
+      "component_count": 4,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98932,
+        -2.93068,
+        -3.97758,
+        -3.90992,
+        1.873,
+        2.13405
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_1_005",
       "category": "bottle_stock",
       "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98606,
-        -2.92178,
-        -3.88009,
-        -3.82,
+        -2.9871,
+        -2.91816,
+        -3.87723,
+        -3.8138,
         1.873,
-        2.14148
-      ]
-    },
-    {
-      "logical_item": "BAR_Bottle_2_1_005",
-      "category": "bottle_stock",
-      "component_count": 3,
-      "support_contract": "shelf_or_speed_rail_contact",
-      "staging_status": "PASS",
-      "support_evidence": "recorded_shelf_contact",
-      "world_bbox_m": [
-        -2.99509,
-        -2.91587,
-        -3.78734,
-        -3.71717,
-        1.873,
-        2.10165
+        2.12551
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_006",
       "category": "bottle_stock",
-      "component_count": 2,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99242,
-        -2.92758,
-        -3.69406,
-        -3.62923,
+        -2.98691,
+        -2.92454,
+        -3.79323,
+        -3.73456,
         1.873,
-        2.1043
+        2.09316
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_007",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98791,
-        -2.926,
-        -3.58373,
-        -3.5279,
+        -2.99275,
+        -2.90977,
+        -3.71308,
+        -3.6361,
         1.873,
-        2.17811
+        2.19002
       ]
     },
     {
@@ -3226,28 +3386,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9904,
-        -2.9206,
-        -3.38849,
-        -3.32768,
+        -2.99836,
+        -2.91235,
+        -3.61722,
+        -3.54049,
         1.873,
-        2.16969
+        2.13537
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_009",
       "category": "bottle_stock",
-      "component_count": 2,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99815,
-        -2.92185,
-        -3.30284,
-        -3.22655,
+        -2.99265,
+        -2.91711,
+        -3.51876,
+        -3.4527,
         1.873,
-        2.18779
+        2.136
       ]
     },
     {
@@ -3258,28 +3418,28 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99256,
-        -2.91726,
-        -3.20148,
-        -3.135,
+        -2.99523,
+        -2.91913,
+        -3.42536,
+        -3.35489,
         1.873,
-        2.1353
+        2.07385
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_011",
       "category": "bottle_stock",
-      "component_count": 2,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99482,
-        -2.92518,
-        -2.99202,
-        -2.92238,
+        -2.99058,
+        -2.91948,
+        -3.32314,
+        -3.26097,
         1.873,
-        2.07921
+        2.05814
       ]
     },
     {
@@ -3290,44 +3450,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99836,
-        -2.91235,
-        -2.90531,
-        -2.82859,
+        -2.99172,
+        -2.91828,
+        -3.24939,
+        -3.18514,
         1.873,
-        2.13537
+        2.12947
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_013",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99265,
-        -2.91711,
-        -2.80268,
-        -2.73662,
+        -2.98987,
+        -2.91806,
+        -3.15078,
+        -3.08323,
         1.873,
-        2.136
+        2.12725
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_014",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99523,
-        -2.91913,
-        -2.7039,
-        -2.63343,
+        -3.00002,
+        -2.91129,
+        -3.05701,
+        -2.97221,
         1.873,
-        2.07385
+        2.10473
       ]
     },
     {
@@ -3338,12 +3498,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99058,
-        -2.91948,
-        -2.59658,
-        -2.53441,
+        -2.995,
+        -2.91673,
+        -2.94003,
+        -2.87002,
         1.873,
-        2.05814
+        2.12784
       ]
     },
     {
@@ -3354,44 +3514,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99172,
-        -2.91828,
-        -2.51879,
-        -2.45454,
+        -2.99298,
+        -2.91723,
+        -2.8336,
+        -2.76765,
         1.873,
-        2.12947
+        2.08205
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_017",
       "category": "bottle_stock",
-      "component_count": 5,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98987,
-        -2.91806,
-        -2.41432,
-        -2.34677,
+        -2.99759,
+        -2.91032,
+        -2.73814,
+        -2.65937,
         1.873,
-        2.12725
+        2.18921
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_018",
       "category": "bottle_stock",
-      "component_count": 5,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -3.00002,
-        -2.91129,
-        -2.31498,
-        -2.23017,
+        -2.99159,
+        -2.92278,
+        -2.61901,
+        -2.55583,
         1.873,
-        2.10473
+        2.1175
       ]
     },
     {
@@ -3402,12 +3562,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.995,
-        -2.91673,
-        -2.19224,
-        -2.12224,
+        -2.988,
+        -2.92277,
+        -2.52978,
+        -2.47325,
         1.873,
-        2.12784
+        2.13421
       ]
     },
     {
@@ -3418,12 +3578,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99298,
-        -2.91723,
-        -2.08012,
-        -2.01416,
+        -2.98698,
+        -2.92541,
+        -2.43864,
+        -2.38468,
         1.873,
-        2.08205
+        2.12867
       ]
     },
     {
@@ -3434,44 +3594,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99759,
-        -2.91032,
-        -1.97898,
-        -1.90021,
+        -2.9887,
+        -2.92232,
+        -2.36231,
+        -2.30491,
         1.873,
-        2.18921
+        2.17362
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_022",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 4,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99159,
-        -2.92278,
-        -1.85385,
-        -1.79067,
+        -2.98233,
+        -2.93767,
+        -2.28941,
+        -2.23297,
         1.873,
-        2.1175
+        2.09228
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_023",
       "category": "bottle_stock",
-      "component_count": 3,
+      "component_count": 4,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.988,
-        -2.92277,
-        -1.75987,
-        -1.70334,
+        -2.98034,
+        -2.93966,
+        -2.14066,
+        -2.091,
         1.873,
-        2.13421
+        2.14733
       ]
     },
     {
@@ -3482,12 +3642,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98698,
-        -2.92541,
-        -1.6631,
-        -1.60915,
+        -2.99587,
+        -2.91385,
+        -2.07402,
+        -2.00227,
         1.873,
-        2.12867
+        2.10768
       ]
     },
     {
@@ -3498,44 +3658,44 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9887,
-        -2.92232,
-        -1.58193,
-        -1.52453,
+        -2.9953,
+        -2.91685,
+        -1.9721,
+        -1.9015,
         1.873,
-        2.17362
+        2.08394
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_026",
       "category": "bottle_stock",
-      "component_count": 4,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98233,
-        -2.93767,
-        -1.50495,
-        -1.44851,
+        -2.99848,
+        -2.91529,
+        -1.81249,
+        -1.73554,
         1.873,
-        2.09228
+        2.10551
       ]
     },
     {
       "logical_item": "BAR_Bottle_2_1_027",
       "category": "bottle_stock",
-      "component_count": 4,
+      "component_count": 3,
       "support_contract": "shelf_or_speed_rail_contact",
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.98034,
-        -2.93966,
-        -1.35216,
-        -1.30251,
+        -2.99848,
+        -2.91643,
+        -1.70074,
+        -1.62378,
         1.873,
-        2.14733
+        2.10716
       ]
     },
     {
@@ -3546,12 +3706,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99587,
-        -2.91385,
-        -1.28113,
-        -1.20938,
+        -2.98821,
+        -2.9253,
+        -1.58788,
+        -1.53147,
         1.873,
-        2.10768
+        2.10075
       ]
     },
     {
@@ -3562,12 +3722,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.9953,
-        -2.91685,
-        -1.17391,
-        -1.10331,
+        -2.99787,
+        -2.91621,
+        -1.51745,
+        -1.44171,
         1.873,
-        2.08394
+        2.13423
       ]
     },
     {
@@ -3578,12 +3738,12 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99848,
-        -2.91529,
-        -1.00905,
-        -0.9321,
+        -2.99308,
+        -2.91837,
+        -1.41918,
+        -1.35302,
         1.873,
-        2.10551
+        2.11163
       ]
     },
     {
@@ -3594,12 +3754,92 @@
       "staging_status": "PASS",
       "support_evidence": "recorded_shelf_contact",
       "world_bbox_m": [
-        -2.99848,
-        -2.91643,
-        -0.89157,
-        -0.81461,
+        -2.99219,
+        -2.91868,
+        -1.32908,
+        -1.2647,
         1.873,
-        2.10716
+        2.12173
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_1_032",
+      "category": "bottle_stock",
+      "component_count": 3,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.99734,
+        -2.91166,
+        -1.2436,
+        -1.16834,
+        1.873,
+        2.07479
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_1_033",
+      "category": "bottle_stock",
+      "component_count": 4,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.99338,
+        -2.92662,
+        -1.05815,
+        -0.9836,
+        1.873,
+        2.1097
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_1_034",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.97919,
+        -2.9259,
+        -0.93391,
+        -0.88773,
+        1.873,
+        2.1217
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_1_035",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.9852,
+        -2.92164,
+        -0.85674,
+        -0.80003,
+        1.873,
+        2.10522
+      ]
+    },
+    {
+      "logical_item": "BAR_Bottle_2_1_036",
+      "category": "bottle_stock",
+      "component_count": 5,
+      "support_contract": "shelf_or_speed_rail_contact",
+      "staging_status": "PASS",
+      "support_evidence": "recorded_shelf_contact",
+      "world_bbox_m": [
+        -2.98778,
+        -2.92263,
+        -0.76156,
+        -0.70012,
+        1.873,
+        2.10177
       ]
     },
     {
@@ -11685,7 +11925,7 @@
     {
       "logical_item": "LGT_BackBarPractical",
       "category": "motivated_lighting",
-      "component_count": 3,
+      "component_count": 5,
       "support_contract": "visible_fixture_or_documented_opening",
       "staging_status": "PASS",
       "support_evidence": "motivated_light_or_visible_fixture_geometry",

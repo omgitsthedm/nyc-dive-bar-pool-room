@@ -13,3 +13,5 @@ node_modules/
 tmp/
 renders/sweep/
 blend-backups/
+renders/film_frames
+renders/break_candidates

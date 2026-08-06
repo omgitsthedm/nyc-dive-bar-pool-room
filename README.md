@@ -28,12 +28,12 @@ fingerprint fails:
   **2,317 render-visible components** grouped into **1,064 logical real-world
   items**.
 - `reports/environment_staging_audit.json`: **14/14 staging contracts pass**;
-  all **321 high-risk logical items** have explicit support/placement evidence.
-- `reports/environment_lock.json`: **PASS** — 2,143 frozen environment objects,
+  all **333 high-risk logical items** have explicit support/placement evidence.
+- `reports/environment_lock.json`: **PASS** — 2,223 frozen environment objects,
   82 materials, and eight image assets match the approved baseline.
 - `reports/pool_system_lock.json`: **PASS** — 355 pool-system objects and 30
   materials match the accepted static table/ball/proxy baseline (re-banked
-  2026-08-05 with the corrected pocket mouths and cap horns).
+  2026-08-06 with the R1 register-bay revision).
 
 The approved environment and the current pool candidate have distinct roles:
 

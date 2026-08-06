@@ -24,7 +24,7 @@
     ]
   },
   "snapshot": {
-    "aggregate_sha256": "0d7d3949f39661715cb5edb41d1e044b6461a0ed28fe96857fa16ce826a47273",
+    "aggregate_sha256": "15ffef5e0949b854e17d24a345e8c28e0d8fa6a0089a60469e2665859806df75",
     "assets": {
       "assets/textures/balls/ball_01.png": "6258e037900825e850d21b13e8124d477fe9bead6ff20c14da24fdf63ccb2e0d",
       "assets/textures/balls/ball_02.png": "3b936e5e434bffba9ea87212e38e4d1250aadfd8aaa95b5d4209b7f43e99c83a",
@@ -440,7 +440,7 @@
         3840,
         2160
       ],
-      "sha256": "fc190fc2dba5d78ed3a0e24d81095339898f153393445a98822b1d351bc408c1",
+      "sha256": "7da606d170107fecf55251cc1d53be44731bee865839e3dba0bd5668e8acd572",
       "summary": {
         "failed": 0,
         "passed": 93,
@@ -449,9 +449,9 @@
       }
     },
     "environment_lock": {
-      "aggregate_sha256": "de99efd0b2f5caef661e66d542918f06942a20ea7330f925a615d77b778bd0be",
+      "aggregate_sha256": "29cf6fa0f1b61beeab8ffb891e35e1f8de60e20cfd36be5f36c6a8f0ab23fb89",
       "path": "reports/environment_lock.json",
-      "report_sha256": "b27ce0a92886f08a9d3525a476f7c0a272fca931ab3f47639e686f211ba365c6",
+      "report_sha256": "4b3ca95382b6b7005ecb1d0023aab6cdda72cf2a9659580453247e25f645bc35",
       "version": 1
     },
     "geometry_contract": {
@@ -4065,11 +4065,11 @@
   },
   "status": "LOCKED_BASELINE",
   "summary": {
-    "aggregate_sha256": "0d7d3949f39661715cb5edb41d1e044b6461a0ed28fe96857fa16ce826a47273",
+    "aggregate_sha256": "15ffef5e0949b854e17d24a345e8c28e0d8fa6a0089a60469e2665859806df75",
     "curve_points": 252,
     "curve_splines": 12,
-    "dimension_audit_sha256": "fc190fc2dba5d78ed3a0e24d81095339898f153393445a98822b1d351bc408c1",
-    "environment_lock_sha256": "de99efd0b2f5caef661e66d542918f06942a20ea7330f925a615d77b778bd0be",
+    "dimension_audit_sha256": "7da606d170107fecf55251cc1d53be44731bee865839e3dba0bd5668e8acd572",
+    "environment_lock_sha256": "29cf6fa0f1b61beeab8ffb891e35e1f8de60e20cfd36be5f36c6a8f0ab23fb89",
     "geometry_contract_sha256": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
     "material_assets": 16,
     "material_slots": 330,

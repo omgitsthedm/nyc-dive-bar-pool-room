@@ -24,6 +24,7 @@ AUDIT_CAMERAS = (
     "CAM_PoolAudit_Fixture_ThreeQuarter_24mm",
     "CAM_Table_ThreeQuarter_50mm",
     "CAM_Rack_Detail_85mm",
+    "CAM_Audit_Register_35mm",
 )
 QUALITY_MODES = {
     # Preserve the original script defaults for fast proof renders.

@@ -290,14 +290,28 @@ def build(mats):
              spread=140.0)
     # back-bar shelf glow, hidden behind the bottle line
     bx = C.DD_BACKBAR_X
-    L.box("LGT_BackBar_FluorescentHousing",
-          (0.055, C.BAR_LEN - 0.08, 0.065),
-          (bx + 0.24, C.DD_BAR_CENTRE_Y, 1.105), LG,
-          mats["blacksteel"], bevel=0.012)
-    L.box("LGT_BackBar_FluorescentTube",
-          (0.035, C.BAR_LEN - 0.22, 0.024),
-          (bx + 0.293, C.DD_BAR_CENTRE_Y, 1.090), LG, mats["backbar_tube"],
-          bevel=0.010, bevel_segments=3)
+    # The strip runs at z 1.090-1.105, inside the register drum's 1.05-1.34
+    # band and on its centre line, so an unbroken run passed through the
+    # machine and put a glow behind the drum. Both the tube and its steel
+    # housing are split into flanking segments around the same 0.82 register
+    # opening the back shelves use. Nothing lit sits behind the register.
+    register_gap = 0.82
+    for side in (-1, 1):
+        tag = "S" if side < 0 else "N"
+        house_span = (C.BAR_LEN - 0.08 - register_gap) / 2.0
+        tube_span = (C.BAR_LEN - 0.22 - register_gap) / 2.0
+        L.box("LGT_BackBar_FluorescentHousing_%s" % tag,
+              (0.055, house_span, 0.065),
+              (bx + 0.24,
+               C.DD_BAR_CENTRE_Y + side * (register_gap / 2.0 + house_span / 2.0),
+               1.105), LG,
+              mats["blacksteel"], bevel=0.012)
+        L.box("LGT_BackBar_FluorescentTube_%s" % tag,
+              (0.035, tube_span, 0.024),
+              (bx + 0.293,
+               C.DD_BAR_CENTRE_Y + side * (register_gap / 2.0 + tube_span / 2.0),
+               1.090), LG, mats["backbar_tube"],
+              bevel=0.010, bevel_segments=3)
     area("LGT_BackBar_Glow", 18.0, 0.06,
          (bx + 0.30, C.DD_BAR_CENTRE_Y, 1.44),
          rot=(0, radians(-70), 0), colour=(1.0, 0.66, 0.38),

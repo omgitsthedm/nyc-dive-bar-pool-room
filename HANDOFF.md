@@ -1,6 +1,6 @@
 # Handoff — NYC Dive-Bar Pool Room
 
-**Updated:** 2026-08-05
+**Updated:** 2026-08-06
 
 **Project root:** `/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room`
 
@@ -33,12 +33,12 @@ evaluated independently:
 - The current environment reports pass **33/33 realism contracts** and **14/14
   physical-staging contracts** across **2,317 render-visible components**
   grouped into **1,064 logical real-world items**.
-- **321 high-risk logical items** have explicit support/placement evidence.
-- **2,143 environment objects, 82 materials, and eight image assets** match the
+- **333 high-risk logical items** have explicit support/placement evidence.
+- **2,223 environment objects, 82 materials, and eight image assets** match the
   approved environment fingerprint in `reports/environment_lock.json`.
 - **355 pool-system objects and 30 materials** match the accepted static
   table/ball/proxy fingerprint in `reports/pool_system_lock.json`
-  (`0d7d3949…`, re-banked 2026-08-05 after the pocket-mouth and register/tap revisions).
+  (`15ffef5e…`, re-banked 2026-08-06 after the R1 register-bay revision).
 - The source-backed Pooltool suite passes **15/15 deterministic physics
   contracts**, including sliding-to-roll transition, rolling resistance,
   ball/ball and ball/cushion response, draw/stop/follow, pocket acceptance and
@@ -235,15 +235,15 @@ default derived-preview path is the safe routine choice.
 - `reports/dimension_audit.json`: 93 passed, 0 failed.
 - Current derived-preview inventory: 2,317 render-visible components and 1,064
   logical items. The realism and staging reports record these current totals;
-  all 321 high-risk items pass their support/placement checks.
-- `reports/environment_lock.json`: locked baseline; 2,143 objects, 82 materials,
+  all 333 high-risk items pass their support/placement checks.
+- `reports/environment_lock.json`: locked baseline; 2,223 objects, 82 materials,
   eight assets; aggregate SHA-256
-  `de99efd0b2f5caef661e66d542918f06942a20ea7330f925a615d77b778bd0be`.
+  `29cf6fa0f1b61beeab8ffb891e35e1f8de60e20cfd36be5f36c6a8f0ab23fb89`.
 - `reports/pool_system_lock.json`: locked static pool baseline; 355 objects, 30
   materials; aggregate SHA-256
-  `0d7d3949f39661715cb5edb41d1e044b6461a0ed28fe96857fa16ce826a47273`.
+  `15ffef5e0949b854e17d24a345e8c28e0d8fa6a0089a60469e2665859806df75`.
   Fresh read-only checks against `blend/poolroom_gameplay_preview.blend` pass
-  both locks: all 2,143 environment objects and all 355 static pool objects are
+  both locks: all 2,223 environment objects and all 355 static pool objects are
   unchanged.
 - `assets/data/pool_physics_profile.json`: pinned Pooltool 0.6.0 resolver,
   physical profile, cue/rack setup, source links and deterministic control-break
