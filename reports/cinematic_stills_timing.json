@@ -1,0 +1,42 @@
+{
+  "draft": {
+    "device": "GPU",
+    "samples": 32,
+    "resolution": [
+      1280,
+      720
+    ],
+    "shot_count": 15,
+    "seconds_per_camera": {
+      "CAM_Cinematic_Threshold_Low_32mm": 27.7,
+      "CAM_Cinematic_BreakLine_70mm": 31.1,
+      "CAM_Table_ThreeQuarter_50mm": 27.7
+    }
+  },
+  "preview": {
+    "device": "GPU",
+    "samples": 96,
+    "resolution": [
+      1600,
+      900
+    ],
+    "shot_count": 15,
+    "seconds_per_camera": {
+      "CAM_Audit_StreetNeon_35mm": 128.2,
+      "CAM_Cinematic_Threshold_Low_32mm": 171.0,
+      "CAM_FrontRoom_22mm": 157.0,
+      "CAM_Bar_Reverse_35mm": 263.0,
+      "CAM_Audit_CleanBar_50mm": 163.0,
+      "CAM_Audit_PatronBarware_55mm": 167.1,
+      "CAM_Audit_Booths_45mm": 237.6,
+      "CAM_Audit_BoothPatina_60mm": 152.2,
+      "CAM_Audit_WallHistory_45mm": 261.1,
+      "CAM_Audit_BathroomDoor_50mm": 242.1,
+      "CAM_Audit_Lighting_35mm": 542.9,
+      "CAM_Hero_Entry_30mm": 191.5,
+      "CAM_Table_ThreeQuarter_50mm": 177.5,
+      "CAM_Cinematic_BreakLine_70mm": 185.3,
+      "CAM_Rack_Detail_85mm": 207.3
+    }
+  }
+}
