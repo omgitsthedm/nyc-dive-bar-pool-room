@@ -1,0 +1,4095 @@
+{
+  "scope": {
+    "intentionally_excluded": [
+      "environment collections already covered by environment_lock",
+      "pool and room lights",
+      "cameras and render settings",
+      "atmosphere and reference collections",
+      "evaluated meshes and render output"
+    ],
+    "locked_collections": [
+      "02_TABLE_VISIBLE",
+      "03_TABLE_ENGINEERING",
+      "05_HERO_PROPS",
+      "10_PHYSICS_PROXIES"
+    ],
+    "locked_data": [
+      "object transforms and custom properties",
+      "raw mesh, curve and vertex-group data",
+      "modifiers and constraints",
+      "material assignments and material graphs",
+      "referenced material image assets",
+      "pool source files and shared geometry contract",
+      "environment-lock identity and dimensional audit"
+    ]
+  },
+  "snapshot": {
+    "aggregate_sha256": "1b4e3397398477e0d70855e48329a1b4b30795477b7d07f5ebd14ddbb5bc0930",
+    "assets": {
+      "assets/textures/balls/ball_01.png": "6258e037900825e850d21b13e8124d477fe9bead6ff20c14da24fdf63ccb2e0d",
+      "assets/textures/balls/ball_02.png": "3b936e5e434bffba9ea87212e38e4d1250aadfd8aaa95b5d4209b7f43e99c83a",
+      "assets/textures/balls/ball_03.png": "95b7bcd8aeea852b2a85c99c1e3cde0ef8d958cca4432034c731d86c5294e412",
+      "assets/textures/balls/ball_04.png": "41e5c83319629f292d72a6c136fe6af7035c8ddc33b7f6ffe06266789f4fbc5b",
+      "assets/textures/balls/ball_05.png": "7eb92a8e1567c0f025ff29c5904fa0892f58e717c83ddaf9467c21ae84df16ad",
+      "assets/textures/balls/ball_06.png": "a5671c05414106f837acd0901ffbc38b8b1b8de5df689b86e93ca179ad1d6dd3",
+      "assets/textures/balls/ball_07.png": "5f4e02c2db2bdaf8d2078797a125e139358c6faffffbf4d70c7261fa5f55647e",
+      "assets/textures/balls/ball_08.png": "a2bbafd39c6f8f0699748b0af8b4f245e4b400f4ad0e982f8b1674b3b9a2048a",
+      "assets/textures/balls/ball_09.png": "7a40c264eecf68211e0d385a9f4fb99cf3c86dc9c5e44716c77e7f44ed22a9af",
+      "assets/textures/balls/ball_10.png": "b6d66d66c5a095c49b2c4025690e4261d298c6fadee0a4848157721e4116c891",
+      "assets/textures/balls/ball_11.png": "0283017c490b1525aa414f281dd7e1507bd7af48fe169ebb61187e7ea89414e2",
+      "assets/textures/balls/ball_12.png": "db092ccbd36f1b7e8b2aa470d7a714642b84c10ff6b637a6a4167019af737049",
+      "assets/textures/balls/ball_13.png": "ebc9bbd83800af8a47962f345f740090621b2674eea7922cc646979d6077318e",
+      "assets/textures/balls/ball_14.png": "af73f5aa274d810aef3a119ae5c497a130920a4fa17104e71fa06cb03c407dec",
+      "assets/textures/balls/ball_15.png": "9f105deb0362960a50bbe06f11de9e84f8e0470e8372c198f72c90b78af4bba5",
+      "assets/textures/balls/ball_cue.png": "2dbd9b8af291525510483f5e83cd7bd26bed35aba82c83480ba974c83ac683d0"
+    },
+    "collection_membership": {
+      "02_TABLE_VISIBLE": [
+        "PT_Apron_E_Lower",
+        "PT_Apron_E_Upper_Foot",
+        "PT_Apron_E_Upper_Head",
+        "PT_Apron_Foot",
+        "PT_Apron_Head",
+        "PT_Apron_W_Lower",
+        "PT_Apron_W_Upper_Foot",
+        "PT_Apron_W_Upper_Head",
+        "PT_CapHorn_corner_NE_10",
+        "PT_CapHorn_corner_NE_11",
+        "PT_CapHorn_corner_NW_7",
+        "PT_CapHorn_corner_NW_8",
+        "PT_CapHorn_corner_SE_16",
+        "PT_CapHorn_corner_SE_17",
+        "PT_CapHorn_corner_SW_1",
+        "PT_CapHorn_corner_SW_2",
+        "PT_CapHorn_side_E_13",
+        "PT_CapHorn_side_E_14",
+        "PT_CapHorn_side_W_4",
+        "PT_CapHorn_side_W_5",
+        "PT_Cloth_Bed",
+        "PT_Cushion_End_Foot",
+        "PT_Cushion_End_Head",
+        "PT_Cushion_Long_E_N",
+        "PT_Cushion_Long_E_S",
+        "PT_Cushion_Long_W_N",
+        "PT_Cushion_Long_W_S",
+        "PT_LegHead_Corner_NE",
+        "PT_LegHead_Corner_NW",
+        "PT_LegHead_Corner_SE",
+        "PT_LegHead_Corner_SW",
+        "PT_LegHead_Mid_East",
+        "PT_LegHead_Mid_West",
+        "PT_LegTurned_Corner_NE",
+        "PT_LegTurned_Corner_NW",
+        "PT_LegTurned_Corner_SE",
+        "PT_LegTurned_Corner_SW",
+        "PT_LegTurned_Mid_East",
+        "PT_LegTurned_Mid_West",
+        "PT_LevelerPad_Corner_NE",
+        "PT_LevelerPad_Corner_NW",
+        "PT_LevelerPad_Corner_SE",
+        "PT_LevelerPad_Corner_SW",
+        "PT_LevelerPad_Mid_East",
+        "PT_LevelerPad_Mid_West",
+        "PT_PocketBasketBase_corner_NE",
+        "PT_PocketBasketBase_corner_NW",
+        "PT_PocketBasketBase_corner_SE",
+        "PT_PocketBasketBase_corner_SW",
+        "PT_PocketBasketBase_side_E",
+        "PT_PocketBasketBase_side_W",
+        "PT_PocketBasket_corner_NE",
+        "PT_PocketBasket_corner_NW",
+        "PT_PocketBasket_corner_SE",
+        "PT_PocketBasket_corner_SW",
+        "PT_PocketBasket_side_E",
+        "PT_PocketBasket_side_W",
+        "PT_PocketLeatherSkirt_corner_NE",
+        "PT_PocketLeatherSkirt_corner_NW",
+        "PT_PocketLeatherSkirt_corner_SE",
+        "PT_PocketLeatherSkirt_corner_SW",
+        "PT_PocketLeatherSkirt_side_E",
+        "PT_PocketLeatherSkirt_side_W",
+        "PT_PocketLeatherWelt_corner_NE",
+        "PT_PocketLeatherWelt_corner_NW",
+        "PT_PocketLeatherWelt_corner_SE",
+        "PT_PocketLeatherWelt_corner_SW",
+        "PT_PocketLeatherWelt_side_E",
+        "PT_PocketLeatherWelt_side_W",
+        "PT_PocketLiner_corner_NE",
+        "PT_PocketLiner_corner_NW",
+        "PT_PocketLiner_corner_SE",
+        "PT_PocketLiner_corner_SW",
+        "PT_PocketLiner_side_E",
+        "PT_PocketLiner_side_W",
+        "PT_PocketStitches_corner_NE",
+        "PT_PocketStitches_corner_NW",
+        "PT_PocketStitches_corner_SE",
+        "PT_PocketStitches_corner_SW",
+        "PT_PocketStitches_side_E",
+        "PT_PocketStitches_side_W",
+        "PT_PocketThroat_corner_NE",
+        "PT_PocketThroat_corner_NW",
+        "PT_PocketThroat_corner_SE",
+        "PT_PocketThroat_corner_SW",
+        "PT_PocketThroat_side_E",
+        "PT_PocketThroat_side_W",
+        "PT_RailCap_End_Foot",
+        "PT_RailCap_End_Head",
+        "PT_RailCap_Long_E_N",
+        "PT_RailCap_Long_E_S",
+        "PT_RailCap_Long_W_N",
+        "PT_RailCap_Long_W_S",
+        "PT_Rail_End_Foot",
+        "PT_Rail_End_Head",
+        "PT_Rail_Long_E_N",
+        "PT_Rail_Long_E_S",
+        "PT_Rail_Long_W_N",
+        "PT_Rail_Long_W_S",
+        "PT_Sight_End_Foot_1",
+        "PT_Sight_End_Foot_2",
+        "PT_Sight_End_Foot_3",
+        "PT_Sight_End_Head_1",
+        "PT_Sight_End_Head_2",
+        "PT_Sight_End_Head_3",
+        "PT_Sight_Long_E_1",
+        "PT_Sight_Long_E_2",
+        "PT_Sight_Long_E_3",
+        "PT_Sight_Long_E_5",
+        "PT_Sight_Long_E_6",
+        "PT_Sight_Long_E_7",
+        "PT_Sight_Long_W_1",
+        "PT_Sight_Long_W_2",
+        "PT_Sight_Long_W_3",
+        "PT_Sight_Long_W_5",
+        "PT_Sight_Long_W_6",
+        "PT_Sight_Long_W_7",
+        "PT_Slate_Center",
+        "PT_Slate_Foot",
+        "PT_Slate_Head",
+        "PT_TableRoot"
+      ],
+      "03_TABLE_ENGINEERING": [
+        "PTX_PocketClearance_Engineering_corner_NE",
+        "PTX_PocketClearance_Engineering_corner_NW",
+        "PTX_PocketClearance_Engineering_corner_SE",
+        "PTX_PocketClearance_Engineering_corner_SW",
+        "PTX_PocketClearance_Engineering_side_E",
+        "PTX_PocketClearance_Engineering_side_W",
+        "PTX_PocketClothCut_Cloth_corner_NE",
+        "PTX_PocketClothCut_Cloth_corner_NW",
+        "PTX_PocketClothCut_Cloth_corner_SE",
+        "PTX_PocketClothCut_Cloth_corner_SW",
+        "PTX_PocketClothCut_Cloth_side_E",
+        "PTX_PocketClothCut_Cloth_side_W",
+        "PTX_PocketDraft_Bed_corner_NE",
+        "PTX_PocketDraft_Bed_corner_NW",
+        "PTX_PocketDraft_Bed_corner_SE",
+        "PTX_PocketDraft_Bed_corner_SW",
+        "PTX_PocketDraft_Bed_side_E",
+        "PTX_PocketDraft_Bed_side_W",
+        "PTX_PocketDraft_RailSeat_corner_NE",
+        "PTX_PocketDraft_RailSeat_corner_NW",
+        "PTX_PocketDraft_RailSeat_corner_SE",
+        "PTX_PocketDraft_RailSeat_corner_SW",
+        "PTX_PocketDraft_RailSeat_side_E",
+        "PTX_PocketDraft_RailSeat_side_W",
+        "PTX_PocketDraft_Rail_corner_NE",
+        "PTX_PocketDraft_Rail_corner_NW",
+        "PTX_PocketDraft_Rail_corner_SE",
+        "PTX_PocketDraft_Rail_corner_SW",
+        "PTX_PocketDraft_Rail_side_E",
+        "PTX_PocketDraft_Rail_side_W",
+        "PT_ArcSubrail_10t",
+        "PT_ArcSubrail_11t",
+        "PT_ArcSubrail_13t",
+        "PT_ArcSubrail_14t",
+        "PT_ArcSubrail_16t",
+        "PT_ArcSubrail_17t",
+        "PT_ArcSubrail_1t",
+        "PT_ArcSubrail_2t",
+        "PT_ArcSubrail_4t",
+        "PT_ArcSubrail_5t",
+        "PT_ArcSubrail_7t",
+        "PT_ArcSubrail_8t",
+        "PT_CentreBeam",
+        "PT_CrossSill_0_E",
+        "PT_CrossSill_0_W",
+        "PT_CrossSill_1_E",
+        "PT_CrossSill_1_W",
+        "PT_CrossSill_2_E",
+        "PT_CrossSill_2_W",
+        "PT_CrossSill_3_E",
+        "PT_CrossSill_3_W",
+        "PT_Featherstrip_End_Foot",
+        "PT_Featherstrip_End_Head",
+        "PT_Featherstrip_Long_E_N",
+        "PT_Featherstrip_Long_E_S",
+        "PT_Featherstrip_Long_W_N",
+        "PT_Featherstrip_Long_W_S",
+        "PT_JawSubrail_1",
+        "PT_JawSubrail_10",
+        "PT_JawSubrail_11",
+        "PT_JawSubrail_13",
+        "PT_JawSubrail_14",
+        "PT_JawSubrail_16",
+        "PT_JawSubrail_17",
+        "PT_JawSubrail_2",
+        "PT_JawSubrail_4",
+        "PT_JawSubrail_5",
+        "PT_JawSubrail_7",
+        "PT_JawSubrail_8",
+        "PT_LevelerStem_Corner_NE",
+        "PT_LevelerStem_Corner_NW",
+        "PT_LevelerStem_Corner_SE",
+        "PT_LevelerStem_Corner_SW",
+        "PT_LevelerStem_Mid_East",
+        "PT_LevelerStem_Mid_West",
+        "PT_PocketFacing_corner_NE_10",
+        "PT_PocketFacing_corner_NE_11",
+        "PT_PocketFacing_corner_NW_7",
+        "PT_PocketFacing_corner_NW_8",
+        "PT_PocketFacing_corner_SE_16",
+        "PT_PocketFacing_corner_SE_17",
+        "PT_PocketFacing_corner_SW_1",
+        "PT_PocketFacing_corner_SW_2",
+        "PT_PocketFacing_side_E_13",
+        "PT_PocketFacing_side_E_14",
+        "PT_PocketFacing_side_W_4",
+        "PT_PocketFacing_side_W_5",
+        "PT_PocketIron_corner_NE",
+        "PT_PocketIron_corner_NW",
+        "PT_PocketIron_corner_SE",
+        "PT_PocketIron_corner_SW",
+        "PT_PocketIron_side_E",
+        "PT_PocketIron_side_W",
+        "PT_PocketLeatherStrap_corner_NE_0",
+        "PT_PocketLeatherStrap_corner_NE_1",
+        "PT_PocketLeatherStrap_corner_NE_2",
+        "PT_PocketLeatherStrap_corner_NW_0",
+        "PT_PocketLeatherStrap_corner_NW_1",
+        "PT_PocketLeatherStrap_corner_NW_2",
+        "PT_PocketLeatherStrap_corner_SE_0",
+        "PT_PocketLeatherStrap_corner_SE_1",
+        "PT_PocketLeatherStrap_corner_SE_2",
+        "PT_PocketLeatherStrap_corner_SW_0",
+        "PT_PocketLeatherStrap_corner_SW_1",
+        "PT_PocketLeatherStrap_corner_SW_2",
+        "PT_PocketLeatherStrap_side_E_0",
+        "PT_PocketLeatherStrap_side_E_1",
+        "PT_PocketLeatherStrap_side_E_2",
+        "PT_PocketLeatherStrap_side_W_0",
+        "PT_PocketLeatherStrap_side_W_1",
+        "PT_PocketLeatherStrap_side_W_2",
+        "PT_PocketMountBolt_corner_NE_0",
+        "PT_PocketMountBolt_corner_NE_1",
+        "PT_PocketMountBolt_corner_NW_0",
+        "PT_PocketMountBolt_corner_NW_1",
+        "PT_PocketMountBolt_corner_SE_0",
+        "PT_PocketMountBolt_corner_SE_1",
+        "PT_PocketMountBolt_corner_SW_0",
+        "PT_PocketMountBolt_corner_SW_1",
+        "PT_PocketMountBolt_side_E_0",
+        "PT_PocketMountBolt_side_E_1",
+        "PT_PocketMountBolt_side_W_0",
+        "PT_PocketMountBolt_side_W_1",
+        "PT_PocketMountEar_corner_NE_0",
+        "PT_PocketMountEar_corner_NE_1",
+        "PT_PocketMountEar_corner_NW_0",
+        "PT_PocketMountEar_corner_NW_1",
+        "PT_PocketMountEar_corner_SE_0",
+        "PT_PocketMountEar_corner_SE_1",
+        "PT_PocketMountEar_corner_SW_0",
+        "PT_PocketMountEar_corner_SW_1",
+        "PT_PocketMountEar_side_E_0",
+        "PT_PocketMountEar_side_E_1",
+        "PT_PocketMountEar_side_W_0",
+        "PT_PocketMountEar_side_W_1",
+        "PT_PocketStrapRivet_corner_NE_0",
+        "PT_PocketStrapRivet_corner_NE_1",
+        "PT_PocketStrapRivet_corner_NE_2",
+        "PT_PocketStrapRivet_corner_NW_0",
+        "PT_PocketStrapRivet_corner_NW_1",
+        "PT_PocketStrapRivet_corner_NW_2",
+        "PT_PocketStrapRivet_corner_SE_0",
+        "PT_PocketStrapRivet_corner_SE_1",
+        "PT_PocketStrapRivet_corner_SE_2",
+        "PT_PocketStrapRivet_corner_SW_0",
+        "PT_PocketStrapRivet_corner_SW_1",
+        "PT_PocketStrapRivet_corner_SW_2",
+        "PT_PocketStrapRivet_side_E_0",
+        "PT_PocketStrapRivet_side_E_1",
+        "PT_PocketStrapRivet_side_E_2",
+        "PT_PocketStrapRivet_side_W_0",
+        "PT_PocketStrapRivet_side_W_1",
+        "PT_PocketStrapRivet_side_W_2",
+        "PT_RailStud_01",
+        "PT_RailStud_02",
+        "PT_RailStud_03",
+        "PT_RailStud_04",
+        "PT_RailStud_05",
+        "PT_RailStud_06",
+        "PT_RailStud_07",
+        "PT_RailStud_08",
+        "PT_RailStud_09",
+        "PT_RailStud_10",
+        "PT_RailStud_11",
+        "PT_RailStud_12",
+        "PT_RailStud_13",
+        "PT_RailStud_14",
+        "PT_RailStud_15",
+        "PT_RailStud_16",
+        "PT_RailStud_17",
+        "PT_RailStud_18",
+        "PT_Sill_End_Foot",
+        "PT_Sill_End_Head",
+        "PT_Sill_Long_E",
+        "PT_Sill_Long_W",
+        "PT_SlateLiner_Perimeter"
+      ],
+      "05_HERO_PROPS": [
+        "PT_Ball_01",
+        "PT_Ball_02",
+        "PT_Ball_03",
+        "PT_Ball_04",
+        "PT_Ball_05",
+        "PT_Ball_06",
+        "PT_Ball_07",
+        "PT_Ball_08",
+        "PT_Ball_09",
+        "PT_Ball_10",
+        "PT_Ball_11",
+        "PT_Ball_12",
+        "PT_Ball_13",
+        "PT_Ball_14",
+        "PT_Ball_15",
+        "PT_Ball_Cue"
+      ],
+      "10_PHYSICS_PROXIES": [
+        "PTX_Arc_10t",
+        "PTX_Arc_11t",
+        "PTX_Arc_13t",
+        "PTX_Arc_14t",
+        "PTX_Arc_16t",
+        "PTX_Arc_17t",
+        "PTX_Arc_1t",
+        "PTX_Arc_2t",
+        "PTX_Arc_4t",
+        "PTX_Arc_5t",
+        "PTX_Arc_7t",
+        "PTX_Arc_8t",
+        "PTX_Linear_1",
+        "PTX_Linear_10",
+        "PTX_Linear_11",
+        "PTX_Linear_12",
+        "PTX_Linear_13",
+        "PTX_Linear_14",
+        "PTX_Linear_15",
+        "PTX_Linear_16",
+        "PTX_Linear_17",
+        "PTX_Linear_18",
+        "PTX_Linear_2",
+        "PTX_Linear_3",
+        "PTX_Linear_4",
+        "PTX_Linear_5",
+        "PTX_Linear_6",
+        "PTX_Linear_7",
+        "PTX_Linear_8",
+        "PTX_Linear_9",
+        "PTX_ShelfDrop_corner_NE",
+        "PTX_ShelfDrop_corner_NW",
+        "PTX_ShelfDrop_corner_SE",
+        "PTX_ShelfDrop_corner_SW",
+        "PTX_ShelfDrop_side_E",
+        "PTX_ShelfDrop_side_W",
+        "PTX_SolverPocket_corner_NE",
+        "PTX_SolverPocket_corner_NW",
+        "PTX_SolverPocket_corner_SE",
+        "PTX_SolverPocket_corner_SW",
+        "PTX_SolverPocket_side_E",
+        "PTX_SolverPocket_side_W"
+      ]
+    },
+    "counts": {
+      "curve_points": 252,
+      "curve_splines": 12,
+      "material_assets": 16,
+      "material_slots": 330,
+      "materials": 30,
+      "mesh_edges": 207576,
+      "mesh_polygons": 99635,
+      "mesh_vertices": 108713,
+      "objects": 355,
+      "objects_by_collection": {
+        "02_TABLE_VISIBLE": 121,
+        "03_TABLE_ENGINEERING": 176,
+        "05_HERO_PROPS": 16,
+        "10_PHYSICS_PROXIES": 42
+      },
+      "objects_by_type": {
+        "CURVE": 12,
+        "EMPTY": 1,
+        "MESH": 342
+      },
+      "source_files": 11
+    },
+    "dimension_audit": {
+      "engine": "CYCLES",
+      "failed_required_checks": [],
+      "generated": "2026-08-05",
+      "path": "reports/dimension_audit.json",
+      "resolution": [
+        3840,
+        2160
+      ],
+      "sha256": "fc190fc2dba5d78ed3a0e24d81095339898f153393445a98822b1d351bc408c1",
+      "summary": {
+        "failed": 0,
+        "passed": 93,
+        "required_failures": 0,
+        "total": 93
+      }
+    },
+    "environment_lock": {
+      "aggregate_sha256": "c025578c2a74fd0761fad9c327f201b0b78c75ef4c5ebbcedabfdd98ce292fe5",
+      "path": "reports/environment_lock.json",
+      "report_sha256": "13ec5910340a86695e07bc62ae805c8045b1f23127dcdb2c9b7053f173927028",
+      "version": 1
+    },
+    "geometry_contract": {
+      "feature_counts": {
+        "jaw": 12,
+        "main": 6,
+        "pocket": 6,
+        "transition_arc": 12
+      },
+      "path": "assets/data/table_wpa_geometry.json",
+      "sha256": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+      "validation_sha256": "a809c09713d7ea53d95540df801201fdef5e8541e5005db53a869ef503064abd"
+    },
+    "materials": {
+      "MAT_Ball_01_Phenolic": "be4befd521c010f9bbfeabf2c71c3c6d9c9e450d551b73dc14954664cb4ff19d",
+      "MAT_Ball_02_Phenolic": "4ca88adcf096a65327033a51107f551711c3a7ce4ed3b618b8f0b9d99dcaa025",
+      "MAT_Ball_03_Phenolic": "1ca6aa1c8323470e2c8359b62b748322db1a88005a3c6db76c0d13bdb39f901a",
+      "MAT_Ball_04_Phenolic": "a87c25cf028c5e0b889df9f2667218fac4ac7d43cb38123c1f8a6aadeca73530",
+      "MAT_Ball_05_Phenolic": "7f6113543acf2f66c0a0af67e4ff20c7da5e5d51b5580e830c845a75ff92776c",
+      "MAT_Ball_06_Phenolic": "009e9653f5a9c8abfc24a5615adf4761eb2b175cbe1bedad1e6520d6445dcf83",
+      "MAT_Ball_07_Phenolic": "b149a3c037c1f61e501b12dce528bcc101002f87cb9194aa3bec22965717f937",
+      "MAT_Ball_08_Phenolic": "ef54ec502498e0f32ad90df6da60dd953fee344a8887f472cd10ae18b4323984",
+      "MAT_Ball_09_Phenolic": "9f0cfd3a6749230cd1a90235cff1d267e75ff9979a86d017a886b96dc6a65cd3",
+      "MAT_Ball_10_Phenolic": "7e4bac8540fb8dcc06cc4a514977d27fdf69951da28328f1037a8f44d862dc5b",
+      "MAT_Ball_11_Phenolic": "4191be884dd48a1556f6c5deec78b75505eddcacef46db2c5a8a1bf97336d0b1",
+      "MAT_Ball_12_Phenolic": "79e975f81704748c0befb1af9d47f230ef2c80c56728ac647539c0e3ee5aebf1",
+      "MAT_Ball_13_Phenolic": "109699b1894826e9ac7890b782fa137fa481779d4e5b3713beeeb08247b0c920",
+      "MAT_Ball_14_Phenolic": "ba8ce33be1273bf26451a5b981bbe0482d3d6e009786010015fa04bd5b8928d6",
+      "MAT_Ball_15_Phenolic": "6b160d6c7b69152df50d80987fee4804a8942e39110a88a985e4eab4ded5a25f",
+      "MAT_Ball_Cue_Phenolic": "364e00fd45a822583778f2c9f6562a7d7b9f804f25655f2abd658202a05639e4",
+      "MAT_Inlay_MotherOfPearl": "f3dd7e34256f7e44635abed49261f622de90b7cfb57547942affbcbb5a7e5485",
+      "MAT_Metal_BlackenedSteel": "5652cce0b07dbd4a942cfb071fffedf90bb9a8855bed5153947889606f741628",
+      "MAT_Pocket_Facing_Rubber": "4dabe7b2aeb8c60ff1e58d8fc2ae44f7e5b61b2c947f0910192f53de5a0f13ed",
+      "MAT_Pocket_Leather_Basket": "259dbda476a5afcba72b944bd6e36011c997ae0d6b53f348a30c8593150d6aa2",
+      "MAT_Pocket_Leather_DeepShadow": "493663dfa0388d7ce868e059d594a20b732b7f8f12a1e35677bf9da11b3e5326",
+      "MAT_Pocket_Leather_Interior": "cd89e79230b42f6f10723dc682aaff8f4733dbfcf51e239e0c7aa1b3b4c02847",
+      "MAT_Pocket_Leather_Oxblood": "097c15c607c16d0e23589128ae78a6764a1db2b4f8537fcd68eaa1da657b731c",
+      "MAT_Table_Cloth_BedWornWorsted": "7fa35c2fbaaa5ac38d173b2c6e899f6719004965aeeaaea1e5bf90ef302471bf",
+      "MAT_Table_Cloth_DarkTournamentGreen": "786325dbae610944784a4119a86f33806069f13d79125e74154e466bfeaf26be",
+      "MAT_Table_Cloth_PocketFacing": "51536d65432f9ebe9eae1dbd7d6f93e10b9aba5e2e9cc9b2b133145ce6f7b9f1",
+      "MAT_Table_Cloth_PocketLiner": "7d687182ce785463dac5f9cd21488cc81c142f7b4f7f8996b598f1fd9cd43cf6",
+      "MAT_Table_Slate_Honed": "9241d0306a0942c9285fbf86401e0b0b3d902b9b3a34f0da588ee2c323bdd3af",
+      "MAT_Table_Walnut_Clearcoat": "53f9b899d9e2243b66af1078c165d39870b23dfbd2cacbe218f0ab071830bbe9",
+      "MAT_Table_Walnut_CrossGrain": "6c5a5f3aef1eea57313f2eb67622b9d3e552870d6f3214511a91fc0ca3a9987a"
+    },
+    "objects": {
+      "PTX_Arc_10t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "216b225fb78ea4fb698bdba7269fb5d118c9bef37e7c58b46c7c5a72b754590f",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_11t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "8905b5ac8d635a9f3f83fd580a8dc5b00ea2a0e4c1a8b3ea79a03a8f1efcb4e4",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_13t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "e69a1a24c8d4478a622a9c2442a4cf484e61a0d83c7ab5494e42f2d50eda9453",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_14t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "959b6a7f4184fc1196588861600b948e1a08a3019fc7ba5487fdbdc2cb88bdf6",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_16t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "39b068a8ea5e964a0f2321293c6da05aa43c555970f21392262a8d060649144b",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_17t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "53917fcd9437239f172436a60d105239656f3cd0aaee27e47e8ad7efa92c19ff",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_1t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "f2bfc071a527cfa6dacf417fd389ace601452a0254824cf3be0c19b2d809119f",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_2t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "90d0c44f483c618de3387e43db77bc48c362cabb93f2f6633b7a860e9f00ea7c",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_4t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "ab795b2282a145c7871b6fa51a75389124312b04f1abb4ebb1f11ac9257be041",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_5t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "3473e4511cdea9420b8f25b6cdef589afac7772bd0220bf1661434cff1331211",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_7t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "25d387851d41fb0114ea3cf9d3367d18600b2e2aaf35f5f7efdaa1551f3e9898",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Arc_8t": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 0,
+        "sha256": "b149ad1609ca8beea61314d73ebd507613f3c704f487961a17bef7270a8482b3",
+        "spline_count": 1,
+        "type": "CURVE",
+        "vertex_count": 0
+      },
+      "PTX_Linear_1": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "e10be2f2c03ab724cc199a03da179b5e4cf05ed8f07772132da982b7eee4c629",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_10": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "106e5a63d24a2fc245c774021bc6b310f3de3360e1503deb228ff8542fd32062",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_11": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "6252362074255c3c54b405b7382a593585789c7088a4ff97fcc92bafc467131b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_12": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "cd5f6256f3386ed182ddf95162114f23705523c5d64b254a53a987fa22eb7ea4",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_13": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "8df228dec72ef60391202806c097bbd2a76dc22831c8ee00163f6ae912d8183c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_14": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "6623bf5d584e81d0692aee8bc3ffbe5bd4d829feb7ecf9f451eeda0e8bf13df4",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_15": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "e6f7f86fe77e6886572cc09b36b76da3fb870b9396d1aa3f5578000695a1ab06",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_16": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "1338f9c9d4aa40040f4fd6d7fb518dd96d28aa7e5315b2fad83a945fbc13fd5b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_17": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "4875b014258a74f1f11ca6226c90c0acf9ca630819f08872e32625205395d57d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_18": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "4463bbb7134bb50232c7b6091e447e9dcad5d2fa4d2ed9dda29d0f9319c429a4",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_2": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "5d7ade8932301b7bd2b70625fc6be043900696d09ead0b15db273d5a8c6102ed",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_3": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "12dabdc94900f7353a1a0489e248844ad263141f3c97071f791312da2aea5d03",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_4": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "52afd441d9259666be5b5cd4b6a7f4b4b0a9ba6e95ddeb752cbf7030862a9329",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_5": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "a8d6706c028824168db5d684b94d938a64b54d89de6ec91ffa772ce3a40d750d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_6": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "f5db1cb480ed3f054b8e0ada824391d8fe64bd3c70106e94f59ba3fa574c84dc",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_7": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "bc2c4f2e6392a61f68c3e3c3031854e6a550f712f001227bb4929f74ec4e8336",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_8": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "d02478897e50aad38cd00a6f235d9b12637b27f8d032e06e7ccd38901cd27085",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_Linear_9": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 12,
+        "sha256": "2bda6225721d948a79ac010de744f1e3db59eed7345e172a4dad78b9b2f7f651",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 20
+      },
+      "PTX_PocketClearance_Engineering_corner_NE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 54,
+        "sha256": "b9c6a1805314b79813b6d5555cf1509a281124d6c875a0b33ace4970f9642f34",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 104
+      },
+      "PTX_PocketClearance_Engineering_corner_NW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 54,
+        "sha256": "1cd00be0f0f48b55a26fdeb6b76f4292e83577ad67eb15252a61b9351ed98690",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 104
+      },
+      "PTX_PocketClearance_Engineering_corner_SE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 54,
+        "sha256": "c527bb4001be158e6138820a53e9853bd12959859b1746500f95b159f6c12a99",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 104
+      },
+      "PTX_PocketClearance_Engineering_corner_SW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 54,
+        "sha256": "18e3577e892b2a143032972bfa636b59c293567b57bd4f70cd7c504e531c196d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 104
+      },
+      "PTX_PocketClearance_Engineering_side_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 54,
+        "sha256": "290235ed8c066ed107f4fec1d01d5939a57f62e44fcec944c49fdc8d5b2b76fe",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 104
+      },
+      "PTX_PocketClearance_Engineering_side_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 54,
+        "sha256": "a411ab521b6130d2cbdb2250a47a46484ba1c0be48724c5af864394ec0dc28d2",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 104
+      },
+      "PTX_PocketClothCut_Cloth_corner_NE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 29,
+        "sha256": "2e6df9fa5bdf99279f9cdb1de100425a452fb0d7453443ee9ef98546c4c668f5",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 54
+      },
+      "PTX_PocketClothCut_Cloth_corner_NW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 29,
+        "sha256": "2624a8fbac880404822208fe250d26709b8218357aa17699c4aec2eb517d5122",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 54
+      },
+      "PTX_PocketClothCut_Cloth_corner_SE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 29,
+        "sha256": "be42d0ec8c816d884a08882094c877dc060d5ecbcca3b4dcb7a5d936f729487a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 54
+      },
+      "PTX_PocketClothCut_Cloth_corner_SW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 29,
+        "sha256": "1dc6e519679bd6e8782b868801a8723da0f85b14da2ee8f0b1a18893a9c7341b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 54
+      },
+      "PTX_PocketClothCut_Cloth_side_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 31,
+        "sha256": "fd65da21907e7208091d9d68ec0abeaa1d4923955a79b254a48910f009888400",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 58
+      },
+      "PTX_PocketClothCut_Cloth_side_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 31,
+        "sha256": "cef3b78c26d5ed9ad8a8944e278be9ee407b0762ded25e2da6dd2c8e6dd89623",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 58
+      },
+      "PTX_PocketDraft_Bed_corner_NE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 252,
+        "sha256": "bb1be12dd287714718c53a895ddb7e7ec14c6e9f9637fa7d37a102fa3a838b32",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 375
+      },
+      "PTX_PocketDraft_Bed_corner_NW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 252,
+        "sha256": "a0fb7e33765a1d1eac880e14cc2dca38f0a8001a3c178febf10e32702d9a0a2b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 375
+      },
+      "PTX_PocketDraft_Bed_corner_SE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 252,
+        "sha256": "8f52d1f93df2fed8cc48d85e9550239c373cb43745c06610b49b620ebacb915c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 375
+      },
+      "PTX_PocketDraft_Bed_corner_SW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 252,
+        "sha256": "a802354c026c689112747943c79ccadae7fcd351283601a62fef2d0adec6f250",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 375
+      },
+      "PTX_PocketDraft_Bed_side_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 268,
+        "sha256": "60e9f182803cd6680fd8d7d29dc091f20c080b625f7c8b3979e4899a3f8a3d2b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 399
+      },
+      "PTX_PocketDraft_Bed_side_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 268,
+        "sha256": "348b73018d480b9b4671807ce6fdfe5d014dfdf0136557fabf9975596c35e029",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 399
+      },
+      "PTX_PocketDraft_RailSeat_corner_NE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 344,
+        "sha256": "a7c616ac31b4e173e4045ecb1056043f87e341f9209f22adc5af0cc4f2c8fff6",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 513
+      },
+      "PTX_PocketDraft_RailSeat_corner_NW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 344,
+        "sha256": "fb40393751a58f2c141ca01b8cf1756cf4fd7684a207ec0ac58d89dffd2f2682",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 513
+      },
+      "PTX_PocketDraft_RailSeat_corner_SE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 344,
+        "sha256": "190cbf4e538ee00fda700b80450b80866c8de47039e24a411064172e09639d3d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 513
+      },
+      "PTX_PocketDraft_RailSeat_corner_SW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 344,
+        "sha256": "601f417eadb8b749a5264dc4f67c294528f05e886d022af3f292d7ff6564fefa",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 513
+      },
+      "PTX_PocketDraft_RailSeat_side_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 330,
+        "sha256": "6b292263d11f1b10be31be728991e7cf79c916ebce89cc66816161af228b16b9",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 492
+      },
+      "PTX_PocketDraft_RailSeat_side_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 330,
+        "sha256": "76d4fe24e89601535de75a4f8f1f44f9f2f2666ab64a37d8beb9b5d7f45845e4",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 492
+      },
+      "PTX_PocketDraft_Rail_corner_NE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 336,
+        "sha256": "1d47423b6f5c3cde54fa7b5a3f981fb11fd5fe900c4203e27a2963ca156ebe9c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 501
+      },
+      "PTX_PocketDraft_Rail_corner_NW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 336,
+        "sha256": "018e64f2a6c0d403b37042eb96a93323f6a7473897ea306121fb6eab7658a7fb",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 501
+      },
+      "PTX_PocketDraft_Rail_corner_SE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 336,
+        "sha256": "2050b9683cf32d9a06dba59be0f3bf65fef70d4581b68548a437c98398c30fc5",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 501
+      },
+      "PTX_PocketDraft_Rail_corner_SW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 336,
+        "sha256": "1de6f77cf009feb5cdd974cf534b6ddbee75f298846c43812ce9b2b4272e4359",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 501
+      },
+      "PTX_PocketDraft_Rail_side_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 322,
+        "sha256": "88968fe6f788c26b7cdc00262da5b1c10e8cbb5821195cd5d8fa97aab6382ff6",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 480
+      },
+      "PTX_PocketDraft_Rail_side_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 320,
+        "sha256": "5191c10cfcb813e0ddc513fed89fe889af4568c78bf6d2d7b5adf388d2367db6",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 477
+      },
+      "PTX_ShelfDrop_corner_NE": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 29,
+        "sha256": "4a90d59b0ea95e9691fbc5cf322acb95c984966d29e41b86b31fa117878800cb",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 54
+      },
+      "PTX_ShelfDrop_corner_NW": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 29,
+        "sha256": "c966dc542d87ec23838ee48a004de4d60f3c715778b1e4e2110116333db9e009",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 54
+      },
+      "PTX_ShelfDrop_corner_SE": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 29,
+        "sha256": "c763c3cd122ccb4773ac7b08747d449bb2e93300341a085418b5b0c095d01179",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 54
+      },
+      "PTX_ShelfDrop_corner_SW": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 29,
+        "sha256": "3193282c7fe60fa3845a3adf7962e1eda4022a42a626a303b024d14774c6398f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 54
+      },
+      "PTX_ShelfDrop_side_E": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 31,
+        "sha256": "1fa05bca47f9418cbe0d218e3fc496e7ec7f339dfdf5a691ad6937f9045cf52e",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 58
+      },
+      "PTX_ShelfDrop_side_W": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 31,
+        "sha256": "03649f087624101af92ff206248d952f654069325579eae1e726321fe1c20991",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 58
+      },
+      "PTX_SolverPocket_corner_NE": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 50,
+        "sha256": "8a6d1e4a9135828e327c7c3f2d64ff8513c9ff3835ae1007d0bcc5942b611e3d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PTX_SolverPocket_corner_NW": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 50,
+        "sha256": "cefefc970afd915918aaef0eb6cf98f614b91d225632b3f044c469ae36d3bb08",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PTX_SolverPocket_corner_SE": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 50,
+        "sha256": "495b8a196a030ab329228b0f48ad965e95e03493a4324610b37322374b89be13",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PTX_SolverPocket_corner_SW": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 50,
+        "sha256": "c987a95ae8ce80fb07146feee3b3f18340863a66054844bfebeea897f35d856c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PTX_SolverPocket_side_E": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 50,
+        "sha256": "9d0d164b3c9c7c01a81bd911ecb621ffe8462e4f33c0c9cdde0662efcc92fe96",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PTX_SolverPocket_side_W": {
+        "collections": [
+          "10_PHYSICS_PROXIES"
+        ],
+        "polygon_count": 50,
+        "sha256": "5e50c43bfbba35e63c86e94c4c79441188d0b49614a69497d9d82452ce64e1f9",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PT_Apron_E_Lower": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 26,
+        "sha256": "e8e858beca887abfd62f4f5dfec67f5cd81da7e1688d54226eceb7a5d14345f4",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 48
+      },
+      "PT_Apron_E_Upper_Foot": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 11,
+        "sha256": "3045514355df7655447228ac8524374f712eb55f617336ff2c528eee48b7292f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 18
+      },
+      "PT_Apron_E_Upper_Head": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 11,
+        "sha256": "0de137429ba6c2ec4b6ce93b1b4f1b81573d692703ded454d9653937203bc131",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 18
+      },
+      "PT_Apron_Foot": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 20,
+        "sha256": "c0f58094c19a2addf19c7ca31af404cca42c0af7f2cb190df64987a87e973fa9",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 28
+      },
+      "PT_Apron_Head": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 20,
+        "sha256": "a371d69a2328b0a53a6147f7d03b2673996c5d8796b9f0506707019b0b8e2408",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 28
+      },
+      "PT_Apron_W_Lower": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 26,
+        "sha256": "e55360cd1dc25f06503cfdf6397579c63c2a08eb83b7600e6930c99c15063b73",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 48
+      },
+      "PT_Apron_W_Upper_Foot": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 11,
+        "sha256": "2ab2e29b25bf0e674ff8dd0bcec82ed57a790135c53c30cb25423a48e6e1d634",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 18
+      },
+      "PT_Apron_W_Upper_Head": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 11,
+        "sha256": "40856414314402d2a3a40b0c00bd685864bc036c519fa3a5258ee5e6d61b13ba",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 18
+      },
+      "PT_ArcSubrail_10t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "18fb9d00281f3701a2327a1f94287e8d43120c5b51ce24ff38d665d919c974d2",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_11t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "8aef23ded5cfeaa577a14014bf04711aac07fd9cac7ef44f833fafed0274bf63",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_13t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "cb6ac6e4a127feed2c7376b2cfa1f95e155741c6b0b7ffc421e5380698118a5e",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_14t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "36539c46f43c9ebce7e01f8fa6d3df90f2f05287f38d21ef895d9c9e3937e0ef",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_16t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "43a4cc9def2ae38289e6bec17c34fd3bf562023a717fdf7bb4341c6f5ce1e1be",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_17t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "0f1d99ff5f6e407f49de4e6da25fa496fd1cadcdfee355766e14c1935a10ae2f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_1t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "e79f212d153e83835e896b746413dd325f7d73ea9bb3dbbbc155bd3c33199528",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_2t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "c7469bf3cdd268a55dfb71035b2ad09b82dc2916f85343a7f7aac3b3d709597b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_4t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "2eefd63adfab76612a5770baff999d5ad7b0839129db097a8caa2de218984f3c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_5t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "e7f6405283308189cd4aa1b04be9ecea80791d63e59f6914ba3986ffe2fc8af7",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_7t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "72975195a100aeca6c973a65b5e489eb68e195cefcb0bfaa8198cf993b5261ea",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_ArcSubrail_8t": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 66,
+        "sha256": "788933a5e2eaa1c24678a60edb8752d410bfd1e75e61377392b9a407024ad243",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 68
+      },
+      "PT_Ball_01": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "07d4158a8f1936f7acf4ecde24272b673e9b792c8d58816e6648888606b0ff6b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_02": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "15ca08af9842de0612b488b943348cc6d53a8f7382fcc1629dd7305be883a9ae",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_03": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "f600e04ccafea1599024cdf25ef645d35984f56057c19ec1c4964f42e8948a51",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_04": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "0f7564655773ed9e673640473d1299e1b1b93bb7b4edf7ae9375b66a9fe93214",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_05": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "9b5742aa62cbd7262c5ef97487a0669936c3025ec61b0cafaa9a4c294c4a4987",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_06": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "e1432fbf681f0462b46c1145e2c9310bedd91cf222636398959a700050ff14bb",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_07": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "4639accb50b30e656c72a6e38936d716b2f2497bc1dec72591788b477fa288fd",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_08": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "0d4b570f3d6adf5b087bd3774dbc258b55b3242cd096b1799b981f4162db1146",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_09": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "2e81f9494f75a9345a473e4ab1528c251916ebb5ebae528d4a6208b88196e6ca",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_10": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "6d4919d4673c06ecfa6b5ea782b24f2a9a07c706d58268a500ca1daa5dfb974c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_11": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "d3523ec9683962d8060cbcfcc10103f255dffb765a030a4032d8c5533e56683c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_12": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "0fd3f5da819b694d950661e0c3c91ba91656ea5f4b45d0ad6f2c3791ba0ca55b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_13": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "0af513f1588879f63a1c12a9d3aa8699ebeb985b8130de596f322d8de732e61a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_14": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "0ba2fb8047651018b72a1b3eed4831ce05823a567a0051c49fad8e6e4754a0f9",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_15": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "c9d058af4c1451046e8c5e60329381ee2574d4fadc763db8867cd86a5f68a97f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_Ball_Cue": {
+        "collections": [
+          "05_HERO_PROPS"
+        ],
+        "polygon_count": 4608,
+        "sha256": "b0ebf6b88db661a2340f2c345043204a2b0239180e8c20e99d7b1f2c82127554",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 4514
+      },
+      "PT_CapHorn_corner_NE_10": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "955f0115c63cdd76621ca1559bb8119caecf42a9f2f14f441963a29015cf53c2",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_corner_NE_11": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "76ac7787563745d72d4429b67808afac69377243f4a0b1e9f43cd9ad3b45a16d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_corner_NW_7": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "e675ce93e58f5d9f1821128542db8a38891ffb3739e50ff062779acaa6efcc83",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_corner_NW_8": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "2951fe02c8b86982357b8de0f37afdb6d24f57439cfa9c14abc958a82c2498ca",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_corner_SE_16": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "b81c2499aefc435fab143813a3819b8c3d77d99ed934c40c185d1f78df56c509",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_corner_SE_17": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "a1135c9a4f374873bde458eb123bfb641811901643d70660afff6f3755dd8e07",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_corner_SW_1": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "26dbb172fc8560ed9a97fe3d63bb8b731ab44e1af12981cded743b80018fde01",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_corner_SW_2": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "9ae5f4036e92179a0cbe7b3cc12465eda65cad507c255749ac29046c6d371e7d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_side_E_13": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "8a39553c97de527f973650de8efd8079cb347aadfae6943fe800db3f66c53754",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_side_E_14": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "f4eda8fadcfb870e9e8e091d2d631cdf8cbf80f55416a870333dcdfd9de65b07",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_side_W_4": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "3450df937abccc13e91c505fea1718042f5432de403e66d984e5e468948de494",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CapHorn_side_W_5": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 18,
+        "sha256": "3b655f77d5a3df550a94a070052bcfd15202133e1dbb2036e10a8e454c103394",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_CentreBeam": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "0d67a1b53b142e9a7f755f266f294ab9e3e22aa4bda1f6e055d055eae4453967",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Cloth_Bed": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 184,
+        "sha256": "6bdcf8864cf95ad15115cc05dc2c12f6817f5e7a58cad297a86583caf48494fa",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 342
+      },
+      "PT_CrossSill_0_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "4585e3ba7084b12c550f29dbf689238889d6e3510cde8563ede080f6dcf0b749",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_CrossSill_0_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "895be06db954a8a972fd6381da159ef51d20d7299f9ddbbeede94e095571961a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_CrossSill_1_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "b03ad4fb4c8a59f5f17390e4cd1d3e11a6f59d5c50203fe8e0bc7d27600011cb",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_CrossSill_1_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "10cb5c4f46cec4ee222e80b90d61cde45ae269def6bbda1712cbb83525fddf87",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_CrossSill_2_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "f5353d77c56f9ce70ab9c67b289607a30eb99445619edeee851180fe220db732",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_CrossSill_2_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "4290614a255efd6a435eb90d303218a96c8881e47fd6530c57fc0e59616a8611",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_CrossSill_3_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "00c38629695d4316eec4a944c36539e0da3cc96082c058e3a6b242c668bed1fb",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_CrossSill_3_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "0c77dfee5ad899b60926be6adcc21dff75b8198f716fde5dbe4863c8dca87a5d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Cushion_End_Foot": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 212,
+        "sha256": "c205bc21de6086ae3dd11be70ed6373f7e826f4d3f41e675f91f6ac2369ce371",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 215
+      },
+      "PT_Cushion_End_Head": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 212,
+        "sha256": "7830de16179102786b49536839f90e509246476c9b52dc7f2f26dff06a87508a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 215
+      },
+      "PT_Cushion_Long_E_N": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 212,
+        "sha256": "16a4cae1a33a213836201010ca710431e8a7bf63c5ea1710ade0bf6d19792982",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 215
+      },
+      "PT_Cushion_Long_E_S": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 212,
+        "sha256": "980ff5677e213540ac6c95d69256dea8f94ae8f58776b81f787637b208fe9716",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 215
+      },
+      "PT_Cushion_Long_W_N": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 212,
+        "sha256": "a864cc2d5b39759ae171af985f2e4d9589c21b987fe36bff6443f73575131903",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 215
+      },
+      "PT_Cushion_Long_W_S": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 212,
+        "sha256": "dd1588cd38a871f0acb9906f11b152051ddbca55cddb671de55771b47593fce3",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 215
+      },
+      "PT_Featherstrip_End_Foot": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 170,
+        "sha256": "6ed2ad6879b705802fa7b24241b956a76599b3feafcca70fa22c0332ce96aa34",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 172
+      },
+      "PT_Featherstrip_End_Head": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 170,
+        "sha256": "64d20cf20e037b184f5b474e1a4784f4bae7ddcbbf8877e83fee0d9e03a80fce",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 172
+      },
+      "PT_Featherstrip_Long_E_N": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 170,
+        "sha256": "36a2af06643d5c141397a9dcbf362d5723a66301ee5125d1559cc3ca4c75c501",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 172
+      },
+      "PT_Featherstrip_Long_E_S": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 170,
+        "sha256": "e956b5425ac1189e13050939497a3a31dccf0a2fc5abe055dffb94f474c9a32a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 172
+      },
+      "PT_Featherstrip_Long_W_N": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 170,
+        "sha256": "30c4ff2cdaa2429d8128cca352c85f448738ab188c2dd1321ab18a4faa890bc0",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 172
+      },
+      "PT_Featherstrip_Long_W_S": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 170,
+        "sha256": "64142055a2ebd5034c07089f6cac3b8a361f3d600621521dffb1188c40ff00e3",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 172
+      },
+      "PT_JawSubrail_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "2db9df2134b9a473ad06138db275fe4f5405afe5a5a06a300086a09fff877c7a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_10": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "5c266f9f3107c9d97b3c5b8569f9ef3326aee5a7c8e0461749f22a036295c553",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_11": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "f4f7679ceb0a14759d5f68d94ecf921795e385a6b801746633177f0f9cd5c236",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_13": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "e15d13f41d9394b13c9010dd7ead019347252c5628c30876f934a6da43d1a4dc",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_14": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "cd1d2256778e32f5c74cdebe6334c8260cf9f3b6bf4a1250a86df4bbb0ea8111",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_16": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "70377a39eca926764437e61e80ca597d8f9250728fdde6525b8982e61bd97dfd",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_17": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "307e21defb2a612afbe86aa0e18f015a176bbee52984eaead4afd5c36db519a8",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "bbae5e1077c120f4196cc17cd08969aa66aa77a101d883aac6fe65edc948cdfe",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_4": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "53af07ff5aef0a0528e7537b86f1507b05773d8878a0014756610f0a26713bfd",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_5": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "86b0d234b02b33431e556bee1f00ca304f824eb13ef34d543c06130fbf696fe9",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_7": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "34628dce3f3d46307f347f462dae456ac7d9ff37ed96f3272313dfc065e64fb3",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_JawSubrail_8": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "b7feaa9bf8b768d446e5650f36fe99dfe35608cca363b52d66074e761c204e13",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_LegHead_Corner_NE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "78fa59210d4f2fbd9c7b674da289ad38d60409b84317acefecbec2493b3e8c69",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_LegHead_Corner_NW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "a9b46762be9e40ea1f3f0bc86d7e638fc61430a9e2f0f3c4e1f04c1d75d4d8ca",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_LegHead_Corner_SE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "4c4846d0795109c2317532579f269b44f9bc813265d661ad96acb84fe153703f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_LegHead_Corner_SW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "edbbd78e55e7efeca369fa3ca230ea5bc431fd0751918495bf7cbf12ba7a1931",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_LegHead_Mid_East": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "103484251868d3512617e3306ec8770f4214ef675e8f57d2b384e2bc939919c8",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_LegHead_Mid_West": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "57e1f879ba55dcec52cf8ba7812f7ea5072d6eba8c9568ecef2f4e39ae0ba8dd",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_LegTurned_Corner_NE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 482,
+        "sha256": "a3f9132051f0b0b5bb7861954cf25c6704d38f26835da5e383691481033342df",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 528
+      },
+      "PT_LegTurned_Corner_NW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 482,
+        "sha256": "72937d840457fcf165e2a55e72e965daba9ce3723b9955ab5713e730898e0323",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 528
+      },
+      "PT_LegTurned_Corner_SE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 482,
+        "sha256": "f562d6cd92b1f31339b4ef24e93324d2a20f1aab4f38a4347fe63c77d06b6624",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 528
+      },
+      "PT_LegTurned_Corner_SW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 482,
+        "sha256": "cb51968cb4efd49333b2dbb2e3eadbc13b6a2881b51e7afe6af1d4b6207323b7",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 528
+      },
+      "PT_LegTurned_Mid_East": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 482,
+        "sha256": "09f41211300e93391d199ffa8f9430f548525770ab4b045bd7555a4a364c0609",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 528
+      },
+      "PT_LegTurned_Mid_West": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 482,
+        "sha256": "7b8c8bc1154c94002ba639393cf9a192f33b20744c609901a3e5cda69477d404",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 528
+      },
+      "PT_LevelerPad_Corner_NE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 34,
+        "sha256": "3f22da944417640623c7a1d99b0d4ade57edb166e9679ead6cb89d6b9317ab8f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 64
+      },
+      "PT_LevelerPad_Corner_NW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 34,
+        "sha256": "2542013fe461dedaf384bd5f757333826498e81f9d227796fb5c2399577d9de6",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 64
+      },
+      "PT_LevelerPad_Corner_SE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 34,
+        "sha256": "132902c5737fe3fea0d9ee59325c915eef0e048cbacb0aee6c5ada1937851042",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 64
+      },
+      "PT_LevelerPad_Corner_SW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 34,
+        "sha256": "038899db6f43f7c5f0f99051f36d1255003488018384300e9f43b14ccb40489d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 64
+      },
+      "PT_LevelerPad_Mid_East": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 34,
+        "sha256": "b97d18a7467ee8b5fbfd1fb5be060f7e22d10510c1165881d437897d87607b09",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 64
+      },
+      "PT_LevelerPad_Mid_West": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 34,
+        "sha256": "e671ab1a3c3fae00103548932a516ac6edc48061bc03a9d1ec250074e3557130",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 64
+      },
+      "PT_LevelerStem_Corner_NE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "aab14fe37783b52a95f684e430edb8b08e6903fdc9fddbf7160504392a51abce",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_LevelerStem_Corner_NW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "6e71ef890009125260d1da17ef077f544ed4f7a1e63cae0e415fbac7869d2fa5",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_LevelerStem_Corner_SE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "86e536c83d2b6ea95c9d7c1975171a0f29a5758ea16de9ef033aee57fb1a0083",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_LevelerStem_Corner_SW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "7fc88b6128a9ef2bdf02ca034ae7e4688b9826604acf1810d543535e15f47620",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_LevelerStem_Mid_East": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "393b92ca79c4013c5a4dec8b367170c95e25c13f8ec942067ab7dba13f06ce8f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_LevelerStem_Mid_West": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "934e6eb32ff920aa521fde2a3e2dc6569a5659a2fc99f7487e8245522a5f8173",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketBasketBase_corner_NE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 50,
+        "sha256": "d0bd52fd16723117c628f8fb0556e9a2f55ce438fc097cfb66ad1e0ad324d6e4",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PT_PocketBasketBase_corner_NW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 50,
+        "sha256": "ac19e35c6f36d62428056ea9e1367e8102ec6f8798ad1065fee6c1582243c7b3",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PT_PocketBasketBase_corner_SE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 50,
+        "sha256": "aacd44641479c9cf7fa6aa9e0f9d186af3a4b38f1fedd9a69d3a028aa89e5f54",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PT_PocketBasketBase_corner_SW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 50,
+        "sha256": "b18f01a65e92b6907877b7ad10571ebf57945064e50f3188cd7fcae8793584c1",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PT_PocketBasketBase_side_E": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 50,
+        "sha256": "369ca03345e1568db746bd88625c4d232726eb59b0003c9583c53097a6be5f4d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PT_PocketBasketBase_side_W": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 50,
+        "sha256": "daf3fe6ddc6737cc1dba6cdc1d3453e4906b959211f529cbcdf96e5440114e8f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 96
+      },
+      "PT_PocketBasket_corner_NE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 144,
+        "sha256": "6365454c5593e17057f7b39ba96863520b98a330903563871574b6b0f491cb74",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 192
+      },
+      "PT_PocketBasket_corner_NW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 144,
+        "sha256": "62e25fbfa53ff42caf4ce414f9c8ebd4a4c29d9da3c85ad1e9e1311665eee1cd",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 192
+      },
+      "PT_PocketBasket_corner_SE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 144,
+        "sha256": "5e60339d417e938cdb1de4dcb9a364b01d32e945eda163fa3955ccfbc4860a09",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 192
+      },
+      "PT_PocketBasket_corner_SW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 144,
+        "sha256": "8e6bde8c2334d509f82cb4a12a981c88997d2793add0a0b793b6f0cb10fdf5c6",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 192
+      },
+      "PT_PocketBasket_side_E": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 144,
+        "sha256": "e206dae7625876aade39b92c273ff9270dddcc15c63d70dd079b0c2a091943da",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 192
+      },
+      "PT_PocketBasket_side_W": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 144,
+        "sha256": "04bc95004766efd85a6de52c467dcebfc2f05e1049542d3167409072b0530ad0",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 192
+      },
+      "PT_PocketFacing_corner_NE_10": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "cd79909548477a83cb8cdc6e9e3dfdafce53516d3c5d28d9e61e8c265e096013",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_corner_NE_11": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "3ebf252820998431143aa33bafd95ae4f449c3a98457bff56e8ff5f8717ac24f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_corner_NW_7": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "71e8d49bab2cfa26ec813a00cc678d05a94be4ac2571ae5631ce4a65a10404d8",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_corner_NW_8": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "d4f7f4941c408b485257903cae8be2e129cc599d856f426c65d77b8376045d3e",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_corner_SE_16": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "63228a06ee52892132fa475976a87a2c8baf9c4e009c894b3841fe6a78f69182",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_corner_SE_17": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "2645f789d2af5dce3e58bd5a49e51d9dd504e73b23a17a95c01eff73752bf021",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_corner_SW_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "9341ebaeb7c4e368c034eddcaba23b85431059a93a16ffd3c91b32d704315f46",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_corner_SW_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "f9dec7a1bd96e5be48e3e395665efebdaf3f217b73cbde4990c84c2429130551",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_side_E_13": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "a726842481a82ead239235c21f79292c3d646e664e21772f5c432339e4165d5b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_side_E_14": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "a02b46a61f1b85b8dfc662179614bdb4aa044aec40ad482bc96370b6913c1d86",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_side_W_4": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "8fa3bf34ed41d90dcc6f9a022d10e73aaf02e37c899a5d332f6b28ed1b3a9983",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketFacing_side_W_5": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 7,
+        "sha256": "cbf6d0f72395475ea9bbf14a5d780f8bdea2a00bc56e54d11b17134f9b2165f3",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 10
+      },
+      "PT_PocketIron_corner_NE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 178,
+        "sha256": "cbfaeb857529494d641efca8c5edd156e0ab352e7bd9ff8713592987b54a9056",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketIron_corner_NW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 178,
+        "sha256": "daef1c96607ffab77519723c93335c859a239dd814f711903d4cab5bfb97befc",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketIron_corner_SE": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 178,
+        "sha256": "6f89be7b6272e2039b48446be64e992e04ce45b850cf4462fe48742ca9083b4a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketIron_corner_SW": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 178,
+        "sha256": "901fa080d653bb9b86f33b6d51375dd014035b9063cda5d4cf9211c382382410",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketIron_side_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 178,
+        "sha256": "9a77525046f7afcf8bbbaf7ad9c356723f253a29031c1ea2852f678823ff707b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketIron_side_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 178,
+        "sha256": "af2fb1627c2cbb14249a0d185a13ae0cb8772cc8d40a24ab3709f9ecad3825bd",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketLeatherSkirt_corner_NE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 178,
+        "sha256": "1c901550da0253f035a5149250f7ee594cf7cb7cb73da7bd21bf19eac9ae7aca",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketLeatherSkirt_corner_NW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 178,
+        "sha256": "97dc063c404e42d8e5191cc4b6bff8f64c80fbf9b399bcec6d49cdd4ba202945",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketLeatherSkirt_corner_SE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 178,
+        "sha256": "a5711cd9890f77349a37952b2e97484b652d014669cde2e6e5146bf24a3250b9",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketLeatherSkirt_corner_SW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 178,
+        "sha256": "8e6f6f456bb57d78bd6ecabf5471c1e11892327b9eeb2add98c6f96cde8c2553",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketLeatherSkirt_side_E": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 178,
+        "sha256": "0e12acc21f241d82ab3b3b0d246e9e75d2b3065aad4ea3a2b93da2a37dc95023",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketLeatherSkirt_side_W": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 178,
+        "sha256": "e6fd9151782a5bf32128c5eaec87eec5a2043802488af1714d3d52e13e1560d7",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_PocketLeatherStrap_corner_NE_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "346a2826cce844b117dbec6272e38c67e7106fe7673f0353ebb54692b19c48ea",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_NE_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "e1f439117ae686f9e9e87208195ea38e293b3150cfd5da336e5aab1c824203bb",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_NE_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "31e8a4f385fb4c694c04a32fbfa7da6b8b57c82832ccb1443d6b7cd93b1432d5",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_NW_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "adb0ce74a73141a346156f1dc538a67196ed4aac6fdd8eb16198a088e78522ff",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_NW_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "31cab4b4da317362720cb80e497d57c63d2bab63904d22b6ef3c5bf1a344e84f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_NW_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "da98ba74eccac0cc4e9519878615a2ffd2289572e123d2a674861bc0d115800f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_SE_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "d50bc4afc40b237f4fd75bcc5c8cc2229b2bd8f087fb7bd4115c6fac875ec2c5",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_SE_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "dd705435806fab7c11455db6902e879c5ad5691fafd4c6d21eb01f3cbf89a839",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_SE_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "3a63629f503f4969af44ffd998ebc39b55d9223620fdbf23ab7a69b02160b4bd",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_SW_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "c9eb0ffc8b67e1e5b75c8b63ce09c045a4b64ac0da0ca47aeac7cf70450306e3",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_SW_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "334f047b76f02c8f7a98061f6aa2adcaf9d8ff11d0748aa49ad6864f02bac07b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_corner_SW_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "42aa541ce69b33bb4dbe7992b834808a72dd1cac5d72e72ba7f1dfa12d86c208",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_side_E_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "d4bf1725e28f48ce6ebeedea7956cce85c22c080e87fd2b3298b3b31dbbf79bf",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_side_E_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "c8ec8420ebb3a7afc95be6ee6bfad6d46513bb54a33c120f64c55124d6d0f83f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_side_E_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "4eb8748cd78c9b2507dae91390ba23d2c7f82a2326a47ff901a61177ce561fdd",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_side_W_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "3ac173628c89ebde3daf8a9b1b9fd2b1a1ad6013a9f41a0e043831f87904fefe",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_side_W_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "3c1fcb3da5ada0925763ae7b95b5eb66cd3b02a4a19f6a4129cce532fc67bc33",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherStrap_side_W_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "e1b1afa3fd89476009aaf5e99e778a21409b65eb7227541f48bc88e037e8c300",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketLeatherWelt_corner_NE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 578,
+        "sha256": "35788929bb00c4da93bea0b1c643a72f73fe31ba900668ec01232500d609aa27",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 588
+      },
+      "PT_PocketLeatherWelt_corner_NW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 578,
+        "sha256": "906b6674dfcd7509b0e1c579850d9459dec8aa50a6ba0aa85056d11e766cc343",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 588
+      },
+      "PT_PocketLeatherWelt_corner_SE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 578,
+        "sha256": "39d65e7c0249165554cbd20bda4caf6ad937d8a4cbd000d43b323062e99ec756",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 588
+      },
+      "PT_PocketLeatherWelt_corner_SW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 578,
+        "sha256": "3ecf3aa10a650b0318c4f05b99e07f661b7baa015b12670e940def7d56c4a9d9",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 588
+      },
+      "PT_PocketLeatherWelt_side_E": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 578,
+        "sha256": "d0e1f335f0af672b8652ab8d521fac5cd50f5ed14c0477b1ba22b6b08c7a59ec",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 588
+      },
+      "PT_PocketLeatherWelt_side_W": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 578,
+        "sha256": "01d1074d0af102e5b86f22e201b8722cd93efb8aed69be2ceb2936b1866c4d5d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 588
+      },
+      "PT_PocketLiner_corner_NE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 125,
+        "sha256": "3561cfbe3beb664492bc27b175272d527053e22e3d1cff2957d143872a06eec1",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 250
+      },
+      "PT_PocketLiner_corner_NW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 125,
+        "sha256": "11e6f9c0b837f1b6d6b3a6a56e6188b3fb76b2a4f3ebb281db4a208e17534ff3",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 250
+      },
+      "PT_PocketLiner_corner_SE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 125,
+        "sha256": "43a6addf6616d49cbf4951ed61d2fe71884d2e1601805f66e3f3523f2e3aca3c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 250
+      },
+      "PT_PocketLiner_corner_SW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 125,
+        "sha256": "b73a2d33aae49b0cf532521818db480c8c795dafdb380758f65d693b7cca680d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 250
+      },
+      "PT_PocketLiner_side_E": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 133,
+        "sha256": "4cf6edfbec2851c76af22c9ab8af03492614b018ad12478cbdc57c256450fd39",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 266
+      },
+      "PT_PocketLiner_side_W": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 133,
+        "sha256": "2149b5d1909122624a1c7a878dc0e0a0aa0df409ddbd12f555f27581a7ee1005",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 266
+      },
+      "PT_PocketMountBolt_corner_NE_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "fb3a2c4049fab9f6d4428d02aa6c65b9180b9be85effd029831c141762c93818",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_corner_NE_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "32b6dd132d7360cef368a0c79cb88fb2a32ca287aea6cd0888fc290dc27da644",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_corner_NW_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "e902711bb7f5fb2af80c4e47fcc3b02797c8ea91f20682b10f3535f5c61abb4b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_corner_NW_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "71d76b99e435ad367612cd1d5f5b88f6d1b10e8791c18bc6a9de2a31f0d8e34e",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_corner_SE_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "b895bd8105f37877140a8dbf8b0f84dbb9160f6d1039845e8278b6dc98bf0867",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_corner_SE_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "5948d8a085a596b83c5683aff1c384e47e3a6180a7a8c15bf2030150f102aec6",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_corner_SW_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "d249e808a3e2e48ce6f5660b85de4416a74ff3a2b2a4b9bce7bb5564d2fca4ed",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_corner_SW_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "5a55cb5694d4ddbf9d2534607e1db3fe00cfd921bf94780fe18e5b41328c55c9",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_side_E_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "89bac002ad1bb9053822516a979fe79a95e31023449ab97df2dd17d6f09732a2",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_side_E_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "b2d71a2abbf9bf1cb74bb69e1d3beec8b76dd7692259479b1fdc85c7b6041c49",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_side_W_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "c6f92a0f46822607074ac76c0a3c6d99a211cf7ca70745626a9db1b4e298be3c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountBolt_side_W_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "dd68721d98f0d93299df0ad3c666804c366c849c5ea9a563c22f8ca1636b56f2",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_PocketMountEar_corner_NE_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "16a61d482e9fa0debbfcda1b420630e9170d729166485d7123e1c6898ca13f14",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_corner_NE_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "af8482baf02ce1f00babc434d3588a5ef48f55f4071f180b74850f10cf813401",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_corner_NW_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "d2a22d3eb13603d230445ea0e35ae8c28758241481e26909a9eb9dc04a392d51",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_corner_NW_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "85f3f55074baf83e4a5aee6c9abde72af033a8d1676b4b83bea453178421c85a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_corner_SE_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "3db0f01c2afc1f73eb80e020d6ce1d092ebaba7d264bd3d293290db919bb80fc",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_corner_SE_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "e3cb63d195db43591f2536bc3b042a919e6935435c445adf70c53a02b0db4e84",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_corner_SW_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "962b02a66cf1c2703bfa29191e57e1ef2e706fc1e658f30aa8c46434fa8a83ab",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_corner_SW_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "8244c67d21ddd7878224bd8c318522531bd1e21d3c6aa110bbc873e9f584a415",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_side_E_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "4c94daf01202b84f7e48d1744b04de557ca76769d22483060a67f9d73ec9cb30",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_side_E_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "0525fabfccaed06ec265582b0c3b7694a3bcae2a7248ab2c9c7e9272a0a14dc5",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_side_W_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "549fd4db31fc1515eab858ef2422bbbde56bbfa6159301ec8b7949c8fcb5362e",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketMountEar_side_W_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 6,
+        "sha256": "543b178acb290202d56f80c2e51cb45f4947e64586840f04f4a878f3724b2535",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_PocketStitches_corner_NE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 84,
+        "sha256": "7aa18f7c738b7c430b0be3a6ab76ea1124de16680051a4467a95a631d327f511",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 112
+      },
+      "PT_PocketStitches_corner_NW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 84,
+        "sha256": "3e1053211b3778867b6e9ed3986307b6a4ebffd9cba5c8e4afada773ed171186",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 112
+      },
+      "PT_PocketStitches_corner_SE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 84,
+        "sha256": "945e19bfee0a77d96334e2de738f880db833770a579073d8a4ef97f827a8b05c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 112
+      },
+      "PT_PocketStitches_corner_SW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 84,
+        "sha256": "8bb8fb8f4dd8af5182b9f72fe17b6fd9f456be06e1b0aafab9d59267208b5555",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 112
+      },
+      "PT_PocketStitches_side_E": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 84,
+        "sha256": "a7dec171a6ae418e75a25391c5ec816702f54817412ed4659fec08362e9f3d4e",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 112
+      },
+      "PT_PocketStitches_side_W": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 84,
+        "sha256": "9940812098129bc4fbb874e97e61db5bf6fb7474e0ef12a276bdd55185326fd0",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 112
+      },
+      "PT_PocketStrapRivet_corner_NE_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "018ee490bc4f6f741786a3f8638f14dea313531cc5db6a2ab984ee708a76c3b3",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_NE_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "4f1cef1f7d17593edf08769e9fd2556380318bef1b9e1ea38e4ad251f4a5f9be",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_NE_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "51b5afdcd8ed863c76460431ae4170b8e23acc4a8c7365d91110c5d8d6cbfeaa",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_NW_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "4a3fb35e5d77aa8dc107bbb07666425d96940ef25e583929adcd76115c01216d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_NW_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "b9d5283847d9bae23333506c9e277e6d152ae05fe36b70a43aba49ef211a9b2b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_NW_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "d43a269b20b5b684583e2004cfdafbdb9750f333217d9a12f87aff5080790572",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_SE_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "a6fcff83b1fe8960ef4a8ab61a9e2542bfa67c936ad267f849c3a4021adf21b8",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_SE_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "5894a4a307ff76ce3337dc7071022286bd3322c0c896a7003523835765afcbe1",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_SE_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "f2e2e291a6ce861847b1e023096281d7405832c9070410efcec2bae50f85d108",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_SW_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "eaaedb52bf860fab60e955afe97df8d19dea0f61209ec9100db7d668f2e16dcb",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_SW_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "5a130d14bc33180ce039376883aadbebb48dde3d641e0f75eda88dcdf5ebeca3",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_corner_SW_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "60de5d7b8b783550b15a7c6c9338da790f1bf4b03a986495a631e067d8788d43",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_side_E_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "0819b82408011897b3cb2b3850284ffa2238a28511deec80c123d3dacb64fd67",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_side_E_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "9eff33b6abc7a7f4cc87fc0c782492d80a30119d5a46dbf37e69ef85d5191b7b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_side_E_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "350052519ed382e329be8f9676e83685b6835fdd30be8ea912c095759255cb2d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_side_W_0": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "3681e6f17bd9cd7317642f30a712c4ad023deb1004cba75f6aad77af497a3547",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_side_W_1": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "a99d29550e7a7f8824e76ca2d7e431c97b22033efb5fedd5b80d09fa1d6b9c61",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketStrapRivet_side_W_2": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 18,
+        "sha256": "0447d11c73f919d677d5a1abfae1ff861521e9bbec7971155227fcb4ac218df7",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 32
+      },
+      "PT_PocketThroat_corner_NE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 125,
+        "sha256": "04aebc44d2aa088fe8ca4f0a6de29742d8914e29cd0f501111cd37e61ba1bad1",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 250
+      },
+      "PT_PocketThroat_corner_NW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 125,
+        "sha256": "d40c432ccec2d51b85597d1ad0d2c2b47af8c97b9c10e25bcff75e0dc5f0ad28",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 250
+      },
+      "PT_PocketThroat_corner_SE": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 125,
+        "sha256": "606574bbdb2573c27e926d8bca2d0aa813fcf93d8571bb869cac6e6d0dfdbf9d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 250
+      },
+      "PT_PocketThroat_corner_SW": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 125,
+        "sha256": "7762cf243bcc94279ca5d2ee3fc2c8567bc46bf426f240ef631f44703b476695",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 250
+      },
+      "PT_PocketThroat_side_E": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 133,
+        "sha256": "c9f84299ebefe042523a57be2c7e318d6fbc8bfff2a6b378a72b0e539dce6d32",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 266
+      },
+      "PT_PocketThroat_side_W": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 133,
+        "sha256": "76801d156e8302cb5aa673c196f05438a0e983020c3a4baf0b78cac4da66812b",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 266
+      },
+      "PT_RailCap_End_Foot": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 113,
+        "sha256": "7059b622eb9ad0c35e285931eea97794b7124f31ffb5fa402cb063c9bb8814ca",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 222
+      },
+      "PT_RailCap_End_Head": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 120,
+        "sha256": "9bd8525b804d8880d0f6a1a69f7189ec469c85482025efc4eebeb34de9ff9a14",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 236
+      },
+      "PT_RailCap_Long_E_N": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 91,
+        "sha256": "dd8d4bbff1d8abdae74c63ebe61906f3d07ecc78fa45b5b4f5e67fbd8d54d394",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 178
+      },
+      "PT_RailCap_Long_E_S": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 92,
+        "sha256": "73ab08d38602f4c070b8e2189779859909062ba8943f0e96ac04d50921234d9d",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 180
+      },
+      "PT_RailCap_Long_W_N": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 95,
+        "sha256": "913310fda1a378bbe6332b65aa7861e855847f26d71da0e666fdc9c15fbb21ad",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 186
+      },
+      "PT_RailCap_Long_W_S": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 95,
+        "sha256": "1127b4553e87de8406c144850296743be7b5e5229d04c5f5414ff686ae00c9bf",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 186
+      },
+      "PT_RailStud_01": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "204b075565aca40eaf174847d0623667a1d4e0110e1b0914fc784f791bd50856",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_02": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "f9245d8e5b9f2cbf5769d2daedcdfb254279ca6020d3520a4580cfff726e557a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_03": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "1a1aa74667cf4f55bc1de0f5430aac03e7164b48194474d72499a504d580f2af",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_04": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "fb3c368d5567a15eb766bf00ad2714feebe81c0f28357ed08e3f191db8ca779a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_05": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "3f8490e796f66ff209042bd6e6729c19586a0e955c3cef4d9735378baa381613",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_06": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "6854ff32fd61c581358a8f82cd65442d5cf22964f354a445401b4fbab835bb78",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_07": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "1b23303c9f01ff652d639e57a134fe2b4f3d1856016553881650dbbe443c1a83",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_08": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "6b42178cf64afdd4e547ceb95312c3199ccd97f52412c901465a33902acb3555",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_09": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "0e196b0db3aeebe2309f3bf2a6033783fe4cdcac30ab5b4993a4fc3d2959c07e",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_10": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "cd0caa5383ef90eb2482d6c2a3e195af8b17bdf597e5bc7d7b51f22a57381375",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_11": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "c491f462a777069fe9147867244bd2e280b8071092e8801923bf905676d20e15",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_12": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "6896afabc8ec2eb9f5fc765a5e4f84c0de35b1995e7ff2fafd3f5dac5d7007b0",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_13": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "48f431c56546e2428e755caff65e0e36a0d4d991652625bb9eba15b3e38d16ff",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_14": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "bb902576d12cc9701739c075da944ff003628679231f45e4458ebe57134bb79f",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_15": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "d33e640e63ec6ad033214cf87ff8a8530e3a7d706a1e5cb39dec6319670d30d2",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_16": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "bbd45f7b37d01862c5551b5025ac35ad0776f80cdbc56b088c21fab26bf343a8",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_17": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "208169cd996f09c395699df5d2ad46b5337c686683afb8fb3807a1301e8b9acf",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_RailStud_18": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 22,
+        "sha256": "2772b79508e59bd2233f9467a3d0d3ed9152de265e0db805ca12aa86ef6f1d07",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 40
+      },
+      "PT_Rail_End_Foot": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "4dc6e84772cf7770f8899980e6fd2055d554ef6f69fb76edc260f075f02f2dfb",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Rail_End_Head": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "bbf247a4e04e269aa80e7118aa55395516c45fab1e3edc1667e229837c06ea05",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Rail_Long_E_N": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "3c9750946a545203e1a7f1dc12a89dba53b8826bb0b884a65e349ac68b3f7370",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Rail_Long_E_S": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "2bfaac619cd0bb5324817f61a4573fd81be63f31e761b57d5dcb681ad0685509",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Rail_Long_W_N": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "bb9c9c1e39ee0a94aaec0893bf84c990f1036294f298f9ce8773fb6b476e2032",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Rail_Long_W_S": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "531b0926e32850f05101186d5eef90fc3c65e984616162d5f542d43f05dcb273",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_End_Foot_1": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "2e1d5e228d66f954017a690f572e3e445945896762fb615c4cbf2191a4a78865",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_End_Foot_2": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "da17b08f8e858e24ff0e59a44715cc1dd4df921aca96c45b723d3bafbb60b445",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_End_Foot_3": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "77eb84f85cfc0b6feef5bb0459401d63e4239ae6f3a268d9ef380606938fffbf",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_End_Head_1": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "f4eb1493db1698a7cd9297fdfaf4b3ff4ef334aae6cc222c9564949d8a688134",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_End_Head_2": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "78f37579ec24270059077f56208077fb1f25ea21b0c70676893ba3ded0a82a37",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_End_Head_3": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "4eb9758d7fd35d8e067b554b281907144b56eece8e5e7630c316c8f51c87e87c",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_E_1": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "19554da8116bf0e4bb51a129bdd4fe5c70a40af0d69845bdbeba3f64286c5a4a",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_E_2": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "32707039fc3a5627e385a8e905c4e97d89b3c365b118e5995a540c710eba28cc",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_E_3": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "ba49ddc7dd44453223fbe277a8c2a733342f1e0211165d8021b359409aa13420",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_E_5": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "92d662434caf6ba13b8a6cdfac4ec444c41e1693730d6387ca1a936fc1ff28b6",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_E_6": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "5d3991749dd20b5c80a118a57e1d3b0549e1c1c11688232dd4ff721b13733044",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_E_7": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "272637430b1f75cb693d02e40214a95a8cb797543d32bd7eab3fe2f9c6d23cfc",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_W_1": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "d0a8086fed019c2fe5a1c302f3239b5a25eb47923cbf0532d44d577853a49778",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_W_2": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "5c51d39c3d6c8f3515cd486c5312182522208867c21da4e36e74a49455dbcdfe",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_W_3": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "5cf4c843f793686482f9af1554062730152396e7c23e9866f63457e923571dc9",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_W_5": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "78ae9152b070a782c37da0195de0a65467fcadec6bd99e0afdbde002fcb91f83",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_W_6": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "f7e2f3ca2f77b5bf4aaa4848247ea377a531796dc0b3131700130d42d9213215",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sight_Long_W_7": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 6,
+        "sha256": "a9b50ca2e9b33d37dd25711086decb8d1236ceefd294d3a4edca881e6a2e19b8",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 8
+      },
+      "PT_Sill_End_Foot": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 32,
+        "sha256": "875ba6af280d24bd6230a8435411fba845171259423ca96f5f244902fd22a215",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 60
+      },
+      "PT_Sill_End_Head": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 32,
+        "sha256": "7aa226f6e7ba71d826162d9241fd21331af03a14538cea0260d5c6bcd571fbbb",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 60
+      },
+      "PT_Sill_Long_E": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 72,
+        "sha256": "d75717a10ecf3795f026bbc58dbf8f4ade6be330fe3b90dd0605758f26d45ce7",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 140
+      },
+      "PT_Sill_Long_W": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 72,
+        "sha256": "80a5e033c3be30b989db00fece8eb2703480589df7012be601e27b005fe2105e",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 140
+      },
+      "PT_SlateLiner_Perimeter": {
+        "collections": [
+          "03_TABLE_ENGINEERING"
+        ],
+        "polygon_count": 324,
+        "sha256": "259d287605744b3b5d2af2b9cf4387599abdc209fdd973abc79498d80d403f86",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 645
+      },
+      "PT_Slate_Center": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 281,
+        "sha256": "92f3992c1c83e38abc20509630fd714383cafda3c11af246bb06052f1a692e53",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 753
+      },
+      "PT_Slate_Foot": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 260,
+        "sha256": "cbbb3665f6fc097e5716e0dc0193eb2ad60e4f187ba1cd5889f95251352c4770",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 704
+      },
+      "PT_Slate_Head": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 260,
+        "sha256": "37e7a39376360f37eb364316782d734b7b1848644d9f443c2bc1411269ef9653",
+        "spline_count": 0,
+        "type": "MESH",
+        "vertex_count": 704
+      },
+      "PT_TableRoot": {
+        "collections": [
+          "02_TABLE_VISIBLE"
+        ],
+        "polygon_count": 0,
+        "sha256": "3f25dfed0e442b1c0b13669e0cfddc4159b3e45726ecac494f2637a27e4c6a35",
+        "spline_count": 0,
+        "type": "EMPTY",
+        "vertex_count": 0
+      }
+    },
+    "source_files": {
+      "assets/data/table_wpa_geometry.json": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+      "scripts/20_build_pool_table.py": "977261e702f848a18d7ff752b21cc4131a261ff1a56e04e5c54dfc41183ed791",
+      "scripts/22_build_balls_and_rack.py": "5c70e57f893db04c1bbf8034cd5409ff0602974e2b5a9b69d8810aec899e5d8c",
+      "scripts/23_rebuild_pool_system.py": "67317daf1baa3f2eaac8fe5809d671bb16588d5788b65fd8f44a15b76fcf7568",
+      "scripts/40_build_materials.py": "a3e7f81b3caaf03eb29183635c02ccf2d103947657053dd0d747050a8ce1da1c",
+      "scripts/90_validate_scene.py": "3dd24e9d3950538c851af336daae03232eaf58fdd8feccf0dd31b1fe231e583a",
+      "scripts/91_validate_pool_geometry_contract.py": "39d3290ca98a8057ccdb3e0f7afd6dd1c0492a422955ffd80c4c01521d9ddd57",
+      "scripts/99_bank_pool_system_lock.py": "fa679345f36f40a47d091a30872b38bc169690324603cf4b65049b7841fb0769",
+      "scripts/config.py": "f73561cb7e4d82f18cbec6472d6f77768d06883cf3acf1e1bce31b09f019b3f1",
+      "scripts/lib.py": "dc985f2bd6d3e20a314169d642d3a0f3a04c1e073a27d9b6fc6187e1dab2709c",
+      "scripts/pool_geometry_contract.py": "74906108c8f4e1fc960a3af59cd2a022473ea28e202efb675fa2af8a4d5dfdff"
+    }
+  },
+  "status": "LOCKED_BASELINE",
+  "summary": {
+    "aggregate_sha256": "1b4e3397398477e0d70855e48329a1b4b30795477b7d07f5ebd14ddbb5bc0930",
+    "curve_points": 252,
+    "curve_splines": 12,
+    "dimension_audit_sha256": "fc190fc2dba5d78ed3a0e24d81095339898f153393445a98822b1d351bc408c1",
+    "environment_lock_sha256": "c025578c2a74fd0761fad9c327f201b0b78c75ef4c5ebbcedabfdd98ce292fe5",
+    "geometry_contract_sha256": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+    "material_assets": 16,
+    "material_slots": 330,
+    "materials": 30,
+    "mesh_edges": 207576,
+    "mesh_polygons": 99635,
+    "mesh_vertices": 108713,
+    "objects": 355,
+    "objects_by_collection": {
+      "02_TABLE_VISIBLE": 121,
+      "03_TABLE_ENGINEERING": 176,
+      "05_HERO_PROPS": 16,
+      "10_PHYSICS_PROXIES": 42
+    },
+    "objects_by_type": {
+      "CURVE": 12,
+      "EMPTY": 1,
+      "MESH": 342
+    },
+    "source_files": 11
+  },
+  "version": 1
+}

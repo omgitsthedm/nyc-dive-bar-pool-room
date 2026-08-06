@@ -1,0 +1,56 @@
+{
+  "engine": "Blender 5.2 Cycles",
+  "generated_utc": "2026-08-06T04:30:05.630636+00:00",
+  "renders": [
+    {
+      "camera": "PT_GameCamera_Overhead",
+      "frame": 1,
+      "name": "01_rack_setup",
+      "path": "renders/physics_proof/01_rack_setup.png",
+      "seconds": 54.03997304197401
+    },
+    {
+      "camera": "PT_GameCamera_Break",
+      "frame": 16,
+      "name": "02_rack_lift",
+      "path": "renders/physics_proof/02_rack_lift.png",
+      "seconds": 50.98964745801641
+    },
+    {
+      "camera": "PT_GameCamera_Break",
+      "frame": 30,
+      "name": "03_cue_contact",
+      "path": "renders/physics_proof/03_cue_contact.png",
+      "seconds": 55.58513625001069
+    },
+    {
+      "camera": "PT_GameCamera_Break",
+      "frame": 33,
+      "name": "04_first_rack_impact",
+      "path": "renders/physics_proof/04_first_rack_impact.png",
+      "seconds": 56.2953680830542
+    },
+    {
+      "camera": "PT_GameCamera_Overhead",
+      "frame": 48,
+      "name": "05_opening_spread",
+      "path": "renders/physics_proof/05_opening_spread.png",
+      "seconds": 59.502647417015396
+    },
+    {
+      "camera": "PT_GameCamera_Overhead",
+      "frame": 171,
+      "name": "06_settled_table",
+      "path": "renders/physics_proof/06_settled_table.png",
+      "seconds": 60.22432162502082
+    }
+  ],
+  "resolution": [
+    1280,
+    720
+  ],
+  "samples_requested": 32,
+  "schema": "pool-physics-render-timing/v1",
+  "total_seconds": 336.6370938750915,
+  "view_layer": "GAMEPLAY"
+}

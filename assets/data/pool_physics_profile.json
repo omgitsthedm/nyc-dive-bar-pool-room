@@ -1,0 +1,91 @@
+{
+  "schema": "pool-physics-profile/v1",
+  "name": "WPA 9-foot dive-bar control profile",
+  "solver": {
+    "package": "pooltool-billiards",
+    "version": "0.6.0",
+    "resolver_version": 9,
+    "ball_ball_model": "frictional_inelastic",
+    "ball_ball_friction_model": "average",
+    "linear_cushion_model": "stronge_compliant",
+    "circular_cushion_model": "stronge_compliant",
+    "cushion_omega_ratio": 1.8,
+    "pocket_model": "canonical",
+    "stick_ball_model": "instantaneous_point",
+    "transition_model": "canonical",
+    "sample_rate_hz": 240,
+    "float_precision": "float64",
+    "random_seed": 19890903
+  },
+  "ball": {
+    "mass_kg": 0.168,
+    "radius_m": 0.028575,
+    "sliding_friction": 0.2,
+    "rolling_deceleration_mps2": 0.125,
+    "sidespin_deceleration_rad_s2": 22.0,
+    "ball_ball_friction": 0.07,
+    "ball_ball_restitution": 0.97,
+    "cushion_restitution_parameter": 0.88,
+    "cushion_friction": 0.14,
+    "gravity_mps2": 9.80665,
+    "material": "cast phenolic resin",
+    "surface": "unwaxed"
+  },
+  "cue": {
+    "mass_kg": 0.567,
+    "length_m": 1.4732,
+    "shaft_radius_at_tip_m": 0.0065,
+    "shaft_radius_at_butt_m": 0.02,
+    "tip_curvature_radius_m": 0.0106045,
+    "end_mass_kg": 0.0056
+  },
+  "rack": {
+    "order": [[1], [9, 2], [10, 8, 3], [11, 4, 14, 6], [5, 13, 15, 7, 12]],
+    "contact_gap_ratio": 0.0,
+    "apex_pool_xy_m": [0.635, 0.635],
+    "eight_ball_position": "row_3_center",
+    "rear_corner_classes": ["solid", "stripe"]
+  },
+  "control_break": {
+    "cue_ball_pool_xy_m": [0.632, 1.957],
+    "cue_speed_mps": 6.98816088,
+    "target_cue_ball_speed_mps": 10.73,
+    "phi_deg": 270.1300204565,
+    "theta_deg": 0.0,
+    "side_offset_a": 0.0,
+    "vertical_offset_b": -0.05
+  },
+  "playback": {
+    "fps": 24,
+    "impact_frame": 30.0,
+    "pocket_drop_duration_s": 0.48,
+    "derived_blend": "blend/poolroom_gameplay_preview.blend",
+    "gameplay_collection": "11_GAMEPLAY",
+    "gameplay_view_layer": "GAMEPLAY"
+  },
+  "calibration": {
+    "normal_cushion_test_speed_mps": 1.0,
+    "target_effective_normal_rebound_ratio": 0.818,
+    "target_effective_normal_rebound_tolerance": 0.012,
+    "break_speed_reference_mph": 24.0,
+    "break_speed_reference_range_mph": [22.0, 26.0]
+  },
+  "sources": {
+    "equipment": "assets/wpa/WPA-Recommended-Equipment-Specifications.pdf",
+    "pooltool": "https://doi.org/10.21105/joss.07301",
+    "ball_dynamics": "https://doi.org/10.1016/j.ijmecsci.2007.11.006",
+    "cloth_dynamics": "https://doi.org/10.1119/1.3157159",
+    "cushion_dynamics": "https://doi.org/10.1243/09544062JMES1964",
+    "sidespin_dynamics": "https://doi.org/10.1109/TMECH.2015.2461547",
+    "cue_impact": "https://doi.org/10.1119/1.2825392",
+    "event_solver_precedent": "https://doi.org/10.1007/11922155_19"
+  },
+  "decision_notes": [
+    "WPA fixes the ball diameter, mass range, material, markings, cloth family and equipment dimensions; it does not publish gameplay friction coefficients.",
+    "The chosen mass is inside the WPA 0.156-0.170 kg range.",
+    "Rolling resistance is represented as constant deceleration through u_r = a_r/g.",
+    "Sidespin friction is represented through Pooltool's radius-factored proportionality so the initial angular deceleration is 22 rad/s^2.",
+    "The Stronge cushion restitution parameter is calibrated to the measured effective low-speed normal rebound ratio; it is not the 0.98 energetic coefficient from the Mathavan model.",
+    "Blender Bullet is not the shot authority. Solver trajectories are baked as linear location and quaternion F-curves, leaving zero Blender rigid bodies intentionally."
+  ]
+}

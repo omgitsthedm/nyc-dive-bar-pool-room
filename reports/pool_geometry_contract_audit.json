@@ -1,0 +1,852 @@
+{
+  "checks": [
+    {
+      "actual": "assets/data/table_wpa_geometry.json",
+      "check": "source_path",
+      "expected": "assets/data/table_wpa_geometry.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+      "check": "source_sha256",
+      "expected": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+      "status": "PASS"
+    },
+    {
+      "actual": 12,
+      "check": "source_count_arcs",
+      "expected": 12,
+      "status": "PASS",
+      "unit": "count"
+    },
+    {
+      "actual": 12,
+      "check": "source_count_jaw_linears",
+      "expected": 12,
+      "status": "PASS",
+      "unit": "count"
+    },
+    {
+      "actual": 18,
+      "check": "source_count_linears",
+      "expected": 18,
+      "status": "PASS",
+      "unit": "count"
+    },
+    {
+      "actual": 6,
+      "check": "source_count_main_linears",
+      "expected": 6,
+      "status": "PASS",
+      "unit": "count"
+    },
+    {
+      "actual": 6,
+      "check": "source_count_pockets",
+      "expected": 6,
+      "status": "PASS",
+      "unit": "count"
+    },
+    {
+      "actual": 1.27,
+      "check": "playfield_width",
+      "expected": 1.27,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 2.54,
+      "check": "playfield_length",
+      "expected": 2.54,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.762,
+      "check": "bed_height",
+      "expected": 0.762,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.028575,
+      "check": "ball_radius",
+      "expected": 0.028575,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.03629025,
+      "check": "cushion_nose_height",
+      "expected": 0.03629025,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.1158875,
+      "check": "finished_facing_nominal_target_corner",
+      "expected": 0.1158875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.1285875,
+      "check": "finished_facing_nominal_target_side",
+      "expected": 0.1285875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.11412925113180429,
+      "check": "raw_fillet_endpoint_span_corner_NE",
+      "expected": 0.11412925113180429,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.11588750000000024,
+      "check": "evaluated_sharp_line_mouth_corner_NE",
+      "expected": 0.1158875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "evaluated_m": 0.11588750000000024,
+        "raw_m": 0.11412925113180429
+      },
+      "check": "raw_and_evaluated_mouth_distinct_corner_NE",
+      "expected": "raw fillet span differs from evaluated sharp-line mouth",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": 0.11588750000000024,
+      "check": "evaluated_mouth_matches_finished_nominal_corner_NE",
+      "expected": 0.1158875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.11412925113180421,
+      "check": "raw_fillet_endpoint_span_corner_NW",
+      "expected": 0.11412925113180421,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.11588749999999998,
+      "check": "evaluated_sharp_line_mouth_corner_NW",
+      "expected": 0.1158875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "evaluated_m": 0.11588749999999998,
+        "raw_m": 0.11412925113180421
+      },
+      "check": "raw_and_evaluated_mouth_distinct_corner_NW",
+      "expected": "raw fillet span differs from evaluated sharp-line mouth",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": 0.11588749999999998,
+      "check": "evaluated_mouth_matches_finished_nominal_corner_NW",
+      "expected": 0.1158875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.11412925113180429,
+      "check": "raw_fillet_endpoint_span_corner_SE",
+      "expected": 0.11412925113180429,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.11588750000000006,
+      "check": "evaluated_sharp_line_mouth_corner_SE",
+      "expected": 0.1158875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "evaluated_m": 0.11588750000000006,
+        "raw_m": 0.11412925113180429
+      },
+      "check": "raw_and_evaluated_mouth_distinct_corner_SE",
+      "expected": "raw fillet span differs from evaluated sharp-line mouth",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": 0.11588750000000006,
+      "check": "evaluated_mouth_matches_finished_nominal_corner_SE",
+      "expected": 0.1158875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.11412925113180421,
+      "check": "raw_fillet_endpoint_span_corner_SW",
+      "expected": 0.11412925113180421,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.11588749999999999,
+      "check": "evaluated_sharp_line_mouth_corner_SW",
+      "expected": 0.1158875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "evaluated_m": 0.11588749999999999,
+        "raw_m": 0.11412925113180421
+      },
+      "check": "raw_and_evaluated_mouth_distinct_corner_SW",
+      "expected": "raw fillet span differs from evaluated sharp-line mouth",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": 0.11588749999999999,
+      "check": "evaluated_mouth_matches_finished_nominal_corner_SW",
+      "expected": 0.1158875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.1256162802144467,
+      "check": "raw_fillet_endpoint_span_side_E",
+      "expected": 0.1256162802144467,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.12858750000000008,
+      "check": "evaluated_sharp_line_mouth_side_E",
+      "expected": 0.1285875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "evaluated_m": 0.12858750000000008,
+        "raw_m": 0.1256162802144467
+      },
+      "check": "raw_and_evaluated_mouth_distinct_side_E",
+      "expected": "raw fillet span differs from evaluated sharp-line mouth",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": 0.12858750000000008,
+      "check": "evaluated_mouth_matches_finished_nominal_side_E",
+      "expected": 0.1285875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.1256162802144467,
+      "check": "raw_fillet_endpoint_span_side_W",
+      "expected": 0.1256162802144467,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.12858750000000008,
+      "check": "evaluated_sharp_line_mouth_side_W",
+      "expected": 0.1285875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "evaluated_m": 0.12858750000000008,
+        "raw_m": 0.1256162802144467
+      },
+      "check": "raw_and_evaluated_mouth_distinct_side_W",
+      "expected": "raw fillet span differs from evaluated sharp-line mouth",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": 0.12858750000000008,
+      "check": "evaluated_mouth_matches_finished_nominal_side_W",
+      "expected": 0.1285875,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 142.0,
+      "check": "jaw_1_corner_SW_cut_angle",
+      "expected": 142.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 142.0,
+      "check": "jaw_2_corner_SW_cut_angle",
+      "expected": 142.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 103.99769096240736,
+      "check": "jaw_4_side_W_cut_angle",
+      "expected": 104.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 103.99769096240736,
+      "check": "jaw_5_side_W_cut_angle",
+      "expected": 104.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 142.0000000000001,
+      "check": "jaw_7_corner_NW_cut_angle",
+      "expected": 142.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 141.99999999999983,
+      "check": "jaw_8_corner_NW_cut_angle",
+      "expected": 142.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 141.99999999999983,
+      "check": "jaw_10_corner_NE_cut_angle",
+      "expected": 142.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 142.00000000000017,
+      "check": "jaw_11_corner_NE_cut_angle",
+      "expected": 142.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 103.99769096240739,
+      "check": "jaw_13_side_E_cut_angle",
+      "expected": 104.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 103.99769096240739,
+      "check": "jaw_14_side_E_cut_angle",
+      "expected": 104.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 142.00000000000009,
+      "check": "jaw_16_corner_SE_cut_angle",
+      "expected": 142.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 142.0,
+      "check": "jaw_17_corner_SE_cut_angle",
+      "expected": 142.0,
+      "status": "PASS",
+      "tolerance": 0.01,
+      "unit": "deg"
+    },
+    {
+      "actual": 0.04127500000000004,
+      "check": "pocket_shelf_corner_SW",
+      "expected": 0.041275,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.10575163449746529,
+      "check": "pocket_shelf_drop_admits_ball_corner_SW",
+      "expected": ">= 0.057150000",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "contained": true,
+        "simple": true
+      },
+      "check": "pocket_shelf_outline_valid_corner_SW",
+      "expected": {
+        "contained": true,
+        "simple": true
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": 0.004762500000000003,
+      "check": "pocket_shelf_side_W",
+      "expected": 0.004762499999999999,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.12645082309627506,
+      "check": "pocket_shelf_drop_admits_ball_side_W",
+      "expected": ">= 0.057150000",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "contained": true,
+        "simple": true
+      },
+      "check": "pocket_shelf_outline_valid_side_W",
+      "expected": {
+        "contained": true,
+        "simple": true
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": 0.041275000000000034,
+      "check": "pocket_shelf_corner_NW",
+      "expected": 0.041275,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.10575163449746537,
+      "check": "pocket_shelf_drop_admits_ball_corner_NW",
+      "expected": ">= 0.057150000",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "contained": true,
+        "simple": true
+      },
+      "check": "pocket_shelf_outline_valid_corner_NW",
+      "expected": {
+        "contained": true,
+        "simple": true
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": 0.041275000000000034,
+      "check": "pocket_shelf_corner_SE",
+      "expected": 0.041275,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.10575163449746537,
+      "check": "pocket_shelf_drop_admits_ball_corner_SE",
+      "expected": ">= 0.057150000",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "contained": true,
+        "simple": true
+      },
+      "check": "pocket_shelf_outline_valid_corner_SE",
+      "expected": {
+        "contained": true,
+        "simple": true
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": 0.004762500000000003,
+      "check": "pocket_shelf_side_E",
+      "expected": 0.004762499999999999,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.12645082309627506,
+      "check": "pocket_shelf_drop_admits_ball_side_E",
+      "expected": ">= 0.057150000",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "contained": true,
+        "simple": true
+      },
+      "check": "pocket_shelf_outline_valid_side_E",
+      "expected": {
+        "contained": true,
+        "simple": true
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": 0.041274999999999964,
+      "check": "pocket_shelf_corner_NE",
+      "expected": 0.041275,
+      "status": "PASS",
+      "tolerance": 1e-09,
+      "unit": "m"
+    },
+    {
+      "actual": 0.10575163449746545,
+      "check": "pocket_shelf_drop_admits_ball_corner_NE",
+      "expected": ">= 0.057150000",
+      "status": "PASS",
+      "unit": "m"
+    },
+    {
+      "actual": {
+        "contained": true,
+        "simple": true
+      },
+      "check": "pocket_shelf_outline_valid_corner_NE",
+      "expected": {
+        "contained": true,
+        "simple": true
+      },
+      "status": "PASS"
+    }
+  ],
+  "geometry": {
+    "ball_radius_m": 0.028575,
+    "cushion_nose_height_m": 0.03629025,
+    "cut_angles": [
+      {
+        "expected_deg": 142.0,
+        "jaw_id": "1",
+        "kind": "corner",
+        "measured_deg": 142.0,
+        "pocket": "corner_SW"
+      },
+      {
+        "expected_deg": 142.0,
+        "jaw_id": "2",
+        "kind": "corner",
+        "measured_deg": 142.0,
+        "pocket": "corner_SW"
+      },
+      {
+        "expected_deg": 104.0,
+        "jaw_id": "4",
+        "kind": "side",
+        "measured_deg": 103.99769096240736,
+        "pocket": "side_W"
+      },
+      {
+        "expected_deg": 104.0,
+        "jaw_id": "5",
+        "kind": "side",
+        "measured_deg": 103.99769096240736,
+        "pocket": "side_W"
+      },
+      {
+        "expected_deg": 142.0,
+        "jaw_id": "7",
+        "kind": "corner",
+        "measured_deg": 142.0000000000001,
+        "pocket": "corner_NW"
+      },
+      {
+        "expected_deg": 142.0,
+        "jaw_id": "8",
+        "kind": "corner",
+        "measured_deg": 141.99999999999983,
+        "pocket": "corner_NW"
+      },
+      {
+        "expected_deg": 142.0,
+        "jaw_id": "10",
+        "kind": "corner",
+        "measured_deg": 141.99999999999983,
+        "pocket": "corner_NE"
+      },
+      {
+        "expected_deg": 142.0,
+        "jaw_id": "11",
+        "kind": "corner",
+        "measured_deg": 142.00000000000017,
+        "pocket": "corner_NE"
+      },
+      {
+        "expected_deg": 104.0,
+        "jaw_id": "13",
+        "kind": "side",
+        "measured_deg": 103.99769096240739,
+        "pocket": "side_E"
+      },
+      {
+        "expected_deg": 104.0,
+        "jaw_id": "14",
+        "kind": "side",
+        "measured_deg": 103.99769096240739,
+        "pocket": "side_E"
+      },
+      {
+        "expected_deg": 142.0,
+        "jaw_id": "16",
+        "kind": "corner",
+        "measured_deg": 142.00000000000009,
+        "pocket": "corner_SE"
+      },
+      {
+        "expected_deg": 142.0,
+        "jaw_id": "17",
+        "kind": "corner",
+        "measured_deg": 142.0,
+        "pocket": "corner_SE"
+      }
+    ],
+    "playfield_m": {
+      "bed_height": 0.762,
+      "length": 2.54,
+      "width": 1.27
+    },
+    "pocket_shelves": [
+      {
+        "contained_in_rail_opening": true,
+        "drop_edge_span_m": 0.10575163449746529,
+        "drop_outline_vertices": 27,
+        "kind": "corner",
+        "measured_m": 0.04127500000000004,
+        "pocket": "corner_SW",
+        "simple": true,
+        "target_m": 0.041275
+      },
+      {
+        "contained_in_rail_opening": true,
+        "drop_edge_span_m": 0.12645082309627506,
+        "drop_outline_vertices": 29,
+        "kind": "side",
+        "measured_m": 0.004762500000000003,
+        "pocket": "side_W",
+        "simple": true,
+        "target_m": 0.004762499999999999
+      },
+      {
+        "contained_in_rail_opening": true,
+        "drop_edge_span_m": 0.10575163449746537,
+        "drop_outline_vertices": 27,
+        "kind": "corner",
+        "measured_m": 0.041275000000000034,
+        "pocket": "corner_NW",
+        "simple": true,
+        "target_m": 0.041275
+      },
+      {
+        "contained_in_rail_opening": true,
+        "drop_edge_span_m": 0.10575163449746537,
+        "drop_outline_vertices": 27,
+        "kind": "corner",
+        "measured_m": 0.041275000000000034,
+        "pocket": "corner_SE",
+        "simple": true,
+        "target_m": 0.041275
+      },
+      {
+        "contained_in_rail_opening": true,
+        "drop_edge_span_m": 0.12645082309627506,
+        "drop_outline_vertices": 29,
+        "kind": "side",
+        "measured_m": 0.004762500000000003,
+        "pocket": "side_E",
+        "simple": true,
+        "target_m": 0.004762499999999999
+      },
+      {
+        "contained_in_rail_opening": true,
+        "drop_edge_span_m": 0.10575163449746545,
+        "drop_outline_vertices": 27,
+        "kind": "corner",
+        "measured_m": 0.041274999999999964,
+        "pocket": "corner_NE",
+        "simple": true,
+        "target_m": 0.041275
+      }
+    ]
+  },
+  "mouth_semantics": {
+    "evaluated_sharp_line_mouth": {
+      "definition": "distance between the infinite-line intersections of each jaw with its connected main cushion before fillets",
+      "target_by_kind_m": {
+        "corner": 0.1158875,
+        "side": 0.1285875
+      },
+      "tolerance_m": 1e-09
+    },
+    "finished_facing_nominal_target": {
+      "by_kind_m": {
+        "corner": 0.1158875,
+        "side": 0.1285875
+      },
+      "definition": "midpoint of the permitted WPA finished-facing mouth range",
+      "wpa_range_by_kind_m": {
+        "corner": [
+          0.1143,
+          0.117475
+        ],
+        "side": [
+          0.127,
+          0.13017499999999999
+        ]
+      }
+    },
+    "pockets": {
+      "corner_NE": {
+        "evaluated_sharp_line_mouth_m": 0.11588750000000024,
+        "evaluated_sharp_line_mouth_mm": 115.88750000000024,
+        "evaluated_to_finished_nominal_mm": -2.3592239273284576e-13,
+        "finished_facing_nominal_target_m": 0.1158875,
+        "finished_facing_nominal_target_mm": 115.8875,
+        "kind": "corner",
+        "raw_fillet_endpoint_span_m": 0.11412925113180429,
+        "raw_fillet_endpoint_span_mm": 114.1292511318043,
+        "raw_to_evaluated_mm": 1.7582488681959496
+      },
+      "corner_NW": {
+        "evaluated_sharp_line_mouth_m": 0.11588749999999998,
+        "evaluated_sharp_line_mouth_mm": 115.88749999999997,
+        "evaluated_to_finished_nominal_mm": 2.7755575615628914e-14,
+        "finished_facing_nominal_target_m": 0.1158875,
+        "finished_facing_nominal_target_mm": 115.8875,
+        "kind": "corner",
+        "raw_fillet_endpoint_span_m": 0.11412925113180421,
+        "raw_fillet_endpoint_span_mm": 114.12925113180421,
+        "raw_to_evaluated_mm": 1.758248868195769
+      },
+      "corner_SE": {
+        "evaluated_sharp_line_mouth_m": 0.11588750000000006,
+        "evaluated_sharp_line_mouth_mm": 115.88750000000006,
+        "evaluated_to_finished_nominal_mm": -5.551115123125783e-14,
+        "finished_facing_nominal_target_m": 0.1158875,
+        "finished_facing_nominal_target_mm": 115.8875,
+        "kind": "corner",
+        "raw_fillet_endpoint_span_m": 0.11412925113180429,
+        "raw_fillet_endpoint_span_mm": 114.1292511318043,
+        "raw_to_evaluated_mm": 1.758248868195769
+      },
+      "corner_SW": {
+        "evaluated_sharp_line_mouth_m": 0.11588749999999999,
+        "evaluated_sharp_line_mouth_mm": 115.88749999999999,
+        "evaluated_to_finished_nominal_mm": 1.3877787807814457e-14,
+        "finished_facing_nominal_target_m": 0.1158875,
+        "finished_facing_nominal_target_mm": 115.8875,
+        "kind": "corner",
+        "raw_fillet_endpoint_span_m": 0.11412925113180421,
+        "raw_fillet_endpoint_span_mm": 114.12925113180421,
+        "raw_to_evaluated_mm": 1.758248868195783
+      },
+      "side_E": {
+        "evaluated_sharp_line_mouth_m": 0.12858750000000008,
+        "evaluated_sharp_line_mouth_mm": 128.5875000000001,
+        "evaluated_to_finished_nominal_mm": -8.326672684688674e-14,
+        "finished_facing_nominal_target_m": 0.1285875,
+        "finished_facing_nominal_target_mm": 128.5875,
+        "kind": "side",
+        "raw_fillet_endpoint_span_m": 0.1256162802144467,
+        "raw_fillet_endpoint_span_mm": 125.6162802144467,
+        "raw_to_evaluated_mm": 2.9712197855533695
+      },
+      "side_W": {
+        "evaluated_sharp_line_mouth_m": 0.12858750000000008,
+        "evaluated_sharp_line_mouth_mm": 128.5875000000001,
+        "evaluated_to_finished_nominal_mm": -8.326672684688674e-14,
+        "finished_facing_nominal_target_m": 0.1285875,
+        "finished_facing_nominal_target_mm": 128.5875,
+        "kind": "side",
+        "raw_fillet_endpoint_span_m": 0.1256162802144467,
+        "raw_fillet_endpoint_span_mm": 125.6162802144467,
+        "raw_to_evaluated_mm": 2.9712197855533695
+      }
+    },
+    "raw_fillet_endpoint_span": {
+      "definition": "distance between the two jaw-side endpoints of the main-to-jaw transition fillets",
+      "expected_by_pocket_m": {
+        "corner_NE": 0.11412925113180429,
+        "corner_NW": 0.11412925113180421,
+        "corner_SE": 0.11412925113180429,
+        "corner_SW": 0.11412925113180421,
+        "side_E": 0.1256162802144467,
+        "side_W": 0.1256162802144467
+      }
+    }
+  },
+  "schema_version": 3,
+  "source": {
+    "counts": {
+      "arcs": 12,
+      "jaw_linears": 12,
+      "linears": 18,
+      "main_linears": 6,
+      "pockets": 6
+    },
+    "expected_sha256": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+    "path": "assets/data/table_wpa_geometry.json",
+    "sha256": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad"
+  },
+  "status": "PASS",
+  "summary": {
+    "checks": 68,
+    "failed": 0,
+    "passed": 68
+  },
+  "validator": "scripts/91_validate_pool_geometry_contract.py"
+}

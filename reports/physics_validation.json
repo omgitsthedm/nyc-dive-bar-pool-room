@@ -1,0 +1,346 @@
+{
+  "fixture_contract": {
+    "angular_velocity_tolerance_rad_s": 0.0001,
+    "break_repeat_runs": 10,
+    "event_time_tolerance_s": 1e-07,
+    "momentum_tolerance_kg_mps": 1e-10,
+    "parameters": {
+      "R": 0.028575,
+      "e_b": 0.97,
+      "e_c": 0.88,
+      "f_c": 0.14,
+      "g": 9.80665,
+      "m": 0.168,
+      "u_b": 0.07,
+      "u_r": 0.012746452662224104,
+      "u_s": 0.2,
+      "u_sp_proportionality": 0.8973502674205769
+    },
+    "position_tolerance_m": 1e-06,
+    "rack_contact_tolerance_m": 1e-08,
+    "velocity_tolerance_mps": 1e-06
+  },
+  "fixture_contract_sha256": "c841f21aa69e3cb59ce3b3f74d8408e0a9f9683674a4a940db5cadf395f0953f",
+  "generated_utc": "2026-08-06T05:00:34.314690+00:00",
+  "parameters": {
+    "ball": {
+      "R": 0.028575,
+      "e_b": 0.97,
+      "e_c": 0.88,
+      "f_c": 0.14,
+      "g": 9.80665,
+      "m": 0.168,
+      "u_b": 0.07,
+      "u_r": 0.012746452662224104,
+      "u_s": 0.2,
+      "u_sp_proportionality": 0.8973502674205769
+    },
+    "cue": {
+      "end_mass_kg": 0.0056,
+      "length_m": 1.4732,
+      "mass_kg": 0.567,
+      "shaft_radius_at_butt_m": 0.02,
+      "shaft_radius_at_tip_m": 0.0065,
+      "tip_curvature_radius_m": 0.0106045
+    },
+    "resolver": {
+      "ball_ball_friction_model": "average",
+      "ball_ball_model": "frictional_inelastic",
+      "circular_cushion_model": "stronge_compliant",
+      "cushion_omega_ratio": 1.8,
+      "linear_cushion_model": "stronge_compliant",
+      "pocket_model": "canonical",
+      "stick_ball_model": "instantaneous_point",
+      "transition_model": "canonical"
+    }
+  },
+  "provenance": {
+    "geometry_contract_sha256": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+    "numba": "0.62.1",
+    "numpy": "2.3.5",
+    "pooltool": "0.6.0",
+    "profile_sha256": "29933eccf106d7a04f3e59231d9b4355479e50b737179f30419bf6dcb98fcd7e",
+    "python": "3.12.13",
+    "python_executable": "python",
+    "resolver_version": 9
+  },
+  "repeatability": {
+    "canonical_sha256": "3886177ecb2f271e4b55d5c086609532f9cd44a36313723b129dc4f2f9fa3619",
+    "runs": 10,
+    "unique_hash_count": 1
+  },
+  "schema": "pool-physics-audit/v1",
+  "status": "PASS",
+  "summary": {
+    "failed": 0,
+    "passed": 15,
+    "required_failures": 0,
+    "total": 15
+  },
+  "tests": [
+    {
+      "description": "Pinned mass, dimensions, coefficients and source contract",
+      "id": "profile_contract",
+      "observed": {
+        "diameter_m": 0.05715,
+        "geometry_sha256": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+        "mass_kg": 0.168,
+        "profile_sha256": "29933eccf106d7a04f3e59231d9b4355479e50b737179f30419bf6dcb98fcd7e",
+        "rolling_coefficient": 0.012746452662224104,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spin_friction_proportionality": 0.8973502674205769
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Analytic sliding-to-natural-roll transition",
+      "id": "slide_to_roll",
+      "observed": {
+        "contact_slip_mps": 2.220446049250313e-16,
+        "omega_y_rad_s": 24.996875390576182,
+        "position_x_m": 0.4248632097523994,
+        "transition_time_s": 0.14567374471113262,
+        "velocity_x_mps": 0.7142857142857142
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Constant rolling deceleration and analytic stop",
+      "id": "rolling_resistance",
+      "observed": {
+        "position_at_0_5_s_m": 0.484375,
+        "speed_at_0_5_s_mps": 0.9375,
+        "stop_distance_m": 4.0,
+        "stop_time_s": 8.0
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Equal-mass momentum transfer with measured restitution",
+      "id": "head_on_transfer",
+      "observed": {
+        "cue_post_speed_mps": 0.014342757318591163,
+        "event_time_s": 0.35052943008471993,
+        "momentum_error_kg_mps": 1.035379938102578e-33,
+        "normal_restitution": 0.97,
+        "object_post_speed_mps": 0.9418410639208189,
+        "pre_speed_mps": 0.95618382123941
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Oblique transfer, throw and no-overlap contact",
+      "id": "cut_collision",
+      "observed": {
+        "contact_separation_m": 0.05714999999999982,
+        "cue_post_velocity_mps": [
+          0.23549164253191282,
+          -0.38307606108202913,
+          0.0
+        ],
+        "event_time_s": 0.358541132138413,
+        "momentum_error_kg_mps": 9.325873406851316e-18,
+        "object_direction_error_deg": 1.9745767686152162,
+        "object_post_velocity_mps": [
+          0.7196907159507856,
+          0.3830760610820292,
+          0.0
+        ]
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Calibrated cushion restitution and mirrored English",
+      "id": "cushion_spin",
+      "observed": {
+        "effective_normal_rebound_ratio": 0.8185019958306469,
+        "event_time_s": 0.32815537175054654,
+        "mirrored_exit_angle_deg": 12.5150904834006,
+        "negative_spin_post_velocity_mps": [
+          0.7668611061162444,
+          -0.17022092817779233,
+          0.0
+        ],
+        "positive_spin_post_velocity_mps": [
+          0.7668611061162444,
+          0.17022092817779233,
+          0.0
+        ]
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Vertical tip offsets produce draw, stop and follow",
+      "id": "draw_stop_follow",
+      "observed": {
+        "cue_displacement_0_25s_after_contact_m": {
+          "draw": -0.05140464964327096,
+          "follow": 0.07377726514473637,
+          "stop": -0.0023669885464634444
+        }
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Pocket acceptance and jaw rejection use the contract geometry",
+      "id": "pocket_capture_reject",
+      "observed": {
+        "corner_capture_time_s": 0.4147132618068323,
+        "corner_reject_jaws": [
+          "1t",
+          "2t"
+        ],
+        "side_capture_time_s": 0.4147511576745263,
+        "side_reject_jaw": "5t"
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "20 m/s cushion and ball contacts cannot tunnel",
+      "id": "continuous_collision_detection",
+      "observed": {
+        "ball_contact_separation_m": 0.05714999999999981,
+        "ball_event_time_s": 0.057152707599956276,
+        "cushion_contact_x_m": 0.028575000000028664,
+        "cushion_event_time_s": 0.030324123601474184
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "A sourced 24 mph control break disperses a legal tight rack",
+      "id": "control_break",
+      "observed": {
+        "canonical_sha256": "3886177ecb2f271e4b55d5c086609532f9cd44a36313723b129dc4f2f9fa3619",
+        "cue_ball_exit_speed_mps": 10.730000000568685,
+        "duration_s": 5.849533716979959,
+        "event_count": 197,
+        "maximum_contact_energy_ratio": 0.997259904146402,
+        "mean_object_displacement_m": 0.6396355579607054,
+        "minimum_final_separation_m": 0.06790721651234907,
+        "object_balls_over_0_15_m": 14,
+        "pocketed": [
+          "7"
+        ],
+        "rail_or_pocket_object_balls": [
+          "1",
+          "2",
+          "5",
+          "6",
+          "7",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "15"
+        ]
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Firm center-ball stroke clears four table lengths",
+      "id": "wpa_cushion_travel",
+      "observed": {
+        "cushion_contacts": 4,
+        "initial_speed_mps": 6.0,
+        "table_lengths": 4.040578818767501,
+        "travel_distance_m": 10.263070199669453
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "24/30/60/240 Hz sampling leaves the event solution unchanged",
+      "id": "sampling_invariance",
+      "observed": {
+        "hashes_by_hz": {
+          "24": "f923c207e0bac5e0ca56f49f02fd76e6aa0db58d7e5b81e99a1a46e0ddb07432",
+          "240": "f923c207e0bac5e0ca56f49f02fd76e6aa0db58d7e5b81e99a1a46e0ddb07432",
+          "30": "f923c207e0bac5e0ca56f49f02fd76e6aa0db58d7e5b81e99a1a46e0ddb07432",
+          "60": "f923c207e0bac5e0ca56f49f02fd76e6aa0db58d7e5b81e99a1a46e0ddb07432"
+        },
+        "unique_hashes": 1
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Trajectory SHA covers every authoritative export field",
+      "id": "trajectory_identity",
+      "observed": {
+        "authoritative_mutations_detected": [
+          "schema",
+          "fixture",
+          "sample_rate",
+          "duration",
+          "ball_parameters",
+          "cue",
+          "rack",
+          "events_first",
+          "events_last",
+          "ball_samples_first",
+          "ball_samples_last",
+          "profile_hash",
+          "geometry_hash",
+          "future_authoritative_field"
+        ],
+        "trajectory_sha256": "2fa7ea2b3ce330662cf30c5467d4d213454be9ec0d06c0015a66e72dbdc927e8",
+        "volatile_fields_ignored": [
+          "generated_utc",
+          "output_path",
+          "source_path"
+        ]
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Collision-split quaternion integration matches a 16x reference",
+      "id": "orientation_collision_integrity",
+      "observed": {
+        "collision_time_s": 0.17235330189607756,
+        "errors_deg": {
+          "1_probe_0": 0.0,
+          "1_probe_1": 0.0,
+          "1_probe_2": 0.0,
+          "1_probe_3": 0.0,
+          "cue_probe_0": 0.0,
+          "cue_probe_1": 0.0,
+          "cue_probe_2": 0.0,
+          "cue_probe_3": 0.0
+        },
+        "maximum_240_vs_3840_error_deg": 0.0,
+        "object_precontact_rotation_deg": 0.0,
+        "probe_times_s": [
+          0.17083333333333334,
+          0.17235330189607756,
+          0.175,
+          0.17916666666666667
+        ]
+      },
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "description": "Fresh control-break systems repeat bit-for-bit",
+      "id": "repeatability",
+      "observed": {
+        "canonical_sha256": "3886177ecb2f271e4b55d5c086609532f9cd44a36313723b129dc4f2f9fa3619",
+        "runs": 10,
+        "unique_hash_count": 1
+      },
+      "required": true,
+      "status": "PASS"
+    }
+  ]
+}

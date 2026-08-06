@@ -1,0 +1,173 @@
+{
+  "assets": {
+    "assets/textures/balls_game/ball_01.png": {
+      "class": "solid",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 1,
+      "opposed_number_circles": 2,
+      "sha256": "0f67e26e70759342f71aec09154188fca4d305e8ce540b999be9fbfc8c853c8c",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_02.png": {
+      "class": "solid",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 2,
+      "opposed_number_circles": 2,
+      "sha256": "9b0c19c09d0979517f1d657b065faba9588883c2629650de11f65b3405ef5958",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_03.png": {
+      "class": "solid",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 3,
+      "opposed_number_circles": 2,
+      "sha256": "99f8800166f76c26e60f35be4564375417a137d796c08c6a03106401cb6b0abc",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_04.png": {
+      "class": "solid",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 4,
+      "opposed_number_circles": 2,
+      "sha256": "c027cd13d8e10f7ecfdf4f70ae6cf0fc73da10fa7101048e46096744018efcf6",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_05.png": {
+      "class": "solid",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 5,
+      "opposed_number_circles": 2,
+      "sha256": "3a4cadf6cfa1f44198b43344182da0c8c3b250fd6aee4baecc4208b0a8087aeb",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_06.png": {
+      "class": "solid",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 6,
+      "opposed_number_circles": 2,
+      "sha256": "af2416b0b72b9a1632c8f3d97646d0a2754fdb927112163ccc7dabe3e848b2b2",
+      "underscored": true,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_07.png": {
+      "class": "solid",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 7,
+      "opposed_number_circles": 2,
+      "sha256": "83c8a7453e8935b893b7487094e213c242b0084cd9a84dbbcfd9ab913bb18c75",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_08.png": {
+      "class": "solid",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 8,
+      "opposed_number_circles": 2,
+      "sha256": "0515b773d6ee87623c601d5040dc2c9c6dac0954c1bef13c696c0101c50ab511",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_09.png": {
+      "class": "stripe",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 9,
+      "opposed_number_circles": 2,
+      "sha256": "ea3321de3c6a7b5d0c6ebbde04e4f482a4cde4f03bbbd44c9aa6060fabc446a0",
+      "underscored": true,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_10.png": {
+      "class": "stripe",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 10,
+      "opposed_number_circles": 2,
+      "sha256": "59ecf1aae673b47259eef95c221a84417435a6bdf95b676205087d152555a887",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_11.png": {
+      "class": "stripe",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 11,
+      "opposed_number_circles": 2,
+      "sha256": "40d51de3832db0c20b1e30a10ee7008565cf0b5baf80eb5b563d65d010f208ab",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_12.png": {
+      "class": "stripe",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 12,
+      "opposed_number_circles": 2,
+      "sha256": "0946dbfcf93c46069ba3fc34002b1af7fd8aabf8b4bc3db2a84d676a21cdbdd6",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_13.png": {
+      "class": "stripe",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 13,
+      "opposed_number_circles": 2,
+      "sha256": "d8b63ff88b1774bb7d1cf122f4e55d27dc117d131c13d74d07141cc4eaa072cf",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_14.png": {
+      "class": "stripe",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 14,
+      "opposed_number_circles": 2,
+      "sha256": "a96b3ed852378be6d415ccda1386c9116a95962842f02485cf2bf2beee064787",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_15.png": {
+      "class": "stripe",
+      "duplicate_number_inverted": true,
+      "height": 1024,
+      "number": 15,
+      "opposed_number_circles": 2,
+      "sha256": "7c8ac24252d7166911e90fcc36418d07fbefe49bf78fae55b86a55766df55da5",
+      "underscored": false,
+      "width": 2048
+    },
+    "assets/textures/balls_game/ball_cue.png": {
+      "class": "cue",
+      "duplicate_number_inverted": false,
+      "height": 1024,
+      "number": 0,
+      "opposed_number_circles": 0,
+      "sha256": "158fba5a7d45c194b25501c6dda099aa07e36e66040fb1660b3ef79266bf1562",
+      "underscored": false,
+      "width": 2048
+    }
+  },
+  "cue_reference": "single red-circle spin mark",
+  "font": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+  "number_circle_diameter_m": 0.022,
+  "projection": "equirectangular spherical caps",
+  "resolution": [
+    2048,
+    1024
+  ],
+  "schema": "pool-ball-markings/v1"
+}

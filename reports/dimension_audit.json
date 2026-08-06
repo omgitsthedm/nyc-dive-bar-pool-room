@@ -1,0 +1,1037 @@
+{
+  "generated": "2026-08-05",
+  "engine": "CYCLES",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "wpa_flatness_metadata_not_simulated": {
+    "lengthwise_m": 0.000508,
+    "widthwise_m": 0.000254,
+    "joint_coplanar_m": 0.000127,
+    "centre_deflection_m": 0.000762
+  },
+  "summary": {
+    "total": 93,
+    "passed": 93,
+    "failed": 0,
+    "required_failures": 0
+  },
+  "checks": [
+    {
+      "check": "playing_surface_width",
+      "measured": 1.2699999809265137,
+      "expected": 1.27,
+      "tolerance": 0.0005,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": -1.907348634588857e-08
+    },
+    {
+      "check": "playing_surface_length",
+      "measured": 2.540000081062317,
+      "expected": 2.54,
+      "tolerance": 0.0005,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 8.106231685900411e-08
+    },
+    {
+      "check": "cushion_nose_height_in_wpa_range",
+      "measured": 0.036290252685546864,
+      "expected": 0.03629025,
+      "permitted": [
+        0.035719,
+        0.036862
+      ],
+      "unit": "m",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "table_uses_approved_geometry_contract",
+      "measured": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+      "expected": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+      "unit": "sha256",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "physics_geometry_feature_counts",
+      "measured": {
+        "main": 6,
+        "jaw": 12,
+        "arc": 12,
+        "pocket": 6
+      },
+      "expected": {
+        "main": 6,
+        "jaw": 12,
+        "arc": 12,
+        "pocket": 6
+      },
+      "unit": "count",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "corner_evaluated_mouth_at_finished_nominal",
+      "measured": 0.11588750000000006,
+      "expected": 0.11588749999999999,
+      "tolerance": 0.00025,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 6.938893903907228e-17
+    },
+    {
+      "check": "side_evaluated_mouth_at_finished_nominal",
+      "measured": 0.12858750000000008,
+      "expected": 0.1285875,
+      "tolerance": 0.00025,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 8.326672684688674e-17
+    },
+    {
+      "check": "corner_jaw_cut_angle_error",
+      "measured": 1.7053025658242404e-13,
+      "expected": 0.0,
+      "tolerance": 0.01,
+      "unit": "deg",
+      "required": true,
+      "status": "PASS",
+      "delta": 1.7053025658242404e-13
+    },
+    {
+      "check": "side_jaw_cut_angle_error",
+      "measured": 0.002309037592638674,
+      "expected": 0.0,
+      "tolerance": 0.01,
+      "unit": "deg",
+      "required": true,
+      "status": "PASS",
+      "delta": 0.002309037592638674
+    },
+    {
+      "check": "cloth_covered_cushion_width",
+      "measured": 0.05080002546310425,
+      "expected": 0.0508,
+      "tolerance": 0.00025,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 2.546310425011189e-08
+    },
+    {
+      "check": "cushion_top_footprints_nonfolding",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "evaluated_cushions_manifold_outward",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "cushion_top_not_above_rail",
+      "measured": 0.8001000285148621,
+      "expected": 0.8000999999999999,
+      "tolerance": 0.00025,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 2.851486213817367e-08
+    },
+    {
+      "check": "main_rails_do_not_overlap_side_pockets",
+      "measured": 0.14100980758666992,
+      "expected": ">=0",
+      "unit": "m",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "exterior_width",
+      "measured": 1.5494000911712646,
+      "expected": 1.5493999999999999,
+      "tolerance": 0.003,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 9.117126475999271e-08
+    },
+    {
+      "check": "exterior_length",
+      "measured": 2.8194000124931335,
+      "expected": 2.8194,
+      "tolerance": 0.003,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 1.2493133638713516e-08
+    },
+    {
+      "check": "rail_top_z",
+      "measured": 0.8001000285148621,
+      "expected": 0.8000999999999999,
+      "tolerance": 0.001,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 2.851486213817367e-08
+    },
+    {
+      "check": "side_pocket_apron_relief_piece_count",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "side_pocket_apron_relief_metadata",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "side_pocket_apron_relief_width",
+      "measured": 0.2200000286102295,
+      "expected": 0.22,
+      "tolerance": 0.0005,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 2.8610229491077277e-08
+    },
+    {
+      "check": "side_pocket_apron_relief_depth",
+      "measured": 0.125,
+      "expected": 0.125,
+      "tolerance": 0.0005,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 0.0
+    },
+    {
+      "check": "playing_surface_z",
+      "measured": 0.7620000243186951,
+      "expected": 0.762,
+      "tolerance": 0.0005,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 2.4318695057701234e-08
+    },
+    {
+      "check": "bed_cloth_wear_is_visual_only",
+      "measured": "MAT_Table_Cloth_BedWornWorsted",
+      "expected": "MAT_Table_Cloth_BedWornWorsted",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "slate_thickness",
+      "measured": 0.02540004253387451,
+      "expected": 0.0254,
+      "tolerance": 0.001,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 4.253387451275126e-08
+    },
+    {
+      "check": "slate_piece_count",
+      "measured": 3,
+      "expected": 3,
+      "status": "PASS",
+      "required": true,
+      "unit": "count"
+    },
+    {
+      "check": "slate_joints_have_no_modelled_air_gap",
+      "measured": 4.76837158203125e-07,
+      "expected": 0.0,
+      "tolerance": 5e-05,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 4.76837158203125e-07
+    },
+    {
+      "check": "cross_sills_contact_slate_liner",
+      "measured": 0.0,
+      "expected": 0.0,
+      "tolerance": 5e-05,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 0.0
+    },
+    {
+      "check": "frame_member_counts",
+      "measured": {
+        "long_sills": 2,
+        "end_sills": 2,
+        "cross_sill_halves": 8,
+        "centre_beams": 1
+      },
+      "expected": {
+        "long_sills": 2,
+        "end_sills": 2,
+        "cross_sill_halves": 8,
+        "centre_beams": 1
+      },
+      "unit": "count",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "frame_members_meet_without_raw_box_overlap",
+      "measured": 0,
+      "expected": 0,
+      "unit": "pair",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "leveler_leg_sill_load_path_contacts",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "leg_heads_have_structural_plan_bearing",
+      "measured": {
+        "long_sill_fraction": {
+          "Corner_NE": 0.7272727272727273,
+          "Corner_NW": 0.7272727272727273,
+          "Corner_SE": 0.7272727272727273,
+          "Corner_SW": 0.7272727272727273,
+          "Mid_East": 0.7272727272727273,
+          "Mid_West": 0.7272727272727273
+        },
+        "corner_end_sill_fraction": {
+          "Corner_NE": 0.19834710743801653,
+          "Corner_NW": 0.19834710743801653,
+          "Corner_SE": 0.19834710743801653,
+          "Corner_SW": 0.19834710743801653
+        }
+      },
+      "expected": {
+        "long_sill_min": 0.45,
+        "corner_end_sill_min": 0.08
+      },
+      "unit": "fraction",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "frame_and_leg_solids_manifold_outward",
+      "measured": 21,
+      "expected": 21,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "metro_rail_stud_count",
+      "measured": 18,
+      "expected": 18,
+      "unit": "count",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "rail_sights_are_flush_inlays",
+      "measured": 18,
+      "expected": 18,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "ball_count",
+      "measured": 16,
+      "expected": 16,
+      "status": "PASS",
+      "required": true,
+      "unit": "count"
+    },
+    {
+      "check": "ball_diameter_within_0.1mm",
+      "measured": 16,
+      "expected": 16,
+      "status": "PASS",
+      "required": true,
+      "offenders": [],
+      "unit": "count"
+    },
+    {
+      "check": "ball_uniform_scale",
+      "measured": 16,
+      "expected": 16,
+      "status": "PASS",
+      "required": true,
+      "offenders": [],
+      "unit": "count"
+    },
+    {
+      "check": "rack_apex_over_foot_spot",
+      "measured": 1.4305114648394124e-08,
+      "expected": 0.0,
+      "tolerance": 0.0005,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": 1.4305114648394124e-08
+    },
+    {
+      "check": "min_rack_center_spacing",
+      "measured": 0.05714996035614366,
+      "expected": 0.05715,
+      "tolerance": 0.0001,
+      "unit": "m",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_capture_openings_ray_below_bed",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_shelves_measured_from_cloth_mesh",
+      "measured": [
+        {
+          "pocket": "corner_SW",
+          "measured_m": 0.04127499646097422,
+          "target_m": 0.041275
+        },
+        {
+          "pocket": "side_W",
+          "measured_m": 0.004762560375151224,
+          "target_m": 0.004762499999999999
+        },
+        {
+          "pocket": "corner_NW",
+          "measured_m": 0.04127499646097422,
+          "target_m": 0.041275
+        },
+        {
+          "pocket": "corner_SE",
+          "measured_m": 0.04127499646097422,
+          "target_m": 0.041275
+        },
+        {
+          "pocket": "side_E",
+          "measured_m": 0.004762560375151224,
+          "target_m": 0.004762499999999999
+        },
+        {
+          "pocket": "corner_NE",
+          "measured_m": 0.04127499646097422,
+          "target_m": 0.041275
+        }
+      ],
+      "expected": {
+        "corner_m": 0.041275,
+        "side_m": 0.004762499999999999
+      },
+      "tolerance": 0.0005,
+      "unit": "m",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_construction_component_counts",
+      "measured": {
+        "facings": 12,
+        "liners": 6,
+        "throats": 6,
+        "irons": 6,
+        "leather_welts": 6,
+        "leather_skirts": 6,
+        "stitch_runs": 6,
+        "mount_ears": 12,
+        "mount_bolts": 12,
+        "leather_straps": 18,
+        "strap_rivets": 18,
+        "baskets": 6,
+        "basket_bases": 6,
+        "serviceable_rail_caps": 6,
+        "cap_horns": 12
+      },
+      "expected": {
+        "facings": 12,
+        "liners": 6,
+        "throats": 6,
+        "irons": 6,
+        "leather_welts": 6,
+        "leather_skirts": 6,
+        "stitch_runs": 6,
+        "mount_ears": 12,
+        "mount_bolts": 12,
+        "leather_straps": 18,
+        "strap_rivets": 18,
+        "baskets": 6,
+        "basket_bases": 6,
+        "serviceable_rail_caps": 6,
+        "cap_horns": 12
+      },
+      "unit": "count",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "retired_pocket_component_vocabulary_absent",
+      "measured": 0,
+      "expected": 0,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "basket_depth_in_range",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "permitted": [
+        0.1,
+        0.12
+      ],
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "basket_admits_six_balls",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_cloth_liner_material_assignment",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_cloth_liner_capture_arc_is_smooth_draft",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_drop_liner_and_throat_topology",
+      "measured": 12,
+      "expected": 12,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "ball_centre_corridors_clear_through_mouths",
+      "measured": 18,
+      "expected": 18,
+      "unit": "ray",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_draft_proofs_manifold_positive",
+      "measured": 18,
+      "expected": 18,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_draft_proof_role_counts",
+      "measured": {
+        "bed_drop": 6,
+        "rail_opening": 6,
+        "rail_outboard_clearance": 6
+      },
+      "expected": {
+        "rail_opening": 6,
+        "rail_outboard_clearance": 6,
+        "bed_drop": 6
+      },
+      "unit": "count",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_backdraft_is_uniform_buffer",
+      "measured": 0.027990767314078013,
+      "expected": 0.0,
+      "tolerance": 0.05,
+      "unit": "deg",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_auxiliary_cutters_manifold_positive",
+      "measured": 12,
+      "expected": 12,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_boolean_targets_manifold_positive",
+      "measured": 11,
+      "expected": 11,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_basket_bases_below_ball_path",
+      "measured": 0.11180005025863649,
+      "expected": ">=0.085725",
+      "unit": "m",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_basket_bases_admit_ball",
+      "measured": 0.04979515075683594,
+      "expected": ">0.028575",
+      "unit": "m",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "six_rail_caps_have_craft_geometry",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "rail_cap_grain_follows_board_axis",
+      "measured": {
+        "world_x": 2,
+        "world_y": 4
+      },
+      "expected": {
+        "world_x": 2,
+        "world_y": 4
+      },
+      "unit": "count",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "visible_end_boards_use_cross_table_grain",
+      "measured": 4,
+      "expected": 4,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_irons_are_open_rail_top_castings",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_welts_leave_open_u_capture_clearance",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "sweeps": [
+        {
+          "pocket": "corner_SW",
+          "kind": "corner",
+          "sweep_deg": 210.00000000000003,
+          "playfield_opening_deg": 149.99999999999997
+        },
+        {
+          "pocket": "side_W",
+          "kind": "side",
+          "sweep_deg": 190.0,
+          "playfield_opening_deg": 170.0
+        },
+        {
+          "pocket": "corner_NW",
+          "kind": "corner",
+          "sweep_deg": 210.00000000000003,
+          "playfield_opening_deg": 149.99999999999997
+        },
+        {
+          "pocket": "corner_SE",
+          "kind": "corner",
+          "sweep_deg": 210.00000000000003,
+          "playfield_opening_deg": 149.99999999999997
+        },
+        {
+          "pocket": "side_E",
+          "kind": "side",
+          "sweep_deg": 190.0,
+          "playfield_opening_deg": 170.0
+        },
+        {
+          "pocket": "corner_NE",
+          "kind": "corner",
+          "sweep_deg": 210.00000000000003,
+          "playfield_opening_deg": 149.99999999999997
+        }
+      ],
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_skirts_join_welts_to_bed_edge",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_welts_have_discrete_stitch_runs",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_irons_have_recessed_two_ear_mounts",
+      "measured": 24,
+      "expected": 24,
+      "unit": "part",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_facing_cores_cloth_covered",
+      "measured": 12,
+      "expected": 12,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "rail_featherstrips_cloth_covered",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "cushion_terminals_have_cloth_edge_ease",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "cushion_terminal_zones_use_wrapped_worsted_cloth",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_throats_use_dark_leather_not_wood",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_baskets_have_dark_interior_leather",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_basket_bases_use_deep_leather_shadow",
+      "measured": 6,
+      "expected": 6,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_suspension_straps_are_visible_leather",
+      "measured": 18,
+      "expected": 18,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_straps_have_visible_steel_rivets",
+      "measured": 18,
+      "expected": 18,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_drop_clear_of_hidden_wood_and_aprons",
+      "measured": 0,
+      "expected": 0,
+      "unit": "pair",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "pocket_assembly_attachment_contacts",
+      "measured": 102,
+      "expected": 102,
+      "unit": "contact",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "set_dressing_clear_of_cue_envelope",
+      "measured": 0,
+      "expected": 0,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "movable_fixture_height_above_bed",
+      "measured": 1.015999997138977,
+      "expected": 1.016,
+      "tolerance": 0.002,
+      "unit": "m",
+      "required": true,
+      "status": "PASS",
+      "delta": -2.8610229740877458e-09
+    },
+    {
+      "check": "pool_table_fill_revision_energy",
+      "measured": 8.0,
+      "expected": 8.0,
+      "tolerance": 0.01,
+      "unit": "W",
+      "required": true,
+      "status": "PASS",
+      "delta": 0.0
+    },
+    {
+      "check": "constructed_public_service_door_count",
+      "measured": 3,
+      "expected": 3,
+      "unit": "count",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "bar_stock_bottle_density",
+      "measured": 193,
+      "expected": ">=120",
+      "unit": "count",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "floor_is_neglected_concrete",
+      "measured": "MAT_Env_Floor_NeglectedConcrete",
+      "expected": "MAT_Env_Floor_NeglectedConcrete",
+      "unit": "name",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "check": "texel_density_hero_surfaces",
+      "measured": 38,
+      "expected": 38,
+      "unit": "count",
+      "floor_px_per_m": 1024.0,
+      "required": false,
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "rigid_body_count",
+      "measured": 0,
+      "expected": 0,
+      "status": "PASS",
+      "required": true,
+      "unit": "count"
+    },
+    {
+      "check": "physics_proxy_feature_counts",
+      "measured": {
+        "total": 42,
+        "linear": 18,
+        "arc": 12,
+        "solver_pocket": 6,
+        "shelf_drop": 6
+      },
+      "expected": {
+        "total": 42,
+        "linear": 18,
+        "arc": 12,
+        "solver_pocket": 6,
+        "shelf_drop": 6
+      },
+      "required": true,
+      "unit": "count",
+      "status": "PASS"
+    },
+    {
+      "check": "physics_proxies_hidden_from_render",
+      "measured": 0,
+      "expected": 0,
+      "required": true,
+      "unit": "count",
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "solver_pocket_proxies_match_pooltool_circles",
+      "measured": 6,
+      "expected": 6,
+      "required": true,
+      "unit": "count",
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "shelf_drop_proxies_are_static_construction_only",
+      "measured": 6,
+      "expected": 6,
+      "required": true,
+      "unit": "count",
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "contact_proxy_radius_is_debug_only",
+      "measured": 30,
+      "expected": 30,
+      "required": true,
+      "unit": "count",
+      "offenders": [],
+      "status": "PASS"
+    },
+    {
+      "check": "unapplied_scale_on_production_meshes",
+      "measured": 0,
+      "expected": 0,
+      "status": "PASS",
+      "required": false,
+      "offenders": [],
+      "unit": "count"
+    },
+    {
+      "check": "unassigned_material_slots",
+      "measured": 0,
+      "expected": 0,
+      "status": "PASS",
+      "required": false,
+      "offenders": [],
+      "unit": "count"
+    },
+    {
+      "check": "missing_external_files",
+      "measured": 0,
+      "expected": 0,
+      "status": "PASS",
+      "required": true,
+      "offenders": [],
+      "unit": "count"
+    },
+    {
+      "check": "reference_collection_excluded",
+      "measured": true,
+      "expected": true,
+      "status": "PASS",
+      "required": true,
+      "unit": "bool"
+    },
+    {
+      "check": "no_stray_startup_objects",
+      "measured": 0,
+      "expected": 0,
+      "unit": "count",
+      "required": true,
+      "offenders": [],
+      "status": "PASS"
+    }
+  ]
+}

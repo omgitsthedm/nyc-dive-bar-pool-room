@@ -1,0 +1,15 @@
+blend/*.blend
+blend/*.blend1
+blend/checkpoints/*.blend
+renders/final_exr/
+site/break.mp4
+*.log
+.DS_Store
+.netlify/
+node_modules/
+*.blend1
+
+# scratch, vendored deps, stale film frames, local blend backups
+tmp/
+renders/sweep/
+blend-backups/

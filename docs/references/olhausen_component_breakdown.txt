@@ -1,0 +1,77 @@
+Here's the complete component-by-component breakdown of the Olhausen Remington, with materials and measurements. One honest caveat upfront: Olhausen publishes overall dimensions and the internal engineering specs, but not every single wood member's dimensions — so where exact numbers aren't published, I've marked industry-standard/WPA tournament measurements that apply to this class of table.
+
+---
+
+## 1. Overall Dimensions (Outside, Cavalier Rail)
+
+| Size | Width | Length | Playing Surface |
+|---|---|---|---|
+| 7' | 50" | 89" | 39" x 78" |
+| 8' | 55" | 99" | 44" x 88" |
+| 8.5' | 57" | 103" | 46" x 92" |
+| 9' | 61" | 111" | 50" x 100" |
+
+ Table height is the industry standard ~32" from floor to playing surface (WPA regulation is 29.25"–31"). Assembled weight runs roughly 700–1,000 lbs depending on size — the Tournament Pro 9' (same construction family) weighs 970 lbs .
+
+## 2. Cabinet / Apron
+- **Material:** 100% solid kiln-dried hardwood — Maple, Oak, Cherry, or Walnut; sourced from slow-growth Northeastern US trees for tighter grain 
+- **Style:** Flat-paneled apron with routered detail 
+- **Finish:** UV-cured finish (resists scratching and chipping), up to 35–38 finish options 
+- **Hardware:** Steel KD (knock-down) apron brackets — consistent alignment, no visible filler or screws 
+
+## 3. Legs
+- **Material:** Solid hardwood, matched to the cabinet wood/finish
+- **Design:** **Floor-to-slate construction** — the legs run uninterrupted from the floor up to directly beneath the slate, carrying the slate's full load vertically rather than through the frame 
+- **Hardware:** Adjustable levelers/anchor plates at floor contact points
+
+## 4. Frame / Slate Support (the engineering core)
+- **Uniliner® slate support body:** Solid wood integrated liner/frame that supports a larger slate area, keeps slate flat and level, minimizes wood movement from humidity, and is nearly **twice as strong as length center braces**; frame strength tested by Weyerhaeuser to support up to **27,000 lbs** 
+- **Slate liner:** Solid wood framing around the slate perimeter — dampens vibration for quieter play and protects the slate in transport 
+- **Bolt-thru crossbrace:** Steel bolts physically support the braces, eliminating frame sag/spread and climate-driven movement 
+
+## 5. Slate (the playing bed)
+- **Material:** Natural slate stone, **diamond-honed** for flatness; each piece rigorously inspected for flatness and bolt-hole placement 
+- **Configuration:** **3-piece, 1" thick** (1.25" available as upgrade) 
+- **Weight:** Each piece **~200+ lbs** — roughly 600+ lbs of slate per table 
+- **Joint treatment:** Seams filled and leveled with auto body filler or wax, then wet-sanded flush during installation
+
+## 6. Rails (top rail assemblies)
+- **Material:** Solid hardwood, same species as cabinet, UV finished 
+- **Depth:** ~5" industry-standard rail depth 
+- **Attachment:** **T-Nut rail construction** — steel T-nuts embedded in the rails accept long-grip bolts from beneath; eliminates dead spots, won't bend or cross-thread, allows precise alignment and easy removal for re-covering 
+- **Sights:** Inlaid mother-of-pearl or diamond-shaped sights (configurable)
+
+## 7. Cushions (bumpers)
+- **Material:** **Accu-Fast® — 100% pure natural gum rubber**, American made, 100% bonded to the rail 
+- **Profile:** True **K-66** — height **1 3/16"**, top/face width **1 1/8"**, 66° cross-section angle 
+- **Nose height (contact point):** 1 3/8"–1 7/16" above the playfield — the WPA spec for 2.25" balls 
+- **Length:** 6 cushions total, ~48" stock cut to rail size 
+- **Warranty:** Lifetime — unlike extruded rubber with fillers, pure gum rubber doesn't harden and crack 
+
+## 8. Pockets
+- **Material:** Leather — **fringe or shield style** (go shield for the premium look) 
+- **Facings:** Rubber/neoprene pocket facings where the cushion meets the pocket mouth
+- **Corner pocket openings:** 4.5"–4.625" (WPA standard range 4.5"–4.75") 
+- **Side pocket openings:** 5"–5.125" 
+- **Hardware:** Steel pocket irons underneath; **no ball return** — drop pockets only 
+- One known trait from the pro community: Olhausen pockets run a wider opening-to-throat ratio, which can produce the occasional "rattle" on balls hit hard along the rail into corners 
+
+## 9. Cloth (felt)
+- **Stock:** Championship or Simonis brand 
+- **Upgrade (do it):** **Simonis 860** — worsted wool (90% wool / 10% nylon), nap-free weave, ~21 oz; available in 26 colors 
+- **Bed cloth:** cut to playfield + 6" overhang per side; rail cloth strips per rail
+
+## 10. Hardware & Fasteners
+- Steel T-nuts and bolts for rail assembly 
+- Steel KD apron brackets 
+- Steel bolt-thru crossbrace hardware 
+- Slate-to-frame screws with recessed heads
+
+## 11. Included Accessories
+- Four cues, bridge stick (58" standard cue length ), wall-mounted cue rack, ball set (2.25" diameter phenolic resin), 8-ball and 9-ball racks, chalk, table cover, repair kit, table brushes 
+
+---
+
+**Summary of the premium material stack:** solid Northeastern hardwood + diamond-honed 1" slate + pure gum rubber K-66 + worsted wool cloth + leather pockets + steel structural hardware. That's the entire heirloom-grade bill of materials — and the lifetime warranty covers all of it .
+
+Want me to turn this into a formatted spec sheet (markdown or PDF) you can hand to a dealer or designer, or spec out the exact build configuration (9' walnut, shield pockets, Simonis color) with a room dimension check for your space?

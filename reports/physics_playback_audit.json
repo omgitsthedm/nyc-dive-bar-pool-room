@@ -1,0 +1,5359 @@
+{
+  "animation": {
+    "balls": {
+      "01": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "02": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "03": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "04": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "05": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "06": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "07": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "08": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "09": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "10": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "11": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "12": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "13": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "14": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "15": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      },
+      "cue": {
+        "api": "layered",
+        "bags": 1,
+        "channels": 7,
+        "expected_keys_per_channel": 1536,
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "layers": 1,
+        "max_frame_error": 0.0,
+        "slots": 1
+      }
+    },
+    "expected_first_frame": 1.0,
+    "expected_keys_per_channel": 1536,
+    "expected_last_frame": 170.38880920410156,
+    "expected_transform_channels_per_ball": 7
+  },
+  "ball_assets": {
+    "01": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "material": "MAT_GameBall_01",
+      "texture": "assets/textures/balls_game/ball_01.png",
+      "texture_sha256": "0f67e26e70759342f71aec09154188fca4d305e8ce540b999be9fbfc8c853c8c"
+    },
+    "02": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "material": "MAT_GameBall_02",
+      "texture": "assets/textures/balls_game/ball_02.png",
+      "texture_sha256": "9b0c19c09d0979517f1d657b065faba9588883c2629650de11f65b3405ef5958"
+    },
+    "03": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999511837959,
+          0.05714999884366989,
+          0.05714999511837959
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          0.9999999403953552,
+          1.0,
+          0.9999999403953552
+        ]
+      },
+      "material": "MAT_GameBall_03",
+      "texture": "assets/textures/balls_game/ball_03.png",
+      "texture_sha256": "99f8800166f76c26e60f35be4564375417a137d796c08c6a03106401cb6b0abc"
+    },
+    "04": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999511837959,
+          0.05714999511837959,
+          0.05714999511837959
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          0.9999999403953552,
+          0.9999999403953552,
+          0.9999999403953552
+        ]
+      },
+      "material": "MAT_GameBall_04",
+      "texture": "assets/textures/balls_game/ball_04.png",
+      "texture_sha256": "c027cd13d8e10f7ecfdf4f70ae6cf0fc73da10fa7101048e46096744018efcf6"
+    },
+    "05": {
+      "geometry": {
+        "dimensions_m": [
+          0.05715000629425049,
+          0.05714999884366989,
+          0.05715000629425049
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0000001192092896,
+          1.0,
+          1.0000001192092896
+        ]
+      },
+      "material": "MAT_GameBall_05",
+      "texture": "assets/textures/balls_game/ball_05.png",
+      "texture_sha256": "3a4cadf6cfa1f44198b43344182da0c8c3b250fd6aee4baecc4208b0a8087aeb"
+    },
+    "06": {
+      "geometry": {
+        "dimensions_m": [
+          0.05715000629425049,
+          0.057150013744831085,
+          0.057150017470121384
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0000001192092896,
+          1.000000238418579,
+          1.0000003576278687
+        ]
+      },
+      "material": "MAT_GameBall_06",
+      "texture": "assets/textures/balls_game/ball_06.png",
+      "texture_sha256": "af2416b0b72b9a1632c8f3d97646d0a2754fdb927112163ccc7dabe3e848b2b2"
+    },
+    "07": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "material": "MAT_GameBall_07",
+      "texture": "assets/textures/balls_game/ball_07.png",
+      "texture_sha256": "83c8a7453e8935b893b7487094e213c242b0084cd9a84dbbcfd9ab913bb18c75"
+    },
+    "08": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999511837959,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          0.9999999403953552,
+          1.0,
+          1.0
+        ]
+      },
+      "material": "MAT_GameBall_08",
+      "texture": "assets/textures/balls_game/ball_08.png",
+      "texture_sha256": "0515b773d6ee87623c601d5040dc2c9c6dac0954c1bef13c696c0101c50ab511"
+    },
+    "09": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999511837959
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          0.9999999403953552
+        ]
+      },
+      "material": "MAT_GameBall_09",
+      "texture": "assets/textures/balls_game/ball_09.png",
+      "texture_sha256": "ea3321de3c6a7b5d0c6ebbde04e4f482a4cde4f03bbbd44c9aa6060fabc446a0"
+    },
+    "10": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "material": "MAT_GameBall_10",
+      "texture": "assets/textures/balls_game/ball_10.png",
+      "texture_sha256": "59ecf1aae673b47259eef95c221a84417435a6bdf95b676205087d152555a887"
+    },
+    "11": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999511837959
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          0.9999999403953552
+        ]
+      },
+      "material": "MAT_GameBall_11",
+      "texture": "assets/textures/balls_game/ball_11.png",
+      "texture_sha256": "40d51de3832db0c20b1e30a10ee7008565cf0b5baf80eb5b563d65d010f208ab"
+    },
+    "12": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "material": "MAT_GameBall_12",
+      "texture": "assets/textures/balls_game/ball_12.png",
+      "texture_sha256": "0946dbfcf93c46069ba3fc34002b1af7fd8aabf8b4bc3db2a84d676a21cdbdd6"
+    },
+    "13": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "material": "MAT_GameBall_13",
+      "texture": "assets/textures/balls_game/ball_13.png",
+      "texture_sha256": "d8b63ff88b1774bb7d1cf122f4e55d27dc117d131c13d74d07141cc4eaa072cf"
+    },
+    "14": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999511837959
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          0.9999999403953552
+        ]
+      },
+      "material": "MAT_GameBall_14",
+      "texture": "assets/textures/balls_game/ball_14.png",
+      "texture_sha256": "a96b3ed852378be6d415ccda1386c9116a95962842f02485cf2bf2beee064787"
+    },
+    "15": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999511837959,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          0.9999999403953552,
+          1.0
+        ]
+      },
+      "material": "MAT_GameBall_15",
+      "texture": "assets/textures/balls_game/ball_15.png",
+      "texture_sha256": "7c8ac24252d7166911e90fcc36418d07fbefe49bf78fae55b86a55766df55da5"
+    },
+    "cue": {
+      "geometry": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "material": "MAT_GameBall_Cue",
+      "texture": "assets/textures/balls_game/ball_cue.png",
+      "texture_sha256": "158fba5a7d45c194b25501c6dda099aa07e36e66040fb1660b3ef79266bf1562"
+    }
+  },
+  "blend": "blend/poolroom_gameplay_preview.blend",
+  "blend_sha256": "62ddc8abeb636a841871bd1f727e6674830cc02977d2a285bcac7044c5a6d2d5",
+  "checks": [
+    {
+      "id": "trajectory_payload_identity",
+      "observed": {
+        "error": null,
+        "recomputed": "98d46617dfa4e093823314faf185065528d05e38291e370fef0481f44b02272c",
+        "stored": "98d46617dfa4e093823314faf185065528d05e38291e370fef0481f44b02272c"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "98d46617dfa4e093823314faf185065528d05e38291e370fef0481f44b02272c",
+      "id": "scene_trajectory_identity",
+      "observed": "98d46617dfa4e093823314faf185065528d05e38291e370fef0481f44b02272c",
+      "status": "PASS"
+    },
+    {
+      "id": "profile_file_identity",
+      "observed": {
+        "file": "29933eccf106d7a04f3e59231d9b4355479e50b737179f30419bf6dcb98fcd7e",
+        "trajectory": "29933eccf106d7a04f3e59231d9b4355479e50b737179f30419bf6dcb98fcd7e"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "29933eccf106d7a04f3e59231d9b4355479e50b737179f30419bf6dcb98fcd7e",
+      "id": "scene_profile_identity",
+      "observed": "29933eccf106d7a04f3e59231d9b4355479e50b737179f30419bf6dcb98fcd7e",
+      "status": "PASS"
+    },
+    {
+      "id": "geometry_file_identity",
+      "observed": {
+        "file": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+        "trajectory": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+      "id": "scene_geometry_identity",
+      "observed": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+      "status": "PASS"
+    },
+    {
+      "id": "asset_schemas",
+      "observed": {
+        "markings": "pool-ball-markings/v1",
+        "profile": "pool-physics-profile/v1",
+        "trajectory": "pool-shot-trajectory/v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "R": 0.028575,
+        "e_b": 0.97,
+        "e_c": 0.88,
+        "f_c": 0.14,
+        "g": 9.80665,
+        "m": 0.168,
+        "u_b": 0.07,
+        "u_r": 0.012746452662224104,
+        "u_s": 0.2,
+        "u_sp_proportionality": 0.8973502674205769
+      },
+      "id": "trajectory_ball_parameter_formulas",
+      "observed": {
+        "absolute_errors": {
+          "R": 0.0,
+          "e_b": 0.0,
+          "e_c": 0.0,
+          "f_c": 0.0,
+          "g": 0.0,
+          "m": 0.0,
+          "u_b": 0.0,
+          "u_r": 0.0,
+          "u_s": 0.0,
+          "u_sp_proportionality": 0.0
+        },
+        "actual": {
+          "R": 0.028575,
+          "e_b": 0.97,
+          "e_c": 0.88,
+          "f_c": 0.14,
+          "g": 9.80665,
+          "m": 0.168,
+          "u_b": 0.07,
+          "u_r": 0.012746452662224104,
+          "u_s": 0.2,
+          "u_sp_proportionality": 0.8973502674205769
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "trajectory_sample_rate_contract",
+      "observed": {
+        "profile_hz": 240,
+        "scene_hz": 240,
+        "trajectory_hz": 240
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "geometry_profile_and_scene_mapping",
+      "observed": {
+        "geometry_w_l_bed_radius_nose": [
+          1.27,
+          2.54,
+          0.762,
+          0.028575,
+          0.03629025
+        ],
+        "scene_w_l_bed_radius_nose": [
+          1.27,
+          2.54,
+          0.762,
+          0.028575,
+          0.03629025
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "fps": 24,
+        "fps_base": 1.0
+      },
+      "id": "scene_fps_and_timebase",
+      "observed": {
+        "effective_fps": 24.0,
+        "fps": 24,
+        "fps_base": 1.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "frame_end": 172,
+        "frame_start": 1
+      },
+      "id": "scene_playback_range",
+      "observed": {
+        "frame_end": 172,
+        "frame_start": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "gameplay_collection",
+      "observed": {
+        "collection": "11_GAMEPLAY",
+        "scene_property": "11_GAMEPLAY"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "zero_blender_rigid_bodies",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "id": "intentional_zero_body_authority",
+      "observed": {
+        "authority": "Pooltool 0.6.0 event solver",
+        "intentional": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "sixteen_gameplay_balls",
+      "observed": [
+        "PT_GameBall_01",
+        "PT_GameBall_02",
+        "PT_GameBall_03",
+        "PT_GameBall_04",
+        "PT_GameBall_05",
+        "PT_GameBall_06",
+        "PT_GameBall_07",
+        "PT_GameBall_08",
+        "PT_GameBall_09",
+        "PT_GameBall_10",
+        "PT_GameBall_11",
+        "PT_GameBall_12",
+        "PT_GameBall_13",
+        "PT_GameBall_14",
+        "PT_GameBall_15",
+        "PT_GameBall_Cue"
+      ],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_01",
+      "id": "ball_01_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_01"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_01_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "1",
+        "ball_number": 1,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_01_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "1",
+          "ball_number": 1,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_01_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "solid",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 1,
+          "opposed_number_circles": 2,
+          "sha256": "0f67e26e70759342f71aec09154188fca4d305e8ce540b999be9fbfc8c853c8c",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_01.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "solid",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_01_texture_file_integrity",
+      "observed": {
+        "file_sha256": "0f67e26e70759342f71aec09154188fca4d305e8ce540b999be9fbfc8c853c8c",
+        "manifest_sha256": "0f67e26e70759342f71aec09154188fca4d305e8ce540b999be9fbfc8c853c8c",
+        "object_sha256": "0f67e26e70759342f71aec09154188fca4d305e8ce540b999be9fbfc8c853c8c",
+        "path": "assets/textures/balls_game/ball_01.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_01_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_01.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_01",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_01"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_01.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_01_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_01_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_01_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_10",
+      "id": "ball_10_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_10"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_10_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "10",
+        "ball_number": 10,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_10_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "10",
+          "ball_number": 10,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_10_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "stripe",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 10,
+          "opposed_number_circles": 2,
+          "sha256": "59ecf1aae673b47259eef95c221a84417435a6bdf95b676205087d152555a887",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_10.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "stripe",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_10_texture_file_integrity",
+      "observed": {
+        "file_sha256": "59ecf1aae673b47259eef95c221a84417435a6bdf95b676205087d152555a887",
+        "manifest_sha256": "59ecf1aae673b47259eef95c221a84417435a6bdf95b676205087d152555a887",
+        "object_sha256": "59ecf1aae673b47259eef95c221a84417435a6bdf95b676205087d152555a887",
+        "path": "assets/textures/balls_game/ball_10.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_10_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_10.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_10",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_10"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_10.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_10_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_10_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_10_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_11",
+      "id": "ball_11_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_11"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_11_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999511837959
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          0.9999999403953552
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "11",
+        "ball_number": 11,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_11_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "11",
+          "ball_number": 11,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_11_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "stripe",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 11,
+          "opposed_number_circles": 2,
+          "sha256": "40d51de3832db0c20b1e30a10ee7008565cf0b5baf80eb5b563d65d010f208ab",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_11.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "stripe",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_11_texture_file_integrity",
+      "observed": {
+        "file_sha256": "40d51de3832db0c20b1e30a10ee7008565cf0b5baf80eb5b563d65d010f208ab",
+        "manifest_sha256": "40d51de3832db0c20b1e30a10ee7008565cf0b5baf80eb5b563d65d010f208ab",
+        "object_sha256": "40d51de3832db0c20b1e30a10ee7008565cf0b5baf80eb5b563d65d010f208ab",
+        "path": "assets/textures/balls_game/ball_11.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_11_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_11.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_11",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_11"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_11.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_11_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_11_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_11_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_12",
+      "id": "ball_12_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_12"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_12_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "12",
+        "ball_number": 12,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_12_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "12",
+          "ball_number": 12,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_12_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "stripe",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 12,
+          "opposed_number_circles": 2,
+          "sha256": "0946dbfcf93c46069ba3fc34002b1af7fd8aabf8b4bc3db2a84d676a21cdbdd6",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_12.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "stripe",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_12_texture_file_integrity",
+      "observed": {
+        "file_sha256": "0946dbfcf93c46069ba3fc34002b1af7fd8aabf8b4bc3db2a84d676a21cdbdd6",
+        "manifest_sha256": "0946dbfcf93c46069ba3fc34002b1af7fd8aabf8b4bc3db2a84d676a21cdbdd6",
+        "object_sha256": "0946dbfcf93c46069ba3fc34002b1af7fd8aabf8b4bc3db2a84d676a21cdbdd6",
+        "path": "assets/textures/balls_game/ball_12.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_12_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_12.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_12",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_12"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_12.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_12_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_12_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_12_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_13",
+      "id": "ball_13_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_13"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_13_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "13",
+        "ball_number": 13,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_13_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "13",
+          "ball_number": 13,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_13_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "stripe",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 13,
+          "opposed_number_circles": 2,
+          "sha256": "d8b63ff88b1774bb7d1cf122f4e55d27dc117d131c13d74d07141cc4eaa072cf",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_13.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "stripe",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_13_texture_file_integrity",
+      "observed": {
+        "file_sha256": "d8b63ff88b1774bb7d1cf122f4e55d27dc117d131c13d74d07141cc4eaa072cf",
+        "manifest_sha256": "d8b63ff88b1774bb7d1cf122f4e55d27dc117d131c13d74d07141cc4eaa072cf",
+        "object_sha256": "d8b63ff88b1774bb7d1cf122f4e55d27dc117d131c13d74d07141cc4eaa072cf",
+        "path": "assets/textures/balls_game/ball_13.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_13_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_13.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_13",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_13"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_13.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_13_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_13_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_13_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_14",
+      "id": "ball_14_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_14"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_14_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999511837959
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          0.9999999403953552
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "14",
+        "ball_number": 14,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_14_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "14",
+          "ball_number": 14,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_14_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "stripe",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 14,
+          "opposed_number_circles": 2,
+          "sha256": "a96b3ed852378be6d415ccda1386c9116a95962842f02485cf2bf2beee064787",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_14.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "stripe",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_14_texture_file_integrity",
+      "observed": {
+        "file_sha256": "a96b3ed852378be6d415ccda1386c9116a95962842f02485cf2bf2beee064787",
+        "manifest_sha256": "a96b3ed852378be6d415ccda1386c9116a95962842f02485cf2bf2beee064787",
+        "object_sha256": "a96b3ed852378be6d415ccda1386c9116a95962842f02485cf2bf2beee064787",
+        "path": "assets/textures/balls_game/ball_14.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_14_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_14.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_14",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_14"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_14.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_14_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_14_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_14_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_15",
+      "id": "ball_15_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_15"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_15_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999511837959,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          0.9999999403953552,
+          1.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "15",
+        "ball_number": 15,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_15_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "15",
+          "ball_number": 15,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_15_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "stripe",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 15,
+          "opposed_number_circles": 2,
+          "sha256": "7c8ac24252d7166911e90fcc36418d07fbefe49bf78fae55b86a55766df55da5",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_15.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "stripe",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_15_texture_file_integrity",
+      "observed": {
+        "file_sha256": "7c8ac24252d7166911e90fcc36418d07fbefe49bf78fae55b86a55766df55da5",
+        "manifest_sha256": "7c8ac24252d7166911e90fcc36418d07fbefe49bf78fae55b86a55766df55da5",
+        "object_sha256": "7c8ac24252d7166911e90fcc36418d07fbefe49bf78fae55b86a55766df55da5",
+        "path": "assets/textures/balls_game/ball_15.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_15_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_15.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_15",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_15"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_15.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_15_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_15_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_15_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_02",
+      "id": "ball_02_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_02"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_02_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "2",
+        "ball_number": 2,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_02_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "2",
+          "ball_number": 2,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_02_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "solid",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 2,
+          "opposed_number_circles": 2,
+          "sha256": "9b0c19c09d0979517f1d657b065faba9588883c2629650de11f65b3405ef5958",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_02.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "solid",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_02_texture_file_integrity",
+      "observed": {
+        "file_sha256": "9b0c19c09d0979517f1d657b065faba9588883c2629650de11f65b3405ef5958",
+        "manifest_sha256": "9b0c19c09d0979517f1d657b065faba9588883c2629650de11f65b3405ef5958",
+        "object_sha256": "9b0c19c09d0979517f1d657b065faba9588883c2629650de11f65b3405ef5958",
+        "path": "assets/textures/balls_game/ball_02.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_02_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_02.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_02",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_02"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_02.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_02_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_02_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_02_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_03",
+      "id": "ball_03_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_03"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_03_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999511837959,
+          0.05714999884366989,
+          0.05714999511837959
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          0.9999999403953552,
+          1.0,
+          0.9999999403953552
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "3",
+        "ball_number": 3,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_03_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "3",
+          "ball_number": 3,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_03_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "solid",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 3,
+          "opposed_number_circles": 2,
+          "sha256": "99f8800166f76c26e60f35be4564375417a137d796c08c6a03106401cb6b0abc",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_03.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "solid",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_03_texture_file_integrity",
+      "observed": {
+        "file_sha256": "99f8800166f76c26e60f35be4564375417a137d796c08c6a03106401cb6b0abc",
+        "manifest_sha256": "99f8800166f76c26e60f35be4564375417a137d796c08c6a03106401cb6b0abc",
+        "object_sha256": "99f8800166f76c26e60f35be4564375417a137d796c08c6a03106401cb6b0abc",
+        "path": "assets/textures/balls_game/ball_03.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_03_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_03.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_03",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_03"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_03.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_03_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_03_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_03_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_04",
+      "id": "ball_04_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_04"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_04_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999511837959,
+          0.05714999511837959,
+          0.05714999511837959
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          0.9999999403953552,
+          0.9999999403953552,
+          0.9999999403953552
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "4",
+        "ball_number": 4,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_04_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "4",
+          "ball_number": 4,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_04_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "solid",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 4,
+          "opposed_number_circles": 2,
+          "sha256": "c027cd13d8e10f7ecfdf4f70ae6cf0fc73da10fa7101048e46096744018efcf6",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_04.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "solid",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_04_texture_file_integrity",
+      "observed": {
+        "file_sha256": "c027cd13d8e10f7ecfdf4f70ae6cf0fc73da10fa7101048e46096744018efcf6",
+        "manifest_sha256": "c027cd13d8e10f7ecfdf4f70ae6cf0fc73da10fa7101048e46096744018efcf6",
+        "object_sha256": "c027cd13d8e10f7ecfdf4f70ae6cf0fc73da10fa7101048e46096744018efcf6",
+        "path": "assets/textures/balls_game/ball_04.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_04_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_04.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_04",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_04"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_04.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_04_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_04_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_04_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_05",
+      "id": "ball_05_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_05"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_05_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05715000629425049,
+          0.05714999884366989,
+          0.05715000629425049
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0000001192092896,
+          1.0,
+          1.0000001192092896
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "5",
+        "ball_number": 5,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_05_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "5",
+          "ball_number": 5,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_05_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "solid",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 5,
+          "opposed_number_circles": 2,
+          "sha256": "3a4cadf6cfa1f44198b43344182da0c8c3b250fd6aee4baecc4208b0a8087aeb",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_05.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "solid",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_05_texture_file_integrity",
+      "observed": {
+        "file_sha256": "3a4cadf6cfa1f44198b43344182da0c8c3b250fd6aee4baecc4208b0a8087aeb",
+        "manifest_sha256": "3a4cadf6cfa1f44198b43344182da0c8c3b250fd6aee4baecc4208b0a8087aeb",
+        "object_sha256": "3a4cadf6cfa1f44198b43344182da0c8c3b250fd6aee4baecc4208b0a8087aeb",
+        "path": "assets/textures/balls_game/ball_05.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_05_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_05.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_05",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_05"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_05.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_05_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_05_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_05_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_06",
+      "id": "ball_06_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_06"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_06_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05715000629425049,
+          0.057150013744831085,
+          0.057150017470121384
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0000001192092896,
+          1.000000238418579,
+          1.0000003576278687
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "6",
+        "ball_number": 6,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_06_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "6",
+          "ball_number": 6,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_06_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "solid",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 6,
+          "opposed_number_circles": 2,
+          "sha256": "af2416b0b72b9a1632c8f3d97646d0a2754fdb927112163ccc7dabe3e848b2b2",
+          "underscored": true,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_06.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "solid",
+          "number_underscored": true,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_06_texture_file_integrity",
+      "observed": {
+        "file_sha256": "af2416b0b72b9a1632c8f3d97646d0a2754fdb927112163ccc7dabe3e848b2b2",
+        "manifest_sha256": "af2416b0b72b9a1632c8f3d97646d0a2754fdb927112163ccc7dabe3e848b2b2",
+        "object_sha256": "af2416b0b72b9a1632c8f3d97646d0a2754fdb927112163ccc7dabe3e848b2b2",
+        "path": "assets/textures/balls_game/ball_06.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_06_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_06.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_06",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_06"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_06.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_06_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_06_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_06_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_07",
+      "id": "ball_07_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_07"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_07_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "7",
+        "ball_number": 7,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "rb",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_07_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "7",
+          "ball_number": 7,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "rb",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_07_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "solid",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 7,
+          "opposed_number_circles": 2,
+          "sha256": "83c8a7453e8935b893b7487094e213c242b0084cd9a84dbbcfd9ab913bb18c75",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_07.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "solid",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_07_texture_file_integrity",
+      "observed": {
+        "file_sha256": "83c8a7453e8935b893b7487094e213c242b0084cd9a84dbbcfd9ab913bb18c75",
+        "manifest_sha256": "83c8a7453e8935b893b7487094e213c242b0084cd9a84dbbcfd9ab913bb18c75",
+        "object_sha256": "83c8a7453e8935b893b7487094e213c242b0084cd9a84dbbcfd9ab913bb18c75",
+        "path": "assets/textures/balls_game/ball_07.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_07_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_07.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_07",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_07"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_07.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_07_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_07_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_07_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_08",
+      "id": "ball_08_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_08"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_08_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999511837959,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          0.9999999403953552,
+          1.0,
+          1.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "8",
+        "ball_number": 8,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_08_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "8",
+          "ball_number": 8,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_08_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "solid",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 8,
+          "opposed_number_circles": 2,
+          "sha256": "0515b773d6ee87623c601d5040dc2c9c6dac0954c1bef13c696c0101c50ab511",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_08.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "solid",
+          "number_underscored": false,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_08_texture_file_integrity",
+      "observed": {
+        "file_sha256": "0515b773d6ee87623c601d5040dc2c9c6dac0954c1bef13c696c0101c50ab511",
+        "manifest_sha256": "0515b773d6ee87623c601d5040dc2c9c6dac0954c1bef13c696c0101c50ab511",
+        "object_sha256": "0515b773d6ee87623c601d5040dc2c9c6dac0954c1bef13c696c0101c50ab511",
+        "path": "assets/textures/balls_game/ball_08.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_08_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_08.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_08",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_08"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_08.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_08_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_08_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_08_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_09",
+      "id": "ball_09_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_09"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_09_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999511837959
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          0.9999999403953552
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "9",
+        "ball_number": 9,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_09_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "9",
+          "ball_number": 9,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_09_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "stripe",
+          "duplicate_number_inverted": true,
+          "height": 1024,
+          "number": 9,
+          "opposed_number_circles": 2,
+          "sha256": "ea3321de3c6a7b5d0c6ebbde04e4f482a4cde4f03bbbd44c9aa6060fabc446a0",
+          "underscored": true,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_09.png",
+          "duplicate_number_inverted": true,
+          "marking_class": "stripe",
+          "number_underscored": true,
+          "opposed_number_circles": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_09_texture_file_integrity",
+      "observed": {
+        "file_sha256": "ea3321de3c6a7b5d0c6ebbde04e4f482a4cde4f03bbbd44c9aa6060fabc446a0",
+        "manifest_sha256": "ea3321de3c6a7b5d0c6ebbde04e4f482a4cde4f03bbbd44c9aa6060fabc446a0",
+        "object_sha256": "ea3321de3c6a7b5d0c6ebbde04e4f482a4cde4f03bbbd44c9aa6060fabc446a0",
+        "path": "assets/textures/balls_game/ball_09.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_09_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_09.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_09",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_09"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_09.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_09_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_09_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_09_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": "PT_GameBall_Cue",
+      "id": "ball_cue_object_exists",
+      "observed": {
+        "collections": [
+          "11_GAMEPLAY"
+        ],
+        "name": "PT_GameBall_Cue"
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "diameter_m": 0.05715,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "ball_cue_actual_geometry",
+      "observed": {
+        "dimensions_m": [
+          0.05714999884366989,
+          0.05714999884366989,
+          0.05714999884366989
+        ],
+        "max_local_vertex_radius_error_m": 1.3467729639837778e-09,
+        "modifiers": [],
+        "parent": null,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "MESH",
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ball_ball_friction": 0.07,
+        "ball_ball_restitution": 0.97,
+        "ball_id": "cue",
+        "ball_number": 0,
+        "blender_rigid_body_intentional": false,
+        "cushion_friction": 0.14,
+        "cushion_restitution_parameter": 0.88,
+        "diameter_m": 0.05715,
+        "mass_kg": 0.168,
+        "physics_authority": "pooltool 0.6.0 event trajectory",
+        "pocket_id": "",
+        "rolling_friction": 0.012746452662224104,
+        "sliding_friction": 0.2,
+        "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+        "spinning_friction": 0.025641783891542983
+      },
+      "id": "ball_cue_physics_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "ball_ball_friction": 0.07,
+          "ball_ball_restitution": 0.97,
+          "ball_id": "cue",
+          "ball_number": 0,
+          "blender_rigid_body_intentional": false,
+          "cushion_friction": 0.14,
+          "cushion_restitution_parameter": 0.88,
+          "diameter_m": 0.05715,
+          "mass_kg": 0.168,
+          "physics_authority": "pooltool 0.6.0 event trajectory",
+          "pocket_id": "",
+          "rolling_friction": 0.012746452662224104,
+          "sliding_friction": 0.2,
+          "solid_sphere_inertia_kg_m2": 5.487085800000001e-05,
+          "spinning_friction": 0.025641783891542983
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_cue_marking_metadata",
+      "observed": {
+        "failures": [],
+        "manifest": {
+          "class": "cue",
+          "duplicate_number_inverted": false,
+          "height": 1024,
+          "number": 0,
+          "opposed_number_circles": 0,
+          "sha256": "158fba5a7d45c194b25501c6dda099aa07e36e66040fb1660b3ef79266bf1562",
+          "underscored": false,
+          "width": 2048
+        },
+        "object": {
+          "decal_asset": "assets/textures/balls_game/ball_cue.png",
+          "duplicate_number_inverted": false,
+          "marking_class": "cue",
+          "number_underscored": false,
+          "opposed_number_circles": 0
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_cue_texture_file_integrity",
+      "observed": {
+        "file_sha256": "158fba5a7d45c194b25501c6dda099aa07e36e66040fb1660b3ef79266bf1562",
+        "manifest_sha256": "158fba5a7d45c194b25501c6dda099aa07e36e66040fb1660b3ef79266bf1562",
+        "object_sha256": "158fba5a7d45c194b25501c6dda099aa07e36e66040fb1660b3ef79266bf1562",
+        "path": "assets/textures/balls_game/ball_cue.png"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_cue_exact_material_image_connection",
+      "observed": {
+        "base_color_link_count": 1,
+        "colorspace": "sRGB",
+        "connected_image": "/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room/assets/textures/balls_game/ball_cue.png",
+        "connected_image_size": [
+          2048,
+          1024
+        ],
+        "expected_material": "MAT_GameBall_Cue",
+        "image_node_count": 1,
+        "material_slots": [
+          "MAT_GameBall_Cue"
+        ],
+        "material_texture_path": "assets/textures/balls_game/ball_cue.png",
+        "surface_link_count": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "api": "layered",
+        "channel_count": 7
+      },
+      "id": "ball_cue_layered_transform_channels",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            0
+          ],
+          [
+            "rotation_quaternion",
+            1
+          ],
+          [
+            "rotation_quaternion",
+            2
+          ],
+          [
+            "rotation_quaternion",
+            3
+          ]
+        ],
+        "layers": 1,
+        "rotation_mode": "QUATERNION",
+        "slots": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ball_cue_transform_key_count_and_times",
+      "observed": {
+        "expected_first_last_frame": [
+          1.0,
+          170.38880920410156
+        ],
+        "expected_keys_per_channel": 1536,
+        "failures": [],
+        "key_counts": {
+          "location[0]": 1536,
+          "location[1]": 1536,
+          "location[2]": 1536,
+          "rotation_quaternion[0]": 1536,
+          "rotation_quaternion[1]": 1536,
+          "rotation_quaternion[2]": 1536,
+          "rotation_quaternion[3]": 1536
+        },
+        "max_frame_error": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": "LINEAR on every transform key",
+      "id": "ball_cue_linear_interpolation",
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "expected": [
+        [
+          1
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          8,
+          3
+        ],
+        [
+          11,
+          4,
+          14,
+          6
+        ],
+        [
+          5,
+          13,
+          15,
+          7,
+          12
+        ]
+      ],
+      "id": "rack_order_and_shape",
+      "observed": {
+        "flat": [
+          1,
+          9,
+          2,
+          10,
+          8,
+          3,
+          11,
+          4,
+          14,
+          6,
+          5,
+          13,
+          15,
+          7,
+          12
+        ],
+        "order": [
+          [
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            8,
+            3
+          ],
+          [
+            11,
+            4,
+            14,
+            6
+          ],
+          [
+            5,
+            13,
+            15,
+            7,
+            12
+          ]
+        ],
+        "row_shape": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": [
+        [
+          2,
+          1
+        ]
+      ],
+      "id": "rack_eight_ball_actual_center",
+      "observed": [
+        [
+          2,
+          1
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "expected": [
+        "solid",
+        "stripe"
+      ],
+      "id": "rack_actual_rear_corner_classes",
+      "observed": {
+        "classes": [
+          "solid",
+          "stripe"
+        ],
+        "numbers": [
+          5,
+          12
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "rack_positions_from_profile_formula",
+      "observed": {
+        "contact_gap_ratio": 0.0,
+        "max_position_error_m": 0.0,
+        "pitch_m": 0.04949335182628067,
+        "step_m": 0.05715
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "rack_positions_match_actual_shot_balls",
+      "observed": {
+        "errors_m": {
+          "1": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0,
+          "14": 0.0,
+          "15": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.0
+        },
+        "max_initial_position_error_m": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "rack_thirty_neighbor_contact_distances",
+      "observed": {
+        "contact_count": 30,
+        "expected_distance_m": 0.05715,
+        "max_contact_distance_error_m": 3.3248612127390054e-08
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "minimum_m": 0.05715
+      },
+      "id": "rack_no_ball_overlap",
+      "observed": {
+        "minimum_pair_distance_m": 0.05714996675138787
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "rack_inside_playfield",
+      "observed": {
+        "x_range_m": [
+          0.5206999778747559,
+          0.7493000030517578
+        ],
+        "y_range_m": [
+          0.43702659010887146,
+          0.6349999904632568
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "rack_actual_scene_components",
+      "observed": {
+        "parts": [
+          "PT_GameRack_BaseRail",
+          "PT_GameRack_LeftRail",
+          "PT_GameRack_RightRail"
+        ],
+        "root": "PT_GameRackRoot"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "cue_actual_scene_components",
+      "observed": {
+        "components": [
+          "PT_GameCue_Bumper",
+          "PT_GameCue_Butt",
+          "PT_GameCue_Ferrule",
+          "PT_GameCue_Joint",
+          "PT_GameCue_ShaftBack",
+          "PT_GameCue_ShaftFront",
+          "PT_GameCue_Tip",
+          "PT_GameCue_Wrap"
+        ],
+        "root": "PT_GameCueRoot",
+        "scene_count": 8
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "a": 0.0,
+        "b": -0.05,
+        "impact_speed_mps": 6.98816088,
+        "length_m": 1.4732,
+        "mass_kg": 0.567,
+        "phi_deg": 270.1300204565,
+        "theta_deg": 0.0,
+        "tip_diameter_m": 0.013
+      },
+      "id": "cue_authoritative_metadata",
+      "observed": {
+        "failures": [],
+        "values": {
+          "a": 0.0,
+          "b": -0.05,
+          "impact_speed_mps": 6.98816088,
+          "length_m": 1.4732,
+          "mass_kg": 0.567,
+          "phi_deg": 270.1300204565,
+          "theta_deg": 0.0,
+          "tip_diameter_m": 0.013
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "cue_length_m": 1.4732
+      },
+      "id": "cue_component_total_and_projected_length",
+      "observed": {
+        "actual_tip_to_butt_span_m": 1.4731995469270636,
+        "max_component_length_error_m": 6.570289801111073e-07,
+        "max_intercomponent_gap_m": 0.0,
+        "metadata_component_sum_m": 1.4732,
+        "projected_component_lengths_m": {
+          "PT_GameCue_Bumper": 0.008000391398738316,
+          "PT_GameCue_Butt": 0.19220065702898026,
+          "PT_GameCue_Ferrule": 0.025000191068595967,
+          "PT_GameCue_Joint": 0.022000123670757432,
+          "PT_GameCue_ShaftBack": 0.3150002289865128,
+          "PT_GameCue_ShaftFront": 0.6200002138605818,
+          "PT_GameCue_Tip": 0.006000305962626129,
+          "PT_GameCue_Wrap": 0.28499995424265023
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "cue_actual_axis_phi_theta",
+      "observed": {
+        "actual_forward_world": [
+          0.0022692617494612932,
+          -0.9999973773956299,
+          -4.0459312344864884e-08
+        ],
+        "axis_error_deg": 2.616774271618417e-06,
+        "expected_forward_world": [
+          0.0022692831698805094,
+          -0.9999974370002747,
+          -0.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "cue_actual_tip_contact_point",
+      "observed": {
+        "actual_world_m": [
+          0.24693524837493896,
+          2.865539312362671,
+          0.7891462445259094
+        ],
+        "contact_radius_m": 0.02857523531012089,
+        "expected_world_m": [
+          0.24693523347377777,
+          2.865539073944092,
+          0.7891463041305542
+        ],
+        "normal_fraction": 0.9987573590611513,
+        "position_error_m": 2.4620758953479386e-07
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "a": 0.0,
+        "b": -0.05,
+        "phi_deg": 270.1300204565,
+        "theta_deg": 0.0
+      },
+      "id": "cue_actual_a_b_theta_offsets",
+      "observed": {
+        "actual_a": 6.312195599496313e-07,
+        "actual_b": -0.050001193161830056,
+        "actual_phi_deg": -89.86998076133679,
+        "actual_theta_deg": 2.318147839362309e-06
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "V0_mps": 6.98816088
+      },
+      "id": "cue_terminal_root_animation_velocity",
+      "observed": {
+        "api": "layered",
+        "bags": 1,
+        "channels": [
+          [
+            "location",
+            0
+          ],
+          [
+            "location",
+            1
+          ],
+          [
+            "location",
+            2
+          ]
+        ],
+        "cross_axis_speed_mps": 5.740355057944087e-07,
+        "impact_frame": 30.0,
+        "layers": 1,
+        "linear": true,
+        "projected_speed_mps": 6.988111719147128,
+        "slots": 1,
+        "speed_mps": 6.988111734106335,
+        "terminal_dt_s": 0.0010000069936116536,
+        "terminal_start_frame": 29.97599983215332,
+        "velocity_world_mps": [
+          0.015858003869652748,
+          -6.988093852996826,
+          0.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "gameplay_view_layer",
+      "observed": {
+        "gameplay_excluded": false,
+        "static_balls_excluded": true,
+        "view_layer": "GAMEPLAY"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "all_ball_exported_sample_timelines",
+      "observed": {
+        "failures": [],
+        "samples_per_ball": {
+          "1": 1535,
+          "10": 1535,
+          "11": 1535,
+          "12": 1535,
+          "13": 1535,
+          "14": 1535,
+          "15": 1535,
+          "2": 1535,
+          "3": 1535,
+          "4": 1535,
+          "5": 1535,
+          "6": 1535,
+          "7": 1535,
+          "8": 1535,
+          "9": 1535,
+          "cue": 1535
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "regular_240hz_sample_coverage",
+      "observed": {
+        "first_missing": [],
+        "missing_count": 0,
+        "regular_grid_count": 1404,
+        "sample_rate_hz": 240
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "exact_event_sample_coverage",
+      "observed": {
+        "event_count": 197,
+        "first_missing": [],
+        "missing_count": 0,
+        "unique_event_times": 132
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_01_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 3.19107592856421e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119186746
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_01_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 3.975
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_10_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 7.820938013301743e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119184579
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_10_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.05595291023658669,
+        "samples_evaluated": 1535,
+        "worst_time_s": 1.908333333
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_11_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 1.5181767837457738e-05,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119184579
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_11_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.05595291023658669,
+        "samples_evaluated": 1535,
+        "worst_time_s": 1.045833333
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_12_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 1.0136338972692764e-05,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119184579
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_12_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.11917854
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_13_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 6.8002212774061274e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119186746
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_13_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 1.033333333
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_14_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 1.7824180786974048e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119184579
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_14_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.11917854
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_15_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 3.9810649034817256e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119184579
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_15_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.11917926
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_02_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 3.257190694957542e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119186746
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_02_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119178887
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_03_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 3.6588950955363543e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119186746
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_03_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119179989
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_04_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 4.347565404871831e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119178213
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_04_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.05595291023658669,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.11918001
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_05_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 1.4212208543113326e-05,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119184579
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_05_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.855177064
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_06_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 3.2537803802385762e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119186746
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_06_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.06852804019207596,
+        "samples_evaluated": 1535,
+        "worst_time_s": 3.1125
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_07_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 5.529113962117105e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119184579
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_07_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.25
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_08_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 4.495411392012632e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119178213
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_08_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119186746
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_09_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 2.915491300130241e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119184579
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_09_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.03956468205889273,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.316666667
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_m": 0.00025,
+        "samples": 1535
+      },
+      "id": "ball_cue_every_sample_position_parity",
+      "observed": {
+        "max_error_m": 1.9547801938209993e-06,
+        "samples_evaluated": 1535,
+        "worst_time_s": 0.119186746
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "max_error_deg": 0.1,
+        "samples": 1535
+      },
+      "id": "ball_cue_every_sample_orientation_parity",
+      "observed": {
+        "max_error_deg": 0.05595291023658669,
+        "samples_evaluated": 1535,
+        "worst_time_s": 1.095833333
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "all_exported_samples_scene_parity",
+      "observed": {
+        "ball_sample_evaluations": 24560,
+        "max_orientation_error_deg": 0.06852804019207596,
+        "max_position_error_m": 1.5181767837457738e-05,
+        "timeline_samples": 1535
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "continuous_trajectory_steps",
+      "observed": {
+        "maximum_sample_step_m": 0.04469130807182913,
+        "sample_period_s": 0.004166666666666667
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "pocket_capture_and_drop_continuity",
+      "observed": {
+        "capture_count": 1,
+        "failures": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "coordinate_roundtrip",
+      "observed": {
+        "error_m": 2.227212004505268e-16
+      },
+      "status": "PASS"
+    }
+  ],
+  "cue": {
+    "actual_a": 6.312195599496313e-07,
+    "actual_b": -0.050001193161830056,
+    "actual_phi_deg": -89.86998076133679,
+    "actual_span_m": 1.4731995469270636,
+    "actual_theta_deg": 2.318147839362309e-06,
+    "actual_tip_world_m": [
+      0.24693524837493896,
+      2.865539312362671,
+      0.7891462445259094
+    ],
+    "contact_error_m": 2.4620758953479386e-07,
+    "expected_tip_world_m": [
+      0.24693523347377777,
+      2.865539073944092,
+      0.7891463041305542
+    ],
+    "metadata_length_sum_m": 1.4732,
+    "terminal_speed_mps": 6.988111734106335,
+    "terminal_velocity_world_mps": [
+      0.015858003869652748,
+      -6.988093852996826,
+      0.0
+    ]
+  },
+  "generated_utc": "2026-08-06T05:49:27.148385+00:00",
+  "identity": {
+    "geometry_file_sha256": "afe868b3788218f0ba29dbe9d5caee81157c088b2b7fbbb00ed5f2faf89f04ad",
+    "markings_file_sha256": "a9a44374a1b726462cb267faffac947cb8dc068280a31a4ba57778c623bc3f9e",
+    "profile_file_sha256": "29933eccf106d7a04f3e59231d9b4355479e50b737179f30419bf6dcb98fcd7e",
+    "trajectory_recomputed_sha256": "98d46617dfa4e093823314faf185065528d05e38291e370fef0481f44b02272c",
+    "trajectory_stored_sha256": "98d46617dfa4e093823314faf185065528d05e38291e370fef0481f44b02272c"
+  },
+  "parity": {
+    "ball_sample_evaluations": 24560,
+    "by_ball": {
+      "1": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 3.19107592856421e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 3.975,
+        "worst_position_time_s": 0.119186746
+      },
+      "10": {
+        "max_orientation_error_deg": 0.05595291023658669,
+        "max_position_error_m": 7.820938013301743e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 1.908333333,
+        "worst_position_time_s": 0.119184579
+      },
+      "11": {
+        "max_orientation_error_deg": 0.05595291023658669,
+        "max_position_error_m": 1.5181767837457738e-05,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 1.045833333,
+        "worst_position_time_s": 0.119184579
+      },
+      "12": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 1.0136338972692764e-05,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 0.11917854,
+        "worst_position_time_s": 0.119184579
+      },
+      "13": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 6.8002212774061274e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 1.033333333,
+        "worst_position_time_s": 0.119186746
+      },
+      "14": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 1.7824180786974048e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 0.11917854,
+        "worst_position_time_s": 0.119184579
+      },
+      "15": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 3.9810649034817256e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 0.11917926,
+        "worst_position_time_s": 0.119184579
+      },
+      "2": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 3.257190694957542e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 0.119178887,
+        "worst_position_time_s": 0.119186746
+      },
+      "3": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 3.6588950955363543e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 0.119179989,
+        "worst_position_time_s": 0.119186746
+      },
+      "4": {
+        "max_orientation_error_deg": 0.05595291023658669,
+        "max_position_error_m": 4.347565404871831e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 0.11918001,
+        "worst_position_time_s": 0.119178213
+      },
+      "5": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 1.4212208543113326e-05,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 0.855177064,
+        "worst_position_time_s": 0.119184579
+      },
+      "6": {
+        "max_orientation_error_deg": 0.06852804019207596,
+        "max_position_error_m": 3.2537803802385762e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 3.1125,
+        "worst_position_time_s": 0.119186746
+      },
+      "7": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 5.529113962117105e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 0.25,
+        "worst_position_time_s": 0.119184579
+      },
+      "8": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 4.495411392012632e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 0.119186746,
+        "worst_position_time_s": 0.119178213
+      },
+      "9": {
+        "max_orientation_error_deg": 0.03956468205889273,
+        "max_position_error_m": 2.915491300130241e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 0.316666667,
+        "worst_position_time_s": 0.119184579
+      },
+      "cue": {
+        "max_orientation_error_deg": 0.05595291023658669,
+        "max_position_error_m": 1.9547801938209993e-06,
+        "samples_evaluated": 1535,
+        "worst_orientation_time_s": 1.095833333,
+        "worst_position_time_s": 0.119186746
+      }
+    },
+    "max_orientation_error_deg": 0.06852804019207596,
+    "max_position_error_m": 1.5181767837457738e-05,
+    "max_sample_step_m": 0.04469130807182913,
+    "sample_rate_hz": 240,
+    "timeline_samples": 1535
+  },
+  "rack": {
+    "contact_gap_ratio": 0.0,
+    "max_initial_position_error_m": 0.0,
+    "max_neighbor_distance_error_m": 3.3248612127390054e-08,
+    "minimum_pair_distance_m": 0.05714996675138787,
+    "neighbor_contact_count": 30,
+    "order": [
+      [
+        1
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        10,
+        8,
+        3
+      ],
+      [
+        11,
+        4,
+        14,
+        6
+      ],
+      [
+        5,
+        13,
+        15,
+        7,
+        12
+      ]
+    ]
+  },
+  "schema": "pool-physics-playback-audit/v2",
+  "status": "PASS",
+  "summary": {
+    "failed": 0,
+    "passed": 216,
+    "total": 216
+  },
+  "trajectory": "assets/data/shots/break_control.json"
+}

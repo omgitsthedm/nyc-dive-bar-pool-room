@@ -1,0 +1,142 @@
+{
+  "generated": "2026-08-04",
+  "source_root": "/Users/davidmarsh/Downloads/Pool Table Assets",
+  "files": [
+    {
+      "path": "/Users/davidmarsh/Downloads/Pool Table Assets/Metro2005.pdf",
+      "sha256": "01b2dc72ad5b68b5d8456c3a0a52e721e90245be52a7d1a0aabcd4008cd7b5a4",
+      "bytes": 1210766,
+      "description": "Brunswick Metro 2005 installation manual",
+      "purpose": "engineering/assembly reference",
+      "license_and_survival": "reference only \u2014 no geometry or texture survives"
+    },
+    {
+      "path": "/Users/davidmarsh/Downloads/Pool Table Assets/US3263996.pdf",
+      "sha256": "8cc0be7f41dbbfa0cb1796488da213bbb35688f232ad1d8f494a729d3ba92a5d",
+      "bytes": 526214,
+      "description": "US Patent 3,263,996 (Braun, 1966) Billiard and Pool Table Construction",
+      "purpose": "frame/load-path logic",
+      "license_and_survival": "expired patent, public domain; reference only"
+    },
+    {
+      "path": "/Users/davidmarsh/Downloads/Pool Table Assets/pool_table_traditional-2.glb",
+      "sha256": "5028c2acdc960fe9a7d0303293843c0f6aa2c5a5fc94b0f37d3475f6a2b30cba",
+      "bytes": 79284636,
+      "description": "Sketchfab 'Pool Table Traditional' by fizyman (4K textures)",
+      "purpose": "proportion/style benchmark",
+      "license_and_survival": "CC-BY-4.0 \u2014 benchmark only, locked in 99_REFERENCE"
+    },
+    {
+      "path": "/Users/davidmarsh/Downloads/Pool Table Assets/pool_table_traditional.glb",
+      "sha256": "8673b15df09e4d3c9371e89902dd476d88a4df60506620476ecec5d289874e80",
+      "bytes": 7237044,
+      "description": "Same asset, 1K textures",
+      "purpose": "lightweight diagnostics",
+      "license_and_survival": "CC-BY-4.0 \u2014 benchmark only"
+    },
+    {
+      "path": "/Users/davidmarsh/Downloads/Pool Table Assets/Pool_Table_Traditional.usdz",
+      "sha256": "21d3ed4e2191f052b208b3ddb530dcce91c67ab250936da8b9fd44b804ac3349",
+      "bytes": 3384788,
+      "description": "Same asset, USDZ",
+      "purpose": "interchange check only",
+      "license_and_survival": "CC-BY-4.0 \u2014 not production source"
+    },
+    {
+      "path": "/Users/davidmarsh/Downloads/Pool Table Assets/pool-table-traditional/source/pool_table_scene.fbx",
+      "sha256": "3b7996bbf709d852302241c4b5f7b1d37866555aa33b867484056afab274f8fb",
+      "bytes": 992464,
+      "description": "Same asset, editable FBX",
+      "purpose": "transform/UV inspection",
+      "license_and_survival": "CC-BY-4.0 \u2014 benchmark only"
+    },
+    {
+      "path": "/Users/davidmarsh/Downloads/Pool Table Assets/pool_table_traditional/scene.gltf",
+      "sha256": "24933eeea37c4665b8de8ae1871715102f39bb89c4db0007bba10d56a2b4f8ee",
+      "bytes": 52495,
+      "description": "Same asset, glTF + external textures",
+      "purpose": "node/UV inspection",
+      "license_and_survival": "CC-BY-4.0 \u2014 benchmark only"
+    },
+    {
+      "path": "/Users/davidmarsh/Downloads/Pool Table Assets/pool_table_traditional/license.txt",
+      "sha256": "90c30044131c9b6f3182df56d3ba897ef65a146fc687d71b541a767b617aa6ad",
+      "bytes": 704,
+      "description": "CC-BY-4.0 license text",
+      "purpose": "license of record",
+      "license_and_survival": "must be honoured in ATTRIBUTION.md"
+    },
+    {
+      "path": "/Users/davidmarsh/.codex/attachments/4288f30b-497f-4352-b3d4-35b7e82aa844/pasted-text.txt",
+      "sha256": "ea4f384c69f9e7b582a4d6e91397b538e0e47818501c4aa57ad0f2ccddd15fce",
+      "bytes": 5503,
+      "description": "Supplied Olhausen Remington component breakdown",
+      "purpose": "material stack + product-family construction",
+      "license_and_survival": "user-supplied text; informs DESIGN_DECISIONS, no assets survive"
+    },
+    {
+      "path": "assets/textures/wall_art/memory_wall_1978_1998.png",
+      "sha256": "176d76a1b3c8ca5d92019e4f080664aa7b53700ef5abfa519cfecf2f93f3a758",
+      "bytes": 3022145,
+      "description": "Original fictional 1978-1998 analog dive-bar memory-wall photo collage",
+      "purpose": "rendered flush social-history paper field",
+      "license_and_survival": "OpenAI image generation, built-in mode; project-owned original, survives into renders"
+    },
+    {
+      "path": "assets/textures/wall_art/payphones_1988.png",
+      "sha256": "f36041024c93eb80f70430ba13cc682e5223eb8cff7b9c903a44f8d08370d353",
+      "bytes": 3324202,
+      "description": "Original fictional 1988 music flyer, aged print treatment",
+      "purpose": "rendered wall art",
+      "license_and_survival": "OpenAI image generation, built-in mode; project-owned original, survives into renders"
+    },
+    {
+      "path": "assets/textures/wall_art/pool_team_1986.png",
+      "sha256": "da91126d3f9d46f4354d983ec9f47ad895917ac871767be8d264f6509fb68f42",
+      "bytes": 2560797,
+      "description": "Original fictional 1986 neighborhood pool-team photograph",
+      "purpose": "rendered flush wall art",
+      "license_and_survival": "OpenAI image generation, built-in mode; project-owned original, survives into renders"
+    },
+    {
+      "path": "assets/textures/wall_art/sticker_wall_1982_1999.png",
+      "sha256": "62411c5dc6d3f2d88bade82247187ef61525cc7ca7a3e2353fca5b865374cc7b",
+      "bytes": 3904191,
+      "description": "Original fictional 1982-1999 torn sticker and flyer collage",
+      "purpose": "rendered wall ephemera",
+      "license_and_survival": "OpenAI image generation, built-in mode; project-owned original, survives into renders"
+    },
+    {
+      "path": "assets/textures/wall_art/tuesday_8ball_1993.png",
+      "sha256": "e24416bc005969f009c7557ade3d743d2933466980f9550394214d3e1d120b64",
+      "bytes": 3892826,
+      "description": "Original fictional 1993 Tuesday 8-ball league flyer",
+      "purpose": "rendered wall art",
+      "license_and_survival": "OpenAI image generation, built-in mode; project-owned original, survives into renders"
+    },
+    {
+      "path": "assets/textures/environment/bathroom_sticker_bomb_v2.png",
+      "sha256": "679b48ddc9f7f493bc38e2fb39b0b620040b7fe79db3d5e45540127989a7d5ac",
+      "bytes": 3718724,
+      "description": "Original dense fictional 1980s-1990s restroom sticker-bomb field",
+      "purpose": "rendered flat restroom-door history",
+      "license_and_survival": "OpenAI image generation, built-in mode; project-owned original, survives into renders"
+    },
+    {
+      "path": "assets/textures/environment/les_night_street_v2.png",
+      "sha256": "63b10cb784c64bcd00497ecf42ce7331577fec4ee4557de09c013d17b0d5a084",
+      "bytes": 2290364,
+      "description": "Original fictional rain-wet Lower East Side nighttime street plate",
+      "purpose": "rendered exterior world behind diamond storefront glazing",
+      "license_and_survival": "OpenAI image generation, built-in mode; project-owned original, survives into renders"
+    },
+    {
+      "path": "assets/textures/environment/wheatpaste_wall_history_v2.png",
+      "sha256": "f8ed2eb787c213fc4a479e741090a01c712a85343e5ffe8dabba0c660151801a",
+      "bytes": 3588198,
+      "description": "Original fictional decades-layered wheat-paste wall history",
+      "purpose": "rendered flush irregular wall paper fields",
+      "license_and_survival": "OpenAI image generation, built-in mode; project-owned original, survives into renders"
+    }
+  ]
+}
