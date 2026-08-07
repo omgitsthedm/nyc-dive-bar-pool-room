@@ -14,21 +14,21 @@
 <style>
   :root {
     color-scheme: dark;
-    --black:  #070605;
-    --pitch:  #030302;
-    --ink:    #14110E;
-    --line:   #2A241D;
-    --bone:   #EDE6D8;
+    --black:  #050505;
+    --pitch:  #000000;
+    --ink:    #101010;
+    --line:   #332C22;
+    --bone:   #EFE9DC;
     --bone-d: #A79E8E;
     /* #6E665A read better as a "quiet" tone but measured 3.32:1 on the data
        strip - under AA for the 10-12px mono labels that use it. 5.38:1 here,
        still a clear step below --bone-d so the hierarchy survives. */
     --mute:   #918879;
-    --amber:  #E9A23B;
-    --brass:  #C9922F;
+    --amber:  #F0902A;
+    --brass:  #B8842A;
     --cloth:  #2E6B4F;
     --crt:    #5FA8D3;
-    --neon:   #D6453C;
+    --neon:   #E8443A;
 
     --edge: clamp(20px, 5vw, 88px);
     --gap:  clamp(56px, 9vw, 152px);
@@ -65,6 +65,19 @@
 
   img, video { display: block; max-width: 100%; }
 
+  /* Grain. A dark bar shot on a cheap sensor has noise in it; a flyer stapled
+     to a pole has paper in it. This is most of the difference between
+     "boutique studio" and "downtown". SVG turbulence as a data URI, so still
+     zero external requests. Fixed, so it sits over the page like emulsion
+     instead of scrolling with it. */
+  body::after {
+    content: "";
+    position: fixed; inset: 0; z-index: 40;
+    pointer-events: none;
+    opacity: .085;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
   /* ---------------------------------------------------------- type ----- */
   .kicker {
     font-family: var(--mono);
@@ -77,14 +90,21 @@
     align-items: center;
     gap: .9em;
   }
+  .kicker::before {
+    content: ""; width: 26px; height: 9px; flex: none;
+    background: var(--neon);
+  }
   .kicker::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, var(--line), transparent);
+    content: ""; flex: 1; height: 2px; background: var(--line);
   }
 
   h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -.028em; line-height: .96; }
+  /* Off-register: the second pass of a cheap two-colour job landing a hair
+     left. 2px and dark, so it reads as bad printing rather than a glow. Off
+     on small screens, where it would cost legibility. */
+  @media (min-width: 760px) {
+    h1, h2 { text-shadow: -2px 0 0 rgba(232,68,58,.30); }
+  }
   h1 { font-size: clamp(38px, 8.6vw, 132px); }
   h2 { font-size: clamp(30px, 5.4vw, 74px); letter-spacing: -.032em; }
   h3 { font-size: clamp(19px, 1.5vw + 14px, 27px); letter-spacing: -.018em; line-height: 1.14; }
@@ -106,7 +126,7 @@
     padding-right: max(var(--edge), env(safe-area-inset-right));
   }
   .band { padding-block: var(--gap); }
-  .rule { height: 1px; background: var(--line); border: 0; margin: 0; }
+  .rule { height: 2px; background: var(--line); border: 0; margin: 0; }
 
   .skip {
     position: absolute; left: -9999px; top: 0; z-index: 10;
@@ -124,11 +144,13 @@
     display: inline-block;
     font-family: var(--mono); font-size: clamp(14px,.4vw + 12px,16px);
     letter-spacing: .01em; text-decoration: none;
-    color: #16110A; background: var(--amber);
-    padding: .95em 1.5em;
-    transition: transform 160ms var(--ease-out), background-color 160ms ease;
+    color: #120C04; background: var(--amber);
+    padding: 1em 1.6em;
+    text-transform: uppercase; letter-spacing: .12em;
+    box-shadow: 5px 5px 0 0 var(--neon);
+    transition: transform 140ms var(--ease-out), box-shadow 140ms var(--ease-out), background-color 160ms ease;
   }
-  a.cta:active { transform: scale(.98); }
+  a.cta:active { transform: translate(3px,3px); box-shadow: 2px 2px 0 0 var(--neon); }
   @media (hover: hover) and (pointer: fine) {
     a.cta:hover { background: #F2B152; }
   }
@@ -142,53 +164,35 @@
   }
 
   /* ---------------------------------------------------------- hero ----- */
-  .hero { position: relative; background: var(--pitch); }
-  .hero-media { position: relative; }
+  /* The film is the product. It gets the top of the page, full width, with
+     nothing over it - no scrim, no headline, no gradient. The type follows. */
+  .hero { background: var(--pitch); padding-top: clamp(16px,2.4vw,30px); }
+  .hero .wordmark { margin: 0 0 clamp(14px,1.8vw,22px); }
+  .hero-media { background: #000; border-block: 1px solid var(--line); }
   .hero video {
     width: 100%; height: auto;
     aspect-ratio: 16/9;
-    object-fit: cover;
     background: #000;
+    display: block;
   }
-  .hero-scrim {
-    position: absolute; inset: 0;
-    pointer-events: none;
-    background:
-      linear-gradient(180deg, rgba(7,6,5,.86) 0%, rgba(7,6,5,.15) 34%, rgba(7,6,5,.05) 60%, rgba(7,6,5,.92) 100%);
-  }
-  .hero-head {
-    position: absolute; top: 0; left: 0; right: 0;
-    padding: max(clamp(18px,3.4vw,48px), env(safe-area-inset-top)) max(var(--edge), env(safe-area-inset-right)) 0 max(var(--edge), env(safe-area-inset-left));
-    pointer-events: none;
-  }
-  .hero-foot {
-    /* Sits clear of the native video control bar, which is ~48px tall and
-       owns the bottom of the frame. Overlapping it made the right-hand note
-       unreadable behind the fullscreen and volume buttons. */
-    position: absolute; bottom: 0; left: 0; right: 0;
-    padding: 0 max(var(--edge), env(safe-area-inset-right)) max(clamp(64px,3.4vw + 52px,96px), env(safe-area-inset-bottom)) max(var(--edge), env(safe-area-inset-left));
-    pointer-events: none;
-    display: flex; flex-wrap: wrap; gap: 10px 30px; align-items: flex-end;
+  .hero-strip {
+    display: flex; flex-wrap: wrap; gap: 6px 30px;
     justify-content: space-between;
+    padding-block: clamp(12px,1.6vw,20px);
   }
   .wordmark {
     font-family: var(--mono);
-    font-size: clamp(10px,.5vw + 8px,12px);
-    letter-spacing: .3em; text-transform: uppercase;
-    color: var(--bone); opacity: .82;
+    font-size: clamp(11px,.5vw + 9px,13px);
+    letter-spacing: .26em; text-transform: uppercase;
+    color: var(--bone);
   }
-  .hero-title { margin-top: clamp(10px, 1.6vw, 22px); text-wrap: balance; }
-  .hero-title span { display: block; color: var(--amber); }
   .hero-note {
     font-family: var(--mono); font-size: clamp(11px,.5vw + 9px,13px);
-    letter-spacing: .02em; color: var(--bone-d);
+    letter-spacing: .02em; color: var(--bone-d); margin: 0;
   }
-  /* On small screens the poster is too dark to carry text; stack instead. */
-  @media (max-width: 700px) {
-    .hero-head { position: static; padding: 26px max(var(--edge), env(safe-area-inset-right)) 0 max(var(--edge), env(safe-area-inset-left)); }
-    .hero-foot { position: static; padding: 18px max(var(--edge), env(safe-area-inset-right)) max(26px, env(safe-area-inset-bottom)) max(var(--edge), env(safe-area-inset-left)); }
-    .hero-scrim { background: linear-gradient(180deg, rgba(7,6,5,.25), rgba(7,6,5,.75)); }
-  }
+  .hero-title-block { padding-block: clamp(30px,5vw,84px) clamp(44px,6vw,104px); }
+  .hero-title { text-wrap: balance; }
+  .hero-title span { display: block; color: var(--amber); }
 
   /* ---------------------------------------------------------- lede ----- */
   .intro { display: grid; gap: clamp(28px,4vw,72px); grid-template-columns: 1fr; }
@@ -204,7 +208,7 @@
   /* ---------------------------------------------------------- spec ----- */
   .spec { background: var(--ink); }
   .spec-grid {
-    display: grid; gap: 1px;
+    display: grid; gap: 2px;
     background: var(--line);
     grid-template-columns: repeat(2, minmax(0,1fr));
   }
@@ -228,8 +232,8 @@
     /* Proportional figures deliberately: tabular-nums gives every digit the
        width of a zero, which reads loose at display size. It is kept for the
        spec column below, where values actually have to align vertically. */
-    font-size: clamp(30px,3.1vw,52px); font-weight: 700;
-    letter-spacing: -.045em; line-height: 1;
+    font-size: clamp(32px,3.3vw,56px); font-weight: 700;
+    letter-spacing: -.05em; line-height: .94;
     color: var(--bone);
   }
   /* Units and denominators sit in a text token, not an accent hue - the
@@ -268,7 +272,7 @@
     line-height: 1.6; color: var(--bone-d);
   }
   .plate figcaption b {
-    color: var(--brass); font-weight: 700; letter-spacing: .12em;
+    color: var(--neon); font-weight: 700; letter-spacing: .12em;
     flex: none; font-size: .92em;
   }
   .plate figcaption span { min-width: 0; overflow-wrap: break-word; }
@@ -284,13 +288,13 @@
   @media (min-width: 900px) { .split { grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: start; } }
 
   /* --------------------------------------------------------- steps ----- */
-  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; background: var(--line); }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; background: var(--line); }
   .steps li { background: var(--black); padding: clamp(18px,2vw,26px) 0 clamp(18px,2vw,26px) clamp(46px,5vw,74px); position: relative; }
   .steps li::before {
     content: attr(data-n);
     position: absolute; left: 0; top: clamp(18px,2vw,26px);
     font-family: var(--mono); font-size: clamp(11px,.5vw + 9px,13px);
-    color: var(--amber); letter-spacing: .1em;
+    color: var(--neon); letter-spacing: .1em;
   }
   .steps h3 { margin-bottom: .45em; }
   .steps p { color: var(--bone-d); max-width: 58ch; }
@@ -320,21 +324,21 @@
 
 <!-- ================================================================ HERO -->
 <header class="hero">
+  <p class="wordmark wrap">Little Fight NYC &nbsp;·&nbsp; Demo</p>
   <div class="hero-media">
     <video src="break-film.mp4" poster="img/break-film-poster.webp"
            width="1920" height="1080" controls preload="metadata" playsinline
            aria-label="Thirty-second film: the room in glances, the cue addressing the ball, and the rack breaking in real time"></video>
-    <div class="hero-scrim" aria-hidden="true"></div>
   </div>
-  <div class="hero-head">
-    <p class="wordmark">Little Fight NYC &nbsp;·&nbsp; Demo</p>
-    <h1 class="hero-title">We built a bar<br>that doesn’t exist.<span>Then broke a rack in it.</span></h1>
-  </div>
-  <div class="hero-foot">
+  <div class="wrap hero-strip">
     <p class="hero-note">30 seconds · turn the sound on</p>
     <p class="hero-note">Nothing here was filmed</p>
   </div>
 </header>
+
+<section class="wrap hero-title-block">
+  <h1 class="hero-title">We built a bar<br>that doesn’t exist.<span>Then broke a rack in it.</span></h1>
+</section>
 
 <hr class="rule">
 
