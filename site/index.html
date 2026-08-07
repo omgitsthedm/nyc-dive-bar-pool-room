@@ -33,7 +33,7 @@
     --edge: clamp(20px, 5vw, 88px);
     --gap:  clamp(56px, 9vw, 152px);
 
-    --sans: "Helvetica Neue", Helvetica, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    --sans: "Helvetica Neue", Helvetica, system-ui, sans-serif;
     --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
   }
 
@@ -47,6 +47,8 @@
 
   body {
     margin: 0;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(233,162,59,.24);
     min-width: 320px;
     background: var(--black);
     color: var(--bone);
@@ -93,9 +95,24 @@
   strong { font-weight: 700; color: #FFF7E8; }
 
   /* -------------------------------------------------------- layout ----- */
-  .wrap { padding-inline: var(--edge); }
+  .wrap {
+    /* Notched devices: the previous build respected the safe area and this
+       redesign is more full-bleed, not less, so it needs it more. */
+    padding-left:  max(var(--edge), env(safe-area-inset-left));
+    padding-right: max(var(--edge), env(safe-area-inset-right));
+  }
   .band { padding-block: var(--gap); }
   .rule { height: 1px; background: var(--line); border: 0; margin: 0; }
+
+  .skip {
+    position: absolute; left: -9999px; top: 0; z-index: 10;
+    background: var(--amber); color: #16110A;
+    font-family: var(--mono); font-size: 13px; letter-spacing: .1em;
+    text-transform: uppercase; text-decoration: none;
+    padding: .85em 1.3em;
+  }
+  .skip:focus { left: 0; }
+  :focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
 
   /* ---------------------------------------------------------- hero ----- */
   .hero { position: relative; background: var(--pitch); }
@@ -114,7 +131,7 @@
   }
   .hero-head {
     position: absolute; top: 0; left: 0; right: 0;
-    padding: clamp(18px,3.4vw,48px) var(--edge) 0;
+    padding: max(clamp(18px,3.4vw,48px), env(safe-area-inset-top)) max(var(--edge), env(safe-area-inset-right)) 0 max(var(--edge), env(safe-area-inset-left));
     pointer-events: none;
   }
   .hero-foot {
@@ -122,7 +139,7 @@
        owns the bottom of the frame. Overlapping it made the right-hand note
        unreadable behind the fullscreen and volume buttons. */
     position: absolute; bottom: 0; left: 0; right: 0;
-    padding: 0 var(--edge) clamp(64px,3.4vw + 52px,96px);
+    padding: 0 max(var(--edge), env(safe-area-inset-right)) max(clamp(64px,3.4vw + 52px,96px), env(safe-area-inset-bottom)) max(var(--edge), env(safe-area-inset-left));
     pointer-events: none;
     display: flex; flex-wrap: wrap; gap: 10px 30px; align-items: flex-end;
     justify-content: space-between;
@@ -136,13 +153,13 @@
   .hero-title { margin-top: clamp(10px, 1.6vw, 22px); text-wrap: balance; }
   .hero-title span { display: block; color: var(--amber); }
   .hero-note {
-    font-family: var(--mono); font-size: clamp(10px,.5vw + 8px,12px);
-    letter-spacing: .16em; text-transform: uppercase; color: var(--bone-d);
+    font-family: var(--mono); font-size: clamp(11px,.5vw + 9px,13px);
+    letter-spacing: .02em; color: var(--bone-d);
   }
   /* On small screens the poster is too dark to carry text; stack instead. */
   @media (max-width: 700px) {
-    .hero-head { position: static; padding: 26px var(--edge) 0; }
-    .hero-foot { position: static; padding: 18px var(--edge) 26px; }
+    .hero-head { position: static; padding: 26px max(var(--edge), env(safe-area-inset-right)) 0 max(var(--edge), env(safe-area-inset-left)); }
+    .hero-foot { position: static; padding: 18px max(var(--edge), env(safe-area-inset-right)) max(26px, env(safe-area-inset-bottom)) max(var(--edge), env(safe-area-inset-left)); }
     .hero-scrim { background: linear-gradient(180deg, rgba(7,6,5,.25), rgba(7,6,5,.75)); }
   }
 
@@ -181,15 +198,21 @@
     .spec-grid > .spec-cell:nth-child(even) { padding-right: var(--edge); }
   }
   .spec-n {
+    /* Proportional figures deliberately: tabular-nums gives every digit the
+       width of a zero, which reads loose at display size. It is kept for the
+       spec column below, where values actually have to align vertically. */
     font-size: clamp(30px,3.1vw,52px); font-weight: 700;
     letter-spacing: -.045em; line-height: 1;
-    font-variant-numeric: tabular-nums; color: var(--bone);
+    color: var(--bone);
   }
-  .spec-n small { font-size: .42em; letter-spacing: -.01em; color: var(--brass); margin-left: .28em; font-weight: 700; }
+  /* Units and denominators sit in a text token, not an accent hue - the
+     figure carries the meaning, the suffix only needs to be distinguishable. */
+  .spec-n small { font-size: .42em; letter-spacing: -.01em; color: var(--mute); margin-left: .28em; font-weight: 700; }
   .spec-l {
     margin-top: .85em; font-family: var(--mono);
-    font-size: clamp(10px,.45vw + 8px,12px); line-height: 1.55;
-    letter-spacing: .1em; text-transform: uppercase; color: var(--mute);
+    font-size: clamp(11px,.45vw + 9px,13px); line-height: 1.55;
+    letter-spacing: .01em; color: var(--mute);
+    max-width: 20ch; text-wrap: pretty;
   }
 
   /* -------------------------------------------------------- figures ---- */
@@ -204,6 +227,7 @@
     color: var(--brass); font-weight: 700; letter-spacing: .12em;
     flex: none; font-size: .92em;
   }
+  .plate figcaption span { min-width: 0; overflow-wrap: break-word; }
   .plates { display: grid; gap: clamp(30px,4.6vw,84px); }
   .pair { display: grid; gap: clamp(30px,4.6vw,84px); }
   @media (min-width: 860px) { .pair { grid-template-columns: 1fr 1fr; align-items: start; } }
@@ -234,27 +258,21 @@
     color: var(--bone-d);
     font-size: .96em;
   }
-  .swatches { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.6em; }
-  .sw {
-    font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
-    padding: .5em .85em; border: 1px solid var(--line); color: var(--bone-d);
-    display: inline-flex; align-items: center; gap: .6em;
-  }
-  .sw i { width: 9px; height: 9px; border-radius: 50%; display: block; }
 
   /* -------------------------------------------------------- footer ----- */
   footer { background: var(--pitch); }
   .foot-grid { display: grid; gap: clamp(24px,3vw,56px); }
   @media (min-width: 780px) { .foot-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
   footer h4 {
-    margin: 0 0 1em; font-family: var(--mono); font-size: 11px;
-    letter-spacing: .22em; text-transform: uppercase; color: var(--mute); font-weight: 400;
+    margin: 0 0 1em; font-family: var(--mono); font-size: 12px;
+    letter-spacing: .02em; color: var(--mute); font-weight: 400;
   }
   footer ul { list-style: none; margin: 0; padding: 0; font-family: var(--mono); font-size: 13px; line-height: 2; color: var(--bone-d); }
-  .colophon { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; color: var(--mute); text-transform: uppercase; }
 </style>
 </head>
 <body>
+
+<a class="skip" href="#content">Skip to content</a>
 
 <!-- ================================================================ HERO -->
 <header class="hero">
@@ -275,6 +293,8 @@
 </header>
 
 <hr class="rule">
+
+<main id="content">
 
 <!-- ================================================================ LEDE -->
 <section class="band wrap">
@@ -309,12 +329,12 @@
 <!-- ================================================================ SPEC -->
 <section class="spec">
   <div class="spec-grid">
-    <div class="spec-cell"><p class="spec-n">2,229</p><p class="spec-l">Objects in the<br>frozen environment</p></div>
-    <div class="spec-cell"><p class="spec-n">90</p><p class="spec-l">Authored<br>materials</p></div>
-    <div class="spec-cell"><p class="spec-n">15<small>/15</small></p><p class="spec-l">Physics contracts<br>passing</p></div>
-    <div class="spec-cell"><p class="spec-n">216<small>/216</small></p><p class="spec-l">Playback parity<br>checks</p></div>
-    <div class="spec-cell"><p class="spec-n">0.069<small>°</small></p><p class="spec-l">Worst orientation<br>error, any frame</p></div>
-    <div class="spec-cell"><p class="spec-n">90</p><p class="spec-l">Breaks simulated<br>to choose one</p></div>
+    <div class="spec-cell"><p class="spec-n">2,229</p><p class="spec-l">Objects in the frozen environment</p></div>
+    <div class="spec-cell"><p class="spec-n">90</p><p class="spec-l">Authored materials</p></div>
+    <div class="spec-cell"><p class="spec-n">15<small>/15</small></p><p class="spec-l">Physics contracts passing</p></div>
+    <div class="spec-cell"><p class="spec-n">216<small>/216</small></p><p class="spec-l">Playback parity checks</p></div>
+    <div class="spec-cell"><p class="spec-n">0.069<small>°</small></p><p class="spec-l">Worst orientation error, any frame</p></div>
+    <div class="spec-cell"><p class="spec-n">90</p><p class="spec-l">Breaks simulated to choose one</p></div>
   </div>
 </section>
 
@@ -370,7 +390,7 @@
       <figure class="plate">
         <img src="img/opening/06-patron-barware.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Pint and rocks glasses with beer, lime, straw, coasters, and the footprint of patrons at the bar">
-        <figcaption><b>07</b><span>Somebody's tab, mid-drink. Condensation, lime, a coaster that has been used before.</span></figcaption>
+        <figcaption><b>07</b><span>Somebody’s tab, mid-drink. Condensation, lime, a coaster that has been used before.</span></figcaption>
       </figure>
       <figure class="plate">
         <img src="img/opening/07-booths.webp" width="1600" height="900" loading="lazy" decoding="async"
@@ -448,12 +468,12 @@
 
 <section class="spec">
   <div class="spec-grid">
-    <div class="spec-cell"><p class="spec-n">11.6<small>m/s</small></p><p class="spec-l">Cue ball<br>at impact</p></div>
-    <div class="spec-cell"><p class="spec-n">248</p><p class="spec-l">Solver events<br>in one break</p></div>
-    <div class="spec-cell"><p class="spec-n">31</p><p class="spec-l">Rail contacts<br>before it settles</p></div>
-    <div class="spec-cell"><p class="spec-n">2</p><p class="spec-l">Balls down —<br>the 4 and the 7</p></div>
-    <div class="spec-cell"><p class="spec-n">7.81<small>s</small></p><p class="spec-l">Until nothing<br>is moving</p></div>
-    <div class="spec-cell"><p class="spec-n">240<small>Hz</small></p><p class="spec-l">Trajectory<br>sample rate</p></div>
+    <div class="spec-cell"><p class="spec-n">11.6<small>m/s</small></p><p class="spec-l">Cue ball at impact</p></div>
+    <div class="spec-cell"><p class="spec-n">248</p><p class="spec-l">Solver events in one break</p></div>
+    <div class="spec-cell"><p class="spec-n">31</p><p class="spec-l">Rail contacts before it settles</p></div>
+    <div class="spec-cell"><p class="spec-n">2</p><p class="spec-l">Balls down — the 4 and the 7</p></div>
+    <div class="spec-cell"><p class="spec-n">7.81<small>s</small></p><p class="spec-l">Until nothing is moving</p></div>
+    <div class="spec-cell"><p class="spec-n">240<small>Hz</small></p><p class="spec-l">Trajectory sample rate</p></div>
   </div>
 </section>
 
@@ -475,14 +495,7 @@
       <p class="measure dim">In the first fiftieth of a second after impact, <strong>99 collisions</strong>
         happen at once. All 99 would sum into mush, so the six loudest are kept — that stack
         <em>is</em> the sound of a break. Every remaining hit is placed to the sample. The whole mix is
-        seeded from the trajectory's own hash, so the same break always produces a bit-identical file.</p>
-      <div class="swatches" aria-hidden="true">
-        <span class="sw"><i style="background:var(--amber)"></i>Practicals</span>
-        <span class="sw"><i style="background:var(--crt)"></i>CRT standby</span>
-        <span class="sw"><i style="background:var(--cloth)"></i>Worsted cloth</span>
-        <span class="sw"><i style="background:var(--neon)"></i>Neon</span>
-        <span class="sw"><i style="background:var(--brass)"></i>Brass</span>
-      </div>
+        seeded from the trajectory’s own hash, so the same break always produces a bit-identical file.</p>
     </div>
   </div>
 </section>
@@ -512,13 +525,15 @@
         216 checks, position and orientation, every sampled frame.</p></li>
     <li data-n="05"><h3>Light it once, render it twice</h3>
       <p>Stills and film share the same room, the same haze and the same lights. The film is cut on
-        the solver's own collision timestamps rather than by feel.</p></li>
+        the solver’s own collision timestamps rather than by feel.</p></li>
   </ol>
 
-  <p class="note" style="margin-top:clamp(32px,4vw,60px);max-width:60ch">The room is deliberately
+  <p class="measure dim" style="margin-top:clamp(32px,4vw,60px)">The room is deliberately
     fictional. Every poster, sticker, flyer and label was generated for this build — no real logos,
     no real businesses, nothing borrowed.</p>
 </section>
+
+</main>
 
 <!-- ============================================================ FOOTER -->
 <footer>
@@ -551,7 +566,6 @@
         </ul>
       </div>
     </div>
-    <p class="colophon" style="margin-top:clamp(40px,5vw,80px)">Rendered in Blender · Cycles path tracing · No stock assets</p>
   </div>
 </footer>
 
