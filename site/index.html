@@ -33,6 +33,7 @@
     --edge: clamp(20px, 5vw, 88px);
     --gap:  clamp(56px, 9vw, 152px);
 
+    --ease-out: cubic-bezier(.23, 1, .32, 1);
     --sans: "Helvetica Neue", Helvetica, system-ui, sans-serif;
     --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
   }
@@ -40,9 +41,12 @@
   * { box-sizing: border-box; }
 
   html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  /* Reduced motion means gentler, not none: colour and opacity still carry
+     meaning, movement does not. */
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    *, *::before, *::after { animation-duration:.001ms !important; transition-duration:.001ms !important; }
+    .plate img { animation: none !important; clip-path: none !important; }
+    * { transition-duration: 120ms !important; }
   }
 
   body {
@@ -111,8 +115,31 @@
     text-transform: uppercase; text-decoration: none;
     padding: .85em 1.3em;
   }
+  .skip { transition: transform 160ms var(--ease-out); }
   .skip:focus { left: 0; }
+  .skip:active { transform: scale(.98); }
   :focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+  a.cta {
+    display: inline-block;
+    font-family: var(--mono); font-size: clamp(14px,.4vw + 12px,16px);
+    letter-spacing: .01em; text-decoration: none;
+    color: #16110A; background: var(--amber);
+    padding: .95em 1.5em;
+    transition: transform 160ms var(--ease-out), background-color 160ms ease;
+  }
+  a.cta:active { transform: scale(.98); }
+  @media (hover: hover) and (pointer: fine) {
+    a.cta:hover { background: #F2B152; }
+  }
+  a.quiet {
+    color: var(--bone); text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    transition: border-color 160ms ease, color 160ms ease;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    a.quiet:hover { color: var(--amber); border-color: var(--amber); }
+  }
 
   /* ---------------------------------------------------------- hero ----- */
   .hero { position: relative; background: var(--pitch); }
@@ -218,6 +245,23 @@
   /* -------------------------------------------------------- figures ---- */
   .plate { margin: 0; }
   .plate img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; background: #000; }
+  /* Plates wipe up as they enter. Marketing-category motion, so it can be
+     longer than UI - but it is clip-path + opacity only, both compositor
+     friendly, and it never blocks reading. Browsers without scroll-driven
+     animations simply show the image. */
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .plate img {
+        animation: plate-in linear both;
+        animation-timeline: view();
+        animation-range: entry 8% cover 26%;
+      }
+      @keyframes plate-in {
+        from { clip-path: inset(14% 0 0 0); opacity: .55; }
+        to   { clip-path: inset(0 0 0 0);   opacity: 1; }
+      }
+    }
+  }
   .plate figcaption {
     margin-top: 1em; display: flex; gap: 1.1em; align-items: baseline;
     font-family: var(--mono); font-size: clamp(11px,.45vw + 9px,13px);
@@ -283,12 +327,12 @@
     <div class="hero-scrim" aria-hidden="true"></div>
   </div>
   <div class="hero-head">
-    <p class="wordmark">Blender / Cycles &nbsp;·&nbsp; Physically Simulated</p>
-    <h1 class="hero-title">A dive bar,<br>built object<br>by object.<span>And one break.</span></h1>
+    <p class="wordmark">Little Fight NYC &nbsp;·&nbsp; Demo</p>
+    <h1 class="hero-title">We built a bar<br>that doesn’t exist.<span>Then broke a rack in it.</span></h1>
   </div>
   <div class="hero-foot">
-    <p class="hero-note">30 seconds · 1920×1080 · 24 fps · sound on</p>
-    <p class="hero-note">New York · Lower East Side · fictional</p>
+    <p class="hero-note">30 seconds · turn the sound on</p>
+    <p class="hero-note">Nothing here was filmed</p>
   </div>
 </header>
 
@@ -300,27 +344,22 @@
 <section class="band wrap">
   <div class="intro">
     <div>
-      <p class="kicker">What this is</p>
-      <p class="lede measure">Every surface in this room was built for it. The bar, the booths, the
-        wheat-pasted wall, the register, the 213 bottles behind it — modelled, textured and lit
-        from nothing in Blender. <em>Nothing here is stock.</em></p>
-      <p class="measure dim">And the break in that film is not animation. No one keyframed those
-        balls. A rigid-body solver ran the shot at 240&nbsp;Hz — cue tip through cushion rebound
-        through the two that dropped — and Blender was handed the result to play back, frame for
-        frame, to within a fifteenth of a degree. The sounds are placed on the solver's own
-        collision timestamps. Nothing in the mix was timed by hand.</p>
+      <p class="kicker">What you’re looking at</p>
+      <p class="lede measure">Every object in this room was made from scratch. The bar, the booths,
+        the register, the 213 bottles behind it. <em>No cameras, no photos, no stock.</em></p>
+      <p class="measure dim">The balls aren’t animated either. Real physics worked out where they
+        go, and every sound you hear sits on an actual collision. We build this kind of thing for
+        clients who need to show a product, a space, or an idea that isn’t built yet.</p>
     </div>
     <aside class="intro-aside">
       <p class="kicker">Spec</p>
       <dl>
         <dt>Room</dt><dd>6.55 × 11.58 × 3.15 m</dd>
-        <dt>Table</dt><dd>WPA 9-foot regulation</dd>
-        <dt>Playfield</dt><dd>1.27 × 2.54 m</dd>
+        <dt>Table</dt><dd>Regulation 9-foot</dd>
         <dt>Ball</dt><dd>57.15 mm · 168 g</dd>
-        <dt>Cushion rebound</dt><dd>0.818</dd>
-        <dt>Solver</dt><dd>240 Hz event-based</dd>
+        <dt>Solver</dt><dd>240 Hz</dd>
         <dt>Renderer</dt><dd>Cycles, path-traced</dd>
-        <dt>Lights with a source</dt><dd>26 of 26</dd>
+        <dt>Lights with a real source</dt><dd>26 of 26</dd>
       </dl>
     </aside>
   </div>
@@ -344,82 +383,81 @@
 <section class="band wrap">
   <p class="kicker">The room</p>
   <h2 class="measure-tight">It had to look like<br>somebody drinks here.</h2>
-  <p class="measure dim" style="margin-top:1.4em">A room reads as real through detail, not through duration. So the
-    rules were strict: every light has a fixture you can point at, nothing floats, and the place is
-    worn rather than dirty. 1,127 individual items were checked for whether something physically
-    holds them up — 333 of them flagged high-risk and audited by hand.</p>
+  <p class="measure dim" style="margin-top:1.4em">Rooms read as real through small things. Every
+    light has a fixture you can point at. Nothing floats. It’s worn, not dirty. We checked all
+    1,127 objects for whether something actually holds them up.</p>
 
   <div class="plates" style="margin-top:clamp(40px,5vw,88px)">
     <figure class="plate bleed">
       <img src="img/opening/12-room-hero.webp" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async"
            alt="Long room view from the bar rail toward the lit pool table and stickered bathroom door">
-      <figcaption class="wrap"><b>01</b><span>The long view. One fixture over the table, practicals down the bar, and air between them — the haze is a real volume, not a gradient.</span></figcaption>
+      <figcaption class="wrap"><b>01</b><span>One fixture over the table, and real air between it and the far wall.</span></figcaption>
     </figure>
 
     <div class="pair">
       <figure class="plate">
         <img src="img/opening/01-street-neon.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Rain-lit Lower East Side storefronts seen through a diamond-latticed bar window and an open neon sign">
-        <figcaption><b>02</b><span>Wet street through diamond lattice. The OPEN sign reads backwards because you are inside it.</span></figcaption>
+        <figcaption><b>02</b><span>The sign reads backwards because you’re inside it.</span></figcaption>
       </figure>
       <figure class="plate">
         <img src="img/opening/02-threshold.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="First step inside the bar, looking past mismatched stools and booths toward the pool table">
-        <figcaption><b>03</b><span>The threshold. Mismatched stools, because nobody bought them at the same time.</span></figcaption>
+        <figcaption><b>03</b><span>Mismatched stools. Nobody buys them all at once.</span></figcaption>
       </figure>
     </div>
 
     <figure class="plate bleed">
       <img src="img/opening/03-front-room.webp" width="1600" height="900" loading="lazy" decoding="async"
            alt="Front room with small tables, mismatched chairs, the bar, and a glowing street window">
-      <figcaption class="wrap"><b>04</b><span>The front room. Cafe tables nobody matched, a circulation aisle narrow enough to make you turn sideways, and the street doing the work in the window.</span></figcaption>
+      <figcaption class="wrap"><b>04</b><span>An aisle narrow enough to make you turn sideways.</span></figcaption>
     </figure>
 
     <figure class="plate">
       <img src="img/opening/04-bar-reveal.webp" width="1600" height="900" loading="lazy" decoding="async"
            alt="Pool-table corner framing a stocked back bar, old register, fruit bowl, and neon street window">
-      <figcaption><b>05</b><span>The back bar. A 1900s barrel-front register stands complete on the shelf — the bottle rows split around it and the strip light stops either side, because a machine that size would not fit otherwise.</span></figcaption>
+      <figcaption><b>05</b><span>The shelves split around the register, because a machine that size wouldn’t fit otherwise.</span></figcaption>
     </figure>
 
     <div class="pair">
       <figure class="plate">
         <img src="img/opening/05-clean-bar.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Wiped, worn bar top with fruit, old metal register, bottle shelves, and a coaster-set drink">
-        <figcaption><b>06</b><span>Wiped for the current shift. The age is finish loss and ring ghosts, never grime.</span></figcaption>
+        <figcaption><b>06</b><span>Wiped for this shift. The age is worn finish, not grime.</span></figcaption>
       </figure>
       <figure class="plate">
         <img src="img/opening/06-patron-barware.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Pint and rocks glasses with beer, lime, straw, coasters, and the footprint of patrons at the bar">
-        <figcaption><b>07</b><span>Somebody’s tab, mid-drink. Condensation, lime, a coaster that has been used before.</span></figcaption>
+        <figcaption><b>07</b><span>Somebody’s tab, mid-drink.</span></figcaption>
       </figure>
       <figure class="plate">
         <img src="img/opening/07-booths.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Small run of adjacent aged-vinyl booths with worn wood tables and drinks set on coasters">
-        <figcaption><b>08</b><span>Two booths, wall-cleated, benches perpendicular so you enter from the aisle.</span></figcaption>
+        <figcaption><b>08</b><span>Two booths, bolted to the wall.</span></figcaption>
       </figure>
       <figure class="plate">
         <img src="img/opening/08-booth-patina.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Close view of cracked booth vinyl, decades-worn tabletop finish, beer, cocktail, and coasters">
-        <figcaption><b>09</b><span>Cracked vinyl at arm height, where arms actually go.</span></figcaption>
+        <figcaption><b>09</b><span>Cracked vinyl at arm height, where arms go.</span></figcaption>
       </figure>
     </div>
 
     <figure class="plate bleed">
       <img src="img/opening/09-wall-history.webp" width="1600" height="900" loading="lazy" decoding="async"
            alt="Faded posters and paper remnants wheat-pasted across an old patched bar wall">
-      <figcaption class="wrap"><b>10</b><span>Twenty years of wheat paste, layered and torn back. Four corners have let go and lifted a few millimetres off the wall — enough to throw their own shadow.</span></figcaption>
+      <figcaption class="wrap"><b>10</b><span>Twenty years of paste. Four corners have lifted enough to cast their own shadow.</span></figcaption>
     </figure>
 
     <div class="pair">
       <figure class="plate">
         <img src="img/opening/10-bathroom-door.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Sticker-covered bathroom door set into patched plaster and dark painted wainscoting">
-        <figcaption><b>11</b><span>The restroom door. Somebody put a daylight bulb in the cage above it, so the back hall runs cold against the amber.</span></figcaption>
+        <figcaption><b>11</b><span>Somebody put a daylight bulb in the cage, so the hall runs cold.</span></figcaption>
       </figure>
       <figure class="plate">
         <img src="img/opening/11-pool-light.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Low three-shade classic billiard fixture suspended over the table beneath the old ceiling">
-        <figcaption><b>12</b><span>Three shades on a brass spine. One tube in the room runs at 70% — tired, not dead.</span></figcaption>
+        <figcaption><b>12</b><span>One tube in the room runs at 70%. Tired, not dead.</span></figcaption>
       </figure>
     </div>
   </div>
@@ -433,34 +471,29 @@
   <div class="split">
     <div>
       <h2>Not animated.<br>Solved.</h2>
-      <p class="measure" style="margin-top:1.3em">The shot is a parameter tuple — where the cue ball sits on
-        the head string, how hard it is hit, where the tip lands — handed to a deterministic
-        event-based solver. It returns every collision with a timestamp: <strong>248 events</strong> in
-        7.806 seconds, from the cue strike to the last ball rolling to a stop.</p>
-      <p class="measure dim">Blender never simulates anything. It is a playback device. The solved
-        trajectory is baked onto the balls as position and rotation, then <strong>216 parity checks</strong>
-        confirm every sampled frame in the scene matches the solver to within 0.069° of orientation.
-        The scene contains zero rigid bodies, and the validators fail if one ever appears.</p>
-      <p class="note">To pick this break, 90 candidates were swept across cue position, speed, tip
-        offset and aim. 26 were thrown out — 18 scratched, 6 failed to spread the rack, 2 were
-        illegal, 5 left a ball parked in a pocket jaw. The winner was chosen from the 64 that were
-        legal.</p>
+      <p class="measure" style="margin-top:1.3em">Tell the physics where the cue ball sits, how hard
+        it’s hit and where the tip lands, and it works out the rest: <strong>248 collisions</strong>
+        over 7.8 seconds. We didn’t place a single one.</p>
+      <p class="measure dim">Then we checked it. <strong>216 tests</strong> confirm what you see
+        matches the physics on every frame, to within a fifteenth of a degree.</p>
+      <p class="note">We simulated 90 different breaks and threw out 26 — scratches, weak racks,
+        balls left blocking a pocket. This is the best of the 64 that were legal.</p>
     </div>
     <div>
       <figure class="plate">
         <img src="img/opening/13-table-hero.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Three-quarter view of the rebuilt nine-foot table, six pockets, rails, worn worsted cloth, and rack">
-        <figcaption><b>13</b><span>The table itself: nine foot, six pockets cut to a geometry contract, worsted cloth with the nap worn where people lean.</span></figcaption>
+        <figcaption><b>13</b><span>Nine foot. The nap is worn where people lean.</span></figcaption>
       </figure>
       <figure class="plate" style="margin-top:clamp(30px,4vw,60px)">
         <img src="img/opening/15-rack-detail.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Close view of the fifteen-ball rack on worn tournament-green cloth before the break">
-        <figcaption><b>14</b><span>Before. Fifteen balls, 57.15 mm each, racked to a measured contact gap.</span></figcaption>
+        <figcaption><b>14</b><span>Fifteen balls, 57.15 mm each, racked tight.</span></figcaption>
       </figure>
       <figure class="plate" style="margin-top:clamp(30px,4vw,60px)">
         <img src="img/opening/14-break-line.webp" width="1600" height="900" loading="lazy" decoding="async"
              alt="Cue-ball-height view down the table toward the racked balls and diamond storefront window">
-        <figcaption><b>15</b><span>The line. Cue-ball height, down the head string, the way you would actually sight it.</span></figcaption>
+        <figcaption><b>15</b><span>Cue-ball height, the way you’d actually sight it.</span></figcaption>
       </figure>
     </div>
   </div>
@@ -484,18 +517,13 @@
   <div class="split">
     <div>
       <p class="kicker">The sound</p>
-      <h2 class="measure-tight">Every hit is<br>where the physics<br>put it.</h2>
+      <h2 class="measure-tight">Every sound sits<br>on a real hit.</h2>
     </div>
     <div>
-      <p class="measure">The mix is generated from the same event list that drives the picture. A
-        ball-ball collision becomes a clack whose level comes from the actual impact speed; a
-        cushion contact is quieter and duller; the two that drop get leather and basket. The cue
-        strike is the loudest single sound in the film, and everything before it is deliberately
-        near-silent.</p>
-      <p class="measure dim">In the first fiftieth of a second after impact, <strong>99 collisions</strong>
-        happen at once. All 99 would sum into mush, so the six loudest are kept — that stack
-        <em>is</em> the sound of a break. Every remaining hit is placed to the sample. The whole mix is
-        seeded from the trajectory’s own hash, so the same break always produces a bit-identical file.</p>
+      <p class="measure">Nothing was timed by ear. Each clack is placed on the collision that
+        caused it, and how hard it lands comes from how fast the balls were actually moving.</p>
+      <p class="measure dim">In the first fiftieth of a second, <strong>99 balls hit each other</strong>.
+        That pile-up <em>is</em> the sound of a break.</p>
     </div>
   </div>
 </section>
@@ -504,33 +532,26 @@
 
 <!-- ============================================================= BUILD -->
 <section class="band wrap">
-  <p class="kicker">How it was made</p>
-  <h2 class="measure-tight">Everything is<br>rebuilt from source.</h2>
-  <p class="measure dim" style="margin-top:1.3em">No file is hand-edited. The room is generated by a
-    chain of scripts, and a set of locks fingerprints the result — if an object moves that should
-    not have, the build fails rather than quietly shipping.</p>
+  <p class="kicker">What this means for you</p>
+  <h2 class="measure-tight">If it doesn’t exist yet,<br>we can still show it.</h2>
+  <p class="measure dim" style="margin-top:1.3em">A space you haven’t built. A product you haven’t
+    manufactured. A machine that would be dangerous to film. If we can measure it, we can show it
+    working — and it will behave the way the real thing behaves.</p>
 
   <ol class="steps" style="margin-top:clamp(36px,4.5vw,72px)">
-    <li data-n="01"><h3>Build the shell, then dress it</h3>
-      <p>Architecture, bar, set dressing, patina and lighting run in order, each owning its own
-        collection. 2,229 objects and 90 materials come out the far end.</p></li>
-    <li data-n="02"><h3>Prove the table before playing on it</h3>
-      <p>The table is validated against a geometry contract — 68 checks on pocket mouths, cushion
-        noses, rail heights — before a single ball is allowed to move.</p></li>
-    <li data-n="03"><h3>Solve the shot outside Blender</h3>
-      <p>A dedicated physics solver runs the break and exports a 240 Hz trajectory with exact
-        collision states. 15 contract tests confirm the constants behave.</p></li>
-    <li data-n="04"><h3>Bake it back and check every frame</h3>
-      <p>The trajectory is written onto the balls as keyframes, then compared against the source:
-        216 checks, position and orientation, every sampled frame.</p></li>
-    <li data-n="05"><h3>Light it once, render it twice</h3>
-      <p>Stills and film share the same room, the same haze and the same lights. The film is cut on
-        the solver’s own collision timestamps rather than by feel.</p></li>
+    <li data-n="01"><h3>Spaces before they’re built</h3>
+      <p>Walk a room, a bar, a storefront or a stage before anyone pours concrete.</p></li>
+    <li data-n="02"><h3>Products before they’re made</h3>
+      <p>Real materials under real light, from any angle, with no photoshoot to schedule.</p></li>
+    <li data-n="03"><h3>Things that actually behave</h3>
+      <p>Motion driven by physics, not guesswork — so what you show is what will happen.</p></li>
   </ol>
 
-  <p class="measure dim" style="margin-top:clamp(32px,4vw,60px)">The room is deliberately
-    fictional. Every poster, sticker, flyer and label was generated for this build — no real logos,
-    no real businesses, nothing borrowed.</p>
+  <p style="margin-top:clamp(40px,5vw,72px)">
+    <a class="cta" href="https://littlefightnyc.com">See what we could build for you</a>
+  </p>
+
+
 </section>
 
 </main>
@@ -540,33 +561,20 @@
   <div class="band wrap">
     <div class="foot-grid">
       <div>
-        <h4>NYC Dive-Bar Pool Room</h4>
-        <p class="measure dim" style="font-size:.95em">A demonstration piece: a complete environment
-          and a physically solved break, built to see how far the whole chain could be pushed —
-          modelling, materials, lighting, simulation, edit and sound.</p>
+        <h4>Little Fight NYC</h4>
+        <p class="measure dim" style="font-size:.95em">A demo we built to see how far we could push
+          it — the room, the physics, the sound, all of it. <a class="quiet" href="https://littlefightnyc.com">littlefightnyc.com</a></p>
       </div>
       <div>
-        <h4>Built with</h4>
+        <h4>This piece</h4>
         <ul>
-          <li>Blender · Cycles</li>
-          <li>Event-based solver</li>
-          <li>Procedural materials</li>
-          <li>Generated textures</li>
-          <li>Synthesised audio</li>
-        </ul>
-      </div>
-      <div>
-        <h4>The film</h4>
-        <ul>
-          <li>30.0 s · 24 fps</li>
-          <li>1920 × 1080</li>
-          <li>16 shots, locked off</li>
-          <li>No slow motion</li>
-          <li>Real time throughout</li>
+          <li>30 seconds, 1920 × 1080</li>
+          <li>15 stills, one film</li>
+          <li>2,229 objects</li>
+          <li>Nothing filmed, nothing stock</li>
         </ul>
       </div>
     </div>
-  </div>
 </footer>
 
 </body>
