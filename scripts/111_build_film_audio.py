@@ -34,17 +34,20 @@ PAN_SCALE = 0.20
 ROOM_TONE_DBFS = -34.0
 TARGET_PEAK_DBFS = -1.0
 OVERLAP_WINDOW_S = 0.05
-OVERLAP_CAP = 6
+OVERLAP_CAP = 3
 
 
 def film_offset_s():
-    """The ONE mapping constant, read from the render script so picture and
-    sound can never disagree about when the strike happens."""
-    text = (ROOT / "scripts" / "105_render_film.py").read_text()
-    for line in text.splitlines():
-        if line.startswith("FILM_OFFSET_S"):
-            return float(line.split("=")[1].split("#")[0].strip())
-    raise RuntimeError("could not read FILM_OFFSET_S from 105_render_film.py")
+    """The ONE mapping constant, now imported rather than scraped.
+
+    This used to read the number back out of 105_render_film.py by matching a
+    line prefix. That did keep picture and sound honest, but it meant the
+    constant lived inside a renderer and that any second renderer would have
+    to be kept in step by hand. It lives in film_time.py now and both sides
+    import it, which is the same guarantee with none of the string matching.
+    """
+    import film_time as FT
+    return float(FT.FILM_OFFSET_S)
 
 
 def _env(n_attack, n_decay, curve=6.0):
@@ -124,8 +127,16 @@ def room_tone(rng, n):
     return tone / (rms + 1e-12) * (10 ** (ROOM_TONE_DBFS / 20.0))
 
 
+# The trim on the crack is a mix balance, not a physics claim. The solver
+# reports eleven ball_ball contacts at the identical timestamp t=0.11263, and
+# the mixer sums them in phase, so the rack cascade arrives as one very large
+# coherent hit. Left alone it beat the cue strike by 6.2x and the loudest
+# moment of a break film was not the break. Lifting the crack and cutting the
+# per-window overlap cap from 6 to 3 puts the strike on top by about 2 dB and
+# leaves the cascade just underneath it, which is the shape the shot wants:
+# the hit, then the rack going.
 SOUND_FOR = {
-    "stick_ball": ("crack", 1.00),
+    "stick_ball": ("crack", 4.00),
     "ball_ball": ("clack", 1.00),
     "ball_linear_cushion": ("cushion", 10 ** (-8 / 20)),
     "ball_circular_cushion": ("cushion", 10 ** (-8 / 20)),
@@ -134,11 +145,31 @@ SOUND_FOR = {
 
 
 def impact_speed(event):
-    vs = [np.array(b["initial"]["velocity_mps"], dtype=float)
-          for b in event["balls"]]
-    if len(vs) == 1:
-        return float(np.linalg.norm(vs[0]))
-    return float(np.linalg.norm(vs[0] - vs[1]))
+    """How hard the event was, in m/s, used to set its gain.
+
+    For a two-ball collision that is the closing speed, which is what it has
+    always been. For a ONE-ball event it used to be the ball's velocity going
+    in, and that is wrong in the one place it matters most: at a stick_ball
+    the cue ball is stationary by definition - the tip has not moved it yet -
+    so the strike measured 0.0 m/s, fell to the 0.12 gain floor, and came out
+    of the mix quieter than the room tone. The loudest thing in a break film
+    was inaudible, and the first sound you actually heard was the rack
+    cascade 0.113 s later, three frames after the strike you could see.
+
+    What a cue strike and a cushion rebound have in common is that the
+    velocity CHANGES: the cue ball leaves at 11.34 m/s, a cushion reverses
+    rather than stops. Measuring the change gets both right, and it makes the
+    strike the largest single impact in the film, which is what it is.
+    """
+    balls = event["balls"]
+    if len(balls) >= 2:
+        v0 = np.array(balls[0]["initial"]["velocity_mps"], dtype=float)
+        v1 = np.array(balls[1]["initial"]["velocity_mps"], dtype=float)
+        return float(np.linalg.norm(v0 - v1))
+    b = balls[0]
+    vi = np.array(b["initial"]["velocity_mps"], dtype=float)
+    vf = np.array(b.get("final", b["initial"])["velocity_mps"], dtype=float)
+    return float(max(np.linalg.norm(vf - vi), np.linalg.norm(vi)))
 
 
 def pan_of(event, half_w=0.635):

@@ -168,7 +168,15 @@
      nothing over it - no scrim, no headline, no gradient. The type follows. */
   .hero { background: var(--pitch); padding-top: clamp(16px,2.4vw,30px); }
   .hero .wordmark { margin: 0 0 clamp(14px,1.8vw,22px); }
-  .hero-media { background: #000; border-block: 1px solid var(--line); }
+  /* Above the body::after grain, which is fixed at z-index 40 and otherwise
+     lies over the whole viewport including this. The page keeps its emulsion
+     everywhere else; the picture keeps its own, which is rendered into the
+     frames after denoising rather than laid over the top of them. Two grains
+     stacked is just noise. */
+  .hero-media {
+    background: #000; border-block: 1px solid var(--line);
+    position: relative; z-index: 41;
+  }
   .hero video {
     width: 100%; height: auto;
     aspect-ratio: 16/9;
@@ -326,9 +334,12 @@
 <header class="hero">
   <p class="wordmark wrap">Little Fight NYC &nbsp;·&nbsp; Demo</p>
   <div class="hero-media">
-    <video src="break-film.mp4" poster="img/break-film-poster.webp"
-           width="1920" height="1080" controls preload="metadata" playsinline
-           aria-label="Thirty-second film: the room in glances, the cue addressing the ball, and the rack breaking in real time"></video>
+    <video controls playsinline preload="metadata"
+           poster="img/break-film-poster.webp" width="1280" height="720"
+           aria-label="Thirty-second cinematic film of the authored New York dive-bar environment and a real-time physics-solved billiards break">
+      <source src="break-film.webm" type="video/webm">
+      <source src="break-film.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="wrap hero-strip">
     <p class="hero-note">30 seconds · turn the sound on</p>
@@ -572,7 +583,7 @@
       <div>
         <h4>This piece</h4>
         <ul>
-          <li>30 seconds, 1920 × 1080</li>
+          <li>30 seconds, 1280 × 720</li>
           <li>15 stills, one film</li>
           <li>2,229 objects</li>
           <li>Nothing filmed, nothing stock</li>

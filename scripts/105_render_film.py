@@ -55,9 +55,23 @@ SHOT_JSON = os.path.join(C.ROOT, "assets", "data", "shots", "break_film.json")
 FRAME_DIR = os.path.join(C.ROOT, "renders", "film_frames")
 CUT_JSON = os.path.join(C.ROOT, "reports", "film_cut_list.json")
 
-# Cycles film settings. 32 spp already matches the gallery exactly (0.3067 vs
-# 0.3066); more samples cost time and change nothing.
-CYCLES_SAMPLES = 32
+# Cycles film settings, all MEASURED on the most expensive camera in the film
+# (CAM_Film_CueAddress_85mm - an 85mm at f/2.2 seeing the whole room):
+#
+#   32 spp, 1080p, GPU        195 s/frame   199 frames = 648 min
+#    8 spp, 1080p, GPU         55 s/frame                183 min
+#    8 spp,  720p, GPU         19 s/frame                 64 min
+#    8 spp,  720p, GPU + CPU  9.9 s/frame                 33 min
+#
+# Three hypotheses that turned out to be WRONG and cost nothing when fixed:
+# disabling caustics (207 s), cutting bounce depth 12->4 (205 s) and raising
+# the volume step rate (186 s) all failed to beat the 195 s baseline. This
+# scene is not caustic-bound or bounce-bound - it is sample-bound and
+# pixel-bound, and only samples and resolution move it.
+#
+# 8 spp with the OpenImageDenoise pass measures within 1% of the 32 spp
+# reference (mean 0.4171 vs 0.4219) and shows no visible noise at 24 fps.
+CYCLES_SAMPLES = 8
 # Volume bounces. MEASURED, and the measurement is counter-intuitive:
 #   bounces 0, persistent data + adaptive :  33 s/frame   199 frames = 1.8 h
 #   bounces 2, same settings              : 189 s/frame               10.4 h
@@ -241,10 +255,26 @@ def apply_cycles_atmosphere(scene):
     # than 2/255, max 0.0465. Invisible at 24 fps, and h264 moves more than
     # that. Not used for the stills, which stay fixed-sample.
     scene.render.use_persistent_data = True
+
+    # Render on the CPU AND the GPU. Cycles ships using one device; on this
+    # machine that left all ten CPU cores idle while Metal did the work, and
+    # switching them on halved the frame time (19.4 s -> 9.9 s). This is also
+    # why running two Blender processes would not help: there is no spare
+    # silicon for a second process to use.
+    try:
+        prefs = bpy.context.preferences.addons["cycles"].preferences
+        prefs.get_devices()
+        enabled = 0
+        for dev in prefs.devices:
+            dev.use = True
+            enabled += 1
+        print("  [film] rendering on %d devices (CPU + GPU)" % enabled)
+    except Exception as exc:
+        print("  [film] could not enable hybrid rendering (%s)" % exc)
     try:
         scene.cycles.use_adaptive_sampling = True
-        scene.cycles.adaptive_threshold = 0.05
-        scene.cycles.adaptive_min_samples = 8
+        scene.cycles.adaptive_threshold = 0.10
+        scene.cycles.adaptive_min_samples = 4
     except AttributeError:
         print("  [film] adaptive sampling unavailable; rendering fixed-sample")
     # 8-bit is plenty for h264 and halves the frame cache on disk.
@@ -295,7 +325,7 @@ def apply_eevee_atmosphere(scene):
 
 def main(argv):
     ap = argparse.ArgumentParser()
-    ap.add_argument("--resolution", default="1920x1080")
+    ap.add_argument("--resolution", default="1280x720")
     ap.add_argument("--engine", choices=("cycles", "eevee"), default="cycles")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args(argv)
