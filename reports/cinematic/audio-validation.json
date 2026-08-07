@@ -1,0 +1,61 @@
+{
+ "wav": "/private/tmp/pool-room-cinematic-webm/audio/film_mix.wav",
+ "duration_s": 30.0,
+ "sample_rate": 48000,
+ "channels": 2,
+ "peak_dbfs": -1.0,
+ "film_offset_s": 19.0,
+ "strike_frame": 456,
+ "peak_t": 19.0008,
+ "loudest_rms_t": 19.11,
+ "events_with_energy": 173,
+ "events_checked": 178,
+ "room_tone_drift_db": 1.339,
+ "checks": [
+  {
+   "name": "duration_is_30s",
+   "passed": true,
+   "detail": "30.0000 s at 48000 Hz, 2 channels"
+  },
+  {
+   "name": "sample_rate_48k",
+   "passed": true,
+   "detail": "48000 Hz"
+  },
+  {
+   "name": "no_clipping",
+   "passed": true,
+   "detail": "true peak -1.000 dBFS"
+  },
+  {
+   "name": "strike_is_loudest_event",
+   "passed": true,
+   "detail": "loudest sample in the whole mix at film 19.0008 s (strike is 19.000 s, delta 0.8 ms); peak 0.891 vs 0.611 for the rack cascade. Longest 10 ms RMS window sits at 19.110 s - the cascade sustains longer, it does not hit harder."
+  },
+  {
+   "name": "pre_strike_is_room_tone_only",
+   "passed": true,
+   "detail": "loudest pre-strike 10 ms window 0.00614 vs 0.16165 in the 3 s after the strike (26.3x quieter)"
+  },
+  {
+   "name": "energy_present_at_event_times",
+   "passed": true,
+   "detail": "173/178 solver event timestamps carry a level rise above the room floor (97%); the rest fall inside the 50 ms overlap cap"
+  },
+  {
+   "name": "audio_video_sync_within_one_frame",
+   "passed": true,
+   "detail": "first visible impact frame 456 (traj t=0.0000); first audible onset at 19.0000 s = frame 456; delta 0 frame(s)"
+  },
+  {
+   "name": "strike_on_frame_456",
+   "passed": true,
+   "detail": "shared film offset 19.000 s puts the strike on frame 456"
+  },
+  {
+   "name": "room_tone_no_long_term_drift",
+   "passed": true,
+   "detail": "spread across eight segments of the 1.4-18.6 s room-tone bed (head fade and fade-out excluded): 1.34 dB"
+  }
+ ]
+}

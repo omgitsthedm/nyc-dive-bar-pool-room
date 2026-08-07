@@ -1,0 +1,226 @@
+{
+ "width": 1280,
+ "height": 720,
+ "samples": 8,
+ "devices": "gpu",
+ "motion_blur": true,
+ "adaptive_threshold": 0.1,
+ "adaptive_min_samples": 4,
+ "preview": false,
+ "median_s": 5.232,
+ "p90_s": 7.29,
+ "max_s": 13.269,
+ "mean_s": 6.001,
+ "frames": [
+  {
+   "frame": 20,
+   "seconds": 13.269,
+   "cam": "CAM_Cine_S01_StorefrontPush",
+   "scene_frame": 20,
+   "flicker": {
+    "pool_neon": 0.9607,
+    "open_neon": 0.9234
+   }
+  },
+  {
+   "frame": 100,
+   "seconds": 8.306,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 100,
+   "flicker": {
+    "pool_neon": 0.9688,
+    "open_neon": 0.9657
+   }
+  },
+  {
+   "frame": 140,
+   "seconds": 7.29,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 140,
+   "flicker": {
+    "pool_neon": 0.9475,
+    "open_neon": 0.9204
+   }
+  },
+  {
+   "frame": 185,
+   "seconds": 7.002,
+   "cam": "CAM_Cine_S03_BoothsWallHistory",
+   "scene_frame": 185,
+   "flicker": {
+    "pool_neon": 0.9428,
+    "open_neon": 0.9332
+   }
+  },
+  {
+   "frame": 240,
+   "seconds": 6.914,
+   "cam": "CAM_Cine_S04_CeilingCrane",
+   "scene_frame": 240,
+   "flicker": {
+    "pool_neon": 0.9746,
+    "open_neon": 0.9819
+   }
+  },
+  {
+   "frame": 290,
+   "seconds": 5.069,
+   "cam": "CAM_Cine_S05_CueAddress",
+   "scene_frame": 290,
+   "flicker": {
+    "pool_neon": 0.9534,
+    "open_neon": 0.9873
+   }
+  },
+  {
+   "frame": 300,
+   "seconds": 5.139,
+   "cam": "CAM_Cine_S06_BreakAndPockets",
+   "scene_frame": 300,
+   "flicker": {
+    "pool_neon": 0.9268,
+    "open_neon": 0.9839
+   }
+  },
+  {
+   "frame": 336,
+   "seconds": 5.122,
+   "cam": "CAM_Cine_S06_BreakAndPockets",
+   "scene_frame": 336,
+   "flicker": {
+    "pool_neon": 0.987,
+    "open_neon": 0.9867
+   }
+  },
+  {
+   "frame": 350,
+   "seconds": 5.149,
+   "cam": "CAM_Cine_S06_BreakAndPockets",
+   "scene_frame": 350,
+   "flicker": {
+    "pool_neon": 0.9466,
+    "open_neon": 0.9358
+   }
+  },
+  {
+   "frame": 400,
+   "seconds": 5.139,
+   "cam": "CAM_Cine_S07_RailAction",
+   "scene_frame": 400,
+   "flicker": {
+    "pool_neon": 0.9732,
+    "open_neon": 0.9766
+   }
+  },
+  {
+   "frame": 470,
+   "seconds": 5.259,
+   "cam": "CAM_Cine_S08_LastBall",
+   "scene_frame": 470,
+   "flicker": {
+    "pool_neon": 0.984,
+    "open_neon": 0.9446
+   }
+  },
+  {
+   "frame": 530,
+   "seconds": 5.232,
+   "cam": "CAM_Cine_S09_Aftermath",
+   "scene_frame": 530,
+   "flicker": {
+    "pool_neon": 0.7526,
+    "open_neon": 0.9229
+   }
+  },
+  {
+   "frame": 612,
+   "seconds": 5.229,
+   "cam": "CAM_Cine_S10_RoomPullback",
+   "scene_frame": 612,
+   "flicker": {
+    "pool_neon": 0.984,
+    "open_neon": 0.9659
+   }
+  },
+  {
+   "frame": 637,
+   "seconds": 5.184,
+   "cam": "CAM_Cine_S10_RoomPullback",
+   "scene_frame": 637,
+   "flicker": {
+    "pool_neon": 0.391,
+    "open_neon": 0.9222
+   }
+  },
+  {
+   "frame": 719,
+   "seconds": 5.268,
+   "cam": "CAM_Cine_S10_RoomPullback",
+   "scene_frame": 719,
+   "flicker": {
+    "pool_neon": 0.9783,
+    "open_neon": 0.9413
+   }
+  },
+  {
+   "frame": 320,
+   "seconds": 5.051,
+   "cam": "CAM_Cine_S06_BreakAndPockets",
+   "scene_frame": 320,
+   "flicker": {
+    "pool_neon": 0.9749,
+    "open_neon": 0.9785
+   }
+  },
+  {
+   "frame": 321,
+   "seconds": 5.564,
+   "cam": "CAM_Cine_S06_BreakAndPockets",
+   "scene_frame": 321,
+   "flicker": {
+    "pool_neon": 0.9587,
+    "open_neon": 0.941
+   }
+  },
+  {
+   "frame": 322,
+   "seconds": 5.43,
+   "cam": "CAM_Cine_S06_BreakAndPockets",
+   "scene_frame": 322,
+   "flicker": {
+    "pool_neon": 0.982,
+    "open_neon": 0.9799
+   }
+  },
+  {
+   "frame": 323,
+   "seconds": 5.233,
+   "cam": "CAM_Cine_S06_BreakAndPockets",
+   "scene_frame": 323,
+   "flicker": {
+    "pool_neon": 0.9246,
+    "open_neon": 0.9749
+   }
+  },
+  {
+   "frame": 324,
+   "seconds": 5.079,
+   "cam": "CAM_Cine_S06_BreakAndPockets",
+   "scene_frame": 324,
+   "flicker": {
+    "pool_neon": 0.9791,
+    "open_neon": 0.95
+   }
+  },
+  {
+   "frame": 325,
+   "seconds": 5.101,
+   "cam": "CAM_Cine_S06_BreakAndPockets",
+   "scene_frame": 325,
+   "flicker": {
+    "pool_neon": 0.9868,
+    "open_neon": 0.9738
+   }
+  }
+ ]
+}
