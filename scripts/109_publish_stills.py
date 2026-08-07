@@ -20,6 +20,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import pngstats  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 RENDERS = ROOT / "renders" / "cinematic_stills"
 SITE_IMG = ROOT / "site" / "img" / "opening"
@@ -58,79 +61,25 @@ def build_map() -> dict[Path, Path]:
     return {renders[i]: slugs[i] for i in sorted(renders)}
 
 
-def _decode(path: Path):
-    """Minimal PNG reader - no Pillow in this venv, and the check matters more
-    than the dependency. Returns (width, height, channels, raw bytes)."""
-    import struct
-    import zlib
-    data = path.read_bytes()
-    pos, idat = 8, b""
-    w = h = bd = ct = 0
-    while pos < len(data):
-        ln = struct.unpack(">I", data[pos:pos + 4])[0]
-        typ = data[pos + 4:pos + 8]
-        chunk = data[pos + 8:pos + 8 + ln]
-        if typ == b"IHDR":
-            w, h, bd, ct = struct.unpack(">IIBB", chunk[:10])
-        elif typ == b"IDAT":
-            idat += chunk
-        pos += 12 + ln
-    raw = zlib.decompress(idat)
-    ch = {0: 1, 2: 3, 4: 2, 6: 4}[ct]
-    bpp = ch * (bd // 8)
-    stride = w * bpp
-    out = bytearray()
-    prev = bytearray(stride)
-    i = 0
-    for _ in range(h):
-        f = raw[i]
-        i += 1
-        line = bytearray(raw[i:i + stride])
-        i += stride
-        for x in range(stride):
-            a = line[x - bpp] if x >= bpp else 0
-            b = prev[x]
-            c = prev[x - bpp] if x >= bpp else 0
-            if f == 1:
-                line[x] = (line[x] + a) & 255
-            elif f == 2:
-                line[x] = (line[x] + b) & 255
-            elif f == 3:
-                line[x] = (line[x] + (a + b) // 2) & 255
-            elif f == 4:
-                pa, pb, pc = abs(b - c), abs(a - c), abs(a + b - 2 * c)
-                pr = a if (pa <= pb and pa <= pc) else (b if pb <= pc else c)
-                line[x] = (line[x] + pr) & 255
-        out += line
-        prev = line
-    return w, h, bpp, bytes(out)
-
-
 def check_not_black(path: Path, min_mean=0.02, max_black_fraction=0.90):
     """A1 requires every stills camera to render non-black with the volume on.
 
-    A camera that ends up inside a volume box renders to pure black in some
-    engines, and a black frame is easy to miss in a 15-image gallery until it
-    is live. Sampled rather than exhaustive - enough to catch a dead frame
-    without decoding 7 MB per image twice.
+    Uses the shared reader in pngstats.py. This function previously carried
+    its own inline decoder that assumed 8 bits per channel. Blender writes
+    16-bit PNGs, so that decoder read the high and low bytes of red as if
+    they were red and green and reported confident nonsense - a pitch-black
+    film passed a black-frame gate built on exactly this mistake. Any gate
+    that measures a render must go through pngstats.
     """
-    w, h, bpp, px = _decode(path)
-    step = bpp * 37                       # sparse stride, prime-ish
-    total = black = 0
-    acc = 0.0
-    for o in range(0, len(px) - bpp, step):
-        y = 0.2126 * px[o] + 0.7152 * px[o + 1] + 0.0722 * px[o + 2]
-        acc += y
-        total += 1
-        if y < 4:
-            black += 1
-    mean = acc / total / 255.0
-    frac = black / total
+    stats = pngstats.luminance_stats(path, stride_px=37)
+    mean = stats["mean"]
+    frac = stats["frac_below_0_05"]
     if mean < min_mean or frac > max_black_fraction:
         raise RuntimeError(
-            "%s looks dead: mean luminance %.4f, %.1f%% near-black. A1 "
-            "requires every stills camera to render non-black with the room "
-            "haze enabled." % (path.name, mean, frac * 100))
+            "%s looks dead: mean luminance %.4f, %.1f%% near-black (%d-bit). "
+            "A1 requires every stills camera to render non-black with the "
+            "room haze enabled."
+            % (path.name, mean, frac * 100, stats["bit_depth"]))
     return mean, frac
 
 

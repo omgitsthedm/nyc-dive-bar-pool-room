@@ -4,141 +4,556 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#070605">
-<title>NYC Dive-Bar Pool Room: Opening Chapter</title>
-<link rel="icon" href="data:,">
+<title>NYC Dive-Bar Pool Room — a physically simulated room, and one break</title>
+<meta name="description" content="A New York dive bar built from scratch in Blender: 2,229 objects, 90 materials, every light with a visible source. The break is not animation — it is a 240 Hz rigid-body solve, and every sound is placed on a real collision.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='13' fill='%23E9A23B'/></svg>">
+<meta property="og:title" content="NYC Dive-Bar Pool Room">
+<meta property="og:description" content="A dive bar built object by object in Blender, and one break solved at 240 Hz.">
+<meta property="og:image" content="img/opening/12-room-hero.webp">
+<meta property="og:type" content="website">
 <style>
   :root {
     color-scheme: dark;
-    --room-black: #070605;
-    --shot-gap: clamp(12px, 2.5vw, 40px);
-    --page-edge: clamp(0px, 1.5vw, 24px);
+    --black:  #070605;
+    --pitch:  #030302;
+    --ink:    #14110E;
+    --line:   #2A241D;
+    --bone:   #EDE6D8;
+    --bone-d: #A79E8E;
+    /* #6E665A read better as a "quiet" tone but measured 3.32:1 on the data
+       strip - under AA for the 10-12px mono labels that use it. 5.38:1 here,
+       still a clear step below --bone-d so the hierarchy survives. */
+    --mute:   #918879;
+    --amber:  #E9A23B;
+    --brass:  #C9922F;
+    --cloth:  #2E6B4F;
+    --crt:    #5FA8D3;
+    --neon:   #D6453C;
+
+    --edge: clamp(20px, 5vw, 88px);
+    --gap:  clamp(56px, 9vw, 152px);
+
+    --sans: "Helvetica Neue", Helvetica, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
   }
 
-  * {
-    box-sizing: border-box;
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration:.001ms !important; transition-duration:.001ms !important; }
   }
 
-  html,
   body {
     margin: 0;
     min-width: 320px;
-    background: var(--room-black);
+    background: var(--black);
+    color: var(--bone);
+    font-family: var(--sans);
+    font-size: clamp(16px, 1.02vw + 13px, 19px);
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
-  .chapter {
-    width: min(100%, 1600px);
-    margin: 0 auto;
-    padding-top: max(var(--page-edge), env(safe-area-inset-top));
-    padding-right: max(var(--page-edge), env(safe-area-inset-right));
-    padding-bottom: max(var(--page-edge), env(safe-area-inset-bottom));
-    padding-left: max(var(--page-edge), env(safe-area-inset-left));
+  img, video { display: block; max-width: 100%; }
+
+  /* ---------------------------------------------------------- type ----- */
+  .kicker {
+    font-family: var(--mono);
+    font-size: clamp(10px, .55vw + 8px, 12px);
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin: 0 0 1.4em;
+    display: flex;
+    align-items: center;
+    gap: .9em;
+  }
+  .kicker::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--line), transparent);
   }
 
-  .shot {
-    margin: 0 0 var(--shot-gap);
-    overflow: hidden;
+  h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -.028em; line-height: .96; }
+  h1 { font-size: clamp(38px, 8.6vw, 132px); }
+  h2 { font-size: clamp(30px, 5.4vw, 74px); letter-spacing: -.032em; }
+  h3 { font-size: clamp(19px, 1.5vw + 14px, 27px); letter-spacing: -.018em; line-height: 1.14; }
+
+  p { margin: 0 0 1.15em; }
+  p:last-child { margin-bottom: 0; }
+  .lede { font-size: clamp(20px, 1.7vw + 15px, 33px); line-height: 1.36; letter-spacing: -.014em; }
+  .measure { max-width: 62ch; }
+  .measure-tight { max-width: 46ch; }
+  .dim { color: var(--bone-d); }
+  em { color: var(--amber); font-style: normal; }
+  strong { font-weight: 700; color: #FFF7E8; }
+
+  /* -------------------------------------------------------- layout ----- */
+  .wrap { padding-inline: var(--edge); }
+  .band { padding-block: var(--gap); }
+  .rule { height: 1px; background: var(--line); border: 0; margin: 0; }
+
+  /* ---------------------------------------------------------- hero ----- */
+  .hero { position: relative; background: var(--pitch); }
+  .hero-media { position: relative; }
+  .hero video {
+    width: 100%; height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
     background: #000;
   }
-
-  .shot:last-child {
-    margin-bottom: 0;
+  .hero-scrim {
+    position: absolute; inset: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(180deg, rgba(7,6,5,.86) 0%, rgba(7,6,5,.15) 34%, rgba(7,6,5,.05) 60%, rgba(7,6,5,.92) 100%);
+  }
+  .hero-head {
+    position: absolute; top: 0; left: 0; right: 0;
+    padding: clamp(18px,3.4vw,48px) var(--edge) 0;
+    pointer-events: none;
+  }
+  .hero-foot {
+    /* Sits clear of the native video control bar, which is ~48px tall and
+       owns the bottom of the frame. Overlapping it made the right-hand note
+       unreadable behind the fullscreen and volume buttons. */
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 0 var(--edge) clamp(64px,3.4vw + 52px,96px);
+    pointer-events: none;
+    display: flex; flex-wrap: wrap; gap: 10px 30px; align-items: flex-end;
+    justify-content: space-between;
+  }
+  .wordmark {
+    font-family: var(--mono);
+    font-size: clamp(10px,.5vw + 8px,12px);
+    letter-spacing: .3em; text-transform: uppercase;
+    color: var(--bone); opacity: .82;
+  }
+  .hero-title { margin-top: clamp(10px, 1.6vw, 22px); text-wrap: balance; }
+  .hero-title span { display: block; color: var(--amber); }
+  .hero-note {
+    font-family: var(--mono); font-size: clamp(10px,.5vw + 8px,12px);
+    letter-spacing: .16em; text-transform: uppercase; color: var(--bone-d);
+  }
+  /* On small screens the poster is too dark to carry text; stack instead. */
+  @media (max-width: 700px) {
+    .hero-head { position: static; padding: 26px var(--edge) 0; }
+    .hero-foot { position: static; padding: 18px var(--edge) 26px; }
+    .hero-scrim { background: linear-gradient(180deg, rgba(7,6,5,.25), rgba(7,6,5,.75)); }
   }
 
-  .shot img,
-  .shot video {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+  /* ---------------------------------------------------------- lede ----- */
+  .intro { display: grid; gap: clamp(28px,4vw,72px); grid-template-columns: 1fr; }
+  @media (min-width: 900px) { .intro { grid-template-columns: minmax(0,1.35fr) minmax(0,1fr); } }
+  .intro-aside {
+    font-family: var(--mono); font-size: clamp(12px,.5vw + 10px,14px);
+    line-height: 1.85; color: var(--bone-d);
   }
+  .intro-aside dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: .35em 1.4em; }
+  .intro-aside dt { color: var(--mute); white-space: nowrap; }
+  .intro-aside dd { margin: 0; color: var(--bone); text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* ---------------------------------------------------------- spec ----- */
+  .spec { background: var(--ink); }
+  .spec-grid {
+    display: grid; gap: 1px;
+    background: var(--line);
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+  @media (min-width: 760px)  { .spec-grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+  @media (min-width: 1180px) { .spec-grid { grid-template-columns: repeat(6, minmax(0,1fr)); } }
+  .spec-cell { background: var(--ink); padding: clamp(20px,2.4vw,34px) clamp(16px,1.8vw,26px); }
+  /* The strip is full bleed so the hairlines run edge to edge, but the first
+     and last figures still line up with the page gutter - otherwise the row
+     reads as misaligned rather than deliberately wide. */
+  .spec-grid > .spec-cell:first-child { padding-left: var(--edge); }
+  .spec-grid > .spec-cell:last-child  { padding-right: var(--edge); }
+  @media (min-width: 760px) and (max-width: 1179px) {
+    .spec-grid > .spec-cell:nth-child(3n+1) { padding-left: var(--edge); }
+    .spec-grid > .spec-cell:nth-child(3n)   { padding-right: var(--edge); }
+  }
+  @media (max-width: 759px) {
+    .spec-grid > .spec-cell:nth-child(odd)  { padding-left: var(--edge); }
+    .spec-grid > .spec-cell:nth-child(even) { padding-right: var(--edge); }
+  }
+  .spec-n {
+    font-size: clamp(30px,3.1vw,52px); font-weight: 700;
+    letter-spacing: -.045em; line-height: 1;
+    font-variant-numeric: tabular-nums; color: var(--bone);
+  }
+  .spec-n small { font-size: .42em; letter-spacing: -.01em; color: var(--brass); margin-left: .28em; font-weight: 700; }
+  .spec-l {
+    margin-top: .85em; font-family: var(--mono);
+    font-size: clamp(10px,.45vw + 8px,12px); line-height: 1.55;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--mute);
+  }
+
+  /* -------------------------------------------------------- figures ---- */
+  .plate { margin: 0; }
+  .plate img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; background: #000; }
+  .plate figcaption {
+    margin-top: 1em; display: flex; gap: 1.1em; align-items: baseline;
+    font-family: var(--mono); font-size: clamp(11px,.45vw + 9px,13px);
+    line-height: 1.6; color: var(--bone-d);
+  }
+  .plate figcaption b {
+    color: var(--brass); font-weight: 700; letter-spacing: .12em;
+    flex: none; font-size: .92em;
+  }
+  .plates { display: grid; gap: clamp(30px,4.6vw,84px); }
+  .pair { display: grid; gap: clamp(30px,4.6vw,84px); }
+  @media (min-width: 860px) { .pair { grid-template-columns: 1fr 1fr; align-items: start; } }
+  .bleed { margin-inline: calc(var(--edge) * -1); }
+  .bleed img { aspect-ratio: 21/9; }
+  @media (max-width: 700px) { .bleed img { aspect-ratio: 16/9; } }
+
+  /* ------------------------------------------------------- two-col ----- */
+  .split { display: grid; gap: clamp(28px,4vw,80px); }
+  @media (min-width: 900px) { .split { grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: start; } }
+
+  /* --------------------------------------------------------- steps ----- */
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; background: var(--line); }
+  .steps li { background: var(--black); padding: clamp(18px,2vw,26px) 0 clamp(18px,2vw,26px) clamp(46px,5vw,74px); position: relative; }
+  .steps li::before {
+    content: attr(data-n);
+    position: absolute; left: 0; top: clamp(18px,2vw,26px);
+    font-family: var(--mono); font-size: clamp(11px,.5vw + 9px,13px);
+    color: var(--amber); letter-spacing: .1em;
+  }
+  .steps h3 { margin-bottom: .45em; }
+  .steps p { color: var(--bone-d); max-width: 58ch; }
+
+  /* --------------------------------------------------------- notes ----- */
+  .note {
+    border-left: 2px solid var(--brass);
+    padding: .1em 0 .1em 1.35em;
+    color: var(--bone-d);
+    font-size: .96em;
+  }
+  .swatches { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.6em; }
+  .sw {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    padding: .5em .85em; border: 1px solid var(--line); color: var(--bone-d);
+    display: inline-flex; align-items: center; gap: .6em;
+  }
+  .sw i { width: 9px; height: 9px; border-radius: 50%; display: block; }
+
+  /* -------------------------------------------------------- footer ----- */
+  footer { background: var(--pitch); }
+  .foot-grid { display: grid; gap: clamp(24px,3vw,56px); }
+  @media (min-width: 780px) { .foot-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
+  footer h4 {
+    margin: 0 0 1em; font-family: var(--mono); font-size: 11px;
+    letter-spacing: .22em; text-transform: uppercase; color: var(--mute); font-weight: 400;
+  }
+  footer ul { list-style: none; margin: 0; padding: 0; font-family: var(--mono); font-size: 13px; line-height: 2; color: var(--bone-d); }
+  .colophon { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; color: var(--mute); text-transform: uppercase; }
 </style>
 </head>
 <body>
-<main class="chapter" aria-label="NYC dive-bar pool room">
-  <figure class="shot">
+
+<!-- ================================================================ HERO -->
+<header class="hero">
+  <div class="hero-media">
     <video src="break-film.mp4" poster="img/break-film-poster.webp"
-           width="1920" height="1080" controls preload="metadata"
-           playsinline
-           aria-label="Thirty-second break: the room, the address, and the
-                       rack scattering in real time"></video>
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/01-street-neon.webp"
-         alt="Rain-lit Lower East Side storefronts seen through a diamond-latticed bar window and an open neon sign"
-         width="1600" height="900" loading="eager" fetchpriority="high"
-         decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/02-threshold.webp"
-         alt="First step inside the bar, looking past mismatched stools and booths toward the pool table"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/03-front-room.webp"
-         alt="Front room with small tables, mismatched chairs, the bar, and a glowing street window"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/04-bar-reveal.webp"
-         alt="Pool-table corner framing a stocked back bar, old register, fruit bowl, and neon street window"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/05-clean-bar.webp"
-         alt="Wiped, worn bar top with fruit, old metal register, bottle shelves, and a coaster-set drink"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/06-patron-barware.webp"
-         alt="Pint and rocks glasses with beer, lime, straw, coasters, and the footprint of patrons at the bar"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/07-booths.webp"
-         alt="Small run of adjacent aged-vinyl booths with worn wood tables and drinks set on coasters"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/08-booth-patina.webp"
-         alt="Close view of cracked booth vinyl, decades-worn tabletop finish, beer, cocktail, and coasters"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/09-wall-history.webp"
-         alt="Faded posters and paper remnants wheat-pasted across an old patched bar wall"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/10-bathroom-door.webp"
-         alt="Sticker-covered bathroom door set into patched plaster and dark painted wainscoting"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/11-pool-light.webp"
-         alt="Low three-shade classic billiard fixture suspended over the table beneath the old ceiling"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/12-room-hero.webp"
-         alt="Long room view from the bar rail toward the lit pool table and stickered bathroom door"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/13-table-hero.webp"
-         alt="Three-quarter view of the rebuilt nine-foot table, six pockets, rails, worn worsted cloth, and rack"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/14-break-line.webp"
-         alt="Cue-ball-height view down the table toward the racked balls and diamond storefront window"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  <figure class="shot">
-    <img src="img/opening/15-rack-detail.webp"
-         alt="Close view of the fifteen-ball rack on worn tournament-green cloth before the break"
-         width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-</main>
+           width="1920" height="1080" controls preload="metadata" playsinline
+           aria-label="Thirty-second film: the room in glances, the cue addressing the ball, and the rack breaking in real time"></video>
+    <div class="hero-scrim" aria-hidden="true"></div>
+  </div>
+  <div class="hero-head">
+    <p class="wordmark">Blender / Cycles &nbsp;·&nbsp; Physically Simulated</p>
+    <h1 class="hero-title">A dive bar,<br>built object<br>by object.<span>And one break.</span></h1>
+  </div>
+  <div class="hero-foot">
+    <p class="hero-note">30 seconds · 1920×1080 · 24 fps · sound on</p>
+    <p class="hero-note">New York · Lower East Side · fictional</p>
+  </div>
+</header>
+
+<hr class="rule">
+
+<!-- ================================================================ LEDE -->
+<section class="band wrap">
+  <div class="intro">
+    <div>
+      <p class="kicker">What this is</p>
+      <p class="lede measure">Every surface in this room was built for it. The bar, the booths, the
+        wheat-pasted wall, the register, the 213 bottles behind it — modelled, textured and lit
+        from nothing in Blender. <em>Nothing here is stock.</em></p>
+      <p class="measure dim">And the break in that film is not animation. No one keyframed those
+        balls. A rigid-body solver ran the shot at 240&nbsp;Hz — cue tip through cushion rebound
+        through the two that dropped — and Blender was handed the result to play back, frame for
+        frame, to within a fifteenth of a degree. The sounds are placed on the solver's own
+        collision timestamps. Nothing in the mix was timed by hand.</p>
+    </div>
+    <aside class="intro-aside">
+      <p class="kicker">Spec</p>
+      <dl>
+        <dt>Room</dt><dd>6.55 × 11.58 × 3.15 m</dd>
+        <dt>Table</dt><dd>WPA 9-foot regulation</dd>
+        <dt>Playfield</dt><dd>1.27 × 2.54 m</dd>
+        <dt>Ball</dt><dd>57.15 mm · 168 g</dd>
+        <dt>Cushion rebound</dt><dd>0.818</dd>
+        <dt>Solver</dt><dd>240 Hz event-based</dd>
+        <dt>Renderer</dt><dd>Cycles, path-traced</dd>
+        <dt>Lights with a source</dt><dd>26 of 26</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- ================================================================ SPEC -->
+<section class="spec">
+  <div class="spec-grid">
+    <div class="spec-cell"><p class="spec-n">2,229</p><p class="spec-l">Objects in the<br>frozen environment</p></div>
+    <div class="spec-cell"><p class="spec-n">90</p><p class="spec-l">Authored<br>materials</p></div>
+    <div class="spec-cell"><p class="spec-n">15<small>/15</small></p><p class="spec-l">Physics contracts<br>passing</p></div>
+    <div class="spec-cell"><p class="spec-n">216<small>/216</small></p><p class="spec-l">Playback parity<br>checks</p></div>
+    <div class="spec-cell"><p class="spec-n">0.069<small>°</small></p><p class="spec-l">Worst orientation<br>error, any frame</p></div>
+    <div class="spec-cell"><p class="spec-n">90</p><p class="spec-l">Breaks simulated<br>to choose one</p></div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============================================================== ROOM -->
+<section class="band wrap">
+  <p class="kicker">The room</p>
+  <h2 class="measure-tight">It had to look like<br>somebody drinks here.</h2>
+  <p class="measure dim" style="margin-top:1.4em">A room reads as real through detail, not through duration. So the
+    rules were strict: every light has a fixture you can point at, nothing floats, and the place is
+    worn rather than dirty. 1,127 individual items were checked for whether something physically
+    holds them up — 333 of them flagged high-risk and audited by hand.</p>
+
+  <div class="plates" style="margin-top:clamp(40px,5vw,88px)">
+    <figure class="plate bleed">
+      <img src="img/opening/12-room-hero.webp" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async"
+           alt="Long room view from the bar rail toward the lit pool table and stickered bathroom door">
+      <figcaption class="wrap"><b>01</b><span>The long view. One fixture over the table, practicals down the bar, and air between them — the haze is a real volume, not a gradient.</span></figcaption>
+    </figure>
+
+    <div class="pair">
+      <figure class="plate">
+        <img src="img/opening/01-street-neon.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Rain-lit Lower East Side storefronts seen through a diamond-latticed bar window and an open neon sign">
+        <figcaption><b>02</b><span>Wet street through diamond lattice. The OPEN sign reads backwards because you are inside it.</span></figcaption>
+      </figure>
+      <figure class="plate">
+        <img src="img/opening/02-threshold.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="First step inside the bar, looking past mismatched stools and booths toward the pool table">
+        <figcaption><b>03</b><span>The threshold. Mismatched stools, because nobody bought them at the same time.</span></figcaption>
+      </figure>
+    </div>
+
+    <figure class="plate bleed">
+      <img src="img/opening/03-front-room.webp" width="1600" height="900" loading="lazy" decoding="async"
+           alt="Front room with small tables, mismatched chairs, the bar, and a glowing street window">
+      <figcaption class="wrap"><b>04</b><span>The front room. Cafe tables nobody matched, a circulation aisle narrow enough to make you turn sideways, and the street doing the work in the window.</span></figcaption>
+    </figure>
+
+    <figure class="plate">
+      <img src="img/opening/04-bar-reveal.webp" width="1600" height="900" loading="lazy" decoding="async"
+           alt="Pool-table corner framing a stocked back bar, old register, fruit bowl, and neon street window">
+      <figcaption><b>05</b><span>The back bar. A 1900s barrel-front register stands complete on the shelf — the bottle rows split around it and the strip light stops either side, because a machine that size would not fit otherwise.</span></figcaption>
+    </figure>
+
+    <div class="pair">
+      <figure class="plate">
+        <img src="img/opening/05-clean-bar.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Wiped, worn bar top with fruit, old metal register, bottle shelves, and a coaster-set drink">
+        <figcaption><b>06</b><span>Wiped for the current shift. The age is finish loss and ring ghosts, never grime.</span></figcaption>
+      </figure>
+      <figure class="plate">
+        <img src="img/opening/06-patron-barware.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Pint and rocks glasses with beer, lime, straw, coasters, and the footprint of patrons at the bar">
+        <figcaption><b>07</b><span>Somebody's tab, mid-drink. Condensation, lime, a coaster that has been used before.</span></figcaption>
+      </figure>
+      <figure class="plate">
+        <img src="img/opening/07-booths.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Small run of adjacent aged-vinyl booths with worn wood tables and drinks set on coasters">
+        <figcaption><b>08</b><span>Two booths, wall-cleated, benches perpendicular so you enter from the aisle.</span></figcaption>
+      </figure>
+      <figure class="plate">
+        <img src="img/opening/08-booth-patina.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Close view of cracked booth vinyl, decades-worn tabletop finish, beer, cocktail, and coasters">
+        <figcaption><b>09</b><span>Cracked vinyl at arm height, where arms actually go.</span></figcaption>
+      </figure>
+    </div>
+
+    <figure class="plate bleed">
+      <img src="img/opening/09-wall-history.webp" width="1600" height="900" loading="lazy" decoding="async"
+           alt="Faded posters and paper remnants wheat-pasted across an old patched bar wall">
+      <figcaption class="wrap"><b>10</b><span>Twenty years of wheat paste, layered and torn back. Four corners have let go and lifted a few millimetres off the wall — enough to throw their own shadow.</span></figcaption>
+    </figure>
+
+    <div class="pair">
+      <figure class="plate">
+        <img src="img/opening/10-bathroom-door.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Sticker-covered bathroom door set into patched plaster and dark painted wainscoting">
+        <figcaption><b>11</b><span>The restroom door. Somebody put a daylight bulb in the cage above it, so the back hall runs cold against the amber.</span></figcaption>
+      </figure>
+      <figure class="plate">
+        <img src="img/opening/11-pool-light.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Low three-shade classic billiard fixture suspended over the table beneath the old ceiling">
+        <figcaption><b>12</b><span>Three shades on a brass spine. One tube in the room runs at 70% — tired, not dead.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- =========================================================== PHYSICS -->
+<section class="band wrap">
+  <p class="kicker">The break</p>
+  <div class="split">
+    <div>
+      <h2>Not animated.<br>Solved.</h2>
+      <p class="measure" style="margin-top:1.3em">The shot is a parameter tuple — where the cue ball sits on
+        the head string, how hard it is hit, where the tip lands — handed to a deterministic
+        event-based solver. It returns every collision with a timestamp: <strong>248 events</strong> in
+        7.806 seconds, from the cue strike to the last ball rolling to a stop.</p>
+      <p class="measure dim">Blender never simulates anything. It is a playback device. The solved
+        trajectory is baked onto the balls as position and rotation, then <strong>216 parity checks</strong>
+        confirm every sampled frame in the scene matches the solver to within 0.069° of orientation.
+        The scene contains zero rigid bodies, and the validators fail if one ever appears.</p>
+      <p class="note">To pick this break, 90 candidates were swept across cue position, speed, tip
+        offset and aim. 26 were thrown out — 18 scratched, 6 failed to spread the rack, 2 were
+        illegal, 5 left a ball parked in a pocket jaw. The winner was chosen from the 64 that were
+        legal.</p>
+    </div>
+    <div>
+      <figure class="plate">
+        <img src="img/opening/13-table-hero.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Three-quarter view of the rebuilt nine-foot table, six pockets, rails, worn worsted cloth, and rack">
+        <figcaption><b>13</b><span>The table itself: nine foot, six pockets cut to a geometry contract, worsted cloth with the nap worn where people lean.</span></figcaption>
+      </figure>
+      <figure class="plate" style="margin-top:clamp(30px,4vw,60px)">
+        <img src="img/opening/15-rack-detail.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Close view of the fifteen-ball rack on worn tournament-green cloth before the break">
+        <figcaption><b>14</b><span>Before. Fifteen balls, 57.15 mm each, racked to a measured contact gap.</span></figcaption>
+      </figure>
+      <figure class="plate" style="margin-top:clamp(30px,4vw,60px)">
+        <img src="img/opening/14-break-line.webp" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Cue-ball-height view down the table toward the racked balls and diamond storefront window">
+        <figcaption><b>15</b><span>The line. Cue-ball height, down the head string, the way you would actually sight it.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="spec">
+  <div class="spec-grid">
+    <div class="spec-cell"><p class="spec-n">11.6<small>m/s</small></p><p class="spec-l">Cue ball<br>at impact</p></div>
+    <div class="spec-cell"><p class="spec-n">248</p><p class="spec-l">Solver events<br>in one break</p></div>
+    <div class="spec-cell"><p class="spec-n">31</p><p class="spec-l">Rail contacts<br>before it settles</p></div>
+    <div class="spec-cell"><p class="spec-n">2</p><p class="spec-l">Balls down —<br>the 4 and the 7</p></div>
+    <div class="spec-cell"><p class="spec-n">7.81<small>s</small></p><p class="spec-l">Until nothing<br>is moving</p></div>
+    <div class="spec-cell"><p class="spec-n">240<small>Hz</small></p><p class="spec-l">Trajectory<br>sample rate</p></div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============================================================= SOUND -->
+<section class="band wrap">
+  <div class="split">
+    <div>
+      <p class="kicker">The sound</p>
+      <h2 class="measure-tight">Every hit is<br>where the physics<br>put it.</h2>
+    </div>
+    <div>
+      <p class="measure">The mix is generated from the same event list that drives the picture. A
+        ball-ball collision becomes a clack whose level comes from the actual impact speed; a
+        cushion contact is quieter and duller; the two that drop get leather and basket. The cue
+        strike is the loudest single sound in the film, and everything before it is deliberately
+        near-silent.</p>
+      <p class="measure dim">In the first fiftieth of a second after impact, <strong>99 collisions</strong>
+        happen at once. All 99 would sum into mush, so the six loudest are kept — that stack
+        <em>is</em> the sound of a break. Every remaining hit is placed to the sample. The whole mix is
+        seeded from the trajectory's own hash, so the same break always produces a bit-identical file.</p>
+      <div class="swatches" aria-hidden="true">
+        <span class="sw"><i style="background:var(--amber)"></i>Practicals</span>
+        <span class="sw"><i style="background:var(--crt)"></i>CRT standby</span>
+        <span class="sw"><i style="background:var(--cloth)"></i>Worsted cloth</span>
+        <span class="sw"><i style="background:var(--neon)"></i>Neon</span>
+        <span class="sw"><i style="background:var(--brass)"></i>Brass</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============================================================= BUILD -->
+<section class="band wrap">
+  <p class="kicker">How it was made</p>
+  <h2 class="measure-tight">Everything is<br>rebuilt from source.</h2>
+  <p class="measure dim" style="margin-top:1.3em">No file is hand-edited. The room is generated by a
+    chain of scripts, and a set of locks fingerprints the result — if an object moves that should
+    not have, the build fails rather than quietly shipping.</p>
+
+  <ol class="steps" style="margin-top:clamp(36px,4.5vw,72px)">
+    <li data-n="01"><h3>Build the shell, then dress it</h3>
+      <p>Architecture, bar, set dressing, patina and lighting run in order, each owning its own
+        collection. 2,229 objects and 90 materials come out the far end.</p></li>
+    <li data-n="02"><h3>Prove the table before playing on it</h3>
+      <p>The table is validated against a geometry contract — 68 checks on pocket mouths, cushion
+        noses, rail heights — before a single ball is allowed to move.</p></li>
+    <li data-n="03"><h3>Solve the shot outside Blender</h3>
+      <p>A dedicated physics solver runs the break and exports a 240 Hz trajectory with exact
+        collision states. 15 contract tests confirm the constants behave.</p></li>
+    <li data-n="04"><h3>Bake it back and check every frame</h3>
+      <p>The trajectory is written onto the balls as keyframes, then compared against the source:
+        216 checks, position and orientation, every sampled frame.</p></li>
+    <li data-n="05"><h3>Light it once, render it twice</h3>
+      <p>Stills and film share the same room, the same haze and the same lights. The film is cut on
+        the solver's own collision timestamps rather than by feel.</p></li>
+  </ol>
+
+  <p class="note" style="margin-top:clamp(32px,4vw,60px);max-width:60ch">The room is deliberately
+    fictional. Every poster, sticker, flyer and label was generated for this build — no real logos,
+    no real businesses, nothing borrowed.</p>
+</section>
+
+<!-- ============================================================ FOOTER -->
+<footer>
+  <div class="band wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>NYC Dive-Bar Pool Room</h4>
+        <p class="measure dim" style="font-size:.95em">A demonstration piece: a complete environment
+          and a physically solved break, built to see how far the whole chain could be pushed —
+          modelling, materials, lighting, simulation, edit and sound.</p>
+      </div>
+      <div>
+        <h4>Built with</h4>
+        <ul>
+          <li>Blender · Cycles</li>
+          <li>Event-based solver</li>
+          <li>Procedural materials</li>
+          <li>Generated textures</li>
+          <li>Synthesised audio</li>
+        </ul>
+      </div>
+      <div>
+        <h4>The film</h4>
+        <ul>
+          <li>30.0 s · 24 fps</li>
+          <li>1920 × 1080</li>
+          <li>16 shots, locked off</li>
+          <li>No slow motion</li>
+          <li>Real time throughout</li>
+        </ul>
+      </div>
+    </div>
+    <p class="colophon" style="margin-top:clamp(40px,5vw,80px)">Rendered in Blender · Cycles path tracing · No stock assets</p>
+  </div>
+</footer>
+
 </body>
 </html>

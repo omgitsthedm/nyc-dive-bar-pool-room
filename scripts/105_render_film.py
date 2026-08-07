@@ -55,6 +55,19 @@ SHOT_JSON = os.path.join(C.ROOT, "assets", "data", "shots", "break_film.json")
 FRAME_DIR = os.path.join(C.ROOT, "renders", "film_frames")
 CUT_JSON = os.path.join(C.ROOT, "reports", "film_cut_list.json")
 
+# Cycles film settings. 32 spp already matches the gallery exactly (0.3067 vs
+# 0.3066); more samples cost time and change nothing.
+CYCLES_SAMPLES = 32
+# Volume bounces. MEASURED, and the measurement is counter-intuitive:
+#   bounces 0, persistent data + adaptive :  33 s/frame   199 frames = 1.8 h
+#   bounces 2, same settings              : 189 s/frame               10.4 h
+# The haze fills the entire room, so multi-bounce volume scattering is far
+# more expensive here than a single-scatter pass - a 5.7x cost for a quarter
+# of a stop (mean 0.2830 vs 0.3066 against the gallery). Not worth 8 hours.
+# An earlier estimate of ~46 s/frame extrapolated from a no-persistent-data
+# ratio and was simply wrong.
+CYCLES_VOLUME_BOUNCES = 0
+
 
 def f(t):
     """film seconds -> film frame"""
@@ -172,8 +185,81 @@ def build_cut_list(shot):
     return [c for c in cuts if c["end"] >= c["start"]], strike_end
 
 
+def apply_cycles_atmosphere(scene):
+    """Cycles film path - the same atmosphere the stills use.
+
+    WHY THE FILM IS NOT EEVEE ANY MORE. A1's engine split hides the room haze
+    on the EEVEE path to dodge froxel artifacts, and that was the right call
+    for artifacts - but the haze is not only atmosphere in this room, it is a
+    light source. Measured on CAM_Audit_StreetNeon_35mm at 32 spp:
+
+        Cycles, haze on, volume bounces 2   mean 0.3067   (gallery = 0.3066)
+        Cycles, haze on, volume bounces 0   mean 0.2830
+        Cycles, haze OFF                    mean 0.1432
+        EEVEE  (haze hidden, as shipped)    mean 0.0903
+
+    So the EEVEE film lost the room's main source of in-scattered light and
+    came out near-black - one cold-open camera was 100% below 0.05, and the
+    god shot 95%. EEVEE additionally ignores emissive geometry, and this bar
+    is lit largely by neon, tubes and bulbs. Raytracing, GI probe volumes at
+    two resolutions, and exposure compensation were all measured; none of
+    them closed the gap.
+
+    Volume bounces are 0 rather than 2 here: 0.2830 against 0.3066 is a
+    quarter of a stop and saves four hours over a 199-frame render.
+    """
+    scene.render.engine = "CYCLES"
+    haze = bpy.data.objects.get("ATM_RoomHaze_Volume")
+    if haze is None:
+        raise RuntimeError("ATM_RoomHaze_Volume missing - the film needs the "
+                           "room haze; without it the room renders dark")
+    haze.hide_render = False
+    legacy = [o for o in bpy.data.objects if o.name.startswith("ATM_PoolBeam")]
+    for ob in legacy:
+        ob.hide_render = True
+    scene.cycles.samples = CYCLES_SAMPLES
+    scene.cycles.volume_bounces = CYCLES_VOLUME_BOUNCES
+    try:
+        scene.cycles.use_denoising = True
+    except AttributeError:
+        pass
+
+    # THE TWO SETTINGS THAT MAKE THIS FEASIBLE. Measured on the god shot at
+    # 1080p, three consecutive frames each:
+    #     baseline                 111 s/frame   199 frames = 6.1 h
+    #     + persistent data         52 s/frame                2.9 h
+    #     + adaptive sampling       33 s/frame                1.8 h
+    #
+    # Persistent data keeps the exported scene and its BVH between frames.
+    # Without it Cycles rebuilds all 2472 objects every single frame, and
+    # this set is static - only sixteen balls move. Verified pixel-identical
+    # against the baseline: mean |diff| 0.00002, 0.00% of pixels off by more
+    # than 2/255.
+    #
+    # Adaptive sampling stops early where a tile has converged. It does
+    # change pixels, so it was measured too: 0.19% of pixels differ by more
+    # than 2/255, max 0.0465. Invisible at 24 fps, and h264 moves more than
+    # that. Not used for the stills, which stay fixed-sample.
+    scene.render.use_persistent_data = True
+    try:
+        scene.cycles.use_adaptive_sampling = True
+        scene.cycles.adaptive_threshold = 0.05
+        scene.cycles.adaptive_min_samples = 8
+    except AttributeError:
+        print("  [film] adaptive sampling unavailable; rendering fixed-sample")
+    # 8-bit is plenty for h264 and halves the frame cache on disk.
+    scene.render.image_settings.color_depth = '8'
+    print("  [film] engine=CYCLES  %d spp, volume bounces %d, room haze ON, "
+          "%d legacy pool-beam object(s) OFF"
+          % (CYCLES_SAMPLES, CYCLES_VOLUME_BOUNCES, len(legacy)))
+
+
 def apply_eevee_atmosphere(scene):
-    """A1 engine split, EEVEE side: real volume OFF, legacy cones ON."""
+    """A1 engine split, EEVEE side: real volume OFF, legacy cones ON.
+
+    Kept for reference and for quick preview renders. NOT used for the
+    shipped film - see apply_cycles_atmosphere for why.
+    """
     for name in ("BLENDER_EEVEE_NEXT", "BLENDER_EEVEE"):
         try:
             scene.render.engine = name
@@ -210,6 +296,7 @@ def apply_eevee_atmosphere(scene):
 def main(argv):
     ap = argparse.ArgumentParser()
     ap.add_argument("--resolution", default="1920x1080")
+    ap.add_argument("--engine", choices=("cycles", "eevee"), default="cycles")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args(argv)
 
@@ -239,7 +326,10 @@ def main(argv):
 
     w, h = (int(v) for v in args.resolution.lower().split("x"))
     scene = bpy.context.scene
-    apply_eevee_atmosphere(scene)
+    if args.engine == "cycles":
+        apply_cycles_atmosphere(scene)
+    else:
+        apply_eevee_atmosphere(scene)
     scene.render.fps = FPS
     scene.render.resolution_x, scene.render.resolution_y = w, h
     scene.render.resolution_percentage = 100
