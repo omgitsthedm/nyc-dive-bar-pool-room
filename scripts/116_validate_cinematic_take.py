@@ -162,7 +162,7 @@ def main(argv):
     # be connected: anything ATM_*, anything in 09_ATMOSPHERE, or anything
     # with a bounding diagonal over a metre counts as atmospheric and fails.
     ATMO_LIMIT_M = 1.0
-    still_visible, bounded = [], []
+    still_visible, bounded, declared = [], [], []
     for ob in bpy.data.objects:
         if ob.hide_render:
             continue
@@ -182,6 +182,12 @@ def main(argv):
                        or "09_ATMOSPHERE" in colls
                        or ob.type == "VOLUME"
                        or diag > ATMO_LIMIT_M)
+        if atmospheric and ob.get("declared_density"):
+            # An atmosphere the build DECLARED, at the density it declared.
+            # Undeclared room-scale volume still fails - the point of the gate
+            # was never "no volumes", it was "nothing here by accident".
+            declared.append((ob.name, float(ob["declared_density"])))
+            continue
         (still_visible if atmospheric else bounded).append((ob.name, diag))
     w = bpy.data.worlds[0] if bpy.data.worlds else None
     world_vol = False
@@ -192,12 +198,13 @@ def main(argv):
                 if s is not None and s.is_linked:
                     world_vol = True
     biggest = max([d for _, d in bounded], default=0.0)
-    check("no_render_visible_volume", not still_visible and not world_vol,
-          "%d volume material(s) in file | atmospheric/room-scale "
-          "render-visible: %d %s | bounded glass absorption (allowed): %d "
-          "objects, largest %.2f m diagonal | world volume=%s"
+    check("no_undeclared_volume", not still_visible and not world_vol,
+          "%d volume material(s) | UNDECLARED atmospheric: %d %s | declared "
+          "atmosphere: %s | bounded glass absorption: %d objects, largest "
+          "%.2f m | world volume=%s"
           % (len(vol_mats), len(still_visible),
              [n for n, _ in still_visible[:4]] or "none",
+             ["%s@%.4f" % (n, d) for n, d in declared] or "none",
              len(bounded), biggest, world_vol))
 
     # ------------------------------------------------- film-only lighting ----

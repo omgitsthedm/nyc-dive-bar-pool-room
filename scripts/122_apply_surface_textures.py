@@ -133,6 +133,60 @@ def rebuild_mirror(mat, tex_dir):
     mat["film_only_surfacing"] = True
 
 
+FRUIT_MATS = ("MAT_Bar_Fruit_Apple", "MAT_Bar_Fruit_Lemon",
+              "MAT_Bar_Garnish_Orange", "MAT_Bar_Fruit_Lime")
+
+
+def improve_fruit():
+    """Give the fruit skin, and let light through it.
+
+    422-vertex spheres in a flat diffuse read as painted clay - which is
+    exactly what they looked like sitting in the bowl on the bar. Citrus peel
+    is pitted and scatters light; apple skin is waxy with a broad, soft
+    highlight and a little translucency at the rim. Both are shader problems,
+    not geometry problems, so nothing here re-meshes anything.
+    """
+    touched = []
+    for name in FRUIT_MATS:
+        mat = bpy.data.materials.get(name)
+        if mat is None or not mat.use_nodes:
+            continue
+        nt = mat.node_tree
+        bsdf = None
+        for n in nt.nodes:
+            if n.type == "BSDF_PRINCIPLED":
+                bsdf = n
+        if bsdf is None:
+            continue
+        citrus = ("Lemon" in name or "Orange" in name or "Lime" in name)
+
+        # Pitted peel / waxy skin, as a bump only.
+        noise = nt.nodes.new("ShaderNodeTexNoise")
+        noise.inputs["Scale"].default_value = 220.0 if citrus else 90.0
+        noise.inputs["Detail"].default_value = 6.0
+        noise.inputs["Roughness"].default_value = 0.65
+        bump = nt.nodes.new("ShaderNodeBump")
+        bump.inputs["Strength"].default_value = 0.28 if citrus else 0.12
+        bump.inputs["Distance"].default_value = 0.0009
+        nt.links.new(noise.outputs["Fac"], bump.inputs["Height"])
+        if not bsdf.inputs["Normal"].is_linked:
+            nt.links.new(bump.outputs["Normal"], bsdf.inputs["Normal"])
+
+        if not bsdf.inputs["Roughness"].is_linked:
+            bsdf.inputs["Roughness"].default_value = 0.44 if citrus else 0.28
+        for key, val in (("Subsurface Weight", 0.22 if citrus else 0.10),
+                         ("Subsurface Scale", 0.010 if citrus else 0.006),
+                         ("Coat Weight", 0.0 if citrus else 0.30),
+                         ("Coat Roughness", 0.22)):
+            if key in bsdf.inputs and not bsdf.inputs[key].is_linked:
+                bsdf.inputs[key].default_value = val
+        mat["film_only_surfacing"] = True
+        touched.append(name)
+    log("fruit re-shaded (peel bump, subsurface, wax coat): %s"
+        % (touched or "none found"))
+    return touched
+
+
 def main(argv):
     ap = argparse.ArgumentParser()
     ap.add_argument("--textures", required=True)
@@ -147,6 +201,7 @@ def main(argv):
             continue
         rebuild(mat, args.textures, base, tile, rgain, bs)
         done.append("%s<-%s@%.2fm" % (name, base, tile))
+    improve_fruit()
     mir = bpy.data.materials.get("MAT_Bar_Mirror_Desilvered")
     if mir is not None:
         rebuild_mirror(mir, args.textures)

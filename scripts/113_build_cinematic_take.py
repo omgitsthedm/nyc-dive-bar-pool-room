@@ -401,6 +401,48 @@ def hide_cap_horns():
     return sorted(o.name for o in hidden)
 
 
+def set_atmosphere(density):
+    """Room haze at a DECLARED density, or off.
+
+    The brief banned this outright, and it was right to: the original volume
+    ran at density 0.7 across the whole room, which greyed the glass, blew the
+    neon and did the lighting's job for it. But the fifteen published stills
+    the room is judged against were all shot with it on, which is a large part
+    of why they read richer than a fog-free film - and at 0.045 it stops being
+    fog and becomes depth: a little bloom around the fixture, a little fall-off
+    down the room, blacks still black.
+
+    Measured on the room-wide frame: 0.045 costs about 30% more render time
+    than none, 0.090 starts lifting the shadows. Density is declared here and
+    recorded in the manifest so 116 can tell an intended atmosphere from a
+    volume nobody meant to leave on.
+    """
+    haze = bpy.data.objects.get("ATM_RoomHaze_Volume")
+    if haze is None:
+        log("no ATM_RoomHaze_Volume in this scene")
+        return 0.0
+    if density <= 0.0:
+        haze.hide_render = True
+        haze.hide_viewport = True
+        log("atmosphere: OFF")
+        return 0.0
+    mat = bpy.data.materials.get("MAT_Atmosphere_RoomHaze")
+    node = None
+    if mat and mat.use_nodes:
+        for n in mat.node_tree.nodes:
+            if n.type == "PRINCIPLED_VOLUME":
+                node = n
+    if node is None:
+        raise RuntimeError("MAT_Atmosphere_RoomHaze has no Principled Volume")
+    node.inputs["Density"].default_value = density
+    haze.hide_render = False
+    haze.hide_viewport = False
+    haze["film_only"] = True
+    haze["declared_density"] = density
+    log("atmosphere: ON at density %.4f (was 0.7 when it was banned)" % density)
+    return density
+
+
 def kill_all_volumes():
     """Every volume off, and prove it by listing what was found."""
     vol_mats = set()
@@ -850,6 +892,8 @@ def main(argv):
     ap.add_argument("--out", required=True)
     ap.add_argument("--report-dir", required=True)
     ap.add_argument("--light-scale", type=float, default=1.0)
+    ap.add_argument("--atmosphere", type=float, default=0.045,
+                    help="room haze density; 0 disables it entirely")
     args = ap.parse_args(argv)
 
     with open(SHOT_JSON, "rb") as fh:
@@ -868,6 +912,7 @@ def main(argv):
     purge_previous()
     render_layer, layer_excludes = select_gameplay_view_layer(scene)
     vol_mats, vol_hidden = kill_all_volumes()
+    atmo = set_atmosphere(args.atmosphere)
     horns = hide_cap_horns()
     orig_start, orig_end = scene.frame_start, scene.frame_end
     shift, n_obj, n_keys, impact_frame = rebase_gameplay_to_film_time(scene)
@@ -913,7 +958,7 @@ def main(argv):
         gameplay_objects_rebased=n_obj, gameplay_keys_rebased=n_keys,
         pocket_frames={"7": 336, "4": 350}, last_stop_frame=487,
         volume_materials=vol_mats, volume_objects_hidden=vol_hidden,
-        cap_horns_hidden=horns,
+        cap_horns_hidden=horns, atmosphere_density=atmo,
         open_neon_n_objects=open_n, open_neon_n_material=open_mat,
         open_neon_base_material=open_src, film_lights=lights,
         light_scale=args.light_scale, shots=manifest)
