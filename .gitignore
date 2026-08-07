@@ -29,3 +29,7 @@ renders/film_out/
 # Python bytecode from the Blender/venv script runs
 __pycache__/
 *.pyc
+
+# macOS duplicate-file artifacts (" 2" copies of tracked textures)
+* 2.png
+* 2.webp
