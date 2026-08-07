@@ -1,0 +1,319 @@
+{
+ "frames_dir": "/private/tmp/pool-room-cinematic-webm/frames",
+ "count": 720,
+ "distinct_images": 720,
+ "consecutive_duplicates": [],
+ "repeats": [],
+ "per_shot": [
+  {
+   "shot": 1,
+   "name": "StorefrontNewYork",
+   "frame": 0,
+   "mean": 0.1856,
+   "median": 0.15291,
+   "p05": 0.05178,
+   "p95": 0.4514,
+   "dark": 0.0468,
+   "bright": 0.0376,
+   "bit_depth": 8
+  },
+  {
+   "shot": 1,
+   "name": "StorefrontNewYork",
+   "frame": 65,
+   "mean": 0.17767,
+   "median": 0.14558,
+   "p05": 0.04445,
+   "p95": 0.45068,
+   "dark": 0.0675,
+   "bright": 0.0389,
+   "bit_depth": 8
+  },
+  {
+   "shot": 1,
+   "name": "StorefrontNewYork",
+   "frame": 131,
+   "mean": 0.16858,
+   "median": 0.1341,
+   "p05": 0.03689,
+   "p95": 0.46254,
+   "dark": 0.1016,
+   "bright": 0.0419,
+   "bit_depth": 8
+  },
+  {
+   "shot": 2,
+   "name": "BarGlide",
+   "frame": 132,
+   "mean": 0.30769,
+   "median": 0.27997,
+   "p05": 0.03695,
+   "p95": 0.68769,
+   "dark": 0.0711,
+   "bright": 0.2266,
+   "bit_depth": 8
+  },
+  {
+   "shot": 2,
+   "name": "BarGlide",
+   "frame": 191,
+   "mean": 0.32824,
+   "median": 0.28695,
+   "p05": 0.0299,
+   "p95": 0.70704,
+   "dark": 0.089,
+   "bright": 0.3046,
+   "bit_depth": 8
+  },
+  {
+   "shot": 2,
+   "name": "BarGlide",
+   "frame": 251,
+   "mean": 0.31366,
+   "median": 0.26244,
+   "p05": 0.02122,
+   "p95": 0.71346,
+   "dark": 0.1173,
+   "bright": 0.2845,
+   "bit_depth": 8
+  },
+  {
+   "shot": 3,
+   "name": "Glassware",
+   "frame": 252,
+   "mean": 0.31258,
+   "median": 0.27785,
+   "p05": 0.01988,
+   "p95": 0.72048,
+   "dark": 0.1292,
+   "bright": 0.2657,
+   "bit_depth": 8
+  },
+  {
+   "shot": 3,
+   "name": "Glassware",
+   "frame": 299,
+   "mean": 0.30148,
+   "median": 0.24165,
+   "p05": 0.00447,
+   "p95": 0.7433,
+   "dark": 0.2227,
+   "bright": 0.2922,
+   "bit_depth": 8
+  },
+  {
+   "shot": 3,
+   "name": "Glassware",
+   "frame": 347,
+   "mean": 0.28661,
+   "median": 0.2398,
+   "p05": 0.00364,
+   "p95": 0.67952,
+   "dark": 0.2293,
+   "bright": 0.2515,
+   "bit_depth": 8
+  },
+  {
+   "shot": 4,
+   "name": "ToTheTable",
+   "frame": 348,
+   "mean": 0.19518,
+   "median": 0.1253,
+   "p05": 0.01842,
+   "p95": 0.57091,
+   "dark": 0.1899,
+   "bright": 0.1154,
+   "bit_depth": 8
+  },
+  {
+   "shot": 4,
+   "name": "ToTheTable",
+   "frame": 401,
+   "mean": 0.26933,
+   "median": 0.22601,
+   "p05": 0.01759,
+   "p95": 0.567,
+   "dark": 0.176,
+   "bright": 0.2003,
+   "bit_depth": 8
+  },
+  {
+   "shot": 4,
+   "name": "ToTheTable",
+   "frame": 455,
+   "mean": 0.35431,
+   "median": 0.45637,
+   "p05": 0.0,
+   "p95": 0.54711,
+   "dark": 0.1689,
+   "bright": 0.3552,
+   "bit_depth": 8
+  },
+  {
+   "shot": 5,
+   "name": "BreakAndPockets",
+   "frame": 456,
+   "mean": 0.24316,
+   "median": 0.23732,
+   "p05": 0.00392,
+   "p95": 0.53061,
+   "dark": 0.2461,
+   "bright": 0.1081,
+   "bit_depth": 8
+  },
+  {
+   "shot": 5,
+   "name": "BreakAndPockets",
+   "frame": 503,
+   "mean": 0.23277,
+   "median": 0.16063,
+   "p05": 0.00531,
+   "p95": 0.53451,
+   "dark": 0.2478,
+   "bright": 0.1351,
+   "bit_depth": 8
+  },
+  {
+   "shot": 5,
+   "name": "BreakAndPockets",
+   "frame": 551,
+   "mean": 0.21462,
+   "median": 0.14132,
+   "p05": 0.00531,
+   "p95": 0.53171,
+   "dark": 0.2467,
+   "bright": 0.0953,
+   "bit_depth": 8
+  },
+  {
+   "shot": 6,
+   "name": "RailAndLastBall",
+   "frame": 552,
+   "mean": 0.38819,
+   "median": 0.51514,
+   "p05": 0.04788,
+   "p95": 0.60953,
+   "dark": 0.0549,
+   "bright": 0.5258,
+   "bit_depth": 8
+  },
+  {
+   "shot": 6,
+   "name": "RailAndLastBall",
+   "frame": 597,
+   "mean": 0.333,
+   "median": 0.38106,
+   "p05": 0.03549,
+   "p95": 0.58513,
+   "dark": 0.0764,
+   "bright": 0.2279,
+   "bit_depth": 8
+  },
+  {
+   "shot": 6,
+   "name": "RailAndLastBall",
+   "frame": 642,
+   "mean": 0.32365,
+   "median": 0.35038,
+   "p05": 0.01232,
+   "p95": 0.62956,
+   "dark": 0.1113,
+   "bright": 0.2461,
+   "bit_depth": 8
+  },
+  {
+   "shot": 7,
+   "name": "SettleAndPullback",
+   "frame": 643,
+   "mean": 0.26238,
+   "median": 0.27316,
+   "p05": 0.00614,
+   "p95": 0.54994,
+   "dark": 0.2027,
+   "bright": 0.1327,
+   "bit_depth": 8
+  },
+  {
+   "shot": 7,
+   "name": "SettleAndPullback",
+   "frame": 681,
+   "mean": 0.21811,
+   "median": 0.15875,
+   "p05": 0.01537,
+   "p95": 0.53955,
+   "dark": 0.1182,
+   "bright": 0.0997,
+   "bit_depth": 8
+  },
+  {
+   "shot": 7,
+   "name": "SettleAndPullback",
+   "frame": 719,
+   "mean": 0.18182,
+   "median": 0.13632,
+   "p05": 0.01148,
+   "p95": 0.5222,
+   "dark": 0.1818,
+   "bright": 0.0636,
+   "bit_depth": 8
+  }
+ ],
+ "key_frames": [
+  {
+   "label": "strike",
+   "frame": 456,
+   "mean": 0.24316,
+   "dark": 0.2461
+  },
+  {
+   "label": "7-ball pocket",
+   "frame": 492,
+   "mean": 0.23504,
+   "dark": 0.2268
+  },
+  {
+   "label": "4-ball pocket",
+   "frame": 506,
+   "mean": 0.23093,
+   "dark": 0.2587
+  },
+  {
+   "label": "last ball stops",
+   "frame": 643,
+   "mean": 0.26238,
+   "dark": 0.2027
+  }
+ ],
+ "checks": [
+  {
+   "name": "frame_count_is_720",
+   "passed": true,
+   "detail": "720 PNG files in /private/tmp/pool-room-cinematic-webm/frames"
+  },
+  {
+   "name": "numbering_0000_to_0719_no_gaps",
+   "passed": true,
+   "detail": "first=0000 last=0719 missing=0"
+  },
+  {
+   "name": "no_consecutive_duplicate_frames",
+   "passed": true,
+   "detail": "0 consecutive identical pairs"
+  },
+  {
+   "name": "no_repeated_frame_anywhere",
+   "passed": true,
+   "detail": "720 distinct images across 720 frames"
+  },
+  {
+   "name": "every_shot_first_mid_last_readable",
+   "passed": true,
+   "detail": "21 frames measured across 7 shots; failures=none"
+  },
+  {
+   "name": "key_event_frames_present_and_readable",
+   "passed": true,
+   "detail": "strike, both pockets and the final stop; failures=none"
+  }
+ ]
+}

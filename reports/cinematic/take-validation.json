@@ -1,0 +1,154 @@
+{
+ "shot_id": "b_51",
+ "trajectory_sha256": "16b5aafa8ce5b8a75a6bc59d66ceea55953f49792328d145cdb4c89487c816a7",
+ "motion": [
+  {
+   "shot": 1,
+   "name": "StorefrontNewYork",
+   "travel_m": 0.9901,
+   "span_m": 0.99,
+   "aim_deg": 7.454,
+   "min_step_m": 0.01368,
+   "frames": 132
+  },
+  {
+   "shot": 2,
+   "name": "BarGlide",
+   "travel_m": 0.7007,
+   "span_m": 0.7007,
+   "aim_deg": 5.909,
+   "min_step_m": 0.011773,
+   "frames": 120
+  },
+  {
+   "shot": 3,
+   "name": "Glassware",
+   "travel_m": 0.4213,
+   "span_m": 0.4211,
+   "aim_deg": 9.851,
+   "min_step_m": 0.011208,
+   "frames": 96
+  },
+  {
+   "shot": 4,
+   "name": "ToTheTable",
+   "travel_m": 2.4033,
+   "span_m": 2.4026,
+   "aim_deg": 44.534,
+   "min_step_m": 0.050151,
+   "frames": 108
+  },
+  {
+   "shot": 5,
+   "name": "BreakAndPockets",
+   "travel_m": 1.8532,
+   "span_m": 1.8527,
+   "aim_deg": 30.905,
+   "min_step_m": 0.123601,
+   "frames": 96
+  },
+  {
+   "shot": 6,
+   "name": "RailAndLastBall",
+   "travel_m": 0.9014,
+   "span_m": 0.9014,
+   "aim_deg": 64.154,
+   "min_step_m": 0.007794,
+   "frames": 91
+  },
+  {
+   "shot": 7,
+   "name": "SettleAndPullback",
+   "travel_m": 1.3551,
+   "span_m": 1.3547,
+   "aim_deg": 35.791,
+   "min_step_m": 0.00726,
+   "frames": 77
+  }
+ ],
+ "closest_approach_m": 0.4041,
+ "closest_object": "PT_RailCap_Long_E_S",
+ "collisions": [],
+ "checks": [
+  {
+   "name": "no_undeclared_volume",
+   "passed": true,
+   "detail": "10 volume material(s) | UNDECLARED atmospheric: 0 none | declared atmosphere: ['ATM_RoomHaze_Volume@0.0450'] | bounded glass absorption: 341 objects, largest 0.32 m | world volume=False"
+  },
+  {
+   "name": "film_lights_all_motivated",
+   "passed": true,
+   "detail": "19 film-only lights, 0 without a motivation"
+  },
+  {
+   "name": "no_camera_parented_light",
+   "passed": true,
+   "detail": "camera-parented film lights: none"
+  },
+  {
+   "name": "film_lights_not_camera_visible",
+   "passed": true,
+   "detail": "film lights visible to camera rays: none"
+  },
+  {
+   "name": "every_shot_moves_in_3d",
+   "passed": true,
+   "detail": "7/7 shots with real camera travel; static shots: none"
+  },
+  {
+   "name": "no_frozen_sub_span",
+   "passed": true,
+   "detail": "smallest per-sample camera step across all shots: 0.007260 m"
+  },
+  {
+   "name": "no_camera_intersection",
+   "passed": true,
+   "detail": "closest approach 0.404 m to PT_RailCap_Long_E_S at frame 552 (limit 0.085); breaches=0"
+  },
+  {
+   "name": "pocket_7_ball_visible_f492",
+   "passed": true,
+   "detail": "ball 7 clear on 10/10 frames into the drop; pocket mouth in-frame=True at (0.24,0.51) blocker=none"
+  },
+  {
+   "name": "pocket_4_ball_visible_f506",
+   "passed": true,
+   "detail": "ball 4 clear on 10/10 frames into the drop; pocket mouth in-frame=True at (0.24,0.45) blocker=none"
+  },
+  {
+   "name": "fixture_never_masks_table",
+   "passed": true,
+   "detail": "break shot sampled every 4 frames; masked=none"
+  },
+  {
+   "name": "balls_match_frozen_trajectory",
+   "passed": true,
+   "detail": "135 ball/frame samples across 9 frames; worst error 0.000000 m (none)"
+  },
+  {
+   "name": "final_frame_is_the_settled_table",
+   "passed": true,
+   "detail": "worst ball error at film frame 719 vs solver final state: 0.000000 m"
+  },
+  {
+   "name": "strike_lands_on_frame_456",
+   "passed": true,
+   "detail": "film frame 456 is trajectory t=0; worst ball error 0.000000 m"
+  },
+  {
+   "name": "flicker_schedule_sane",
+   "passed": true,
+   "detail": " pool_neon min 0.344 max 0.989 | open_neon min 0.661 max 0.989"
+  },
+  {
+   "name": "flicker_spares_pocket_events",
+   "passed": true,
+   "detail": "no dip below 0.90 within +/-4 frames of 492 or 506; breaches=0"
+  },
+  {
+   "name": "flicker_emission_light_synchronised",
+   "passed": true,
+   "detail": "applied both channels at 7 sample frames for 2 sources; mismatches=0"
+  }
+ ]
+}

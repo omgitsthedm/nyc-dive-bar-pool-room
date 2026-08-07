@@ -1,0 +1,7216 @@
+{
+ "width": 1280,
+ "height": 720,
+ "samples": 8,
+ "devices": "hybrid",
+ "motion_blur": true,
+ "adaptive_threshold": 0.1,
+ "adaptive_min_samples": 4,
+ "preview": false,
+ "median_s": 5.531,
+ "p90_s": 6.57,
+ "max_s": 9.07,
+ "mean_s": 5.682,
+ "frames": [
+  {
+   "frame": 0,
+   "seconds": 6.309,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 0,
+   "flicker": {
+    "pool_neon": 0.9291,
+    "open_neon": 0.9469
+   }
+  },
+  {
+   "frame": 1,
+   "seconds": 4.527,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 1,
+   "flicker": {
+    "pool_neon": 0.927,
+    "open_neon": 0.9782
+   }
+  },
+  {
+   "frame": 2,
+   "seconds": 5.627,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 2,
+   "flicker": {
+    "pool_neon": 0.9372,
+    "open_neon": 0.976
+   }
+  },
+  {
+   "frame": 3,
+   "seconds": 5.381,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 3,
+   "flicker": {
+    "pool_neon": 0.9658,
+    "open_neon": 0.986
+   }
+  },
+  {
+   "frame": 4,
+   "seconds": 6.007,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 4,
+   "flicker": {
+    "pool_neon": 0.9762,
+    "open_neon": 0.9599
+   }
+  },
+  {
+   "frame": 5,
+   "seconds": 5.635,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 5,
+   "flicker": {
+    "pool_neon": 0.9836,
+    "open_neon": 0.9244
+   }
+  },
+  {
+   "frame": 6,
+   "seconds": 4.676,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 6,
+   "flicker": {
+    "pool_neon": 0.9658,
+    "open_neon": 0.9394
+   }
+  },
+  {
+   "frame": 7,
+   "seconds": 4.766,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 7,
+   "flicker": {
+    "pool_neon": 0.9807,
+    "open_neon": 0.9846
+   }
+  },
+  {
+   "frame": 8,
+   "seconds": 5.025,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 8,
+   "flicker": {
+    "pool_neon": 0.975,
+    "open_neon": 0.9223
+   }
+  },
+  {
+   "frame": 9,
+   "seconds": 5.104,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 9,
+   "flicker": {
+    "pool_neon": 0.9646,
+    "open_neon": 0.933
+   }
+  },
+  {
+   "frame": 10,
+   "seconds": 5.109,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 10,
+   "flicker": {
+    "pool_neon": 0.9271,
+    "open_neon": 0.9292
+   }
+  },
+  {
+   "frame": 11,
+   "seconds": 4.591,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 11,
+   "flicker": {
+    "pool_neon": 0.9647,
+    "open_neon": 0.9409
+   }
+  },
+  {
+   "frame": 12,
+   "seconds": 4.551,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 12,
+   "flicker": {
+    "pool_neon": 0.9766,
+    "open_neon": 0.9873
+   }
+  },
+  {
+   "frame": 13,
+   "seconds": 4.643,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 13,
+   "flicker": {
+    "pool_neon": 0.9814,
+    "open_neon": 0.9825
+   }
+  },
+  {
+   "frame": 14,
+   "seconds": 4.932,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 14,
+   "flicker": {
+    "pool_neon": 0.9735,
+    "open_neon": 0.9556
+   }
+  },
+  {
+   "frame": 15,
+   "seconds": 4.57,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 15,
+   "flicker": {
+    "pool_neon": 0.9378,
+    "open_neon": 0.9663
+   }
+  },
+  {
+   "frame": 16,
+   "seconds": 4.645,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 16,
+   "flicker": {
+    "pool_neon": 0.978,
+    "open_neon": 0.9782
+   }
+  },
+  {
+   "frame": 17,
+   "seconds": 4.664,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 17,
+   "flicker": {
+    "pool_neon": 0.9786,
+    "open_neon": 0.9722
+   }
+  },
+  {
+   "frame": 18,
+   "seconds": 5.328,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 18,
+   "flicker": {
+    "pool_neon": 0.9834,
+    "open_neon": 0.9885
+   }
+  },
+  {
+   "frame": 19,
+   "seconds": 6.732,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 19,
+   "flicker": {
+    "pool_neon": 0.9817,
+    "open_neon": 0.9884
+   }
+  },
+  {
+   "frame": 20,
+   "seconds": 5.174,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 20,
+   "flicker": {
+    "pool_neon": 0.9625,
+    "open_neon": 0.9749
+   }
+  },
+  {
+   "frame": 21,
+   "seconds": 4.791,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 21,
+   "flicker": {
+    "pool_neon": 0.9798,
+    "open_neon": 0.9272
+   }
+  },
+  {
+   "frame": 22,
+   "seconds": 5.494,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 22,
+   "flicker": {
+    "pool_neon": 0.9749,
+    "open_neon": 0.9377
+   }
+  },
+  {
+   "frame": 23,
+   "seconds": 6.232,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 23,
+   "flicker": {
+    "pool_neon": 0.9794,
+    "open_neon": 0.9311
+   }
+  },
+  {
+   "frame": 24,
+   "seconds": 6.142,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 24,
+   "flicker": {
+    "pool_neon": 0.98,
+    "open_neon": 0.9473
+   }
+  },
+  {
+   "frame": 25,
+   "seconds": 6.015,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 25,
+   "flicker": {
+    "pool_neon": 0.9729,
+    "open_neon": 0.9434
+   }
+  },
+  {
+   "frame": 26,
+   "seconds": 5.963,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 26,
+   "flicker": {
+    "pool_neon": 0.9671,
+    "open_neon": 0.9786
+   }
+  },
+  {
+   "frame": 27,
+   "seconds": 6.122,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 27,
+   "flicker": {
+    "pool_neon": 0.9686,
+    "open_neon": 0.9513
+   }
+  },
+  {
+   "frame": 28,
+   "seconds": 6.676,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 28,
+   "flicker": {
+    "pool_neon": 0.9723,
+    "open_neon": 0.9616
+   }
+  },
+  {
+   "frame": 29,
+   "seconds": 6.565,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 29,
+   "flicker": {
+    "pool_neon": 0.9585,
+    "open_neon": 0.9741
+   }
+  },
+  {
+   "frame": 30,
+   "seconds": 8.208,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 30,
+   "flicker": {
+    "pool_neon": 0.9496,
+    "open_neon": 0.9765
+   }
+  },
+  {
+   "frame": 31,
+   "seconds": 7.555,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 31,
+   "flicker": {
+    "pool_neon": 0.9225,
+    "open_neon": 0.988
+   }
+  },
+  {
+   "frame": 32,
+   "seconds": 6.885,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 32,
+   "flicker": {
+    "pool_neon": 0.9409,
+    "open_neon": 0.977
+   }
+  },
+  {
+   "frame": 33,
+   "seconds": 6.612,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 33,
+   "flicker": {
+    "pool_neon": 0.98,
+    "open_neon": 0.9635
+   }
+  },
+  {
+   "frame": 34,
+   "seconds": 7.052,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 34,
+   "flicker": {
+    "pool_neon": 0.9266,
+    "open_neon": 0.9532
+   }
+  },
+  {
+   "frame": 35,
+   "seconds": 8.684,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 35,
+   "flicker": {
+    "pool_neon": 0.9656,
+    "open_neon": 0.9425
+   }
+  },
+  {
+   "frame": 36,
+   "seconds": 8.061,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 36,
+   "flicker": {
+    "pool_neon": 0.9743,
+    "open_neon": 0.9827
+   }
+  },
+  {
+   "frame": 37,
+   "seconds": 6.32,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 37,
+   "flicker": {
+    "pool_neon": 0.9758,
+    "open_neon": 0.9801
+   }
+  },
+  {
+   "frame": 38,
+   "seconds": 6.048,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 38,
+   "flicker": {
+    "pool_neon": 0.9814,
+    "open_neon": 0.9207
+   }
+  },
+  {
+   "frame": 39,
+   "seconds": 6.44,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 39,
+   "flicker": {
+    "pool_neon": 0.9264,
+    "open_neon": 0.7443
+   }
+  },
+  {
+   "frame": 40,
+   "seconds": 6.452,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 40,
+   "flicker": {
+    "pool_neon": 0.9398,
+    "open_neon": 0.9326
+   }
+  },
+  {
+   "frame": 41,
+   "seconds": 6.945,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 41,
+   "flicker": {
+    "pool_neon": 0.9813,
+    "open_neon": 0.9689
+   }
+  },
+  {
+   "frame": 42,
+   "seconds": 7.223,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 42,
+   "flicker": {
+    "pool_neon": 0.9852,
+    "open_neon": 0.979
+   }
+  },
+  {
+   "frame": 43,
+   "seconds": 6.576,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 43,
+   "flicker": {
+    "pool_neon": 0.9751,
+    "open_neon": 0.9792
+   }
+  },
+  {
+   "frame": 44,
+   "seconds": 8.663,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 44,
+   "flicker": {
+    "pool_neon": 0.9476,
+    "open_neon": 0.9792
+   }
+  },
+  {
+   "frame": 45,
+   "seconds": 7.356,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 45,
+   "flicker": {
+    "pool_neon": 0.9798,
+    "open_neon": 0.9732
+   }
+  },
+  {
+   "frame": 46,
+   "seconds": 6.98,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 46,
+   "flicker": {
+    "pool_neon": 0.9301,
+    "open_neon": 0.9489
+   }
+  },
+  {
+   "frame": 47,
+   "seconds": 6.768,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 47,
+   "flicker": {
+    "pool_neon": 0.9815,
+    "open_neon": 0.9461
+   }
+  },
+  {
+   "frame": 48,
+   "seconds": 6.962,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 48,
+   "flicker": {
+    "pool_neon": 0.9547,
+    "open_neon": 0.9334
+   }
+  },
+  {
+   "frame": 49,
+   "seconds": 6.302,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 49,
+   "flicker": {
+    "pool_neon": 0.9549,
+    "open_neon": 0.926
+   }
+  },
+  {
+   "frame": 50,
+   "seconds": 6.317,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 50,
+   "flicker": {
+    "pool_neon": 0.9878,
+    "open_neon": 0.9816
+   }
+  },
+  {
+   "frame": 51,
+   "seconds": 5.981,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 51,
+   "flicker": {
+    "pool_neon": 0.9755,
+    "open_neon": 0.9628
+   }
+  },
+  {
+   "frame": 52,
+   "seconds": 6.519,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 52,
+   "flicker": {
+    "pool_neon": 0.9757,
+    "open_neon": 0.9892
+   }
+  },
+  {
+   "frame": 53,
+   "seconds": 6.486,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 53,
+   "flicker": {
+    "pool_neon": 0.9643,
+    "open_neon": 0.9233
+   }
+  },
+  {
+   "frame": 54,
+   "seconds": 6.415,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 54,
+   "flicker": {
+    "pool_neon": 0.9229,
+    "open_neon": 0.9773
+   }
+  },
+  {
+   "frame": 55,
+   "seconds": 6.897,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 55,
+   "flicker": {
+    "pool_neon": 0.9275,
+    "open_neon": 0.9334
+   }
+  },
+  {
+   "frame": 56,
+   "seconds": 7.376,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 56,
+   "flicker": {
+    "pool_neon": 0.9314,
+    "open_neon": 0.9699
+   }
+  },
+  {
+   "frame": 57,
+   "seconds": 6.189,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 57,
+   "flicker": {
+    "pool_neon": 0.9317,
+    "open_neon": 0.9876
+   }
+  },
+  {
+   "frame": 58,
+   "seconds": 6.172,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 58,
+   "flicker": {
+    "pool_neon": 0.9582,
+    "open_neon": 0.9843
+   }
+  },
+  {
+   "frame": 59,
+   "seconds": 6.281,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 59,
+   "flicker": {
+    "pool_neon": 0.9379,
+    "open_neon": 0.9776
+   }
+  },
+  {
+   "frame": 60,
+   "seconds": 6.415,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 60,
+   "flicker": {
+    "pool_neon": 0.9817,
+    "open_neon": 0.9558
+   }
+  },
+  {
+   "frame": 61,
+   "seconds": 6.024,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 61,
+   "flicker": {
+    "pool_neon": 0.9751,
+    "open_neon": 0.9859
+   }
+  },
+  {
+   "frame": 62,
+   "seconds": 6.398,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 62,
+   "flicker": {
+    "pool_neon": 0.9858,
+    "open_neon": 0.9772
+   }
+  },
+  {
+   "frame": 63,
+   "seconds": 6.029,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 63,
+   "flicker": {
+    "pool_neon": 0.9608,
+    "open_neon": 0.9452
+   }
+  },
+  {
+   "frame": 64,
+   "seconds": 6.105,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 64,
+   "flicker": {
+    "pool_neon": 0.9621,
+    "open_neon": 0.9845
+   }
+  },
+  {
+   "frame": 65,
+   "seconds": 6.241,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 65,
+   "flicker": {
+    "pool_neon": 0.9372,
+    "open_neon": 0.9396
+   }
+  },
+  {
+   "frame": 66,
+   "seconds": 6.706,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 66,
+   "flicker": {
+    "pool_neon": 0.9881,
+    "open_neon": 0.9603
+   }
+  },
+  {
+   "frame": 67,
+   "seconds": 6.741,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 67,
+   "flicker": {
+    "pool_neon": 0.9219,
+    "open_neon": 0.9779
+   }
+  },
+  {
+   "frame": 68,
+   "seconds": 6.065,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 68,
+   "flicker": {
+    "pool_neon": 0.9295,
+    "open_neon": 0.9343
+   }
+  },
+  {
+   "frame": 69,
+   "seconds": 6.995,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 69,
+   "flicker": {
+    "pool_neon": 0.9573,
+    "open_neon": 0.9651
+   }
+  },
+  {
+   "frame": 70,
+   "seconds": 6.357,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 70,
+   "flicker": {
+    "pool_neon": 0.9668,
+    "open_neon": 0.9771
+   }
+  },
+  {
+   "frame": 71,
+   "seconds": 6.339,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 71,
+   "flicker": {
+    "pool_neon": 0.9204,
+    "open_neon": 0.9388
+   }
+  },
+  {
+   "frame": 72,
+   "seconds": 6.394,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 72,
+   "flicker": {
+    "pool_neon": 0.9351,
+    "open_neon": 0.9439
+   }
+  },
+  {
+   "frame": 73,
+   "seconds": 6.1,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 73,
+   "flicker": {
+    "pool_neon": 0.9735,
+    "open_neon": 0.9202
+   }
+  },
+  {
+   "frame": 74,
+   "seconds": 6.862,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 74,
+   "flicker": {
+    "pool_neon": 0.9794,
+    "open_neon": 0.9687
+   }
+  },
+  {
+   "frame": 75,
+   "seconds": 6.453,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 75,
+   "flicker": {
+    "pool_neon": 0.983,
+    "open_neon": 0.9389
+   }
+  },
+  {
+   "frame": 76,
+   "seconds": 6.241,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 76,
+   "flicker": {
+    "pool_neon": 0.9365,
+    "open_neon": 0.9785
+   }
+  },
+  {
+   "frame": 77,
+   "seconds": 6.447,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 77,
+   "flicker": {
+    "pool_neon": 0.9389,
+    "open_neon": 0.963
+   }
+  },
+  {
+   "frame": 78,
+   "seconds": 6.053,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 78,
+   "flicker": {
+    "pool_neon": 0.9863,
+    "open_neon": 0.9787
+   }
+  },
+  {
+   "frame": 79,
+   "seconds": 6.468,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 79,
+   "flicker": {
+    "pool_neon": 0.9853,
+    "open_neon": 0.9413
+   }
+  },
+  {
+   "frame": 80,
+   "seconds": 6.234,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 80,
+   "flicker": {
+    "pool_neon": 0.967,
+    "open_neon": 0.9526
+   }
+  },
+  {
+   "frame": 81,
+   "seconds": 5.957,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 81,
+   "flicker": {
+    "pool_neon": 0.9828,
+    "open_neon": 0.9793
+   }
+  },
+  {
+   "frame": 82,
+   "seconds": 6.242,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 82,
+   "flicker": {
+    "pool_neon": 0.9664,
+    "open_neon": 0.9332
+   }
+  },
+  {
+   "frame": 83,
+   "seconds": 5.909,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 83,
+   "flicker": {
+    "pool_neon": 0.936,
+    "open_neon": 0.9851
+   }
+  },
+  {
+   "frame": 84,
+   "seconds": 6.254,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 84,
+   "flicker": {
+    "pool_neon": 0.9827,
+    "open_neon": 0.9571
+   }
+  },
+  {
+   "frame": 85,
+   "seconds": 6.62,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 85,
+   "flicker": {
+    "pool_neon": 0.968,
+    "open_neon": 0.9602
+   }
+  },
+  {
+   "frame": 86,
+   "seconds": 6.193,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 86,
+   "flicker": {
+    "pool_neon": 0.9793,
+    "open_neon": 0.9416
+   }
+  },
+  {
+   "frame": 87,
+   "seconds": 6.428,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 87,
+   "flicker": {
+    "pool_neon": 0.9426,
+    "open_neon": 0.9251
+   }
+  },
+  {
+   "frame": 88,
+   "seconds": 5.983,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 88,
+   "flicker": {
+    "pool_neon": 0.9794,
+    "open_neon": 0.9596
+   }
+  },
+  {
+   "frame": 89,
+   "seconds": 7.293,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 89,
+   "flicker": {
+    "pool_neon": 0.9205,
+    "open_neon": 0.9224
+   }
+  },
+  {
+   "frame": 90,
+   "seconds": 6.55,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 90,
+   "flicker": {
+    "pool_neon": 0.9849,
+    "open_neon": 0.9276
+   }
+  },
+  {
+   "frame": 91,
+   "seconds": 5.939,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 91,
+   "flicker": {
+    "pool_neon": 0.9501,
+    "open_neon": 0.982
+   }
+  },
+  {
+   "frame": 92,
+   "seconds": 5.891,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 92,
+   "flicker": {
+    "pool_neon": 0.9258,
+    "open_neon": 0.9734
+   }
+  },
+  {
+   "frame": 93,
+   "seconds": 5.695,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 93,
+   "flicker": {
+    "pool_neon": 0.9769,
+    "open_neon": 0.9863
+   }
+  },
+  {
+   "frame": 94,
+   "seconds": 5.676,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 94,
+   "flicker": {
+    "pool_neon": 0.9758,
+    "open_neon": 0.9432
+   }
+  },
+  {
+   "frame": 95,
+   "seconds": 5.92,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 95,
+   "flicker": {
+    "pool_neon": 0.9751,
+    "open_neon": 0.967
+   }
+  },
+  {
+   "frame": 96,
+   "seconds": 6.866,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 96,
+   "flicker": {
+    "pool_neon": 0.9758,
+    "open_neon": 0.9424
+   }
+  },
+  {
+   "frame": 97,
+   "seconds": 6.533,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 97,
+   "flicker": {
+    "pool_neon": 0.9831,
+    "open_neon": 0.9566
+   }
+  },
+  {
+   "frame": 98,
+   "seconds": 6.162,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 98,
+   "flicker": {
+    "pool_neon": 0.9773,
+    "open_neon": 0.943
+   }
+  },
+  {
+   "frame": 99,
+   "seconds": 6.177,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 99,
+   "flicker": {
+    "pool_neon": 0.9889,
+    "open_neon": 0.977
+   }
+  },
+  {
+   "frame": 100,
+   "seconds": 6.004,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 100,
+   "flicker": {
+    "pool_neon": 0.94,
+    "open_neon": 0.9251
+   }
+  },
+  {
+   "frame": 101,
+   "seconds": 5.652,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 101,
+   "flicker": {
+    "pool_neon": 0.9235,
+    "open_neon": 0.9397
+   }
+  },
+  {
+   "frame": 102,
+   "seconds": 6.054,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 102,
+   "flicker": {
+    "pool_neon": 0.9528,
+    "open_neon": 0.939
+   }
+  },
+  {
+   "frame": 103,
+   "seconds": 7.015,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 103,
+   "flicker": {
+    "pool_neon": 0.974,
+    "open_neon": 0.6742
+   }
+  },
+  {
+   "frame": 104,
+   "seconds": 6.375,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 104,
+   "flicker": {
+    "pool_neon": 0.9522,
+    "open_neon": 0.9343
+   }
+  },
+  {
+   "frame": 105,
+   "seconds": 6.28,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 105,
+   "flicker": {
+    "pool_neon": 0.9486,
+    "open_neon": 0.9798
+   }
+  },
+  {
+   "frame": 106,
+   "seconds": 5.743,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 106,
+   "flicker": {
+    "pool_neon": 0.9839,
+    "open_neon": 0.9841
+   }
+  },
+  {
+   "frame": 107,
+   "seconds": 6.424,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 107,
+   "flicker": {
+    "pool_neon": 0.9777,
+    "open_neon": 0.9447
+   }
+  },
+  {
+   "frame": 108,
+   "seconds": 6.64,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 108,
+   "flicker": {
+    "pool_neon": 0.9788,
+    "open_neon": 0.9535
+   }
+  },
+  {
+   "frame": 109,
+   "seconds": 6.149,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 109,
+   "flicker": {
+    "pool_neon": 0.9311,
+    "open_neon": 0.9339
+   }
+  },
+  {
+   "frame": 110,
+   "seconds": 7.578,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 110,
+   "flicker": {
+    "pool_neon": 0.9623,
+    "open_neon": 0.9614
+   }
+  },
+  {
+   "frame": 111,
+   "seconds": 7.711,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 111,
+   "flicker": {
+    "pool_neon": 0.947,
+    "open_neon": 0.9328
+   }
+  },
+  {
+   "frame": 112,
+   "seconds": 6.609,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 112,
+   "flicker": {
+    "pool_neon": 0.9699,
+    "open_neon": 0.9334
+   }
+  },
+  {
+   "frame": 113,
+   "seconds": 6.57,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 113,
+   "flicker": {
+    "pool_neon": 0.9362,
+    "open_neon": 0.9457
+   }
+  },
+  {
+   "frame": 114,
+   "seconds": 6.823,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 114,
+   "flicker": {
+    "pool_neon": 0.9563,
+    "open_neon": 0.9373
+   }
+  },
+  {
+   "frame": 115,
+   "seconds": 6.481,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 115,
+   "flicker": {
+    "pool_neon": 0.965,
+    "open_neon": 0.9348
+   }
+  },
+  {
+   "frame": 116,
+   "seconds": 6.601,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 116,
+   "flicker": {
+    "pool_neon": 0.9721,
+    "open_neon": 0.9356
+   }
+  },
+  {
+   "frame": 117,
+   "seconds": 6.287,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 117,
+   "flicker": {
+    "pool_neon": 0.9273,
+    "open_neon": 0.9724
+   }
+  },
+  {
+   "frame": 118,
+   "seconds": 6.522,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 118,
+   "flicker": {
+    "pool_neon": 0.9843,
+    "open_neon": 0.9867
+   }
+  },
+  {
+   "frame": 119,
+   "seconds": 6.454,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 119,
+   "flicker": {
+    "pool_neon": 0.9209,
+    "open_neon": 0.9221
+   }
+  },
+  {
+   "frame": 120,
+   "seconds": 6.036,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 120,
+   "flicker": {
+    "pool_neon": 0.9272,
+    "open_neon": 0.9682
+   }
+  },
+  {
+   "frame": 121,
+   "seconds": 6.379,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 121,
+   "flicker": {
+    "pool_neon": 0.9892,
+    "open_neon": 0.9647
+   }
+  },
+  {
+   "frame": 122,
+   "seconds": 6.38,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 122,
+   "flicker": {
+    "pool_neon": 0.9867,
+    "open_neon": 0.9731
+   }
+  },
+  {
+   "frame": 123,
+   "seconds": 6.169,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 123,
+   "flicker": {
+    "pool_neon": 0.7385,
+    "open_neon": 0.9432
+   }
+  },
+  {
+   "frame": 124,
+   "seconds": 6.03,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 124,
+   "flicker": {
+    "pool_neon": 0.9501,
+    "open_neon": 0.9738
+   }
+  },
+  {
+   "frame": 125,
+   "seconds": 6.282,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 125,
+   "flicker": {
+    "pool_neon": 0.9856,
+    "open_neon": 0.98
+   }
+  },
+  {
+   "frame": 126,
+   "seconds": 6.643,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 126,
+   "flicker": {
+    "pool_neon": 0.9759,
+    "open_neon": 0.9775
+   }
+  },
+  {
+   "frame": 127,
+   "seconds": 6.524,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 127,
+   "flicker": {
+    "pool_neon": 0.9774,
+    "open_neon": 0.9217
+   }
+  },
+  {
+   "frame": 128,
+   "seconds": 6.537,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 128,
+   "flicker": {
+    "pool_neon": 0.9748,
+    "open_neon": 0.9348
+   }
+  },
+  {
+   "frame": 129,
+   "seconds": 6.157,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 129,
+   "flicker": {
+    "pool_neon": 0.9864,
+    "open_neon": 0.9642
+   }
+  },
+  {
+   "frame": 130,
+   "seconds": 6.091,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 130,
+   "flicker": {
+    "pool_neon": 0.9656,
+    "open_neon": 0.9642
+   }
+  },
+  {
+   "frame": 131,
+   "seconds": 6.09,
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "scene_frame": 131,
+   "flicker": {
+    "pool_neon": 0.9789,
+    "open_neon": 0.9409
+   }
+  },
+  {
+   "frame": 132,
+   "seconds": 5.671,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 132,
+   "flicker": {
+    "pool_neon": 0.9837,
+    "open_neon": 0.9443
+   }
+  },
+  {
+   "frame": 133,
+   "seconds": 5.918,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 133,
+   "flicker": {
+    "pool_neon": 0.9829,
+    "open_neon": 0.9796
+   }
+  },
+  {
+   "frame": 134,
+   "seconds": 6.052,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 134,
+   "flicker": {
+    "pool_neon": 0.9296,
+    "open_neon": 0.9525
+   }
+  },
+  {
+   "frame": 135,
+   "seconds": 6.244,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 135,
+   "flicker": {
+    "pool_neon": 0.988,
+    "open_neon": 0.9291
+   }
+  },
+  {
+   "frame": 136,
+   "seconds": 6.162,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 136,
+   "flicker": {
+    "pool_neon": 0.9253,
+    "open_neon": 0.9542
+   }
+  },
+  {
+   "frame": 137,
+   "seconds": 5.805,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 137,
+   "flicker": {
+    "pool_neon": 0.9891,
+    "open_neon": 0.9891
+   }
+  },
+  {
+   "frame": 138,
+   "seconds": 6.795,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 138,
+   "flicker": {
+    "pool_neon": 0.9814,
+    "open_neon": 0.9758
+   }
+  },
+  {
+   "frame": 139,
+   "seconds": 5.988,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 139,
+   "flicker": {
+    "pool_neon": 0.9373,
+    "open_neon": 0.9734
+   }
+  },
+  {
+   "frame": 140,
+   "seconds": 7.069,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 140,
+   "flicker": {
+    "pool_neon": 0.9271,
+    "open_neon": 0.9268
+   }
+  },
+  {
+   "frame": 141,
+   "seconds": 6.074,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 141,
+   "flicker": {
+    "pool_neon": 0.9528,
+    "open_neon": 0.978
+   }
+  },
+  {
+   "frame": 142,
+   "seconds": 6.035,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 142,
+   "flicker": {
+    "pool_neon": 0.9262,
+    "open_neon": 0.9462
+   }
+  },
+  {
+   "frame": 143,
+   "seconds": 6.707,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 143,
+   "flicker": {
+    "pool_neon": 0.955,
+    "open_neon": 0.9765
+   }
+  },
+  {
+   "frame": 144,
+   "seconds": 5.781,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 144,
+   "flicker": {
+    "pool_neon": 0.9258,
+    "open_neon": 0.9239
+   }
+  },
+  {
+   "frame": 145,
+   "seconds": 6.135,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 145,
+   "flicker": {
+    "pool_neon": 0.9777,
+    "open_neon": 0.9883
+   }
+  },
+  {
+   "frame": 146,
+   "seconds": 6.483,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 146,
+   "flicker": {
+    "pool_neon": 0.931,
+    "open_neon": 0.9806
+   }
+  },
+  {
+   "frame": 147,
+   "seconds": 5.672,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 147,
+   "flicker": {
+    "pool_neon": 0.9802,
+    "open_neon": 0.9893
+   }
+  },
+  {
+   "frame": 148,
+   "seconds": 5.838,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 148,
+   "flicker": {
+    "pool_neon": 0.6851,
+    "open_neon": 0.9231
+   }
+  },
+  {
+   "frame": 149,
+   "seconds": 5.592,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 149,
+   "flicker": {
+    "pool_neon": 0.9744,
+    "open_neon": 0.983
+   }
+  },
+  {
+   "frame": 150,
+   "seconds": 6.111,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 150,
+   "flicker": {
+    "pool_neon": 0.9326,
+    "open_neon": 0.9341
+   }
+  },
+  {
+   "frame": 151,
+   "seconds": 5.851,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 151,
+   "flicker": {
+    "pool_neon": 0.9261,
+    "open_neon": 0.9229
+   }
+  },
+  {
+   "frame": 152,
+   "seconds": 5.583,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 152,
+   "flicker": {
+    "pool_neon": 0.9859,
+    "open_neon": 0.9262
+   }
+  },
+  {
+   "frame": 153,
+   "seconds": 5.793,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 153,
+   "flicker": {
+    "pool_neon": 0.9829,
+    "open_neon": 0.9851
+   }
+  },
+  {
+   "frame": 154,
+   "seconds": 5.649,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 154,
+   "flicker": {
+    "pool_neon": 0.986,
+    "open_neon": 0.9642
+   }
+  },
+  {
+   "frame": 155,
+   "seconds": 5.94,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 155,
+   "flicker": {
+    "pool_neon": 0.945,
+    "open_neon": 0.9826
+   }
+  },
+  {
+   "frame": 156,
+   "seconds": 5.795,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 156,
+   "flicker": {
+    "pool_neon": 0.9298,
+    "open_neon": 0.9312
+   }
+  },
+  {
+   "frame": 157,
+   "seconds": 5.666,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 157,
+   "flicker": {
+    "pool_neon": 0.9395,
+    "open_neon": 0.975
+   }
+  },
+  {
+   "frame": 158,
+   "seconds": 5.261,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 158,
+   "flicker": {
+    "pool_neon": 0.984,
+    "open_neon": 0.9624
+   }
+  },
+  {
+   "frame": 159,
+   "seconds": 5.417,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 159,
+   "flicker": {
+    "pool_neon": 0.9243,
+    "open_neon": 0.9274
+   }
+  },
+  {
+   "frame": 160,
+   "seconds": 5.053,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 160,
+   "flicker": {
+    "pool_neon": 0.9377,
+    "open_neon": 0.9335
+   }
+  },
+  {
+   "frame": 161,
+   "seconds": 5.209,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 161,
+   "flicker": {
+    "pool_neon": 0.9428,
+    "open_neon": 0.9826
+   }
+  },
+  {
+   "frame": 162,
+   "seconds": 5.111,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 162,
+   "flicker": {
+    "pool_neon": 0.9369,
+    "open_neon": 0.9859
+   }
+  },
+  {
+   "frame": 163,
+   "seconds": 5.431,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 163,
+   "flicker": {
+    "pool_neon": 0.9833,
+    "open_neon": 0.9786
+   }
+  },
+  {
+   "frame": 164,
+   "seconds": 5.048,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 164,
+   "flicker": {
+    "pool_neon": 0.7833,
+    "open_neon": 0.9436
+   }
+  },
+  {
+   "frame": 165,
+   "seconds": 5.201,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 165,
+   "flicker": {
+    "pool_neon": 0.9863,
+    "open_neon": 0.9377
+   }
+  },
+  {
+   "frame": 166,
+   "seconds": 5.117,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 166,
+   "flicker": {
+    "pool_neon": 0.9859,
+    "open_neon": 0.9377
+   }
+  },
+  {
+   "frame": 167,
+   "seconds": 5.5,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 167,
+   "flicker": {
+    "pool_neon": 0.9844,
+    "open_neon": 0.9363
+   }
+  },
+  {
+   "frame": 168,
+   "seconds": 5.669,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 168,
+   "flicker": {
+    "pool_neon": 0.9309,
+    "open_neon": 0.9625
+   }
+  },
+  {
+   "frame": 169,
+   "seconds": 5.306,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 169,
+   "flicker": {
+    "pool_neon": 0.926,
+    "open_neon": 0.9877
+   }
+  },
+  {
+   "frame": 170,
+   "seconds": 5.616,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 170,
+   "flicker": {
+    "pool_neon": 0.985,
+    "open_neon": 0.9395
+   }
+  },
+  {
+   "frame": 171,
+   "seconds": 5.517,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 171,
+   "flicker": {
+    "pool_neon": 0.9348,
+    "open_neon": 0.9543
+   }
+  },
+  {
+   "frame": 172,
+   "seconds": 5.589,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 172,
+   "flicker": {
+    "pool_neon": 0.9869,
+    "open_neon": 0.9467
+   }
+  },
+  {
+   "frame": 173,
+   "seconds": 5.179,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 173,
+   "flicker": {
+    "pool_neon": 0.9759,
+    "open_neon": 0.9882
+   }
+  },
+  {
+   "frame": 174,
+   "seconds": 5.232,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 174,
+   "flicker": {
+    "pool_neon": 0.9826,
+    "open_neon": 0.9203
+   }
+  },
+  {
+   "frame": 175,
+   "seconds": 5.026,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 175,
+   "flicker": {
+    "pool_neon": 0.9628,
+    "open_neon": 0.9856
+   }
+  },
+  {
+   "frame": 176,
+   "seconds": 5.057,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 176,
+   "flicker": {
+    "pool_neon": 0.9527,
+    "open_neon": 0.9812
+   }
+  },
+  {
+   "frame": 177,
+   "seconds": 5.481,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 177,
+   "flicker": {
+    "pool_neon": 0.9422,
+    "open_neon": 0.9779
+   }
+  },
+  {
+   "frame": 178,
+   "seconds": 5.24,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 178,
+   "flicker": {
+    "pool_neon": 0.9323,
+    "open_neon": 0.9318
+   }
+  },
+  {
+   "frame": 179,
+   "seconds": 5.396,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 179,
+   "flicker": {
+    "pool_neon": 0.6991,
+    "open_neon": 0.9259
+   }
+  },
+  {
+   "frame": 180,
+   "seconds": 5.293,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 180,
+   "flicker": {
+    "pool_neon": 0.9259,
+    "open_neon": 0.9249
+   }
+  },
+  {
+   "frame": 181,
+   "seconds": 5.055,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 181,
+   "flicker": {
+    "pool_neon": 0.9787,
+    "open_neon": 0.983
+   }
+  },
+  {
+   "frame": 182,
+   "seconds": 5.125,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 182,
+   "flicker": {
+    "pool_neon": 0.9837,
+    "open_neon": 0.9507
+   }
+  },
+  {
+   "frame": 183,
+   "seconds": 5.061,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 183,
+   "flicker": {
+    "pool_neon": 0.9351,
+    "open_neon": 0.985
+   }
+  },
+  {
+   "frame": 184,
+   "seconds": 5.489,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 184,
+   "flicker": {
+    "pool_neon": 0.9729,
+    "open_neon": 0.9223
+   }
+  },
+  {
+   "frame": 185,
+   "seconds": 5.031,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 185,
+   "flicker": {
+    "pool_neon": 0.9676,
+    "open_neon": 0.986
+   }
+  },
+  {
+   "frame": 186,
+   "seconds": 5.35,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 186,
+   "flicker": {
+    "pool_neon": 0.9794,
+    "open_neon": 0.9219
+   }
+  },
+  {
+   "frame": 187,
+   "seconds": 5.985,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 187,
+   "flicker": {
+    "pool_neon": 0.9384,
+    "open_neon": 0.9231
+   }
+  },
+  {
+   "frame": 188,
+   "seconds": 5.595,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 188,
+   "flicker": {
+    "pool_neon": 0.985,
+    "open_neon": 0.9613
+   }
+  },
+  {
+   "frame": 189,
+   "seconds": 5.423,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 189,
+   "flicker": {
+    "pool_neon": 0.9721,
+    "open_neon": 0.9407
+   }
+  },
+  {
+   "frame": 190,
+   "seconds": 5.336,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 190,
+   "flicker": {
+    "pool_neon": 0.9216,
+    "open_neon": 0.9858
+   }
+  },
+  {
+   "frame": 191,
+   "seconds": 6.011,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 191,
+   "flicker": {
+    "pool_neon": 0.987,
+    "open_neon": 0.9738
+   }
+  },
+  {
+   "frame": 192,
+   "seconds": 5.473,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 192,
+   "flicker": {
+    "pool_neon": 0.9736,
+    "open_neon": 0.9639
+   }
+  },
+  {
+   "frame": 193,
+   "seconds": 5.228,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 193,
+   "flicker": {
+    "pool_neon": 0.9304,
+    "open_neon": 0.9446
+   }
+  },
+  {
+   "frame": 194,
+   "seconds": 5.093,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 194,
+   "flicker": {
+    "pool_neon": 0.9728,
+    "open_neon": 0.9604
+   }
+  },
+  {
+   "frame": 195,
+   "seconds": 5.162,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 195,
+   "flicker": {
+    "pool_neon": 0.9763,
+    "open_neon": 0.9749
+   }
+  },
+  {
+   "frame": 196,
+   "seconds": 5.137,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 196,
+   "flicker": {
+    "pool_neon": 0.9408,
+    "open_neon": 0.9504
+   }
+  },
+  {
+   "frame": 197,
+   "seconds": 5.158,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 197,
+   "flicker": {
+    "pool_neon": 0.9806,
+    "open_neon": 0.9772
+   }
+  },
+  {
+   "frame": 198,
+   "seconds": 5.111,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 198,
+   "flicker": {
+    "pool_neon": 0.9375,
+    "open_neon": 0.9233
+   }
+  },
+  {
+   "frame": 199,
+   "seconds": 5.121,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 199,
+   "flicker": {
+    "pool_neon": 0.9584,
+    "open_neon": 0.6614
+   }
+  },
+  {
+   "frame": 200,
+   "seconds": 5.531,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 200,
+   "flicker": {
+    "pool_neon": 0.9735,
+    "open_neon": 0.921
+   }
+  },
+  {
+   "frame": 201,
+   "seconds": 5.495,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 201,
+   "flicker": {
+    "pool_neon": 0.9355,
+    "open_neon": 0.986
+   }
+  },
+  {
+   "frame": 202,
+   "seconds": 5.061,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 202,
+   "flicker": {
+    "pool_neon": 0.9406,
+    "open_neon": 0.9865
+   }
+  },
+  {
+   "frame": 203,
+   "seconds": 5.027,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 203,
+   "flicker": {
+    "pool_neon": 0.9385,
+    "open_neon": 0.9681
+   }
+  },
+  {
+   "frame": 204,
+   "seconds": 5.472,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 204,
+   "flicker": {
+    "pool_neon": 0.9481,
+    "open_neon": 0.9879
+   }
+  },
+  {
+   "frame": 205,
+   "seconds": 5.301,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 205,
+   "flicker": {
+    "pool_neon": 0.79,
+    "open_neon": 0.9861
+   }
+  },
+  {
+   "frame": 206,
+   "seconds": 5.035,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 206,
+   "flicker": {
+    "pool_neon": 0.9531,
+    "open_neon": 0.9747
+   }
+  },
+  {
+   "frame": 207,
+   "seconds": 5.199,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 207,
+   "flicker": {
+    "pool_neon": 0.9852,
+    "open_neon": 0.9489
+   }
+  },
+  {
+   "frame": 208,
+   "seconds": 5.055,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 208,
+   "flicker": {
+    "pool_neon": 0.9327,
+    "open_neon": 0.9858
+   }
+  },
+  {
+   "frame": 209,
+   "seconds": 4.952,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 209,
+   "flicker": {
+    "pool_neon": 0.9333,
+    "open_neon": 0.9342
+   }
+  },
+  {
+   "frame": 210,
+   "seconds": 5.935,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 210,
+   "flicker": {
+    "pool_neon": 0.9867,
+    "open_neon": 0.7323
+   }
+  },
+  {
+   "frame": 211,
+   "seconds": 5.638,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 211,
+   "flicker": {
+    "pool_neon": 0.9822,
+    "open_neon": 0.9841
+   }
+  },
+  {
+   "frame": 212,
+   "seconds": 5.27,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 212,
+   "flicker": {
+    "pool_neon": 0.9769,
+    "open_neon": 0.9809
+   }
+  },
+  {
+   "frame": 213,
+   "seconds": 5.446,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 213,
+   "flicker": {
+    "pool_neon": 0.9871,
+    "open_neon": 0.9726
+   }
+  },
+  {
+   "frame": 214,
+   "seconds": 4.925,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 214,
+   "flicker": {
+    "pool_neon": 0.982,
+    "open_neon": 0.9742
+   }
+  },
+  {
+   "frame": 215,
+   "seconds": 5.321,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 215,
+   "flicker": {
+    "pool_neon": 0.9863,
+    "open_neon": 0.9576
+   }
+  },
+  {
+   "frame": 216,
+   "seconds": 5.208,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 216,
+   "flicker": {
+    "pool_neon": 0.9259,
+    "open_neon": 0.973
+   }
+  },
+  {
+   "frame": 217,
+   "seconds": 5.231,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 217,
+   "flicker": {
+    "pool_neon": 0.9513,
+    "open_neon": 0.9584
+   }
+  },
+  {
+   "frame": 218,
+   "seconds": 5.042,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 218,
+   "flicker": {
+    "pool_neon": 0.9721,
+    "open_neon": 0.933
+   }
+  },
+  {
+   "frame": 219,
+   "seconds": 5.242,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 219,
+   "flicker": {
+    "pool_neon": 0.9349,
+    "open_neon": 0.9563
+   }
+  },
+  {
+   "frame": 220,
+   "seconds": 5.173,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 220,
+   "flicker": {
+    "pool_neon": 0.9552,
+    "open_neon": 0.9386
+   }
+  },
+  {
+   "frame": 221,
+   "seconds": 5.121,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 221,
+   "flicker": {
+    "pool_neon": 0.9471,
+    "open_neon": 0.9655
+   }
+  },
+  {
+   "frame": 222,
+   "seconds": 5.908,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 222,
+   "flicker": {
+    "pool_neon": 0.9228,
+    "open_neon": 0.9779
+   }
+  },
+  {
+   "frame": 223,
+   "seconds": 5.41,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 223,
+   "flicker": {
+    "pool_neon": 0.9316,
+    "open_neon": 0.9584
+   }
+  },
+  {
+   "frame": 224,
+   "seconds": 5.179,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 224,
+   "flicker": {
+    "pool_neon": 0.9604,
+    "open_neon": 0.9346
+   }
+  },
+  {
+   "frame": 225,
+   "seconds": 5.197,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 225,
+   "flicker": {
+    "pool_neon": 0.9577,
+    "open_neon": 0.985
+   }
+  },
+  {
+   "frame": 226,
+   "seconds": 5.233,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 226,
+   "flicker": {
+    "pool_neon": 0.9893,
+    "open_neon": 0.9873
+   }
+  },
+  {
+   "frame": 227,
+   "seconds": 5.26,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 227,
+   "flicker": {
+    "pool_neon": 0.9798,
+    "open_neon": 0.9765
+   }
+  },
+  {
+   "frame": 228,
+   "seconds": 5.753,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 228,
+   "flicker": {
+    "pool_neon": 0.9757,
+    "open_neon": 0.9262
+   }
+  },
+  {
+   "frame": 229,
+   "seconds": 8.517,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 229,
+   "flicker": {
+    "pool_neon": 0.9813,
+    "open_neon": 0.9692
+   }
+  },
+  {
+   "frame": 230,
+   "seconds": 7.827,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 230,
+   "flicker": {
+    "pool_neon": 0.9254,
+    "open_neon": 0.9539
+   }
+  },
+  {
+   "frame": 231,
+   "seconds": 6.39,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 231,
+   "flicker": {
+    "pool_neon": 0.6841,
+    "open_neon": 0.9753
+   }
+  },
+  {
+   "frame": 232,
+   "seconds": 5.655,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 232,
+   "flicker": {
+    "pool_neon": 0.9225,
+    "open_neon": 0.9407
+   }
+  },
+  {
+   "frame": 233,
+   "seconds": 5.341,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 233,
+   "flicker": {
+    "pool_neon": 0.9659,
+    "open_neon": 0.9845
+   }
+  },
+  {
+   "frame": 234,
+   "seconds": 5.137,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 234,
+   "flicker": {
+    "pool_neon": 0.936,
+    "open_neon": 0.955
+   }
+  },
+  {
+   "frame": 235,
+   "seconds": 5.651,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 235,
+   "flicker": {
+    "pool_neon": 0.9312,
+    "open_neon": 0.9618
+   }
+  },
+  {
+   "frame": 236,
+   "seconds": 8.412,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 236,
+   "flicker": {
+    "pool_neon": 0.9339,
+    "open_neon": 0.9411
+   }
+  },
+  {
+   "frame": 237,
+   "seconds": 6.429,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 237,
+   "flicker": {
+    "pool_neon": 0.9846,
+    "open_neon": 0.9284
+   }
+  },
+  {
+   "frame": 238,
+   "seconds": 6.666,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 238,
+   "flicker": {
+    "pool_neon": 0.9823,
+    "open_neon": 0.9657
+   }
+  },
+  {
+   "frame": 239,
+   "seconds": 5.231,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 239,
+   "flicker": {
+    "pool_neon": 0.9783,
+    "open_neon": 0.9466
+   }
+  },
+  {
+   "frame": 240,
+   "seconds": 5.348,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 240,
+   "flicker": {
+    "pool_neon": 0.9549,
+    "open_neon": 0.9548
+   }
+  },
+  {
+   "frame": 241,
+   "seconds": 5.245,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 241,
+   "flicker": {
+    "pool_neon": 0.9739,
+    "open_neon": 0.9882
+   }
+  },
+  {
+   "frame": 242,
+   "seconds": 5.278,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 242,
+   "flicker": {
+    "pool_neon": 0.981,
+    "open_neon": 0.9785
+   }
+  },
+  {
+   "frame": 243,
+   "seconds": 5.191,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 243,
+   "flicker": {
+    "pool_neon": 0.9746,
+    "open_neon": 0.9801
+   }
+  },
+  {
+   "frame": 244,
+   "seconds": 5.305,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 244,
+   "flicker": {
+    "pool_neon": 0.961,
+    "open_neon": 0.9507
+   }
+  },
+  {
+   "frame": 245,
+   "seconds": 5.271,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 245,
+   "flicker": {
+    "pool_neon": 0.9323,
+    "open_neon": 0.9585
+   }
+  },
+  {
+   "frame": 246,
+   "seconds": 5.402,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 246,
+   "flicker": {
+    "pool_neon": 0.9889,
+    "open_neon": 0.9349
+   }
+  },
+  {
+   "frame": 247,
+   "seconds": 5.702,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 247,
+   "flicker": {
+    "pool_neon": 0.9802,
+    "open_neon": 0.9817
+   }
+  },
+  {
+   "frame": 248,
+   "seconds": 5.387,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 248,
+   "flicker": {
+    "pool_neon": 0.9892,
+    "open_neon": 0.934
+   }
+  },
+  {
+   "frame": 249,
+   "seconds": 5.19,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 249,
+   "flicker": {
+    "pool_neon": 0.9437,
+    "open_neon": 0.9745
+   }
+  },
+  {
+   "frame": 250,
+   "seconds": 5.158,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 250,
+   "flicker": {
+    "pool_neon": 0.966,
+    "open_neon": 0.6914
+   }
+  },
+  {
+   "frame": 251,
+   "seconds": 5.226,
+   "cam": "CAM_Cine_S02_BarGlide",
+   "scene_frame": 251,
+   "flicker": {
+    "pool_neon": 0.948,
+    "open_neon": 0.9802
+   }
+  },
+  {
+   "frame": 252,
+   "seconds": 8.462,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 252,
+   "flicker": {
+    "pool_neon": 0.9439,
+    "open_neon": 0.9522
+   }
+  },
+  {
+   "frame": 253,
+   "seconds": 6.353,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 253,
+   "flicker": {
+    "pool_neon": 0.7706,
+    "open_neon": 0.9748
+   }
+  },
+  {
+   "frame": 254,
+   "seconds": 5.663,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 254,
+   "flicker": {
+    "pool_neon": 0.9552,
+    "open_neon": 0.9761
+   }
+  },
+  {
+   "frame": 255,
+   "seconds": 5.297,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 255,
+   "flicker": {
+    "pool_neon": 0.9759,
+    "open_neon": 0.9773
+   }
+  },
+  {
+   "frame": 256,
+   "seconds": 5.578,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 256,
+   "flicker": {
+    "pool_neon": 0.9873,
+    "open_neon": 0.9542
+   }
+  },
+  {
+   "frame": 257,
+   "seconds": 5.557,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 257,
+   "flicker": {
+    "pool_neon": 0.9869,
+    "open_neon": 0.968
+   }
+  },
+  {
+   "frame": 258,
+   "seconds": 5.285,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 258,
+   "flicker": {
+    "pool_neon": 0.9404,
+    "open_neon": 0.9317
+   }
+  },
+  {
+   "frame": 259,
+   "seconds": 5.357,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 259,
+   "flicker": {
+    "pool_neon": 0.9231,
+    "open_neon": 0.9239
+   }
+  },
+  {
+   "frame": 260,
+   "seconds": 5.728,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 260,
+   "flicker": {
+    "pool_neon": 0.962,
+    "open_neon": 0.9823
+   }
+  },
+  {
+   "frame": 261,
+   "seconds": 5.162,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 261,
+   "flicker": {
+    "pool_neon": 0.9864,
+    "open_neon": 0.9545
+   }
+  },
+  {
+   "frame": 262,
+   "seconds": 5.266,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 262,
+   "flicker": {
+    "pool_neon": 0.9776,
+    "open_neon": 0.9376
+   }
+  },
+  {
+   "frame": 263,
+   "seconds": 5.27,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 263,
+   "flicker": {
+    "pool_neon": 0.9744,
+    "open_neon": 0.9766
+   }
+  },
+  {
+   "frame": 264,
+   "seconds": 5.169,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 264,
+   "flicker": {
+    "pool_neon": 0.9666,
+    "open_neon": 0.9689
+   }
+  },
+  {
+   "frame": 265,
+   "seconds": 5.019,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 265,
+   "flicker": {
+    "pool_neon": 0.98,
+    "open_neon": 0.9276
+   }
+  },
+  {
+   "frame": 266,
+   "seconds": 5.106,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 266,
+   "flicker": {
+    "pool_neon": 0.9795,
+    "open_neon": 0.9877
+   }
+  },
+  {
+   "frame": 267,
+   "seconds": 5.356,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 267,
+   "flicker": {
+    "pool_neon": 0.9795,
+    "open_neon": 0.9723
+   }
+  },
+  {
+   "frame": 268,
+   "seconds": 5.421,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 268,
+   "flicker": {
+    "pool_neon": 0.9729,
+    "open_neon": 0.9785
+   }
+  },
+  {
+   "frame": 269,
+   "seconds": 5.155,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 269,
+   "flicker": {
+    "pool_neon": 0.9586,
+    "open_neon": 0.973
+   }
+  },
+  {
+   "frame": 270,
+   "seconds": 5.18,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 270,
+   "flicker": {
+    "pool_neon": 0.9724,
+    "open_neon": 0.974
+   }
+  },
+  {
+   "frame": 271,
+   "seconds": 5.38,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 271,
+   "flicker": {
+    "pool_neon": 0.9751,
+    "open_neon": 0.9641
+   }
+  },
+  {
+   "frame": 272,
+   "seconds": 5.266,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 272,
+   "flicker": {
+    "pool_neon": 0.9822,
+    "open_neon": 0.9858
+   }
+  },
+  {
+   "frame": 273,
+   "seconds": 5.488,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 273,
+   "flicker": {
+    "pool_neon": 0.9866,
+    "open_neon": 0.9684
+   }
+  },
+  {
+   "frame": 274,
+   "seconds": 5.386,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 274,
+   "flicker": {
+    "pool_neon": 0.9887,
+    "open_neon": 0.9656
+   }
+  },
+  {
+   "frame": 275,
+   "seconds": 4.96,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 275,
+   "flicker": {
+    "pool_neon": 0.9863,
+    "open_neon": 0.93
+   }
+  },
+  {
+   "frame": 276,
+   "seconds": 5.224,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 276,
+   "flicker": {
+    "pool_neon": 0.9695,
+    "open_neon": 0.9538
+   }
+  },
+  {
+   "frame": 277,
+   "seconds": 5.193,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 277,
+   "flicker": {
+    "pool_neon": 0.9744,
+    "open_neon": 0.9833
+   }
+  },
+  {
+   "frame": 278,
+   "seconds": 5.164,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 278,
+   "flicker": {
+    "pool_neon": 0.9767,
+    "open_neon": 0.9387
+   }
+  },
+  {
+   "frame": 279,
+   "seconds": 5.307,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 279,
+   "flicker": {
+    "pool_neon": 0.989,
+    "open_neon": 0.9632
+   }
+  },
+  {
+   "frame": 280,
+   "seconds": 5.635,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 280,
+   "flicker": {
+    "pool_neon": 0.7277,
+    "open_neon": 0.9834
+   }
+  },
+  {
+   "frame": 281,
+   "seconds": 5.276,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 281,
+   "flicker": {
+    "pool_neon": 0.9205,
+    "open_neon": 0.983
+   }
+  },
+  {
+   "frame": 282,
+   "seconds": 5.881,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 282,
+   "flicker": {
+    "pool_neon": 0.9797,
+    "open_neon": 0.9438
+   }
+  },
+  {
+   "frame": 283,
+   "seconds": 6.593,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 283,
+   "flicker": {
+    "pool_neon": 0.9667,
+    "open_neon": 0.9272
+   }
+  },
+  {
+   "frame": 284,
+   "seconds": 5.845,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 284,
+   "flicker": {
+    "pool_neon": 0.9579,
+    "open_neon": 0.9599
+   }
+  },
+  {
+   "frame": 285,
+   "seconds": 6.821,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 285,
+   "flicker": {
+    "pool_neon": 0.9409,
+    "open_neon": 0.9255
+   }
+  },
+  {
+   "frame": 286,
+   "seconds": 7.32,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 286,
+   "flicker": {
+    "pool_neon": 0.9419,
+    "open_neon": 0.9233
+   }
+  },
+  {
+   "frame": 287,
+   "seconds": 5.638,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 287,
+   "flicker": {
+    "pool_neon": 0.9479,
+    "open_neon": 0.9691
+   }
+  },
+  {
+   "frame": 288,
+   "seconds": 5.479,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 288,
+   "flicker": {
+    "pool_neon": 0.9294,
+    "open_neon": 0.955
+   }
+  },
+  {
+   "frame": 289,
+   "seconds": 5.357,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 289,
+   "flicker": {
+    "pool_neon": 0.9829,
+    "open_neon": 0.9562
+   }
+  },
+  {
+   "frame": 290,
+   "seconds": 5.905,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 290,
+   "flicker": {
+    "pool_neon": 0.9761,
+    "open_neon": 0.9423
+   }
+  },
+  {
+   "frame": 291,
+   "seconds": 6.046,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 291,
+   "flicker": {
+    "pool_neon": 0.9542,
+    "open_neon": 0.9637
+   }
+  },
+  {
+   "frame": 292,
+   "seconds": 5.788,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 292,
+   "flicker": {
+    "pool_neon": 0.987,
+    "open_neon": 0.9284
+   }
+  },
+  {
+   "frame": 293,
+   "seconds": 5.829,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 293,
+   "flicker": {
+    "pool_neon": 0.9435,
+    "open_neon": 0.9606
+   }
+  },
+  {
+   "frame": 294,
+   "seconds": 5.983,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 294,
+   "flicker": {
+    "pool_neon": 0.987,
+    "open_neon": 0.9724
+   }
+  },
+  {
+   "frame": 295,
+   "seconds": 5.779,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 295,
+   "flicker": {
+    "pool_neon": 0.9357,
+    "open_neon": 0.9267
+   }
+  },
+  {
+   "frame": 296,
+   "seconds": 5.63,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 296,
+   "flicker": {
+    "pool_neon": 0.984,
+    "open_neon": 0.9519
+   }
+  },
+  {
+   "frame": 297,
+   "seconds": 5.555,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 297,
+   "flicker": {
+    "pool_neon": 0.9731,
+    "open_neon": 0.9489
+   }
+  },
+  {
+   "frame": 298,
+   "seconds": 5.465,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 298,
+   "flicker": {
+    "pool_neon": 0.9223,
+    "open_neon": 0.9647
+   }
+  },
+  {
+   "frame": 299,
+   "seconds": 5.564,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 299,
+   "flicker": {
+    "pool_neon": 0.9849,
+    "open_neon": 0.9785
+   }
+  },
+  {
+   "frame": 300,
+   "seconds": 5.111,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 300,
+   "flicker": {
+    "pool_neon": 0.4134,
+    "open_neon": 0.9545
+   }
+  },
+  {
+   "frame": 301,
+   "seconds": 5.124,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 301,
+   "flicker": {
+    "pool_neon": 0.395,
+    "open_neon": 0.9299
+   }
+  },
+  {
+   "frame": 302,
+   "seconds": 6.048,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 302,
+   "flicker": {
+    "pool_neon": 0.4071,
+    "open_neon": 0.9366
+   }
+  },
+  {
+   "frame": 303,
+   "seconds": 5.37,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 303,
+   "flicker": {
+    "pool_neon": 0.9802,
+    "open_neon": 0.9783
+   }
+  },
+  {
+   "frame": 304,
+   "seconds": 5.667,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 304,
+   "flicker": {
+    "pool_neon": 0.9753,
+    "open_neon": 0.9633
+   }
+  },
+  {
+   "frame": 305,
+   "seconds": 5.383,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 305,
+   "flicker": {
+    "pool_neon": 0.9867,
+    "open_neon": 0.9481
+   }
+  },
+  {
+   "frame": 306,
+   "seconds": 5.205,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 306,
+   "flicker": {
+    "pool_neon": 0.9633,
+    "open_neon": 0.938
+   }
+  },
+  {
+   "frame": 307,
+   "seconds": 5.132,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 307,
+   "flicker": {
+    "pool_neon": 0.9833,
+    "open_neon": 0.9721
+   }
+  },
+  {
+   "frame": 308,
+   "seconds": 5.223,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 308,
+   "flicker": {
+    "pool_neon": 0.9265,
+    "open_neon": 0.9828
+   }
+  },
+  {
+   "frame": 309,
+   "seconds": 5.133,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 309,
+   "flicker": {
+    "pool_neon": 0.9775,
+    "open_neon": 0.9439
+   }
+  },
+  {
+   "frame": 310,
+   "seconds": 5.187,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 310,
+   "flicker": {
+    "pool_neon": 0.9779,
+    "open_neon": 0.9855
+   }
+  },
+  {
+   "frame": 311,
+   "seconds": 4.86,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 311,
+   "flicker": {
+    "pool_neon": 0.9383,
+    "open_neon": 0.9887
+   }
+  },
+  {
+   "frame": 312,
+   "seconds": 5.11,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 312,
+   "flicker": {
+    "pool_neon": 0.9302,
+    "open_neon": 0.9735
+   }
+  },
+  {
+   "frame": 313,
+   "seconds": 4.701,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 313,
+   "flicker": {
+    "pool_neon": 0.9781,
+    "open_neon": 0.9742
+   }
+  },
+  {
+   "frame": 314,
+   "seconds": 4.785,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 314,
+   "flicker": {
+    "pool_neon": 0.9801,
+    "open_neon": 0.9607
+   }
+  },
+  {
+   "frame": 315,
+   "seconds": 5.378,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 315,
+   "flicker": {
+    "pool_neon": 0.9404,
+    "open_neon": 0.9213
+   }
+  },
+  {
+   "frame": 316,
+   "seconds": 5.954,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 316,
+   "flicker": {
+    "pool_neon": 0.9733,
+    "open_neon": 0.9346
+   }
+  },
+  {
+   "frame": 317,
+   "seconds": 6.26,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 317,
+   "flicker": {
+    "pool_neon": 0.9763,
+    "open_neon": 0.9549
+   }
+  },
+  {
+   "frame": 318,
+   "seconds": 5.471,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 318,
+   "flicker": {
+    "pool_neon": 0.9854,
+    "open_neon": 0.9754
+   }
+  },
+  {
+   "frame": 319,
+   "seconds": 5.539,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 319,
+   "flicker": {
+    "pool_neon": 0.9859,
+    "open_neon": 0.9585
+   }
+  },
+  {
+   "frame": 320,
+   "seconds": 5.184,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 320,
+   "flicker": {
+    "pool_neon": 0.9776,
+    "open_neon": 0.9636
+   }
+  },
+  {
+   "frame": 321,
+   "seconds": 4.791,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 321,
+   "flicker": {
+    "pool_neon": 0.9348,
+    "open_neon": 0.9365
+   }
+  },
+  {
+   "frame": 322,
+   "seconds": 4.728,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 322,
+   "flicker": {
+    "pool_neon": 0.9864,
+    "open_neon": 0.9735
+   }
+  },
+  {
+   "frame": 323,
+   "seconds": 4.702,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 323,
+   "flicker": {
+    "pool_neon": 0.9731,
+    "open_neon": 0.9533
+   }
+  },
+  {
+   "frame": 324,
+   "seconds": 4.895,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 324,
+   "flicker": {
+    "pool_neon": 0.7774,
+    "open_neon": 0.9793
+   }
+  },
+  {
+   "frame": 325,
+   "seconds": 4.62,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 325,
+   "flicker": {
+    "pool_neon": 0.9655,
+    "open_neon": 0.9289
+   }
+  },
+  {
+   "frame": 326,
+   "seconds": 4.593,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 326,
+   "flicker": {
+    "pool_neon": 0.9246,
+    "open_neon": 0.9762
+   }
+  },
+  {
+   "frame": 327,
+   "seconds": 5.367,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 327,
+   "flicker": {
+    "pool_neon": 0.9766,
+    "open_neon": 0.9319
+   }
+  },
+  {
+   "frame": 328,
+   "seconds": 5.788,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 328,
+   "flicker": {
+    "pool_neon": 0.35,
+    "open_neon": 0.9788
+   }
+  },
+  {
+   "frame": 329,
+   "seconds": 5.157,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 329,
+   "flicker": {
+    "pool_neon": 0.3514,
+    "open_neon": 0.7921
+   }
+  },
+  {
+   "frame": 330,
+   "seconds": 5.134,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 330,
+   "flicker": {
+    "pool_neon": 0.3442,
+    "open_neon": 0.9846
+   }
+  },
+  {
+   "frame": 331,
+   "seconds": 4.586,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 331,
+   "flicker": {
+    "pool_neon": 0.9659,
+    "open_neon": 0.9479
+   }
+  },
+  {
+   "frame": 332,
+   "seconds": 4.487,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 332,
+   "flicker": {
+    "pool_neon": 0.9303,
+    "open_neon": 0.9792
+   }
+  },
+  {
+   "frame": 333,
+   "seconds": 4.421,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 333,
+   "flicker": {
+    "pool_neon": 0.9302,
+    "open_neon": 0.9864
+   }
+  },
+  {
+   "frame": 334,
+   "seconds": 4.704,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 334,
+   "flicker": {
+    "pool_neon": 0.9737,
+    "open_neon": 0.7664
+   }
+  },
+  {
+   "frame": 335,
+   "seconds": 4.575,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 335,
+   "flicker": {
+    "pool_neon": 0.9371,
+    "open_neon": 0.7416
+   }
+  },
+  {
+   "frame": 336,
+   "seconds": 4.437,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 336,
+   "flicker": {
+    "pool_neon": 0.9795,
+    "open_neon": 0.9751
+   }
+  },
+  {
+   "frame": 337,
+   "seconds": 4.484,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 337,
+   "flicker": {
+    "pool_neon": 0.9781,
+    "open_neon": 0.9811
+   }
+  },
+  {
+   "frame": 338,
+   "seconds": 4.535,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 338,
+   "flicker": {
+    "pool_neon": 0.9748,
+    "open_neon": 0.9517
+   }
+  },
+  {
+   "frame": 339,
+   "seconds": 4.745,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 339,
+   "flicker": {
+    "pool_neon": 0.9532,
+    "open_neon": 0.9846
+   }
+  },
+  {
+   "frame": 340,
+   "seconds": 5.054,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 340,
+   "flicker": {
+    "pool_neon": 0.9231,
+    "open_neon": 0.9519
+   }
+  },
+  {
+   "frame": 341,
+   "seconds": 5.031,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 341,
+   "flicker": {
+    "pool_neon": 0.9601,
+    "open_neon": 0.9807
+   }
+  },
+  {
+   "frame": 342,
+   "seconds": 6.498,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 342,
+   "flicker": {
+    "pool_neon": 0.9245,
+    "open_neon": 0.9696
+   }
+  },
+  {
+   "frame": 343,
+   "seconds": 6.222,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 343,
+   "flicker": {
+    "pool_neon": 0.9749,
+    "open_neon": 0.9853
+   }
+  },
+  {
+   "frame": 344,
+   "seconds": 4.72,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 344,
+   "flicker": {
+    "pool_neon": 0.9727,
+    "open_neon": 0.9762
+   }
+  },
+  {
+   "frame": 345,
+   "seconds": 4.492,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 345,
+   "flicker": {
+    "pool_neon": 0.9892,
+    "open_neon": 0.9872
+   }
+  },
+  {
+   "frame": 346,
+   "seconds": 4.478,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 346,
+   "flicker": {
+    "pool_neon": 0.9723,
+    "open_neon": 0.715
+   }
+  },
+  {
+   "frame": 347,
+   "seconds": 5.391,
+   "cam": "CAM_Cine_S03_Glassware",
+   "scene_frame": 347,
+   "flicker": {
+    "pool_neon": 0.9497,
+    "open_neon": 0.9766
+   }
+  },
+  {
+   "frame": 348,
+   "seconds": 5.083,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 348,
+   "flicker": {
+    "pool_neon": 0.7058,
+    "open_neon": 0.9774
+   }
+  },
+  {
+   "frame": 349,
+   "seconds": 5.447,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 349,
+   "flicker": {
+    "pool_neon": 0.9828,
+    "open_neon": 0.9356
+   }
+  },
+  {
+   "frame": 350,
+   "seconds": 5.323,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 350,
+   "flicker": {
+    "pool_neon": 0.9591,
+    "open_neon": 0.9686
+   }
+  },
+  {
+   "frame": 351,
+   "seconds": 5.796,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 351,
+   "flicker": {
+    "pool_neon": 0.9364,
+    "open_neon": 0.9592
+   }
+  },
+  {
+   "frame": 352,
+   "seconds": 5.283,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 352,
+   "flicker": {
+    "pool_neon": 0.9597,
+    "open_neon": 0.9567
+   }
+  },
+  {
+   "frame": 353,
+   "seconds": 5.185,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 353,
+   "flicker": {
+    "pool_neon": 0.9809,
+    "open_neon": 0.9339
+   }
+  },
+  {
+   "frame": 354,
+   "seconds": 5.368,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 354,
+   "flicker": {
+    "pool_neon": 0.96,
+    "open_neon": 0.9787
+   }
+  },
+  {
+   "frame": 355,
+   "seconds": 5.067,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 355,
+   "flicker": {
+    "pool_neon": 0.7728,
+    "open_neon": 0.98
+   }
+  },
+  {
+   "frame": 356,
+   "seconds": 5.642,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 356,
+   "flicker": {
+    "pool_neon": 0.9556,
+    "open_neon": 0.98
+   }
+  },
+  {
+   "frame": 357,
+   "seconds": 5.411,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 357,
+   "flicker": {
+    "pool_neon": 0.9816,
+    "open_neon": 0.9312
+   }
+  },
+  {
+   "frame": 358,
+   "seconds": 5.113,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 358,
+   "flicker": {
+    "pool_neon": 0.9398,
+    "open_neon": 0.9613
+   }
+  },
+  {
+   "frame": 359,
+   "seconds": 4.97,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 359,
+   "flicker": {
+    "pool_neon": 0.9837,
+    "open_neon": 0.9375
+   }
+  },
+  {
+   "frame": 360,
+   "seconds": 5.46,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 360,
+   "flicker": {
+    "pool_neon": 0.9752,
+    "open_neon": 0.9451
+   }
+  },
+  {
+   "frame": 361,
+   "seconds": 5.13,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 361,
+   "flicker": {
+    "pool_neon": 0.9809,
+    "open_neon": 0.9762
+   }
+  },
+  {
+   "frame": 362,
+   "seconds": 5.143,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 362,
+   "flicker": {
+    "pool_neon": 0.9436,
+    "open_neon": 0.9464
+   }
+  },
+  {
+   "frame": 363,
+   "seconds": 5.455,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 363,
+   "flicker": {
+    "pool_neon": 0.9335,
+    "open_neon": 0.9349
+   }
+  },
+  {
+   "frame": 364,
+   "seconds": 5.998,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 364,
+   "flicker": {
+    "pool_neon": 0.9774,
+    "open_neon": 0.9312
+   }
+  },
+  {
+   "frame": 365,
+   "seconds": 5.46,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 365,
+   "flicker": {
+    "pool_neon": 0.9558,
+    "open_neon": 0.9522
+   }
+  },
+  {
+   "frame": 366,
+   "seconds": 5.779,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 366,
+   "flicker": {
+    "pool_neon": 0.9727,
+    "open_neon": 0.9292
+   }
+  },
+  {
+   "frame": 367,
+   "seconds": 5.178,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 367,
+   "flicker": {
+    "pool_neon": 0.938,
+    "open_neon": 0.9829
+   }
+  },
+  {
+   "frame": 368,
+   "seconds": 5.858,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 368,
+   "flicker": {
+    "pool_neon": 0.9362,
+    "open_neon": 0.9244
+   }
+  },
+  {
+   "frame": 369,
+   "seconds": 5.18,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 369,
+   "flicker": {
+    "pool_neon": 0.9823,
+    "open_neon": 0.9323
+   }
+  },
+  {
+   "frame": 370,
+   "seconds": 5.887,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 370,
+   "flicker": {
+    "pool_neon": 0.6921,
+    "open_neon": 0.9818
+   }
+  },
+  {
+   "frame": 371,
+   "seconds": 5.152,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 371,
+   "flicker": {
+    "pool_neon": 0.981,
+    "open_neon": 0.968
+   }
+  },
+  {
+   "frame": 372,
+   "seconds": 4.996,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 372,
+   "flicker": {
+    "pool_neon": 0.9727,
+    "open_neon": 0.9665
+   }
+  },
+  {
+   "frame": 373,
+   "seconds": 5.531,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 373,
+   "flicker": {
+    "pool_neon": 0.9764,
+    "open_neon": 0.9859
+   }
+  },
+  {
+   "frame": 374,
+   "seconds": 5.193,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 374,
+   "flicker": {
+    "pool_neon": 0.9305,
+    "open_neon": 0.9655
+   }
+  },
+  {
+   "frame": 375,
+   "seconds": 4.931,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 375,
+   "flicker": {
+    "pool_neon": 0.9544,
+    "open_neon": 0.9557
+   }
+  },
+  {
+   "frame": 376,
+   "seconds": 5.027,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 376,
+   "flicker": {
+    "pool_neon": 0.9494,
+    "open_neon": 0.9859
+   }
+  },
+  {
+   "frame": 377,
+   "seconds": 5.025,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 377,
+   "flicker": {
+    "pool_neon": 0.9887,
+    "open_neon": 0.9874
+   }
+  },
+  {
+   "frame": 378,
+   "seconds": 5.142,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 378,
+   "flicker": {
+    "pool_neon": 0.9418,
+    "open_neon": 0.9834
+   }
+  },
+  {
+   "frame": 379,
+   "seconds": 5.203,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 379,
+   "flicker": {
+    "pool_neon": 0.9307,
+    "open_neon": 0.9634
+   }
+  },
+  {
+   "frame": 380,
+   "seconds": 4.997,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 380,
+   "flicker": {
+    "pool_neon": 0.9216,
+    "open_neon": 0.9585
+   }
+  },
+  {
+   "frame": 381,
+   "seconds": 5.223,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 381,
+   "flicker": {
+    "pool_neon": 0.9269,
+    "open_neon": 0.9875
+   }
+  },
+  {
+   "frame": 382,
+   "seconds": 5.163,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 382,
+   "flicker": {
+    "pool_neon": 0.9737,
+    "open_neon": 0.94
+   }
+  },
+  {
+   "frame": 383,
+   "seconds": 7.683,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 383,
+   "flicker": {
+    "pool_neon": 0.9332,
+    "open_neon": 0.9844
+   }
+  },
+  {
+   "frame": 384,
+   "seconds": 8.087,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 384,
+   "flicker": {
+    "pool_neon": 0.978,
+    "open_neon": 0.9552
+   }
+  },
+  {
+   "frame": 385,
+   "seconds": 5.648,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 385,
+   "flicker": {
+    "pool_neon": 0.9461,
+    "open_neon": 0.987
+   }
+  },
+  {
+   "frame": 386,
+   "seconds": 5.053,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 386,
+   "flicker": {
+    "pool_neon": 0.9241,
+    "open_neon": 0.9424
+   }
+  },
+  {
+   "frame": 387,
+   "seconds": 5.513,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 387,
+   "flicker": {
+    "pool_neon": 0.9218,
+    "open_neon": 0.9815
+   }
+  },
+  {
+   "frame": 388,
+   "seconds": 5.357,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 388,
+   "flicker": {
+    "pool_neon": 0.9627,
+    "open_neon": 0.9808
+   }
+  },
+  {
+   "frame": 389,
+   "seconds": 4.992,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 389,
+   "flicker": {
+    "pool_neon": 0.9836,
+    "open_neon": 0.9763
+   }
+  },
+  {
+   "frame": 390,
+   "seconds": 5.546,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 390,
+   "flicker": {
+    "pool_neon": 0.9875,
+    "open_neon": 0.9755
+   }
+  },
+  {
+   "frame": 391,
+   "seconds": 4.905,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 391,
+   "flicker": {
+    "pool_neon": 0.9273,
+    "open_neon": 0.9807
+   }
+  },
+  {
+   "frame": 392,
+   "seconds": 5.251,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 392,
+   "flicker": {
+    "pool_neon": 0.9838,
+    "open_neon": 0.9729
+   }
+  },
+  {
+   "frame": 393,
+   "seconds": 5.294,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 393,
+   "flicker": {
+    "pool_neon": 0.9302,
+    "open_neon": 0.9282
+   }
+  },
+  {
+   "frame": 394,
+   "seconds": 4.983,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 394,
+   "flicker": {
+    "pool_neon": 0.9795,
+    "open_neon": 0.9325
+   }
+  },
+  {
+   "frame": 395,
+   "seconds": 5.682,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 395,
+   "flicker": {
+    "pool_neon": 0.9836,
+    "open_neon": 0.9334
+   }
+  },
+  {
+   "frame": 396,
+   "seconds": 5.741,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 396,
+   "flicker": {
+    "pool_neon": 0.9843,
+    "open_neon": 0.9867
+   }
+  },
+  {
+   "frame": 397,
+   "seconds": 5.309,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 397,
+   "flicker": {
+    "pool_neon": 0.9279,
+    "open_neon": 0.9835
+   }
+  },
+  {
+   "frame": 398,
+   "seconds": 5.188,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 398,
+   "flicker": {
+    "pool_neon": 0.9807,
+    "open_neon": 0.945
+   }
+  },
+  {
+   "frame": 399,
+   "seconds": 5.453,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 399,
+   "flicker": {
+    "pool_neon": 0.9413,
+    "open_neon": 0.9805
+   }
+  },
+  {
+   "frame": 400,
+   "seconds": 5.472,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 400,
+   "flicker": {
+    "pool_neon": 0.9201,
+    "open_neon": 0.9521
+   }
+  },
+  {
+   "frame": 401,
+   "seconds": 4.998,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 401,
+   "flicker": {
+    "pool_neon": 0.9738,
+    "open_neon": 0.9755
+   }
+  },
+  {
+   "frame": 402,
+   "seconds": 5.596,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 402,
+   "flicker": {
+    "pool_neon": 0.9622,
+    "open_neon": 0.9629
+   }
+  },
+  {
+   "frame": 403,
+   "seconds": 6.179,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 403,
+   "flicker": {
+    "pool_neon": 0.9839,
+    "open_neon": 0.9824
+   }
+  },
+  {
+   "frame": 404,
+   "seconds": 5.266,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 404,
+   "flicker": {
+    "pool_neon": 0.9307,
+    "open_neon": 0.9777
+   }
+  },
+  {
+   "frame": 405,
+   "seconds": 5.119,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 405,
+   "flicker": {
+    "pool_neon": 0.9861,
+    "open_neon": 0.9812
+   }
+  },
+  {
+   "frame": 406,
+   "seconds": 5.127,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 406,
+   "flicker": {
+    "pool_neon": 0.9895,
+    "open_neon": 0.9524
+   }
+  },
+  {
+   "frame": 407,
+   "seconds": 5.035,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 407,
+   "flicker": {
+    "pool_neon": 0.7211,
+    "open_neon": 0.9608
+   }
+  },
+  {
+   "frame": 408,
+   "seconds": 5.538,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 408,
+   "flicker": {
+    "pool_neon": 0.9367,
+    "open_neon": 0.9783
+   }
+  },
+  {
+   "frame": 409,
+   "seconds": 4.947,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 409,
+   "flicker": {
+    "pool_neon": 0.9453,
+    "open_neon": 0.9469
+   }
+  },
+  {
+   "frame": 410,
+   "seconds": 4.978,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 410,
+   "flicker": {
+    "pool_neon": 0.9787,
+    "open_neon": 0.9808
+   }
+  },
+  {
+   "frame": 411,
+   "seconds": 5.284,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 411,
+   "flicker": {
+    "pool_neon": 0.982,
+    "open_neon": 0.9814
+   }
+  },
+  {
+   "frame": 412,
+   "seconds": 5.344,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 412,
+   "flicker": {
+    "pool_neon": 0.9294,
+    "open_neon": 0.9484
+   }
+  },
+  {
+   "frame": 413,
+   "seconds": 4.892,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 413,
+   "flicker": {
+    "pool_neon": 0.9833,
+    "open_neon": 0.9699
+   }
+  },
+  {
+   "frame": 414,
+   "seconds": 5.193,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 414,
+   "flicker": {
+    "pool_neon": 0.9776,
+    "open_neon": 0.9217
+   }
+  },
+  {
+   "frame": 415,
+   "seconds": 4.836,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 415,
+   "flicker": {
+    "pool_neon": 0.9879,
+    "open_neon": 0.9817
+   }
+  },
+  {
+   "frame": 416,
+   "seconds": 5.83,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 416,
+   "flicker": {
+    "pool_neon": 0.951,
+    "open_neon": 0.9789
+   }
+  },
+  {
+   "frame": 417,
+   "seconds": 5.37,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 417,
+   "flicker": {
+    "pool_neon": 0.9416,
+    "open_neon": 0.9805
+   }
+  },
+  {
+   "frame": 418,
+   "seconds": 6.181,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 418,
+   "flicker": {
+    "pool_neon": 0.9456,
+    "open_neon": 0.9794
+   }
+  },
+  {
+   "frame": 419,
+   "seconds": 5.153,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 419,
+   "flicker": {
+    "pool_neon": 0.9432,
+    "open_neon": 0.975
+   }
+  },
+  {
+   "frame": 420,
+   "seconds": 5.024,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 420,
+   "flicker": {
+    "pool_neon": 0.9736,
+    "open_neon": 0.9562
+   }
+  },
+  {
+   "frame": 421,
+   "seconds": 5.452,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 421,
+   "flicker": {
+    "pool_neon": 0.988,
+    "open_neon": 0.9256
+   }
+  },
+  {
+   "frame": 422,
+   "seconds": 4.949,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 422,
+   "flicker": {
+    "pool_neon": 0.9245,
+    "open_neon": 0.9734
+   }
+  },
+  {
+   "frame": 423,
+   "seconds": 4.704,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 423,
+   "flicker": {
+    "pool_neon": 0.975,
+    "open_neon": 0.9798
+   }
+  },
+  {
+   "frame": 424,
+   "seconds": 5.195,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 424,
+   "flicker": {
+    "pool_neon": 0.9731,
+    "open_neon": 0.9791
+   }
+  },
+  {
+   "frame": 425,
+   "seconds": 5.416,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 425,
+   "flicker": {
+    "pool_neon": 0.974,
+    "open_neon": 0.9479
+   }
+  },
+  {
+   "frame": 426,
+   "seconds": 4.861,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 426,
+   "flicker": {
+    "pool_neon": 0.6662,
+    "open_neon": 0.9816
+   }
+  },
+  {
+   "frame": 427,
+   "seconds": 4.751,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 427,
+   "flicker": {
+    "pool_neon": 0.9353,
+    "open_neon": 0.9739
+   }
+  },
+  {
+   "frame": 428,
+   "seconds": 4.689,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 428,
+   "flicker": {
+    "pool_neon": 0.9798,
+    "open_neon": 0.9746
+   }
+  },
+  {
+   "frame": 429,
+   "seconds": 4.717,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 429,
+   "flicker": {
+    "pool_neon": 0.9761,
+    "open_neon": 0.9892
+   }
+  },
+  {
+   "frame": 430,
+   "seconds": 4.997,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 430,
+   "flicker": {
+    "pool_neon": 0.9885,
+    "open_neon": 0.9795
+   }
+  },
+  {
+   "frame": 431,
+   "seconds": 4.757,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 431,
+   "flicker": {
+    "pool_neon": 0.9728,
+    "open_neon": 0.9782
+   }
+  },
+  {
+   "frame": 432,
+   "seconds": 5.458,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 432,
+   "flicker": {
+    "pool_neon": 0.9852,
+    "open_neon": 0.9599
+   }
+  },
+  {
+   "frame": 433,
+   "seconds": 4.93,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 433,
+   "flicker": {
+    "pool_neon": 0.9225,
+    "open_neon": 0.949
+   }
+  },
+  {
+   "frame": 434,
+   "seconds": 5.197,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 434,
+   "flicker": {
+    "pool_neon": 0.9845,
+    "open_neon": 0.9363
+   }
+  },
+  {
+   "frame": 435,
+   "seconds": 4.915,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 435,
+   "flicker": {
+    "pool_neon": 0.9814,
+    "open_neon": 0.9729
+   }
+  },
+  {
+   "frame": 436,
+   "seconds": 5.463,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 436,
+   "flicker": {
+    "pool_neon": 0.9329,
+    "open_neon": 0.9544
+   }
+  },
+  {
+   "frame": 437,
+   "seconds": 4.974,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 437,
+   "flicker": {
+    "pool_neon": 0.9845,
+    "open_neon": 0.9458
+   }
+  },
+  {
+   "frame": 438,
+   "seconds": 5.429,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 438,
+   "flicker": {
+    "pool_neon": 0.9729,
+    "open_neon": 0.9722
+   }
+  },
+  {
+   "frame": 439,
+   "seconds": 4.908,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 439,
+   "flicker": {
+    "pool_neon": 0.9739,
+    "open_neon": 0.6672
+   }
+  },
+  {
+   "frame": 440,
+   "seconds": 5.022,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 440,
+   "flicker": {
+    "pool_neon": 0.9722,
+    "open_neon": 0.9776
+   }
+  },
+  {
+   "frame": 441,
+   "seconds": 5.002,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 441,
+   "flicker": {
+    "pool_neon": 0.9296,
+    "open_neon": 0.9664
+   }
+  },
+  {
+   "frame": 442,
+   "seconds": 4.783,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 442,
+   "flicker": {
+    "pool_neon": 0.985,
+    "open_neon": 0.9866
+   }
+  },
+  {
+   "frame": 443,
+   "seconds": 5.383,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 443,
+   "flicker": {
+    "pool_neon": 0.928,
+    "open_neon": 0.9628
+   }
+  },
+  {
+   "frame": 444,
+   "seconds": 5.063,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 444,
+   "flicker": {
+    "pool_neon": 0.9648,
+    "open_neon": 0.9507
+   }
+  },
+  {
+   "frame": 445,
+   "seconds": 5.118,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 445,
+   "flicker": {
+    "pool_neon": 0.9334,
+    "open_neon": 0.9871
+   }
+  },
+  {
+   "frame": 446,
+   "seconds": 5.649,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 446,
+   "flicker": {
+    "pool_neon": 0.9661,
+    "open_neon": 0.9848
+   }
+  },
+  {
+   "frame": 447,
+   "seconds": 6.175,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 447,
+   "flicker": {
+    "pool_neon": 0.9392,
+    "open_neon": 0.9308
+   }
+  },
+  {
+   "frame": 448,
+   "seconds": 6.057,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 448,
+   "flicker": {
+    "pool_neon": 0.9543,
+    "open_neon": 0.9887
+   }
+  },
+  {
+   "frame": 449,
+   "seconds": 5.03,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 449,
+   "flicker": {
+    "pool_neon": 0.962,
+    "open_neon": 0.9722
+   }
+  },
+  {
+   "frame": 450,
+   "seconds": 4.989,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 450,
+   "flicker": {
+    "pool_neon": 0.9384,
+    "open_neon": 0.926
+   }
+  },
+  {
+   "frame": 451,
+   "seconds": 4.966,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 451,
+   "flicker": {
+    "pool_neon": 0.9621,
+    "open_neon": 0.9563
+   }
+  },
+  {
+   "frame": 452,
+   "seconds": 4.957,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 452,
+   "flicker": {
+    "pool_neon": 0.975,
+    "open_neon": 0.9317
+   }
+  },
+  {
+   "frame": 453,
+   "seconds": 5.684,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 453,
+   "flicker": {
+    "pool_neon": 0.951,
+    "open_neon": 0.984
+   }
+  },
+  {
+   "frame": 454,
+   "seconds": 4.746,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 454,
+   "flicker": {
+    "pool_neon": 0.9883,
+    "open_neon": 0.959
+   }
+  },
+  {
+   "frame": 455,
+   "seconds": 4.717,
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "scene_frame": 455,
+   "flicker": {
+    "pool_neon": 0.9584,
+    "open_neon": 0.9297
+   }
+  },
+  {
+   "frame": 456,
+   "seconds": 4.688,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 456,
+   "flicker": {
+    "pool_neon": 0.9443,
+    "open_neon": 0.9733
+   }
+  },
+  {
+   "frame": 457,
+   "seconds": 4.9,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 457,
+   "flicker": {
+    "pool_neon": 0.9755,
+    "open_neon": 0.9888
+   }
+  },
+  {
+   "frame": 458,
+   "seconds": 4.993,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 458,
+   "flicker": {
+    "pool_neon": 0.9698,
+    "open_neon": 0.9766
+   }
+  },
+  {
+   "frame": 459,
+   "seconds": 4.788,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 459,
+   "flicker": {
+    "pool_neon": 0.9883,
+    "open_neon": 0.9628
+   }
+  },
+  {
+   "frame": 460,
+   "seconds": 5.12,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 460,
+   "flicker": {
+    "pool_neon": 0.982,
+    "open_neon": 0.935
+   }
+  },
+  {
+   "frame": 461,
+   "seconds": 5.505,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 461,
+   "flicker": {
+    "pool_neon": 0.9869,
+    "open_neon": 0.9595
+   }
+  },
+  {
+   "frame": 462,
+   "seconds": 5.18,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 462,
+   "flicker": {
+    "pool_neon": 0.9559,
+    "open_neon": 0.9616
+   }
+  },
+  {
+   "frame": 463,
+   "seconds": 4.986,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 463,
+   "flicker": {
+    "pool_neon": 0.981,
+    "open_neon": 0.9566
+   }
+  },
+  {
+   "frame": 464,
+   "seconds": 5.101,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 464,
+   "flicker": {
+    "pool_neon": 0.9256,
+    "open_neon": 0.9728
+   }
+  },
+  {
+   "frame": 465,
+   "seconds": 4.996,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 465,
+   "flicker": {
+    "pool_neon": 0.9856,
+    "open_neon": 0.9213
+   }
+  },
+  {
+   "frame": 466,
+   "seconds": 4.726,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 466,
+   "flicker": {
+    "pool_neon": 0.9768,
+    "open_neon": 0.9477
+   }
+  },
+  {
+   "frame": 467,
+   "seconds": 5.032,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 467,
+   "flicker": {
+    "pool_neon": 0.9587,
+    "open_neon": 0.973
+   }
+  },
+  {
+   "frame": 468,
+   "seconds": 5.433,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 468,
+   "flicker": {
+    "pool_neon": 0.9823,
+    "open_neon": 0.9414
+   }
+  },
+  {
+   "frame": 469,
+   "seconds": 5.097,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 469,
+   "flicker": {
+    "pool_neon": 0.9833,
+    "open_neon": 0.9206
+   }
+  },
+  {
+   "frame": 470,
+   "seconds": 5.1,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 470,
+   "flicker": {
+    "pool_neon": 0.9883,
+    "open_neon": 0.9745
+   }
+  },
+  {
+   "frame": 471,
+   "seconds": 4.997,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 471,
+   "flicker": {
+    "pool_neon": 0.9736,
+    "open_neon": 0.9785
+   }
+  },
+  {
+   "frame": 472,
+   "seconds": 4.749,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 472,
+   "flicker": {
+    "pool_neon": 0.9352,
+    "open_neon": 0.9383
+   }
+  },
+  {
+   "frame": 473,
+   "seconds": 4.916,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 473,
+   "flicker": {
+    "pool_neon": 0.9809,
+    "open_neon": 0.9349
+   }
+  },
+  {
+   "frame": 474,
+   "seconds": 4.973,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 474,
+   "flicker": {
+    "pool_neon": 0.9417,
+    "open_neon": 0.9784
+   }
+  },
+  {
+   "frame": 475,
+   "seconds": 4.871,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 475,
+   "flicker": {
+    "pool_neon": 0.9586,
+    "open_neon": 0.9762
+   }
+  },
+  {
+   "frame": 476,
+   "seconds": 6.002,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 476,
+   "flicker": {
+    "pool_neon": 0.9536,
+    "open_neon": 0.7328
+   }
+  },
+  {
+   "frame": 477,
+   "seconds": 5.527,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 477,
+   "flicker": {
+    "pool_neon": 0.9798,
+    "open_neon": 0.9763
+   }
+  },
+  {
+   "frame": 478,
+   "seconds": 4.92,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 478,
+   "flicker": {
+    "pool_neon": 0.9788,
+    "open_neon": 0.9871
+   }
+  },
+  {
+   "frame": 479,
+   "seconds": 5.479,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 479,
+   "flicker": {
+    "pool_neon": 0.9499,
+    "open_neon": 0.9577
+   }
+  },
+  {
+   "frame": 480,
+   "seconds": 5.161,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 480,
+   "flicker": {
+    "pool_neon": 0.9328,
+    "open_neon": 0.9457
+   }
+  },
+  {
+   "frame": 481,
+   "seconds": 5.445,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 481,
+   "flicker": {
+    "pool_neon": 0.973,
+    "open_neon": 0.9727
+   }
+  },
+  {
+   "frame": 482,
+   "seconds": 5.172,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 482,
+   "flicker": {
+    "pool_neon": 0.9849,
+    "open_neon": 0.9441
+   }
+  },
+  {
+   "frame": 483,
+   "seconds": 5.657,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 483,
+   "flicker": {
+    "pool_neon": 0.9236,
+    "open_neon": 0.9769
+   }
+  },
+  {
+   "frame": 484,
+   "seconds": 5.748,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 484,
+   "flicker": {
+    "pool_neon": 0.9285,
+    "open_neon": 0.9685
+   }
+  },
+  {
+   "frame": 485,
+   "seconds": 5.849,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 485,
+   "flicker": {
+    "pool_neon": 0.9722,
+    "open_neon": 0.9851
+   }
+  },
+  {
+   "frame": 486,
+   "seconds": 5.757,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 486,
+   "flicker": {
+    "pool_neon": 0.9735,
+    "open_neon": 0.9536
+   }
+  },
+  {
+   "frame": 487,
+   "seconds": 6.314,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 487,
+   "flicker": {
+    "pool_neon": 0.9787,
+    "open_neon": 0.9889
+   }
+  },
+  {
+   "frame": 488,
+   "seconds": 5.996,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 488,
+   "flicker": {
+    "pool_neon": 0.9676,
+    "open_neon": 0.9853
+   }
+  },
+  {
+   "frame": 489,
+   "seconds": 6.117,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 489,
+   "flicker": {
+    "pool_neon": 0.9798,
+    "open_neon": 0.9726
+   }
+  },
+  {
+   "frame": 490,
+   "seconds": 6.094,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 490,
+   "flicker": {
+    "pool_neon": 0.9842,
+    "open_neon": 0.9226
+   }
+  },
+  {
+   "frame": 491,
+   "seconds": 6.001,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 491,
+   "flicker": {
+    "pool_neon": 0.975,
+    "open_neon": 0.9837
+   }
+  },
+  {
+   "frame": 492,
+   "seconds": 5.372,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 492,
+   "flicker": {
+    "pool_neon": 0.9685,
+    "open_neon": 0.9761
+   }
+  },
+  {
+   "frame": 493,
+   "seconds": 5.476,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 493,
+   "flicker": {
+    "pool_neon": 0.9619,
+    "open_neon": 0.9428
+   }
+  },
+  {
+   "frame": 494,
+   "seconds": 5.307,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 494,
+   "flicker": {
+    "pool_neon": 0.9809,
+    "open_neon": 0.9579
+   }
+  },
+  {
+   "frame": 495,
+   "seconds": 5.158,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 495,
+   "flicker": {
+    "pool_neon": 0.9323,
+    "open_neon": 0.9422
+   }
+  },
+  {
+   "frame": 496,
+   "seconds": 5.399,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 496,
+   "flicker": {
+    "pool_neon": 0.9581,
+    "open_neon": 0.9639
+   }
+  },
+  {
+   "frame": 497,
+   "seconds": 5.29,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 497,
+   "flicker": {
+    "pool_neon": 0.9804,
+    "open_neon": 0.9444
+   }
+  },
+  {
+   "frame": 498,
+   "seconds": 5.357,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 498,
+   "flicker": {
+    "pool_neon": 0.9382,
+    "open_neon": 0.9742
+   }
+  },
+  {
+   "frame": 499,
+   "seconds": 5.242,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 499,
+   "flicker": {
+    "pool_neon": 0.9693,
+    "open_neon": 0.9829
+   }
+  },
+  {
+   "frame": 500,
+   "seconds": 5.334,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 500,
+   "flicker": {
+    "pool_neon": 0.9278,
+    "open_neon": 0.9727
+   }
+  },
+  {
+   "frame": 501,
+   "seconds": 5.212,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 501,
+   "flicker": {
+    "pool_neon": 0.9204,
+    "open_neon": 0.9234
+   }
+  },
+  {
+   "frame": 502,
+   "seconds": 5.583,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 502,
+   "flicker": {
+    "pool_neon": 0.9826,
+    "open_neon": 0.9723
+   }
+  },
+  {
+   "frame": 503,
+   "seconds": 5.305,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 503,
+   "flicker": {
+    "pool_neon": 0.9864,
+    "open_neon": 0.9813
+   }
+  },
+  {
+   "frame": 504,
+   "seconds": 5.368,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 504,
+   "flicker": {
+    "pool_neon": 0.9813,
+    "open_neon": 0.9831
+   }
+  },
+  {
+   "frame": 505,
+   "seconds": 5.493,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 505,
+   "flicker": {
+    "pool_neon": 0.9372,
+    "open_neon": 0.9518
+   }
+  },
+  {
+   "frame": 506,
+   "seconds": 5.424,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 506,
+   "flicker": {
+    "pool_neon": 0.9469,
+    "open_neon": 0.9745
+   }
+  },
+  {
+   "frame": 507,
+   "seconds": 5.947,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 507,
+   "flicker": {
+    "pool_neon": 0.9795,
+    "open_neon": 0.9772
+   }
+  },
+  {
+   "frame": 508,
+   "seconds": 5.556,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 508,
+   "flicker": {
+    "pool_neon": 0.9536,
+    "open_neon": 0.9223
+   }
+  },
+  {
+   "frame": 509,
+   "seconds": 7.293,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 509,
+   "flicker": {
+    "pool_neon": 0.9762,
+    "open_neon": 0.9758
+   }
+  },
+  {
+   "frame": 510,
+   "seconds": 6.056,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 510,
+   "flicker": {
+    "pool_neon": 0.9831,
+    "open_neon": 0.9863
+   }
+  },
+  {
+   "frame": 511,
+   "seconds": 5.275,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 511,
+   "flicker": {
+    "pool_neon": 0.9885,
+    "open_neon": 0.9527
+   }
+  },
+  {
+   "frame": 512,
+   "seconds": 5.36,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 512,
+   "flicker": {
+    "pool_neon": 0.9529,
+    "open_neon": 0.9453
+   }
+  },
+  {
+   "frame": 513,
+   "seconds": 6.354,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 513,
+   "flicker": {
+    "pool_neon": 0.9295,
+    "open_neon": 0.9843
+   }
+  },
+  {
+   "frame": 514,
+   "seconds": 5.717,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 514,
+   "flicker": {
+    "pool_neon": 0.9809,
+    "open_neon": 0.9871
+   }
+  },
+  {
+   "frame": 515,
+   "seconds": 6.015,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 515,
+   "flicker": {
+    "pool_neon": 0.4481,
+    "open_neon": 0.9514
+   }
+  },
+  {
+   "frame": 516,
+   "seconds": 6.614,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 516,
+   "flicker": {
+    "pool_neon": 0.4551,
+    "open_neon": 0.9394
+   }
+  },
+  {
+   "frame": 517,
+   "seconds": 6.274,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 517,
+   "flicker": {
+    "pool_neon": 0.9814,
+    "open_neon": 0.9454
+   }
+  },
+  {
+   "frame": 518,
+   "seconds": 7.972,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 518,
+   "flicker": {
+    "pool_neon": 0.9841,
+    "open_neon": 0.9681
+   }
+  },
+  {
+   "frame": 519,
+   "seconds": 7.842,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 519,
+   "flicker": {
+    "pool_neon": 0.9852,
+    "open_neon": 0.9479
+   }
+  },
+  {
+   "frame": 520,
+   "seconds": 6.018,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 520,
+   "flicker": {
+    "pool_neon": 0.9842,
+    "open_neon": 0.9218
+   }
+  },
+  {
+   "frame": 521,
+   "seconds": 5.572,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 521,
+   "flicker": {
+    "pool_neon": 0.9775,
+    "open_neon": 0.9894
+   }
+  },
+  {
+   "frame": 522,
+   "seconds": 5.375,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 522,
+   "flicker": {
+    "pool_neon": 0.9284,
+    "open_neon": 0.9246
+   }
+  },
+  {
+   "frame": 523,
+   "seconds": 5.956,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 523,
+   "flicker": {
+    "pool_neon": 0.9636,
+    "open_neon": 0.9843
+   }
+  },
+  {
+   "frame": 524,
+   "seconds": 6.169,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 524,
+   "flicker": {
+    "pool_neon": 0.9238,
+    "open_neon": 0.9543
+   }
+  },
+  {
+   "frame": 525,
+   "seconds": 6.608,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 525,
+   "flicker": {
+    "pool_neon": 0.9778,
+    "open_neon": 0.9414
+   }
+  },
+  {
+   "frame": 526,
+   "seconds": 7.418,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 526,
+   "flicker": {
+    "pool_neon": 0.9838,
+    "open_neon": 0.9518
+   }
+  },
+  {
+   "frame": 527,
+   "seconds": 7.529,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 527,
+   "flicker": {
+    "pool_neon": 0.9777,
+    "open_neon": 0.95
+   }
+  },
+  {
+   "frame": 528,
+   "seconds": 6.718,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 528,
+   "flicker": {
+    "pool_neon": 0.9858,
+    "open_neon": 0.9826
+   }
+  },
+  {
+   "frame": 529,
+   "seconds": 6.456,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 529,
+   "flicker": {
+    "pool_neon": 0.9294,
+    "open_neon": 0.9254
+   }
+  },
+  {
+   "frame": 530,
+   "seconds": 7.165,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 530,
+   "flicker": {
+    "pool_neon": 0.9734,
+    "open_neon": 0.9336
+   }
+  },
+  {
+   "frame": 531,
+   "seconds": 5.744,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 531,
+   "flicker": {
+    "pool_neon": 0.9823,
+    "open_neon": 0.9727
+   }
+  },
+  {
+   "frame": 532,
+   "seconds": 5.86,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 532,
+   "flicker": {
+    "pool_neon": 0.9513,
+    "open_neon": 0.9846
+   }
+  },
+  {
+   "frame": 533,
+   "seconds": 7.344,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 533,
+   "flicker": {
+    "pool_neon": 0.9381,
+    "open_neon": 0.939
+   }
+  },
+  {
+   "frame": 534,
+   "seconds": 5.992,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 534,
+   "flicker": {
+    "pool_neon": 0.9416,
+    "open_neon": 0.9499
+   }
+  },
+  {
+   "frame": 535,
+   "seconds": 6.706,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 535,
+   "flicker": {
+    "pool_neon": 0.9281,
+    "open_neon": 0.9417
+   }
+  },
+  {
+   "frame": 536,
+   "seconds": 6.605,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 536,
+   "flicker": {
+    "pool_neon": 0.9749,
+    "open_neon": 0.9325
+   }
+  },
+  {
+   "frame": 537,
+   "seconds": 6.917,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 537,
+   "flicker": {
+    "pool_neon": 0.9324,
+    "open_neon": 0.9777
+   }
+  },
+  {
+   "frame": 538,
+   "seconds": 6.452,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 538,
+   "flicker": {
+    "pool_neon": 0.9732,
+    "open_neon": 0.9363
+   }
+  },
+  {
+   "frame": 539,
+   "seconds": 6.695,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 539,
+   "flicker": {
+    "pool_neon": 0.9348,
+    "open_neon": 0.9828
+   }
+  },
+  {
+   "frame": 540,
+   "seconds": 5.771,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 540,
+   "flicker": {
+    "pool_neon": 0.9871,
+    "open_neon": 0.9736
+   }
+  },
+  {
+   "frame": 541,
+   "seconds": 6.348,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 541,
+   "flicker": {
+    "pool_neon": 0.9873,
+    "open_neon": 0.9794
+   }
+  },
+  {
+   "frame": 542,
+   "seconds": 7.132,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 542,
+   "flicker": {
+    "pool_neon": 0.9868,
+    "open_neon": 0.967
+   }
+  },
+  {
+   "frame": 543,
+   "seconds": 5.368,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 543,
+   "flicker": {
+    "pool_neon": 0.9729,
+    "open_neon": 0.9862
+   }
+  },
+  {
+   "frame": 544,
+   "seconds": 5.652,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 544,
+   "flicker": {
+    "pool_neon": 0.9491,
+    "open_neon": 0.9295
+   }
+  },
+  {
+   "frame": 545,
+   "seconds": 5.969,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 545,
+   "flicker": {
+    "pool_neon": 0.9363,
+    "open_neon": 0.9838
+   }
+  },
+  {
+   "frame": 546,
+   "seconds": 6.233,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 546,
+   "flicker": {
+    "pool_neon": 0.9789,
+    "open_neon": 0.9379
+   }
+  },
+  {
+   "frame": 547,
+   "seconds": 6.037,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 547,
+   "flicker": {
+    "pool_neon": 0.9353,
+    "open_neon": 0.9665
+   }
+  },
+  {
+   "frame": 548,
+   "seconds": 6.123,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 548,
+   "flicker": {
+    "pool_neon": 0.9237,
+    "open_neon": 0.9562
+   }
+  },
+  {
+   "frame": 549,
+   "seconds": 5.369,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 549,
+   "flicker": {
+    "pool_neon": 0.9355,
+    "open_neon": 0.9872
+   }
+  },
+  {
+   "frame": 550,
+   "seconds": 6.687,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 550,
+   "flicker": {
+    "pool_neon": 0.9325,
+    "open_neon": 0.9609
+   }
+  },
+  {
+   "frame": 551,
+   "seconds": 6.02,
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "scene_frame": 551,
+   "flicker": {
+    "pool_neon": 0.9574,
+    "open_neon": 0.9741
+   }
+  },
+  {
+   "frame": 552,
+   "seconds": 6.499,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 552,
+   "flicker": {
+    "pool_neon": 0.9205,
+    "open_neon": 0.94
+   }
+  },
+  {
+   "frame": 553,
+   "seconds": 6.334,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 553,
+   "flicker": {
+    "pool_neon": 0.9695,
+    "open_neon": 0.9361
+   }
+  },
+  {
+   "frame": 554,
+   "seconds": 6.002,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 554,
+   "flicker": {
+    "pool_neon": 0.9778,
+    "open_neon": 0.9772
+   }
+  },
+  {
+   "frame": 555,
+   "seconds": 6.135,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 555,
+   "flicker": {
+    "pool_neon": 0.9806,
+    "open_neon": 0.9777
+   }
+  },
+  {
+   "frame": 556,
+   "seconds": 5.907,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 556,
+   "flicker": {
+    "pool_neon": 0.9623,
+    "open_neon": 0.957
+   }
+  },
+  {
+   "frame": 557,
+   "seconds": 6.427,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 557,
+   "flicker": {
+    "pool_neon": 0.9782,
+    "open_neon": 0.9826
+   }
+  },
+  {
+   "frame": 558,
+   "seconds": 5.918,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 558,
+   "flicker": {
+    "pool_neon": 0.9227,
+    "open_neon": 0.9835
+   }
+  },
+  {
+   "frame": 559,
+   "seconds": 6.176,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 559,
+   "flicker": {
+    "pool_neon": 0.9629,
+    "open_neon": 0.9472
+   }
+  },
+  {
+   "frame": 560,
+   "seconds": 6.124,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 560,
+   "flicker": {
+    "pool_neon": 0.6777,
+    "open_neon": 0.9371
+   }
+  },
+  {
+   "frame": 561,
+   "seconds": 6.133,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 561,
+   "flicker": {
+    "pool_neon": 0.9721,
+    "open_neon": 0.9787
+   }
+  },
+  {
+   "frame": 562,
+   "seconds": 6.284,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 562,
+   "flicker": {
+    "pool_neon": 0.9572,
+    "open_neon": 0.9749
+   }
+  },
+  {
+   "frame": 563,
+   "seconds": 5.785,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 563,
+   "flicker": {
+    "pool_neon": 0.9831,
+    "open_neon": 0.9647
+   }
+  },
+  {
+   "frame": 564,
+   "seconds": 5.231,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 564,
+   "flicker": {
+    "pool_neon": 0.9686,
+    "open_neon": 0.9331
+   }
+  },
+  {
+   "frame": 565,
+   "seconds": 5.093,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 565,
+   "flicker": {
+    "pool_neon": 0.9622,
+    "open_neon": 0.9501
+   }
+  },
+  {
+   "frame": 566,
+   "seconds": 5.113,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 566,
+   "flicker": {
+    "pool_neon": 0.988,
+    "open_neon": 0.9205
+   }
+  },
+  {
+   "frame": 567,
+   "seconds": 5.47,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 567,
+   "flicker": {
+    "pool_neon": 0.9841,
+    "open_neon": 0.9212
+   }
+  },
+  {
+   "frame": 568,
+   "seconds": 5.785,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 568,
+   "flicker": {
+    "pool_neon": 0.6555,
+    "open_neon": 0.9329
+   }
+  },
+  {
+   "frame": 569,
+   "seconds": 5.698,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 569,
+   "flicker": {
+    "pool_neon": 0.9457,
+    "open_neon": 0.9529
+   }
+  },
+  {
+   "frame": 570,
+   "seconds": 6.172,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 570,
+   "flicker": {
+    "pool_neon": 0.9803,
+    "open_neon": 0.9646
+   }
+  },
+  {
+   "frame": 571,
+   "seconds": 6.249,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 571,
+   "flicker": {
+    "pool_neon": 0.9817,
+    "open_neon": 0.9695
+   }
+  },
+  {
+   "frame": 572,
+   "seconds": 5.813,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 572,
+   "flicker": {
+    "pool_neon": 0.9827,
+    "open_neon": 0.934
+   }
+  },
+  {
+   "frame": 573,
+   "seconds": 5.68,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 573,
+   "flicker": {
+    "pool_neon": 0.9809,
+    "open_neon": 0.982
+   }
+  },
+  {
+   "frame": 574,
+   "seconds": 5.655,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 574,
+   "flicker": {
+    "pool_neon": 0.9873,
+    "open_neon": 0.9381
+   }
+  },
+  {
+   "frame": 575,
+   "seconds": 5.867,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 575,
+   "flicker": {
+    "pool_neon": 0.9843,
+    "open_neon": 0.9638
+   }
+  },
+  {
+   "frame": 576,
+   "seconds": 5.653,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 576,
+   "flicker": {
+    "pool_neon": 0.9857,
+    "open_neon": 0.9312
+   }
+  },
+  {
+   "frame": 577,
+   "seconds": 5.303,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 577,
+   "flicker": {
+    "pool_neon": 0.979,
+    "open_neon": 0.974
+   }
+  },
+  {
+   "frame": 578,
+   "seconds": 5.5,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 578,
+   "flicker": {
+    "pool_neon": 0.9783,
+    "open_neon": 0.9289
+   }
+  },
+  {
+   "frame": 579,
+   "seconds": 5.539,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 579,
+   "flicker": {
+    "pool_neon": 0.9775,
+    "open_neon": 0.9769
+   }
+  },
+  {
+   "frame": 580,
+   "seconds": 5.674,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 580,
+   "flicker": {
+    "pool_neon": 0.9631,
+    "open_neon": 0.9664
+   }
+  },
+  {
+   "frame": 581,
+   "seconds": 5.176,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 581,
+   "flicker": {
+    "pool_neon": 0.966,
+    "open_neon": 0.9605
+   }
+  },
+  {
+   "frame": 582,
+   "seconds": 7.082,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 582,
+   "flicker": {
+    "pool_neon": 0.9752,
+    "open_neon": 0.9873
+   }
+  },
+  {
+   "frame": 583,
+   "seconds": 6.393,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 583,
+   "flicker": {
+    "pool_neon": 0.9788,
+    "open_neon": 0.9893
+   }
+  },
+  {
+   "frame": 584,
+   "seconds": 5.863,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 584,
+   "flicker": {
+    "pool_neon": 0.9258,
+    "open_neon": 0.9824
+   }
+  },
+  {
+   "frame": 585,
+   "seconds": 6.478,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 585,
+   "flicker": {
+    "pool_neon": 0.9727,
+    "open_neon": 0.9801
+   }
+  },
+  {
+   "frame": 586,
+   "seconds": 6.192,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 586,
+   "flicker": {
+    "pool_neon": 0.6922,
+    "open_neon": 0.9862
+   }
+  },
+  {
+   "frame": 587,
+   "seconds": 6.284,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 587,
+   "flicker": {
+    "pool_neon": 0.9808,
+    "open_neon": 0.9869
+   }
+  },
+  {
+   "frame": 588,
+   "seconds": 5.937,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 588,
+   "flicker": {
+    "pool_neon": 0.9855,
+    "open_neon": 0.9727
+   }
+  },
+  {
+   "frame": 589,
+   "seconds": 6.086,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 589,
+   "flicker": {
+    "pool_neon": 0.9867,
+    "open_neon": 0.9484
+   }
+  },
+  {
+   "frame": 590,
+   "seconds": 5.515,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 590,
+   "flicker": {
+    "pool_neon": 0.9622,
+    "open_neon": 0.9723
+   }
+  },
+  {
+   "frame": 591,
+   "seconds": 5.726,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 591,
+   "flicker": {
+    "pool_neon": 0.9241,
+    "open_neon": 0.9281
+   }
+  },
+  {
+   "frame": 592,
+   "seconds": 5.579,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 592,
+   "flicker": {
+    "pool_neon": 0.9749,
+    "open_neon": 0.942
+   }
+  },
+  {
+   "frame": 593,
+   "seconds": 6.097,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 593,
+   "flicker": {
+    "pool_neon": 0.9852,
+    "open_neon": 0.9765
+   }
+  },
+  {
+   "frame": 594,
+   "seconds": 5.658,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 594,
+   "flicker": {
+    "pool_neon": 0.9597,
+    "open_neon": 0.9861
+   }
+  },
+  {
+   "frame": 595,
+   "seconds": 5.692,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 595,
+   "flicker": {
+    "pool_neon": 0.9801,
+    "open_neon": 0.9789
+   }
+  },
+  {
+   "frame": 596,
+   "seconds": 5.453,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 596,
+   "flicker": {
+    "pool_neon": 0.9777,
+    "open_neon": 0.9752
+   }
+  },
+  {
+   "frame": 597,
+   "seconds": 5.306,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 597,
+   "flicker": {
+    "pool_neon": 0.9794,
+    "open_neon": 0.7704
+   }
+  },
+  {
+   "frame": 598,
+   "seconds": 5.749,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 598,
+   "flicker": {
+    "pool_neon": 0.9253,
+    "open_neon": 0.957
+   }
+  },
+  {
+   "frame": 599,
+   "seconds": 6.095,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 599,
+   "flicker": {
+    "pool_neon": 0.9752,
+    "open_neon": 0.9275
+   }
+  },
+  {
+   "frame": 600,
+   "seconds": 5.885,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 600,
+   "flicker": {
+    "pool_neon": 0.9824,
+    "open_neon": 0.9818
+   }
+  },
+  {
+   "frame": 601,
+   "seconds": 5.221,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 601,
+   "flicker": {
+    "pool_neon": 0.9298,
+    "open_neon": 0.9867
+   }
+  },
+  {
+   "frame": 602,
+   "seconds": 5.058,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 602,
+   "flicker": {
+    "pool_neon": 0.98,
+    "open_neon": 0.9754
+   }
+  },
+  {
+   "frame": 603,
+   "seconds": 5.49,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 603,
+   "flicker": {
+    "pool_neon": 0.9875,
+    "open_neon": 0.9818
+   }
+  },
+  {
+   "frame": 604,
+   "seconds": 5.843,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 604,
+   "flicker": {
+    "pool_neon": 0.9842,
+    "open_neon": 0.9246
+   }
+  },
+  {
+   "frame": 605,
+   "seconds": 5.921,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 605,
+   "flicker": {
+    "pool_neon": 0.9844,
+    "open_neon": 0.9632
+   }
+  },
+  {
+   "frame": 606,
+   "seconds": 6.118,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 606,
+   "flicker": {
+    "pool_neon": 0.9801,
+    "open_neon": 0.9855
+   }
+  },
+  {
+   "frame": 607,
+   "seconds": 5.599,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 607,
+   "flicker": {
+    "pool_neon": 0.9831,
+    "open_neon": 0.9279
+   }
+  },
+  {
+   "frame": 608,
+   "seconds": 6.025,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 608,
+   "flicker": {
+    "pool_neon": 0.9861,
+    "open_neon": 0.9732
+   }
+  },
+  {
+   "frame": 609,
+   "seconds": 6.626,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 609,
+   "flicker": {
+    "pool_neon": 0.9857,
+    "open_neon": 0.6962
+   }
+  },
+  {
+   "frame": 610,
+   "seconds": 5.95,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 610,
+   "flicker": {
+    "pool_neon": 0.9728,
+    "open_neon": 0.9412
+   }
+  },
+  {
+   "frame": 611,
+   "seconds": 6.328,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 611,
+   "flicker": {
+    "pool_neon": 0.9748,
+    "open_neon": 0.9889
+   }
+  },
+  {
+   "frame": 612,
+   "seconds": 6.132,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 612,
+   "flicker": {
+    "pool_neon": 0.9774,
+    "open_neon": 0.9764
+   }
+  },
+  {
+   "frame": 613,
+   "seconds": 5.865,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 613,
+   "flicker": {
+    "pool_neon": 0.9666,
+    "open_neon": 0.9239
+   }
+  },
+  {
+   "frame": 614,
+   "seconds": 5.681,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 614,
+   "flicker": {
+    "pool_neon": 0.9785,
+    "open_neon": 0.9884
+   }
+  },
+  {
+   "frame": 615,
+   "seconds": 6.06,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 615,
+   "flicker": {
+    "pool_neon": 0.9211,
+    "open_neon": 0.9831
+   }
+  },
+  {
+   "frame": 616,
+   "seconds": 6.176,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 616,
+   "flicker": {
+    "pool_neon": 0.9638,
+    "open_neon": 0.9859
+   }
+  },
+  {
+   "frame": 617,
+   "seconds": 6.101,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 617,
+   "flicker": {
+    "pool_neon": 0.9736,
+    "open_neon": 0.9823
+   }
+  },
+  {
+   "frame": 618,
+   "seconds": 6.047,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 618,
+   "flicker": {
+    "pool_neon": 0.9753,
+    "open_neon": 0.9781
+   }
+  },
+  {
+   "frame": 619,
+   "seconds": 5.312,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 619,
+   "flicker": {
+    "pool_neon": 0.9237,
+    "open_neon": 0.9767
+   }
+  },
+  {
+   "frame": 620,
+   "seconds": 5.111,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 620,
+   "flicker": {
+    "pool_neon": 0.9607,
+    "open_neon": 0.948
+   }
+  },
+  {
+   "frame": 621,
+   "seconds": 5.324,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 621,
+   "flicker": {
+    "pool_neon": 0.9804,
+    "open_neon": 0.9881
+   }
+  },
+  {
+   "frame": 622,
+   "seconds": 5.264,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 622,
+   "flicker": {
+    "pool_neon": 0.9296,
+    "open_neon": 0.9216
+   }
+  },
+  {
+   "frame": 623,
+   "seconds": 6.655,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 623,
+   "flicker": {
+    "pool_neon": 0.9726,
+    "open_neon": 0.935
+   }
+  },
+  {
+   "frame": 624,
+   "seconds": 5.307,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 624,
+   "flicker": {
+    "pool_neon": 0.9276,
+    "open_neon": 0.9786
+   }
+  },
+  {
+   "frame": 625,
+   "seconds": 5.809,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 625,
+   "flicker": {
+    "pool_neon": 0.9415,
+    "open_neon": 0.9652
+   }
+  },
+  {
+   "frame": 626,
+   "seconds": 6.428,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 626,
+   "flicker": {
+    "pool_neon": 0.9728,
+    "open_neon": 0.9599
+   }
+  },
+  {
+   "frame": 627,
+   "seconds": 5.682,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 627,
+   "flicker": {
+    "pool_neon": 0.9427,
+    "open_neon": 0.9745
+   }
+  },
+  {
+   "frame": 628,
+   "seconds": 5.588,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 628,
+   "flicker": {
+    "pool_neon": 0.9499,
+    "open_neon": 0.9239
+   }
+  },
+  {
+   "frame": 629,
+   "seconds": 5.242,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 629,
+   "flicker": {
+    "pool_neon": 0.9677,
+    "open_neon": 0.9693
+   }
+  },
+  {
+   "frame": 630,
+   "seconds": 5.289,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 630,
+   "flicker": {
+    "pool_neon": 0.9816,
+    "open_neon": 0.9868
+   }
+  },
+  {
+   "frame": 631,
+   "seconds": 5.743,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 631,
+   "flicker": {
+    "pool_neon": 0.9558,
+    "open_neon": 0.9782
+   }
+  },
+  {
+   "frame": 632,
+   "seconds": 5.909,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 632,
+   "flicker": {
+    "pool_neon": 0.9399,
+    "open_neon": 0.9527
+   }
+  },
+  {
+   "frame": 633,
+   "seconds": 5.318,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 633,
+   "flicker": {
+    "pool_neon": 0.9858,
+    "open_neon": 0.9534
+   }
+  },
+  {
+   "frame": 634,
+   "seconds": 5.719,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 634,
+   "flicker": {
+    "pool_neon": 0.9796,
+    "open_neon": 0.952
+   }
+  },
+  {
+   "frame": 635,
+   "seconds": 5.316,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 635,
+   "flicker": {
+    "pool_neon": 0.9266,
+    "open_neon": 0.937
+   }
+  },
+  {
+   "frame": 636,
+   "seconds": 5.54,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 636,
+   "flicker": {
+    "pool_neon": 0.9774,
+    "open_neon": 0.9698
+   }
+  },
+  {
+   "frame": 637,
+   "seconds": 5.873,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 637,
+   "flicker": {
+    "pool_neon": 0.9839,
+    "open_neon": 0.9443
+   }
+  },
+  {
+   "frame": 638,
+   "seconds": 5.212,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 638,
+   "flicker": {
+    "pool_neon": 0.9336,
+    "open_neon": 0.9758
+   }
+  },
+  {
+   "frame": 639,
+   "seconds": 5.253,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 639,
+   "flicker": {
+    "pool_neon": 0.7133,
+    "open_neon": 0.9517
+   }
+  },
+  {
+   "frame": 640,
+   "seconds": 5.355,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 640,
+   "flicker": {
+    "pool_neon": 0.9785,
+    "open_neon": 0.9868
+   }
+  },
+  {
+   "frame": 641,
+   "seconds": 6.038,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 641,
+   "flicker": {
+    "pool_neon": 0.9881,
+    "open_neon": 0.967
+   }
+  },
+  {
+   "frame": 642,
+   "seconds": 5.439,
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "scene_frame": 642,
+   "flicker": {
+    "pool_neon": 0.9818,
+    "open_neon": 0.9772
+   }
+  },
+  {
+   "frame": 643,
+   "seconds": 5.666,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 643,
+   "flicker": {
+    "pool_neon": 0.9425,
+    "open_neon": 0.9234
+   }
+  },
+  {
+   "frame": 644,
+   "seconds": 4.999,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 644,
+   "flicker": {
+    "pool_neon": 0.9823,
+    "open_neon": 0.9632
+   }
+  },
+  {
+   "frame": 645,
+   "seconds": 5.729,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 645,
+   "flicker": {
+    "pool_neon": 0.7158,
+    "open_neon": 0.9739
+   }
+  },
+  {
+   "frame": 646,
+   "seconds": 5.308,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 646,
+   "flicker": {
+    "pool_neon": 0.9214,
+    "open_neon": 0.9623
+   }
+  },
+  {
+   "frame": 647,
+   "seconds": 4.982,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 647,
+   "flicker": {
+    "pool_neon": 0.9458,
+    "open_neon": 0.9764
+   }
+  },
+  {
+   "frame": 648,
+   "seconds": 4.828,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 648,
+   "flicker": {
+    "pool_neon": 0.9451,
+    "open_neon": 0.9316
+   }
+  },
+  {
+   "frame": 649,
+   "seconds": 5.038,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 649,
+   "flicker": {
+    "pool_neon": 0.9786,
+    "open_neon": 0.9808
+   }
+  },
+  {
+   "frame": 650,
+   "seconds": 5.046,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 650,
+   "flicker": {
+    "pool_neon": 0.9691,
+    "open_neon": 0.9522
+   }
+  },
+  {
+   "frame": 651,
+   "seconds": 5.474,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 651,
+   "flicker": {
+    "pool_neon": 0.6727,
+    "open_neon": 0.9529
+   }
+  },
+  {
+   "frame": 652,
+   "seconds": 5.305,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 652,
+   "flicker": {
+    "pool_neon": 0.9859,
+    "open_neon": 0.9839
+   }
+  },
+  {
+   "frame": 653,
+   "seconds": 5.168,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 653,
+   "flicker": {
+    "pool_neon": 0.9747,
+    "open_neon": 0.9256
+   }
+  },
+  {
+   "frame": 654,
+   "seconds": 5.387,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 654,
+   "flicker": {
+    "pool_neon": 0.9678,
+    "open_neon": 0.9734
+   }
+  },
+  {
+   "frame": 655,
+   "seconds": 5.765,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 655,
+   "flicker": {
+    "pool_neon": 0.9529,
+    "open_neon": 0.9323
+   }
+  },
+  {
+   "frame": 656,
+   "seconds": 5.686,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 656,
+   "flicker": {
+    "pool_neon": 0.9858,
+    "open_neon": 0.9745
+   }
+  },
+  {
+   "frame": 657,
+   "seconds": 6.319,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 657,
+   "flicker": {
+    "pool_neon": 0.9735,
+    "open_neon": 0.9694
+   }
+  },
+  {
+   "frame": 658,
+   "seconds": 5.944,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 658,
+   "flicker": {
+    "pool_neon": 0.9757,
+    "open_neon": 0.9638
+   }
+  },
+  {
+   "frame": 659,
+   "seconds": 6.583,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 659,
+   "flicker": {
+    "pool_neon": 0.9267,
+    "open_neon": 0.7652
+   }
+  },
+  {
+   "frame": 660,
+   "seconds": 5.854,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 660,
+   "flicker": {
+    "pool_neon": 0.9304,
+    "open_neon": 0.9835
+   }
+  },
+  {
+   "frame": 661,
+   "seconds": 5.483,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 661,
+   "flicker": {
+    "pool_neon": 0.9783,
+    "open_neon": 0.9357
+   }
+  },
+  {
+   "frame": 662,
+   "seconds": 5.937,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 662,
+   "flicker": {
+    "pool_neon": 0.9244,
+    "open_neon": 0.9773
+   }
+  },
+  {
+   "frame": 663,
+   "seconds": 5.515,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 663,
+   "flicker": {
+    "pool_neon": 0.9807,
+    "open_neon": 0.9877
+   }
+  },
+  {
+   "frame": 664,
+   "seconds": 5.828,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 664,
+   "flicker": {
+    "pool_neon": 0.9554,
+    "open_neon": 0.9489
+   }
+  },
+  {
+   "frame": 665,
+   "seconds": 6.273,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 665,
+   "flicker": {
+    "pool_neon": 0.9207,
+    "open_neon": 0.9467
+   }
+  },
+  {
+   "frame": 666,
+   "seconds": 5.583,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 666,
+   "flicker": {
+    "pool_neon": 0.9763,
+    "open_neon": 0.9663
+   }
+  },
+  {
+   "frame": 667,
+   "seconds": 6.502,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 667,
+   "flicker": {
+    "pool_neon": 0.9821,
+    "open_neon": 0.957
+   }
+  },
+  {
+   "frame": 668,
+   "seconds": 5.306,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 668,
+   "flicker": {
+    "pool_neon": 0.9601,
+    "open_neon": 0.9554
+   }
+  },
+  {
+   "frame": 669,
+   "seconds": 5.597,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 669,
+   "flicker": {
+    "pool_neon": 0.9412,
+    "open_neon": 0.9823
+   }
+  },
+  {
+   "frame": 670,
+   "seconds": 5.606,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 670,
+   "flicker": {
+    "pool_neon": 0.9758,
+    "open_neon": 0.9839
+   }
+  },
+  {
+   "frame": 671,
+   "seconds": 5.206,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 671,
+   "flicker": {
+    "pool_neon": 0.9677,
+    "open_neon": 0.9536
+   }
+  },
+  {
+   "frame": 672,
+   "seconds": 5.829,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 672,
+   "flicker": {
+    "pool_neon": 0.9809,
+    "open_neon": 0.9427
+   }
+  },
+  {
+   "frame": 673,
+   "seconds": 5.752,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 673,
+   "flicker": {
+    "pool_neon": 0.9583,
+    "open_neon": 0.9775
+   }
+  },
+  {
+   "frame": 674,
+   "seconds": 5.515,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 674,
+   "flicker": {
+    "pool_neon": 0.9563,
+    "open_neon": 0.9235
+   }
+  },
+  {
+   "frame": 675,
+   "seconds": 6.852,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 675,
+   "flicker": {
+    "pool_neon": 0.9592,
+    "open_neon": 0.9316
+   }
+  },
+  {
+   "frame": 676,
+   "seconds": 6.375,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 676,
+   "flicker": {
+    "pool_neon": 0.9833,
+    "open_neon": 0.9885
+   }
+  },
+  {
+   "frame": 677,
+   "seconds": 7.083,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 677,
+   "flicker": {
+    "pool_neon": 0.9875,
+    "open_neon": 0.9572
+   }
+  },
+  {
+   "frame": 678,
+   "seconds": 6.54,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 678,
+   "flicker": {
+    "pool_neon": 0.9884,
+    "open_neon": 0.9887
+   }
+  },
+  {
+   "frame": 679,
+   "seconds": 7.069,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 679,
+   "flicker": {
+    "pool_neon": 0.9649,
+    "open_neon": 0.9622
+   }
+  },
+  {
+   "frame": 680,
+   "seconds": 9.07,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 680,
+   "flicker": {
+    "pool_neon": 0.9315,
+    "open_neon": 0.9844
+   }
+  },
+  {
+   "frame": 681,
+   "seconds": 5.748,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 681,
+   "flicker": {
+    "pool_neon": 0.9736,
+    "open_neon": 0.9853
+   }
+  },
+  {
+   "frame": 682,
+   "seconds": 5.267,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 682,
+   "flicker": {
+    "pool_neon": 0.9893,
+    "open_neon": 0.9599
+   }
+  },
+  {
+   "frame": 683,
+   "seconds": 5.259,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 683,
+   "flicker": {
+    "pool_neon": 0.9873,
+    "open_neon": 0.9738
+   }
+  },
+  {
+   "frame": 684,
+   "seconds": 5.294,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 684,
+   "flicker": {
+    "pool_neon": 0.9771,
+    "open_neon": 0.9875
+   }
+  },
+  {
+   "frame": 685,
+   "seconds": 5.233,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 685,
+   "flicker": {
+    "pool_neon": 0.9406,
+    "open_neon": 0.9802
+   }
+  },
+  {
+   "frame": 686,
+   "seconds": 5.196,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 686,
+   "flicker": {
+    "pool_neon": 0.9765,
+    "open_neon": 0.9373
+   }
+  },
+  {
+   "frame": 687,
+   "seconds": 5.179,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 687,
+   "flicker": {
+    "pool_neon": 0.9266,
+    "open_neon": 0.965
+   }
+  },
+  {
+   "frame": 688,
+   "seconds": 5.139,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 688,
+   "flicker": {
+    "pool_neon": 0.9277,
+    "open_neon": 0.9272
+   }
+  },
+  {
+   "frame": 689,
+   "seconds": 5.605,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 689,
+   "flicker": {
+    "pool_neon": 0.9875,
+    "open_neon": 0.9747
+   }
+  },
+  {
+   "frame": 690,
+   "seconds": 6.076,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 690,
+   "flicker": {
+    "pool_neon": 0.987,
+    "open_neon": 0.9886
+   }
+  },
+  {
+   "frame": 691,
+   "seconds": 5.282,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 691,
+   "flicker": {
+    "pool_neon": 0.9815,
+    "open_neon": 0.9818
+   }
+  },
+  {
+   "frame": 692,
+   "seconds": 5.146,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 692,
+   "flicker": {
+    "pool_neon": 0.9678,
+    "open_neon": 0.9783
+   }
+  },
+  {
+   "frame": 693,
+   "seconds": 5.01,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 693,
+   "flicker": {
+    "pool_neon": 0.9868,
+    "open_neon": 0.9428
+   }
+  },
+  {
+   "frame": 694,
+   "seconds": 5.103,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 694,
+   "flicker": {
+    "pool_neon": 0.9397,
+    "open_neon": 0.9615
+   }
+  },
+  {
+   "frame": 695,
+   "seconds": 4.959,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 695,
+   "flicker": {
+    "pool_neon": 0.9506,
+    "open_neon": 0.9585
+   }
+  },
+  {
+   "frame": 696,
+   "seconds": 5.057,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 696,
+   "flicker": {
+    "pool_neon": 0.6789,
+    "open_neon": 0.9779
+   }
+  },
+  {
+   "frame": 697,
+   "seconds": 4.975,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 697,
+   "flicker": {
+    "pool_neon": 0.9359,
+    "open_neon": 0.973
+   }
+  },
+  {
+   "frame": 698,
+   "seconds": 4.918,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 698,
+   "flicker": {
+    "pool_neon": 0.9822,
+    "open_neon": 0.988
+   }
+  },
+  {
+   "frame": 699,
+   "seconds": 4.949,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 699,
+   "flicker": {
+    "pool_neon": 0.9892,
+    "open_neon": 0.9869
+   }
+  },
+  {
+   "frame": 700,
+   "seconds": 4.942,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 700,
+   "flicker": {
+    "pool_neon": 0.9641,
+    "open_neon": 0.9757
+   }
+  },
+  {
+   "frame": 701,
+   "seconds": 4.998,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 701,
+   "flicker": {
+    "pool_neon": 0.7179,
+    "open_neon": 0.9651
+   }
+  },
+  {
+   "frame": 702,
+   "seconds": 4.861,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 702,
+   "flicker": {
+    "pool_neon": 0.9445,
+    "open_neon": 0.9822
+   }
+  },
+  {
+   "frame": 703,
+   "seconds": 4.94,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 703,
+   "flicker": {
+    "pool_neon": 0.982,
+    "open_neon": 0.9479
+   }
+  },
+  {
+   "frame": 704,
+   "seconds": 4.906,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 704,
+   "flicker": {
+    "pool_neon": 0.9737,
+    "open_neon": 0.9395
+   }
+  },
+  {
+   "frame": 705,
+   "seconds": 4.991,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 705,
+   "flicker": {
+    "pool_neon": 0.9416,
+    "open_neon": 0.9642
+   }
+  },
+  {
+   "frame": 706,
+   "seconds": 4.941,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 706,
+   "flicker": {
+    "pool_neon": 0.9814,
+    "open_neon": 0.9763
+   }
+  },
+  {
+   "frame": 707,
+   "seconds": 5.007,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 707,
+   "flicker": {
+    "pool_neon": 0.9562,
+    "open_neon": 0.9762
+   }
+  },
+  {
+   "frame": 708,
+   "seconds": 4.902,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 708,
+   "flicker": {
+    "pool_neon": 0.9653,
+    "open_neon": 0.9218
+   }
+  },
+  {
+   "frame": 709,
+   "seconds": 4.994,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 709,
+   "flicker": {
+    "pool_neon": 0.9848,
+    "open_neon": 0.9737
+   }
+  },
+  {
+   "frame": 710,
+   "seconds": 4.879,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 710,
+   "flicker": {
+    "pool_neon": 0.9404,
+    "open_neon": 0.9805
+   }
+  },
+  {
+   "frame": 711,
+   "seconds": 4.977,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 711,
+   "flicker": {
+    "pool_neon": 0.9692,
+    "open_neon": 0.9775
+   }
+  },
+  {
+   "frame": 712,
+   "seconds": 4.937,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 712,
+   "flicker": {
+    "pool_neon": 0.9296,
+    "open_neon": 0.9755
+   }
+  },
+  {
+   "frame": 713,
+   "seconds": 5.954,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 713,
+   "flicker": {
+    "pool_neon": 0.9773,
+    "open_neon": 0.9729
+   }
+  },
+  {
+   "frame": 714,
+   "seconds": 5.904,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 714,
+   "flicker": {
+    "pool_neon": 0.9207,
+    "open_neon": 0.9767
+   }
+  },
+  {
+   "frame": 715,
+   "seconds": 6.15,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 715,
+   "flicker": {
+    "pool_neon": 0.9692,
+    "open_neon": 0.9371
+   }
+  },
+  {
+   "frame": 716,
+   "seconds": 6.18,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 716,
+   "flicker": {
+    "pool_neon": 0.9577,
+    "open_neon": 0.9514
+   }
+  },
+  {
+   "frame": 717,
+   "seconds": 6.341,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 717,
+   "flicker": {
+    "pool_neon": 0.9766,
+    "open_neon": 0.9543
+   }
+  },
+  {
+   "frame": 718,
+   "seconds": 5.698,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 718,
+   "flicker": {
+    "pool_neon": 0.9781,
+    "open_neon": 0.9594
+   }
+  },
+  {
+   "frame": 719,
+   "seconds": 5.601,
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "scene_frame": 719,
+   "flicker": {
+    "pool_neon": 0.9277,
+    "open_neon": 0.9626
+   }
+  }
+ ]
+}

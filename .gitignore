@@ -25,3 +25,7 @@ assets/data/shots/candidates/out/
 
 # Silent master + film intermediates: the shipped file is site/break-film.mp4
 renders/film_out/
+
+# Python bytecode from the Blender/venv script runs
+__pycache__/
+*.pyc

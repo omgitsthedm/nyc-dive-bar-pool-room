@@ -1,0 +1,183 @@
+{
+ "trajectory_sha256": "16b5aafa8ce5b8a75a6bc59d66ceea55953f49792328d145cdb4c89487c816a7",
+ "shot_id": "b_51",
+ "duration_s": 7.805997761,
+ "fps": 24,
+ "total_frames": 720,
+ "film_offset_s": 19.0,
+ "strike_frame": 456,
+ "bake_start": 456,
+ "bake_end": 645,
+ "original_bake": [
+  1,
+  219
+ ],
+ "gameplay_shift": 426,
+ "bake_impact_frame": 30,
+ "render_view_layer": "GAMEPLAY",
+ "view_layer_excludes": [
+  "00_GUIDES",
+  "05_HERO_PROPS",
+  "10_PHYSICS_PROXIES",
+  "99_REFERENCE_LOCKED"
+ ],
+ "gameplay_objects_rebased": 18,
+ "gameplay_keys_rebased": 230108,
+ "pocket_frames": {
+  "7": 336,
+  "4": 350
+ },
+ "last_stop_frame": 487,
+ "volume_materials": [
+  "MAT_Atmosphere_Haze",
+  "MAT_Atmosphere_RoomHaze"
+ ],
+ "volume_objects_hidden": [
+  "ATM_PoolBeam_Volume",
+  "ATM_RoomHaze_Volume"
+ ],
+ "cap_horns_hidden": [
+  "PT_CapHorn_corner_NE_10",
+  "PT_CapHorn_corner_NE_11",
+  "PT_CapHorn_corner_NW_7",
+  "PT_CapHorn_corner_NW_8",
+  "PT_CapHorn_corner_SE_16",
+  "PT_CapHorn_corner_SE_17",
+  "PT_CapHorn_corner_SW_1",
+  "PT_CapHorn_corner_SW_2",
+  "PT_CapHorn_side_E_13",
+  "PT_CapHorn_side_E_14",
+  "PT_CapHorn_side_W_4",
+  "PT_CapHorn_side_W_5"
+ ],
+ "atmosphere_density": 0.045,
+ "open_neon_n_objects": [
+  "LGT_NeonWindowOpen_N_0",
+  "LGT_NeonWindowOpen_N_1",
+  "LGT_NeonWindowOpen_N_2"
+ ],
+ "open_neon_n_material": "MAT_OpenNeon_N_film",
+ "open_neon_base_material": "MAT_Prop_NeonGreen",
+ "film_lights": [
+  "FILM_PoolFixture_Bounce",
+  "FILM_PoolFixture_UpWash",
+  "FILM_BackBar_Fluoro_S",
+  "FILM_BackBar_Fluoro_N",
+  "FILM_Storefront_StreetSpill",
+  "FILM_OpenNeon_Spill",
+  "FILM_CRT_Spill",
+  "FILM_Restroom_Cool",
+  "FILM_EastSconce_0",
+  "FILM_EastSconce_1",
+  "FILM_RearSconce_0",
+  "FILM_RearSconce_1",
+  "FILM_Cafe_Practical",
+  "FILM_Entry_Practical",
+  "FILM_BoothPendant_0",
+  "FILM_BoothPendant_1",
+  "FILM_BarPendant_0",
+  "FILM_BarPendant_1",
+  "FILM_BarPendant_2"
+ ],
+ "light_scale": 1.0,
+ "shots": [
+  {
+   "shot": 1,
+   "name": "StorefrontNewYork",
+   "cam": "CAM_Cine_S01_StorefrontNewYork",
+   "path": "FILMPATH_S01",
+   "rig": "FILMRIG_S01",
+   "target": "FILMTGT_S01",
+   "first": 0,
+   "last": 131,
+   "lens": 35.0,
+   "fstop": 4.0,
+   "why": "the diamond lattice, the OPEN sign read backwards from inside, and the wet Lower East Side street moving behind it",
+   "tracks_ball": null
+  },
+  {
+   "shot": 2,
+   "name": "BarGlide",
+   "cam": "CAM_Cine_S02_BarGlide",
+   "path": "FILMPATH_S02",
+   "rig": "FILMRIG_S02",
+   "target": "FILMTGT_S02",
+   "first": 132,
+   "last": 251,
+   "lens": 40.0,
+   "fstop": 8.0,
+   "why": "the length of the back bar: 213 bottles, the barrel-front register, and the fluorescent sections that stop either side of it",
+   "tracks_ball": null
+  },
+  {
+   "shot": 3,
+   "name": "Glassware",
+   "cam": "CAM_Cine_S03_Glassware",
+   "path": "FILMPATH_S03",
+   "rig": "FILMRIG_S03",
+   "target": "FILMTGT_S03",
+   "first": 252,
+   "last": 347,
+   "lens": 55.0,
+   "fstop": 5.0,
+   "why": "low along the bar top past a pint with a foam head and condensation on the glass, and a rocks cocktail on its coaster",
+   "tracks_ball": null
+  },
+  {
+   "shot": 4,
+   "name": "ToTheTable",
+   "cam": "CAM_Cine_S04_ToTheTable",
+   "path": "FILMPATH_S04",
+   "rig": "FILMRIG_S04",
+   "target": "FILMTGT_S04",
+   "first": 348,
+   "last": 455,
+   "lens": 35.0,
+   "fstop": 5.6,
+   "why": "off the room and down onto the fixture, the cloth and the racked balls - the last thing before the cue moves",
+   "tracks_ball": null
+  },
+  {
+   "shot": 5,
+   "name": "BreakAndPockets",
+   "cam": "CAM_Cine_S05_BreakAndPockets",
+   "path": "FILMPATH_S05",
+   "rig": "FILMRIG_S05",
+   "target": "FILMTGT_S05",
+   "first": 456,
+   "last": 551,
+   "lens": 26.0,
+   "fstop": 5.6,
+   "why": "the strike, in real time, drifting down the east side so the south-east corner - where the 7 and then the 4 drop - is never out of frame",
+   "tracks_ball": null
+  },
+  {
+   "shot": 6,
+   "name": "RailAndLastBall",
+   "cam": "CAM_Cine_S06_RailAndLastBall",
+   "path": "FILMPATH_S06",
+   "rig": "FILMRIG_S06",
+   "target": "FILMTGT_S06",
+   "first": 552,
+   "last": 642,
+   "lens": 60.0,
+   "fstop": 4.0,
+   "why": "low along the east rail while the table is still working, following the 13 - the last thing moving anywhere - until it gives up",
+   "tracks_ball": "13"
+  },
+  {
+   "shot": 7,
+   "name": "SettleAndPullback",
+   "cam": "CAM_Cine_S07_SettleAndPullback",
+   "path": "FILMPATH_S07",
+   "rig": "FILMRIG_S07",
+   "target": "FILMTGT_S07",
+   "first": 643,
+   "last": 719,
+   "lens": 24.0,
+   "fstop": 8.0,
+   "why": "rise away and open out down the length of the room - fixture, table, booths, bar, and the lit storefront at the far end",
+   "tracks_ball": null
+  }
+ ]
+}
