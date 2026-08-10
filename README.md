@@ -15,6 +15,9 @@ control break, spin, pocket capture and solver-to-Blender playback validation.
 - This repository remains the Blender production-art source. Its `site/`
   directory is the packaged media source retained with the art project; the
   former standalone Netlify URL is retired.
+- Do not deploy this repository as a standalone Netlify site. Publish its
+  presentation only through the separate canonical Little Fight NYC website
+  source listed above.
 - `blend/poolroom_cinematic.blend` is the latest film-specific derived scene.
   It sits on top of the protected master, static preview, and gameplay preview
   described below.

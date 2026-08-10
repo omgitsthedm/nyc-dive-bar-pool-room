@@ -223,7 +223,9 @@ distinct-camera count.
 The finished opening chapter contains 15 ordered 1600 × 900, 96-spp Cycles
 frames in `renders/cinematic_stills/`. All 15 render from the same derived
 candidate; the measured total is 2,941.5 seconds. The visual-only sequence is
-live at `https://pool-table-test.netlify.app/`.
+presented at
+`https://littlefightnyc.com/examples/lab/concepts/pool-room/`. The retired
+standalone Netlify site is no longer a deployment target for this repository.
 
 ### Gameplay physics proof
 
