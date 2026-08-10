@@ -1,14 +1,22 @@
 # Handoff — NYC Dive-Bar Pool Room
 
-**Updated:** 2026-08-06
+**Updated:** 2026-08-08
 
-**Project root:** `/Users/davidmarsh/Desktop/Pool Table Test/nyc-dive-bar-pool-room`
+**Project root:** `/Users/davidmarsh/Desktop/LiFi NYC/Pool Table Test/nyc-dive-bar-pool-room`
 
 **Frozen environment master:** `blend/poolroom_master.blend`
 
 **Current derived pool preview:** `blend/poolroom_pool_rebuild_preview.blend`
 
 **Current derived gameplay preview:** `blend/poolroom_gameplay_preview.blend`
+
+**Current cinematic scene:** `blend/poolroom_cinematic.blend`
+
+**Verified portable cinematic checkpoint:**
+`blend/checkpoints/poolroom_cinematic_portable_2026-08-08.blend`
+
+**Public presentation:**
+[The Pool Room at Little Fight NYC](https://littlefightnyc.com/examples/lab/concepts/pool-room/)
 
 **Blender:** 5.2.0 LTS (`/Applications/Blender.app/Contents/MacOS/Blender`)
 
@@ -53,8 +61,8 @@ evaluated independently:
   unchanged protected artifacts.  `reports/pool_system_lock.json` was
   deliberately re-banked for the reviewed 2026-08-05 pocket revision; the
   derived previews were regenerated from the untouched master.
-- The ordered 15-shot opening chapter is rendered at 1600 × 900 and is live as
-  a visual-only gallery at `https://pool-table-test.netlify.app/`.
+- The ordered 15-shot opening chapter is rendered at 1600 × 900 and is live at
+  `https://littlefightnyc.com/examples/lab/concepts/pool-room/`.
 
 | Area | Current construction |
 |---|---|
@@ -205,7 +213,7 @@ recorded in `docs/SOURCE_MANIFEST.md` and `reports/asset_manifest.json`.
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_master.blend -P scripts/23_rebuild_pool_system.py
 
 # Current static candidate checks.
-/Users/davidmarsh/Desktop/Pool\ Table\ Test/.venv/bin/python scripts/91_validate_pool_geometry_contract.py
+../.venv/bin/python scripts/91_validate_pool_geometry_contract.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_pool_rebuild_preview.blend -P scripts/90_validate_scene.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_pool_rebuild_preview.blend -P scripts/95_audit_realism.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_pool_rebuild_preview.blend -P scripts/96_audit_environment_staging.py
@@ -213,9 +221,9 @@ recorded in `docs/SOURCE_MANIFEST.md` and `reports/asset_manifest.json`.
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_pool_rebuild_preview.blend -P scripts/99_bank_pool_system_lock.py
 
 # Deterministic gameplay profile, trajectory and Blender bake.
-/Users/davidmarsh/Desktop/Pool\ Table\ Test/.venv/bin/python scripts/make_game_ball_decals.py
-/Users/davidmarsh/Desktop/Pool\ Table\ Test/.venv/bin/python scripts/100_validate_pool_physics.py --repeat 10
-/Users/davidmarsh/Desktop/Pool\ Table\ Test/.venv/bin/python scripts/101_export_pool_shot.py
+../.venv/bin/python scripts/make_game_ball_decals.py
+../.venv/bin/python scripts/100_validate_pool_physics.py --repeat 10
+../.venv/bin/python scripts/101_export_pool_shot.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_pool_rebuild_preview.blend -P scripts/102_bake_pool_playback.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_gameplay_preview.blend -P scripts/103_validate_pool_playback.py
 
@@ -328,7 +336,9 @@ default derived-preview path is the safe routine choice.
    exposure and light boost predate this practical-light network.
 7. This is a plausible visualization, not an NYC permit/accessibility/fire/
    health-code certification.
-8. The production gallery is deployed. No Git commit or push was made.
+8. The public presentation is deployed from the canonical Little Fight NYC
+   website repository. The former standalone Netlify URL is retired; this
+   repository retains the Blender source and packaged media.
 
 ## Next action
 

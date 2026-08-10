@@ -13,9 +13,10 @@
 # files are written into the repo.
 set -euo pipefail
 
-REPO="$(cd "$(dirname "$0")/.." && pwd)"
+REPO="$(cd "$(dirname "$0")/.." && pwd -P)"
 SCRATCH="${SCRATCH:-/private/tmp/pool-room-cinematic-webm}"
-VP="/Users/davidmarsh/Desktop/Pool Table Test/.venv/bin/python"
+WORKSPACE="$(cd "$REPO/.." && pwd -P)"
+POOL_ROOM_PYTHON="${POOL_ROOM_PYTHON:-$WORKSPACE/.venv/bin/python}"
 
 FRAMES="$SCRATCH/frames"
 AUDIO="$SCRATCH/audio/film_mix.wav"
@@ -35,11 +36,11 @@ POSTER_FRAME="${POSTER_FRAME:-712}"
 KEEP_MASTER=0
 [ "${1:-}" = "--keep-master" ] && KEEP_MASTER=1
 
-SHA="$("$VP" -c "import json;print(json.load(open('$REPO/assets/data/shots/break_film.json'))['trajectory_sha256'])")"
+SHA="$("$POOL_ROOM_PYTHON" -c "import json;print(json.load(open('$REPO/assets/data/shots/break_film.json'))['trajectory_sha256'])")"
 mkdir -p "$ENC" "$(dirname "$POSTER")"
 
 echo "=== 1. frame sequence gate ==="
-"$VP" "$REPO/scripts/118_validate_frame_sequence.py" \
+"$POOL_ROOM_PYTHON" "$REPO/scripts/118_validate_frame_sequence.py" \
   --frames "$FRAMES" --manifest "$SCRATCH/tests/shot-manifest.json" \
   --report "$SCRATCH/tests/frame-sequence.json"
 
@@ -53,7 +54,7 @@ echo "=== 2. film grain after denoise -> lossless master ==="
 # 4:2:0 conversion happens once, in the deliverable encodes.
 ffmpeg -y -loglevel error -framerate $FPS -start_number 0 \
   -i "$FRAMES/%04d.png" -f rawvideo -pix_fmt rgb24 - \
-| "$VP" "$REPO/scripts/filmgrain.py" --width $W --height $H --sha "$SHA" \
+| "$POOL_ROOM_PYTHON" "$REPO/scripts/filmgrain.py" --width $W --height $H --sha "$SHA" \
     --stats "$SCRATCH/tests/grain-stats.json" \
 | ffmpeg -y -loglevel error -f rawvideo -pix_fmt rgb24 -s ${W}x${H} \
     -framerate $FPS -i - -c:v ffv1 -level 3 -g 1 "$MASTER"

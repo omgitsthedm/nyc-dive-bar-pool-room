@@ -6,6 +6,22 @@ the hero. The frozen environment and accepted static table now support a
 derived deterministic gameplay scene with marked balls, cue/rack setup, a
 control break, spin, pocket capture and solver-to-Blender playback validation.
 
+## Production placement
+
+- **Public presentation**:
+  [The Pool Room at Little Fight NYC](https://littlefightnyc.com/examples/lab/concepts/pool-room/)
+- **Live website source**:
+  `/Users/davidmarsh/Code/LiFi NYC/Little Fight NYC Business/Website/littlefightnyc-website/app/public/examples/lab/concepts/pool-room/`
+- This repository remains the Blender production-art source. Its `site/`
+  directory is the packaged media source retained with the art project; the
+  former standalone Netlify URL is retired.
+- `blend/poolroom_cinematic.blend` is the latest film-specific derived scene.
+  It sits on top of the protected master, static preview, and gameplay preview
+  described below.
+- `blend/checkpoints/poolroom_cinematic_portable_2026-08-08.blend` is the
+  verified local-open checkpoint. It preserves the original scene and rebases
+  its 73 moved image references to project-relative paths.
+
 ## Scoped pool rebuild and gate
 
 ```bash
@@ -48,7 +64,7 @@ Scoped pool rebuild and saved-candidate checks:
 
 ```bash
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_pool_rebuild_preview.blend -P scripts/90_validate_scene.py
-/Users/davidmarsh/Desktop/Pool\ Table\ Test/.venv/bin/python scripts/91_validate_pool_geometry_contract.py
+../.venv/bin/python scripts/91_validate_pool_geometry_contract.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_pool_rebuild_preview.blend -P scripts/95_audit_realism.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_pool_rebuild_preview.blend -P scripts/96_audit_environment_staging.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_pool_rebuild_preview.blend -P scripts/98_validate_environment_lock.py
@@ -69,7 +85,7 @@ Scoped pool rebuild and saved-candidate checks:
 | Lighting/street | done — 25/25 sources motivated by visible fixtures, neon assemblies or modeled openings; original wet-night LES street plate behind diamond glazing |
 | Environment freeze | done — core room collections are unselectable and machine-fingerprinted; non-pool lighting/materials/assets/global color state are guarded; pool systems remain editable |
 | Evidence | 28 distinct cameras — 19 cinematic/environment cameras plus nine purpose-built pool-audit cameras; six final corner/side pocket views cover playing-surface, top and underside angles |
-| Opening chapter | done — 15 ordered 1600 × 900 Cycles stills in `renders/cinematic_stills/`; visual-only gallery live at `https://pool-table-test.netlify.app/` |
+| Opening chapter | done — 15 ordered 1600 × 900 Cycles stills in `renders/cinematic_stills/`; public presentation live at `https://littlefightnyc.com/examples/lab/concepts/pool-room/` |
 | Physics/gameplay | foundation passes — Pooltool 0.6.0 deterministic event solver, 16 marked 57.15 mm / 0.168 kg balls, explicit slide/roll/spin and collision profile, legal tight 8-ball rack, 58 in cue, 24 mph control break, pocket capture and baked quaternion/location playback; zero Blender rigid bodies intentionally |
 | Physics validation | `reports/physics_validation.json` 15/15 PASS; `reports/physics_playback_audit.json` 216/216 PASS across 24,560 saved-scene sample comparisons, with 0.015 mm maximum position error and 0.069° maximum orientation error |
 | Physics visual proof | accepted — six regenerated 1280 × 720, 48-spp Cycles frames and contact sheet in `renders/physics_proof/`; `reports/physics_render_timing.json` records 336.6 s |
@@ -116,9 +132,9 @@ Pooltool's capture test is a continuous 2D pocket-circle crossing; the modeled
 Bullet is deliberately not involved, so zero rigid bodies remain intentional.
 
 ```bash
-/Users/davidmarsh/Desktop/Pool\ Table\ Test/.venv/bin/python scripts/make_game_ball_decals.py
-/Users/davidmarsh/Desktop/Pool\ Table\ Test/.venv/bin/python scripts/100_validate_pool_physics.py --repeat 10
-/Users/davidmarsh/Desktop/Pool\ Table\ Test/.venv/bin/python scripts/101_export_pool_shot.py
+../.venv/bin/python scripts/make_game_ball_decals.py
+../.venv/bin/python scripts/100_validate_pool_physics.py --repeat 10
+../.venv/bin/python scripts/101_export_pool_shot.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_pool_rebuild_preview.blend -P scripts/102_bake_pool_playback.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_gameplay_preview.blend -P scripts/103_validate_pool_playback.py
 /Applications/Blender.app/Contents/MacOS/Blender -b blend/poolroom_gameplay_preview.blend -P scripts/104_render_pool_physics_proof.py -- --engine cycles --samples 48 --width 1280 --height 720
